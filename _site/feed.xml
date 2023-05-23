@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-22T19:35:04-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
+Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Puedes revisa el listado de todas las herramientas disponibles  &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;aqui&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;configuracion&quot;&gt;Configuracion&lt;/h1&gt;
+
+&lt;p&gt;Para tener el acceso a todas las herramientas solo debes de agregar la llave(key) de acceso a las configuraciones de APT en Termux :&lt;/p&gt;
+
+&lt;h3 id=&quot;crea-el-directorio-&quot;&gt;Crea el directorio :&lt;/h3&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Descarga la Key(llave) :
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;wget
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d/ivam3-termux-packages.list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h3 id=&quot;actualiza-termux-&quot;&gt;Actualiza Termux :&lt;/h3&gt;
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En ese listado de herramientas que hemos optenido vamos a tener a &lt;strong&gt;termux-doker-qemu&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ apt show  termux-docker-qemu                             
+Package: termux-docker-qemu                                Version: 0.3.3
+Maintainer: Ivam3 &amp;lt;https://t.me/Ivam3_Bot&amp;gt;
+Installed-Size: 2048 B
+Depends: termux-api, openssh, wget, procps, qemu-utils, qemu-common, qemu-system-x86-64-headless
+Suggests: i-haklab
+Homepage: https://www.docker.com/products/docker-desktop/
+Download-Size: 3840 B
+APT-Manual-Installed: &lt;span class=&quot;nb&quot;&gt;yes
+&lt;/span&gt;APT-Sources: https://ivam3.github.io/termux-packages stable/extras all Packages
+Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;running x86,x86_64,armv7 and aarch64 Linux virtual machines using QEMU
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Esto nos va a facilitar virtualizar el sistema operativo.&lt;/p&gt;
+
+&lt;h3 id=&quot;por-que-alpine&quot;&gt;Por que alpine&lt;/h3&gt;
+
+&lt;p&gt;Solo cuenta con un peso minimo de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;133MB&lt;/code&gt; y por eso es  adecuado para  manejan contenedores, especialmente Docker. 💢&lt;/p&gt;
+
+&lt;h1 id=&quot;intalacion&quot;&gt;Intalacion&lt;/h1&gt;
+
+&lt;p&gt;Vamos a proceder a instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;termux-doker-qemu&lt;/code&gt; com un:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;termux-doker-qemu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Puedes contar con una explicasion mas detallada de todo el proceso y configuracion en el sigiente video 👇 espero que lo disfute&lt;/p&gt;
+
+&lt;h1 id=&quot;video&quot;&gt;Video&lt;/h1&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+
+  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/CXvTUEG1oPs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2020-11-29T00:00:00-05:00</published><updated>2020-11-29T00:00:00-05:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
+
+&lt;h1 id=&quot;instalacion&quot;&gt;Instalacion&lt;/h1&gt;
+
+&lt;h2 id=&quot;paso-1-actualizar-paquetes&quot;&gt;Paso 1: actualizar paquetes&lt;/h2&gt;
+
+&lt;p&gt;Ejecute el siguiente comando&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;paso-2-instalar-termux-api&quot;&gt;Paso 2: Instalar termux-api&lt;/h2&gt;
+
+&lt;p&gt;Ahora debe asegurarse de que termux tenga acceso a las funciones de hardware de Android y Chrome. Ejecute el siguiente comando.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;termux-api
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;paso-3-install-paquete-de-nodejs&quot;&gt;Paso 3: Install paquete de nodejs&lt;/h2&gt;
+
+&lt;p&gt;Para su intalacion ejecutar&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt  &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nodejs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;paso-4-instalar-localtunel&quot;&gt;Paso 4: Instalar localtunel&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; localtunnel
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Despues de que finalice la instalacion tendremos un error la ejecutal el comado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lt&lt;/code&gt; que seria la 
+abreviatura de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; mostrando por pantalla lo siguente&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16
+        throw new Error&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Unsupported platform: &apos;&lt;/span&gt; + process.platform&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        ^
+
+Error: Unsupported platform: android
+    at Object.&amp;lt;anonymous&amp;gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16:15&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._compile &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1275:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._extensions..js &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1329:10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module.load &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1133:32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._load &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:972:12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module.require &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1157:19&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at require &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/helpers:119:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Object.&amp;lt;anonymous&amp;gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/bin/lt.js:4:17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._compile &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1275:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._extensions..js &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1329:10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+Node.js v19.6.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para solucionar lo siguente procederemos a untilizar nuestro editor de texto faborito y editaremos el siguiente archivo&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvim &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/lib/node_modules/localtunnel/node_modules/openurl/openurl.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Nos pocisionaremos en la linea numero &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;14&lt;/code&gt; gregamos la siguente fracmento de codigo despues de el 
+ultimo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;android&apos;&lt;/span&gt;:
+    &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;termux&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;resultado-final&quot;&gt;Resultado final&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    5 switch&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;process.platform&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    6     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;darwin&apos;&lt;/span&gt;:
+    7         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;open&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                      
+    8         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    9     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;win32&apos;&lt;/span&gt;:
+   10         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;explorer.exe&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   11         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   12     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;linux&apos;&lt;/span&gt;:
+   13         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;xdg-open&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   14         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   15     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;android&apos;&lt;/span&gt;:
+   16         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;termux&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                   
+   17         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   18     default:
+   19         throw new Error&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Unsupported platform: &apos;&lt;/span&gt; + process.platform&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+   20 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;usar&quot;&gt;usar&lt;/h1&gt;
+&lt;p&gt;Suponiendo que su servidor local se está ejecutando en el puerto 8000, simplemente use el ltcomando para iniciar el túnel.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lt &lt;span class=&quot;nt&quot;&gt;--port&lt;/span&gt; 8000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="soluciones" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
