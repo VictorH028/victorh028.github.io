@@ -3,7 +3,6 @@ comments: true
 layout: single
 title: Como intalar localtunnel
 date: 2023-04-17
-comments_id: 30
 classes: wide
 header:
   teaser: /assets/images/localtunnel/icon-localtunnel.png

@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Alpine en termux - Ciberseguridad y Hacking Ético</title>
-<meta name="description" content="Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.">
+<!-- begin _includes/seo.html --><title>Criptografía_RSA - Ciberseguridad y Hacking Ético</title>
+<meta name="description" content="En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Ciberseguridad y Hacking Ético">
-<meta property="og:title" content="Alpine en termux">
-<meta property="og:url" content="http://localhost:4000/Alpine/">
+<meta property="og:title" content="Criptografía_RSA">
+<meta property="og:url" content="http://localhost:4000/RSA/">
 
 
-  <meta property="og:description" content="Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2023-04-21T00:00:00-04:00">
+  <meta property="og:description" content="En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2023-05-25T00:00:00-04:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/Alpine/">
+
+<link rel="canonical" href="http://localhost:4000/RSA/">
 
 
 
@@ -166,7 +166,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Alpine en termux</li>
+        <li class="current">Criptografía_RSA</li>
       
     
   </ol>
@@ -283,15 +283,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Alpine en termux">
-    <meta itemprop="description" content="Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.">
-    <meta itemprop="datePublished" content="April 21, 2023">
+    <meta itemprop="headline" content="Criptografía_RSA">
+    <meta itemprop="description" content="En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.">
+    <meta itemprop="datePublished" content="May 25, 2023">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Alpine en termux
+          <h1 id="page-title" class="page__title" itemprop="headline">Criptografía_RSA
 </h1>
           
         </header>
@@ -301,74 +301,95 @@
         
         <p class="page__meta">
           
-            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2023-04-21T00:00:00-04:00">April 21, 2023 </time>&emsp;
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2023-05-25T00:00:00-04:00">May 25, 2023 </time>&emsp;
           
           
         </p>
-        <p>Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
-Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la <a href="https://t.me/Ivam3by_Cinderella">comunidad</a> a probado su funcionalidad al 100% en Android.</p>
+        <p>En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</p>
 
-<ul>
-  <li>Puedes revisa el listado de todas las herramientas disponibles  <a href="https://github.com/ivam3/termux-packages">aqui</a>:</li>
-</ul>
+<p>Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:</p>
 
-<h1 id="configuracion">Configuracion</h1>
-
-<p>Para tener el acceso a todas las herramientas solo debes de agregar la llave(key) de acceso a las configuraciones de APT en Termux :</p>
-
-<h3 id="crea-el-directorio-">Crea el directorio :</h3>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d 
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   apt update
+   apt <span class="nb">install </span>openssl
 </code></pre></div></div>
-<ul>
-  <li>Descarga la Key(llave) :
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>wget
-</code></pre></div>    </div>
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list <span class="nt">-O</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d/ivam3-termux-packages.list
-</code></pre></div>    </div>
-    <h3 id="actualiza-termux-">Actualiza Termux :</h3>
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update <span class="o">&amp;&amp;</span> apt upgrade
+
+<h1 id="clave-privada">Clave privada</h1>
+
+<ol>
+  <li>
+    <p>Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl genrsa <span class="nt">-out</span> clave_privada.pem 2048
 </code></pre></div>    </div>
   </li>
-</ul>
+</ol>
 
-<p>En ese listado de herramientas que hemos optenido vamos a tener a <strong>termux-doker-qemu</strong></p>
+<p>El número <code class="language-plaintext highlighter-rouge">2048</code> es la longitud de la clave. Si necesitas una clave más larga, puedes cambiar este valor.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>❯ apt show  termux-docker-qemu                             
-Package: termux-docker-qemu                                Version: 0.3.3
-Maintainer: Ivam3 &lt;https://t.me/Ivam3_Bot&gt;
-Installed-Size: 2048 B
-Depends: termux-api, openssh, wget, procps, qemu-utils, qemu-common, qemu-system-x86-64-headless
-Suggests: i-haklab
-Homepage: https://www.docker.com/products/docker-desktop/
-Download-Size: 3840 B
-APT-Manual-Installed: <span class="nb">yes
-</span>APT-Sources: https://ivam3.github.io/termux-packages stable/extras all Packages
-Description: Docker container <span class="k">for </span>running x86,x86_64,armv7 and aarch64 Linux virtual machines using QEMU
-</code></pre></div></div>
+<h1 id="clave-publia">Clave publia</h1>
 
-<p>Esto nos va a facilitar virtualizar el sistema operativo.</p>
+<p>Para extraer la clave pública de la clave privada que acabamos  de generar.</p>
 
-<h3 id="por-que-alpine">Por que alpine</h3>
+<ol>
+  <li>
+    <p>El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:</p>
 
-<p>Solo cuenta con un peso minimo de <code class="language-plaintext highlighter-rouge">133MB</code> y por eso es  adecuado para  manejan contenedores, especialmente Docker. 💢</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsa <span class="nt">-in</span> clave_privada.pem <span class="nt">-pubout</span> <span class="nt">-out</span> clave_publica.pem
+</code></pre></div>    </div>
 
-<h1 id="intalacion">Intalacion</h1>
+    <p>El archivo <code class="language-plaintext highlighter-rouge">clave_publica.pem</code> contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.</p>
+  </li>
+</ol>
 
-<p>Vamos a proceder a instalar <code class="language-plaintext highlighter-rouge">termux-doker-qemu</code> com un:</p>
+<h1 id="cifrar-el-archivo-utilizando-la-clave-pública">Cifrar el archivo utilizando la clave pública.</h1>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>termux-doker-qemu
-</code></pre></div></div>
+<ol>
+  <li>
+    <p>El siguiente comando cifrará el archivo <code class="language-plaintext highlighter-rouge">archivo_a_cifrar</code>  utilizando la clave pública contenida en el archivo <code class="language-plaintext highlighter-rouge">clave_publica.pem</code>:</p>
 
-<p>Puedes contar con una explicasion mas detallada de todo el proceso y configuracion en el sigiente video 👇 espero que lo disfute</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsautl <span class="nt">-encrypt</span> <span class="nt">-in</span> archivo_a_cifrar <span class="nt">-out</span> archivo_cifrado <span class="nt">-inkey</span> clave_publica.pem <span class="nt">-pubin</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
 
-<h1 id="video">Video</h1>
+<p>El archivo cifrado resultante se almacenará en el archivo <code class="language-plaintext highlighter-rouge">archivo_cifrado</code>.</p>
 
-<!-- Courtesy of embedresponsively.com //-->
-<div class="responsive-video-container">
+<p>Es importante tener en cuenta que la clave privada que se ha utilizado para generar la clave pública, debe mantenerse en un lugar seguro y no debe ser distribuida. Sólo la clave pública debe ser compartida con aquellos que necesitan cifrar información para que la persona que posee la clave privada pueda descifrar la información cifrada utilizando sus funciones privadas.</p>
 
-  <iframe src="https://www.youtube-nocookie.com/embed/CXvTUEG1oPs" frameborder="0" allowfullscreen=""></iframe>
+<h1 id="de-sesencriptar-el-archivo-en-rsa">De sesencriptar el archivo en RSA</h1>
 
-</div>
+<p>Para desencriptar un archivo utilizando RSA, necesitarás los siguientes elementos:</p>
+
+<ol>
+  <li>
+    <p>La clave pública que se utilizó para cifrar el archivo.</p>
+  </li>
+  <li>
+    <p>El archivo cifrado que se desea desencriptar.</p>
+  </li>
+</ol>
+
+<p>Antes de comenzar, es importante señalar que la operación de desencriptación se suele hacer en local y no suele ser una buena práctica compartir información de este tipo con terceros.</p>
+
+<ol>
+  <li>
+    <p>Tener a la mano el archivo cifrado y la clave pública que se utilizó para cifrar. Esta debe estar en un archivo llamado <code class="language-plaintext highlighter-rouge">clave_publica.pem</code>.</p>
+  </li>
+  <li>
+    <p>Finalmente, ejecutar el siguiente comando para obtener el texto claro:</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsautl <span class="nt">-decrypt</span> <span class="nt">-in</span> archivo_cifrado <span class="nt">-inkey</span> public_key.pem <span class="nt">-out</span> archivo_plano
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Donde <code class="language-plaintext highlighter-rouge">archivo_cifrado</code> es el archivo que deseas desencriptar y que debería haber llegado junto con la clave pública, y <code class="language-plaintext highlighter-rouge">archivo_plano</code> es el archivo donde se almacenará el resultado del proceso de desencriptación.</p>
+
+<p>También puedes especificar la ruta completa del archivo si no está en la carpeta actual.</p>
+
+<p>Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado</p>
+
+<p>Y esto es todp por hoy</p>
 
 <div id="disqus_thread"></div>
 <script>
@@ -402,43 +423,16 @@ Description: Docker container <span class="k">for </span>running x86,x86_64,armv
     
       
       
-      <a href="/tags/#intalacion" class="page__taxonomy-item" rel="tag">intalacion</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#termux" class="page__taxonomy-item" rel="tag">termux</a>
+      <a href="/tags/#rsa" class="page__taxonomy-item" rel="tag">RSA</a>
     
     </span>
   </p>
 
 
-
-
-  
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="/categories/#root" class="page__taxonomy-item" rel="tag">root</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/categories/#termux" class="page__taxonomy-item" rel="tag">termux</a>
-    
-    </span>
-  </p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Fecha:</strong> <time datetime="2023-04-21T00:00:00-04:00">April 21, 2023</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Fecha:</strong> <time datetime="2023-05-25T00:00:00-04:00">May 25, 2023</time></p>
         
       </footer>
 
@@ -447,12 +441,11 @@ Description: Docker container <span class="k">for </span>running x86,x86_64,armv
       
   <nav class="pagination">
     
-      <a href="/install-localtunel/" class="pagination--pager" title="Como intalar localtunnel
+      <a href="/Alpine/" class="pagination--pager" title="Alpine en termux
 ">Previous</a>
     
     
-      <a href="/RSA/" class="pagination--pager" title="Criptografía_RSA
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 

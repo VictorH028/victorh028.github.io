@@ -1,4 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-22T19:35:04-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-25T13:38:10-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">Criptografía_RSA</title><link href="http://localhost:4000/RSA/" rel="alternate" type="text/html" title="Criptografía_RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/RSA</id><content type="html" xml:base="http://localhost:4000/RSA/">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
+
+&lt;p&gt;Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   apt update
+   apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;clave-privada&quot;&gt;Clave privada&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl genrsa &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_privada.pem 2048
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;El número &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2048&lt;/code&gt; es la longitud de la clave. Si necesitas una clave más larga, puedes cambiar este valor.&lt;/p&gt;
+
+&lt;h1 id=&quot;clave-publia&quot;&gt;Clave publia&lt;/h1&gt;
+
+&lt;p&gt;Para extraer la clave pública de la clave privada que acabamos  de generar.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsa &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; clave_privada.pem &lt;span class=&quot;nt&quot;&gt;-pubout&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_publica.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;El archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt; contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;cifrar-el-archivo-utilizando-la-clave-pública&quot;&gt;Cifrar el archivo utilizando la clave pública.&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;El siguiente comando cifrará el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_a_cifrar&lt;/code&gt;  utilizando la clave pública contenida en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-encrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_a_cifrar &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; clave_publica.pem &lt;span class=&quot;nt&quot;&gt;-pubin&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;El archivo cifrado resultante se almacenará en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_cifrado&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Es importante tener en cuenta que la clave privada que se ha utilizado para generar la clave pública, debe mantenerse en un lugar seguro y no debe ser distribuida. Sólo la clave pública debe ser compartida con aquellos que necesitan cifrar información para que la persona que posee la clave privada pueda descifrar la información cifrada utilizando sus funciones privadas.&lt;/p&gt;
+
+&lt;h1 id=&quot;de-sesencriptar-el-archivo-en-rsa&quot;&gt;De sesencriptar el archivo en RSA&lt;/h1&gt;
+
+&lt;p&gt;Para desencriptar un archivo utilizando RSA, necesitarás los siguientes elementos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;La clave pública que se utilizó para cifrar el archivo.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;El archivo cifrado que se desea desencriptar.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Antes de comenzar, es importante señalar que la operación de desencriptación se suele hacer en local y no suele ser una buena práctica compartir información de este tipo con terceros.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tener a la mano el archivo cifrado y la clave pública que se utilizó para cifrar. Esta debe estar en un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finalmente, ejecutar el siguiente comando para obtener el texto claro:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-decrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; public_key.pem &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_plano
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Donde &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_cifrado&lt;/code&gt; es el archivo que deseas desencriptar y que debería haber llegado junto con la clave pública, y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_plano&lt;/code&gt; es el archivo donde se almacenará el resultado del proceso de desencriptación.&lt;/p&gt;
+
+&lt;p&gt;También puedes especificar la ruta completa del archivo si no está en la carpeta actual.&lt;/p&gt;
+
+&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado&lt;/p&gt;
+
+&lt;p&gt;Y esto es todp por hoy&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
 Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -73,7 +169,7 @@ Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;r
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2020-11-29T00:00:00-05:00</published><updated>2020-11-29T00:00:00-05:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
 
 &lt;h1 id=&quot;instalacion&quot;&gt;Instalacion&lt;/h1&gt;
 
@@ -171,4 +267,4 @@ ultimo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="soluciones" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
