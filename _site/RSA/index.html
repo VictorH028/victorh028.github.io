@@ -309,20 +309,18 @@
 
 <p>Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   apt update
-   apt <span class="nb">install </span>openssl
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+apt <span class="nb">install </span>openssl
 </code></pre></div></div>
 
 <h1 id="clave-privada">Clave privada</h1>
 
 <ol>
-  <li>
-    <p>Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:</p>
-
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl genrsa <span class="nt">-out</span> clave_privada.pem 2048
-</code></pre></div>    </div>
-  </li>
+  <li>Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:</li>
 </ol>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl genrsa <span class="nt">-out</span> clave_privada.pem 2048
+</code></pre></div></div>
 
 <p>El número <code class="language-plaintext highlighter-rouge">2048</code> es la longitud de la clave. Si necesitas una clave más larga, puedes cambiar este valor.</p>
 
@@ -331,26 +329,22 @@
 <p>Para extraer la clave pública de la clave privada que acabamos  de generar.</p>
 
 <ol>
-  <li>
-    <p>El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:</p>
-
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsa <span class="nt">-in</span> clave_privada.pem <span class="nt">-pubout</span> <span class="nt">-out</span> clave_publica.pem
-</code></pre></div>    </div>
-
-    <p>El archivo <code class="language-plaintext highlighter-rouge">clave_publica.pem</code> contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.</p>
-  </li>
+  <li>El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:</li>
 </ol>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsa <span class="nt">-in</span> clave_privada.pem <span class="nt">-pubout</span> <span class="nt">-out</span> clave_publica.pem
+</code></pre></div></div>
+
+<p>El archivo <code class="language-plaintext highlighter-rouge">clave_publica.pem</code> contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.</p>
 
 <h1 id="cifrar-el-archivo-utilizando-la-clave-pública">Cifrar el archivo utilizando la clave pública.</h1>
 
 <ol>
-  <li>
-    <p>El siguiente comando cifrará el archivo <code class="language-plaintext highlighter-rouge">archivo_a_cifrar</code>  utilizando la clave pública contenida en el archivo <code class="language-plaintext highlighter-rouge">clave_publica.pem</code>:</p>
-
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsautl <span class="nt">-encrypt</span> <span class="nt">-in</span> archivo_a_cifrar <span class="nt">-out</span> archivo_cifrado <span class="nt">-inkey</span> clave_publica.pem <span class="nt">-pubin</span>
-</code></pre></div>    </div>
-  </li>
+  <li>El siguiente comando cifrará el archivo <code class="language-plaintext highlighter-rouge">archivo_a_cifrar</code>  utilizando la clave pública contenida en el archivo <code class="language-plaintext highlighter-rouge">clave_publica.pem</code>:</li>
 </ol>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsautl <span class="nt">-encrypt</span> <span class="nt">-in</span> archivo_a_cifrar <span class="nt">-out</span> archivo_cifrado <span class="nt">-inkey</span> clave_publica.pem <span class="nt">-pubin</span>
+</code></pre></div></div>
 
 <p>El archivo cifrado resultante se almacenará en el archivo <code class="language-plaintext highlighter-rouge">archivo_cifrado</code>.</p>
 
@@ -377,19 +371,17 @@
   </li>
   <li>
     <p>Finalmente, ejecutar el siguiente comando para obtener el texto claro:</p>
-
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsautl <span class="nt">-decrypt</span> <span class="nt">-in</span> archivo_cifrado <span class="nt">-inkey</span> public_key.pem <span class="nt">-out</span> archivo_plano
-</code></pre></div>    </div>
   </li>
 </ol>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl rsautl <span class="nt">-decrypt</span> <span class="nt">-in</span> archivo_cifrado <span class="nt">-inkey</span> public_key.pem <span class="nt">-out</span> archivo_plano
+</code></pre></div></div>
 
 <p>Donde <code class="language-plaintext highlighter-rouge">archivo_cifrado</code> es el archivo que deseas desencriptar y que debería haber llegado junto con la clave pública, y <code class="language-plaintext highlighter-rouge">archivo_plano</code> es el archivo donde se almacenará el resultado del proceso de desencriptación.</p>
 
 <p>También puedes especificar la ruta completa del archivo si no está en la carpeta actual.</p>
 
-<p>Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado</p>
-
-<p>Y esto es todp por hoy</p>
+<p>Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.</p>
 
 <div id="disqus_thread"></div>
 <script>

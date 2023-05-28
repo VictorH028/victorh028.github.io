@@ -1,21 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-25T13:38:10-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">Criptografía_RSA</title><link href="http://localhost:4000/RSA/" rel="alternate" type="text/html" title="Criptografía_RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/RSA</id><content type="html" xml:base="http://localhost:4000/RSA/">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-28T15:14:07-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">Criptografía_RSA</title><link href="http://localhost:4000/RSA/" rel="alternate" type="text/html" title="Criptografía_RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/RSA</id><content type="html" xml:base="http://localhost:4000/RSA/">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
 
 &lt;p&gt;Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   apt update
-   apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update
+apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;clave-privada&quot;&gt;Clave privada&lt;/h1&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl genrsa &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_privada.pem 2048
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl genrsa &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_privada.pem 2048
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;El número &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2048&lt;/code&gt; es la longitud de la clave. Si necesitas una clave más larga, puedes cambiar este valor.&lt;/p&gt;
 
@@ -24,26 +22,22 @@
 &lt;p&gt;Para extraer la clave pública de la clave privada que acabamos  de generar.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsa &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; clave_privada.pem &lt;span class=&quot;nt&quot;&gt;-pubout&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_publica.pem
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;El archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt; contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsa &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; clave_privada.pem &lt;span class=&quot;nt&quot;&gt;-pubout&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_publica.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt; contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.&lt;/p&gt;
 
 &lt;h1 id=&quot;cifrar-el-archivo-utilizando-la-clave-pública&quot;&gt;Cifrar el archivo utilizando la clave pública.&lt;/h1&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;El siguiente comando cifrará el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_a_cifrar&lt;/code&gt;  utilizando la clave pública contenida en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-encrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_a_cifrar &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; clave_publica.pem &lt;span class=&quot;nt&quot;&gt;-pubin&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+  &lt;li&gt;El siguiente comando cifrará el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_a_cifrar&lt;/code&gt;  utilizando la clave pública contenida en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt;:&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-encrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_a_cifrar &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; clave_publica.pem &lt;span class=&quot;nt&quot;&gt;-pubin&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;El archivo cifrado resultante se almacenará en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_cifrado&lt;/code&gt;.&lt;/p&gt;
 
@@ -70,19 +64,17 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Finalmente, ejecutar el siguiente comando para obtener el texto claro:&lt;/p&gt;
-
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-decrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; public_key.pem &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_plano
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-decrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; public_key.pem &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_plano
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Donde &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_cifrado&lt;/code&gt; es el archivo que deseas desencriptar y que debería haber llegado junto con la clave pública, y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_plano&lt;/code&gt; es el archivo donde se almacenará el resultado del proceso de desencriptación.&lt;/p&gt;
 
 &lt;p&gt;También puedes especificar la ruta completa del archivo si no está en la carpeta actual.&lt;/p&gt;
 
-&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado&lt;/p&gt;
-
-&lt;p&gt;Y esto es todp por hoy&lt;/p&gt;
+&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.&lt;/p&gt;
 
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -169,7 +161,136 @@ Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;r
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Notas de git</title><link href="http://localhost:4000/GIT/" rel="alternate" type="text/html" title="Notas de git" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/GIT</id><content type="html" xml:base="http://localhost:4000/GIT/">&lt;p&gt;Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.&lt;/p&gt;
+
+&lt;p&gt;Para configurar un token de acceso personal, sigue estos pasos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ingrese a tu cuenta de Git y crea un nuevo token de acceso personal. Asegúrate de seleccionar los permisos necesarios para editar o subir proyectos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Abre la línea de comandos de Linux y escribe lo siguiente:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Esto configurará el almacenamiento de tus credenciales en un archivo en tu sistema local.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ahora, cada vez que deseas autenticarte en Git desde la línea de comandos, ingresa tus credenciales una vez. Git almacenará tus credenciales en el archivo local, lo que significa que no tendrás que ingresarlas de nuevo en el futuro.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Para usar tu token de acceso personal, deberás actualizar tus credenciales en la línea de comandos de la siguiente manera:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global credential.helper &apos;store --file ~/.my-credentials&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Reemplaza &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.my-credentials&lt;/code&gt; con tu archivo configurado para almacenar tus credenciales. Luego ingresa tu nombre de usuario en Git y el token de acceso personal como contraseña.&lt;/p&gt;
+
+&lt;p&gt;Con estos pasos, ya no tendrás que autenticarte cada vez que desees subir o editar un proyecto en Git desde la terminal de Linux.&lt;/p&gt;
+
+&lt;h2 id=&quot;branches&quot;&gt;Branches&lt;/h2&gt;
+
+&lt;p&gt;Las ramas son una parte muy importante de git.
+ La ramificación permite hacer una “copia” de su proyecto de trabajo y cambiarlo sin afectar la rama principal (rama maestra), lo que brinda la oportunidad de trabajar en el mismo proyecto con diferentes compromisos.
+ Cuando desee agregar una nueva función o corregir un error, sin importar cuán grande o pequeño sea, debe crear una nueva rama para encapsular sus cambios.&lt;/p&gt;
+
+&lt;p&gt;Una vez finalizada la función, puede fusionarla con la rama principal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&amp;quot;../assets/images/GIT/branch_git.png&amp;quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La creación de una nueva rama se realiza con el comando branch:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch my_new_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Luego, debemos cambiar a la sucursal usando el comando de pago:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git checkout  my_new_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Hay un atajo para crear y cambiar a una nueva rama:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; my_new_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ahora, cada cambio realizado en la nueva rama llamada my_new_branch no afectará a la rama principal.
+ Esto significa que puede trabajar con seguridad en el proyecto sin romper nada.  Cada sucursal tiene su propia historia, área de preparación y directorio de trabajo.&lt;/p&gt;
+
+&lt;p&gt;Para ver la lista de sus sucursales, ejecute el comando ==git branch== en el directorio del proyecto.&lt;/p&gt;
+
+&lt;h1 id=&quot;fusionar-sucursales&quot;&gt;Fusionar sucursales&lt;/h1&gt;
+
+&lt;p&gt;Primero, necesitamos cambiar a la rama maestra:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ahora fusionamos la rama con:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git merge &amp;lt;nombre_de_la_rama&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;eliminar-sucursales&quot;&gt;Eliminar sucursales&lt;/h1&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;nombre_de_la_rama&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="soluciones" /><category term="notas" /><category term="termux" /><category term="tips" /><summary type="html">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.</summary></entry><entry><title type="html">Alternativas para `ngrok`</title><link href="http://localhost:4000/ngrok_alternativas/" rel="alternate" type="text/html" title="Alternativas para `ngrok`" /><published>2023-04-18T00:00:00-04:00</published><updated>2023-04-18T00:00:00-04:00</updated><id>http://localhost:4000/ngrok_alternativas</id><content type="html" xml:base="http://localhost:4000/ngrok_alternativas/">&lt;p&gt;Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado&lt;/p&gt;
+
+&lt;h1 id=&quot;opcion-1&quot;&gt;Opcion 1&lt;/h1&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://pagekite.net
+curl &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; https://pagekite.net/pk/pagekite.py 
+python2 pagekite.py 80 yourname.pagekite.me
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;opcion-2&quot;&gt;Opcion 2&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://portmap.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-3&quot;&gt;Opcion 3&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/antoniomika/sish
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-4&quot;&gt;Opcion 4&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://forwardhq.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-5&quot;&gt;Opcion 5&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.beame.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-6&quot;&gt;Opcion 6&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://localhost.run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-7&quot;&gt;Opcion 7&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://holepunch.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-8&quot;&gt;Opcion 8&lt;/h1&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://burrow.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="alternativa" /><category term="termux" /><category term="tips" /><summary type="html">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
 
 &lt;h1 id=&quot;instalacion&quot;&gt;Instalacion&lt;/h1&gt;
 
