@@ -1,81 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-28T16:05:39-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">Criptografía_RSA</title><link href="http://localhost:4000/RSA/" rel="alternate" type="text/html" title="Criptografía_RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/RSA</id><content type="html" xml:base="http://localhost:4000/RSA/">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-05T19:03:29-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">Como grabar archivos locales en alpine</title><link href="http://localhost:4000/aline-get_file/" rel="alternate" type="text/html" title="Como grabar archivos locales en alpine" /><published>2023-07-05T00:00:00-04:00</published><updated>2023-07-05T00:00:00-04:00</updated><id>http://localhost:4000/aline-get_file</id><content type="html" xml:base="http://localhost:4000/aline-get_file/">En esta oportunidad vamos a estar viendo como pasar un archivio que tenemos en termux a alpine:
 
-&lt;p&gt;Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:&lt;/p&gt;
+# Informacion 
+Un servidor es un conjunto de computadoras capaces de atender las peticiones de un cliente y devolverle una respuesta en concordancia el cual podemos crear condiversos comandos como (nc,python,localtunnel,php,..etc) el cual estare utilisando *php*
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update
-apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+# intalacion
+`apt install php`
 
-&lt;h1 id=&quot;clave-privada&quot;&gt;Clave privada&lt;/h1&gt;
+La lista de opciones de línea de comandos proporcionada por el binario de PHP se puede consultar en cualquier momento ejecutando PHP con el argumento -h
+el cual estaremos utilizando la opcion **-S** que ejecutar con servidor web incorporado.
 
-&lt;ol&gt;
-  &lt;li&gt;Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:&lt;/li&gt;
-&lt;/ol&gt;
+**Nota:** Hay que tener en cuenta la formato de una URL que  esta compuesto por varias partes: Protocolo, Dominio, Extensión, Recurso y Parámetros. 
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl genrsa &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_privada.pem 2048
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+[[imagen]]
 
-&lt;p&gt;El número &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2048&lt;/code&gt; es la longitud de la clave. Si necesitas una clave más larga, puedes cambiar este valor.&lt;/p&gt;
+Ya teniendo el binario _php_ instalado pasamos a ejecutar lo sigiente:
 
-&lt;h1 id=&quot;clave-publia&quot;&gt;Clave publia&lt;/h1&gt;
+```sh 
+php 127.0.0.1:8080  
+```
 
-&lt;p&gt;Para extraer la clave pública de la clave privada que acabamos  de generar.&lt;/p&gt;
+El cual ejecurata el servidor pero no nos dejara escribir nada mas para evitar eso podemos usar _CTRL-z_ para que pase a 2 plano o agregar al final de el comando lo sigiente ** 2&gt;&amp;1 &amp;** para tener el mismo resultado 
 
-&lt;ol&gt;
-  &lt;li&gt;El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:&lt;/li&gt;
-&lt;/ol&gt;
+```sh
+php 127.0.0.1:8080 2&gt;&amp;1 &amp;
+```
+Depues de esto pasamos a ejecutar el sigiente comando `ssh -R 80:localhost:8080 nokey@localhost.run` que permite a los desarrolladores exponer un servidor de desarrollo local a Internet con un esfuerzo mínimo. 
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsa &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; clave_privada.pem &lt;span class=&quot;nt&quot;&gt;-pubout&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_publica.pem
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+[[imagen]]
 
-&lt;p&gt;El archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt; contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.&lt;/p&gt;
+Con el link que nos otorgaron lo copiamos y cresmos una nueva secion
+con _CTRL-ALT-c_ para corer alpine
 
-&lt;h1 id=&quot;cifrar-el-archivo-utilizando-la-clave-pública&quot;&gt;Cifrar el archivo utilizando la clave pública.&lt;/h1&gt;
+# En alpine
 
-&lt;ol&gt;
-  &lt;li&gt;El siguiente comando cifrará el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_a_cifrar&lt;/code&gt;  utilizando la clave pública contenida en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt;:&lt;/li&gt;
-&lt;/ol&gt;
+Intalamos  a **wget**
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-encrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_a_cifrar &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; clave_publica.pem &lt;span class=&quot;nt&quot;&gt;-pubin&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```sh
+apk add  wget
+```
 
-&lt;p&gt;El archivo cifrado resultante se almacenará en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_cifrado&lt;/code&gt;.&lt;/p&gt;
+El comando wget es una herramienta desarrollada por el proyecto GNU para descargar archivos de la web. _wget_ le permite recuperar contenido y archivos de servidores web utilizando una interfaz de línea de comandos.
 
-&lt;p&gt;Es importante tener en cuenta que la clave privada que se ha utilizado para generar la clave pública, debe mantenerse en un lugar seguro y no debe ser distribuida. Sólo la clave pública debe ser compartida con aquellos que necesitan cifrar información para que la persona que posee la clave privada pueda descifrar la información cifrada utilizando sus funciones privadas.&lt;/p&gt;
+```sh
+wget URL  
+```
 
-&lt;h1 id=&quot;de-sesencriptar-el-archivo-en-rsa&quot;&gt;De sesencriptar el archivo en RSA&lt;/h1&gt;
 
-&lt;p&gt;Para desencriptar un archivo utilizando RSA, necesitarás los siguientes elementos:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;La clave pública que se utilizó para cifrar el archivo.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;El archivo cifrado que se desea desencriptar.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Antes de comenzar, es importante señalar que la operación de desencriptación se suele hacer en local y no suele ser una buena práctica compartir información de este tipo con terceros.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Tener a la mano el archivo cifrado y la clave pública que se utilizó para cifrar. Esta debe estar en un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Finalmente, ejecutar el siguiente comando para obtener el texto claro:&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-decrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; public_key.pem &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_plano
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Donde &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_cifrado&lt;/code&gt; es el archivo que deseas desencriptar y que debería haber llegado junto con la clave pública, y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_plano&lt;/code&gt; es el archivo donde se almacenará el resultado del proceso de desencriptación.&lt;/p&gt;
-
-&lt;p&gt;También puedes especificar la ruta completa del archivo si no está en la carpeta actual.&lt;/p&gt;
-
-&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.&lt;/p&gt;
-
+{% if page.comments %}
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
     (function() { // DON&apos;T EDIT BELOW THIS LINE
@@ -85,72 +56,161 @@ apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
     (d.head || d.body).appendChild(s);
     })();
 &lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+{% endif %}</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="alpine" /><summary type="html">En esta oportunidad vamos a estar viendo como pasar un archivio que tenemos en termux a alpine:</summary></entry><entry><title type="html">Criptografía_RSA</title><link href="http://localhost:4000/RSA/" rel="alternate" type="text/html" title="Criptografía_RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/RSA</id><content type="html" xml:base="http://localhost:4000/RSA/">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
-Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Puedes revisa el listado de todas las herramientas disponibles  &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;aqui&lt;/a&gt;:&lt;/li&gt;
-&lt;/ul&gt;
+Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:
 
-&lt;h1 id=&quot;configuracion&quot;&gt;Configuracion&lt;/h1&gt;
+```sh
+apt update
+apt install openssl
+```
 
-&lt;p&gt;Para tener el acceso a todas las herramientas solo debes de agregar la llave(key) de acceso a las configuraciones de APT en Termux :&lt;/p&gt;
+# Clave privada
 
-&lt;h3 id=&quot;crea-el-directorio-&quot;&gt;Crea el directorio :&lt;/h3&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;Descarga la Key(llave) :
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;wget
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d/ivam3-termux-packages.list
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;h3 id=&quot;actualiza-termux-&quot;&gt;Actualiza Termux :&lt;/h3&gt;
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+1. Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:
 
-&lt;p&gt;En ese listado de herramientas que hemos optenido vamos a tener a &lt;strong&gt;termux-doker-qemu&lt;/strong&gt;&lt;/p&gt;
+```sh
+openssl genrsa -out clave_privada.pem 2048
+```
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ apt show  termux-docker-qemu                             
+El número `2048` es la longitud de la clave. Si necesitas una clave más larga, puedes cambiar este valor.
+
+# Clave publia 
+
+Para extraer la clave pública de la clave privada que acabamos  de generar. 
+
+2. El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:
+
+```sh
+openssl rsa -in clave_privada.pem -pubout -out clave_publica.pem
+```
+
+El archivo `clave_publica.pem` contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.
+
+# Cifrar el archivo utilizando la clave pública. 
+
+3. El siguiente comando cifrará el archivo `archivo_a_cifrar`  utilizando la clave pública contenida en el archivo `clave_publica.pem`:
+
+```sh
+openssl rsautl -encrypt -in archivo_a_cifrar -out archivo_cifrado -inkey clave_publica.pem -pubin
+```
+
+El archivo cifrado resultante se almacenará en el archivo `archivo_cifrado`.
+
+Es importante tener en cuenta que la clave privada que se ha utilizado para generar la clave pública, debe mantenerse en un lugar seguro y no debe ser distribuida. Sólo la clave pública debe ser compartida con aquellos que necesitan cifrar información para que la persona que posee la clave privada pueda descifrar la información cifrada utilizando sus funciones privadas.
+
+
+# De sesencriptar el archivo en RSA
+
+Para desencriptar un archivo utilizando RSA, necesitarás los siguientes elementos:
+
+1. La clave pública que se utilizó para cifrar el archivo. 
+
+2. El archivo cifrado que se desea desencriptar.
+
+Antes de comenzar, es importante señalar que la operación de desencriptación se suele hacer en local y no suele ser una buena práctica compartir información de este tipo con terceros.
+
+
+1. Tener a la mano el archivo cifrado y la clave pública que se utilizó para cifrar. Esta debe estar en un archivo llamado `clave_publica.pem`.
+ 
+2. Finalmente, ejecutar el siguiente comando para obtener el texto claro:
+
+```sh
+openssl rsautl -decrypt -in archivo_cifrado -inkey public_key.pem -out archivo_plano
+```
+
+Donde `archivo_cifrado` es el archivo que deseas desencriptar y que debería haber llegado junto con la clave pública, y `archivo_plano` es el archivo donde se almacenará el resultado del proceso de desencriptación.
+
+También puedes especificar la ruta completa del archivo si no está en la carpeta actual. 
+
+Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.
+
+
+
+{% if page.comments %}
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+{% endif %}</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
+Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la [comunidad](https://t.me/Ivam3by_Cinderella) a probado su funcionalidad al 100% en Android.
+
+
+- Puedes revisa el listado de todas las herramientas disponibles  [aqui](https://github.com/ivam3/termux-packages):
+
+# Configuracion
+
+Para tener el acceso a todas las herramientas solo debes de agregar la llave(key) de acceso a las configuraciones de APT en Termux :
+
+### Crea el directorio :
+```sh
+mkdir -p $PREFIX/etc/apt/sources.list.d 
+```
+- Descarga la Key(llave) :
+```sh
+apt install wget
+```
+```sh
+wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list -O $PREFIX/etc/apt/sources.list.d/ivam3-termux-packages.list
+```
+### Actualiza Termux :
+```sh
+apt update &amp;&amp; apt upgrade
+```
+
+En ese listado de herramientas que hemos optenido vamos a tener a **termux-doker-qemu**  
+
+```shell
+❯ apt show  termux-docker-qemu                             
 Package: termux-docker-qemu                                Version: 0.3.3
-Maintainer: Ivam3 &amp;lt;https://t.me/Ivam3_Bot&amp;gt;
+Maintainer: Ivam3 &lt;https://t.me/Ivam3_Bot&gt;
 Installed-Size: 2048 B
 Depends: termux-api, openssh, wget, procps, qemu-utils, qemu-common, qemu-system-x86-64-headless
 Suggests: i-haklab
 Homepage: https://www.docker.com/products/docker-desktop/
 Download-Size: 3840 B
-APT-Manual-Installed: &lt;span class=&quot;nb&quot;&gt;yes
-&lt;/span&gt;APT-Sources: https://ivam3.github.io/termux-packages stable/extras all Packages
-Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;running x86,x86_64,armv7 and aarch64 Linux virtual machines using QEMU
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+APT-Manual-Installed: yes
+APT-Sources: https://ivam3.github.io/termux-packages stable/extras all Packages
+Description: Docker container for running x86,x86_64,armv7 and aarch64 Linux virtual machines using QEMU
+```
 
-&lt;p&gt;Esto nos va a facilitar virtualizar el sistema operativo.&lt;/p&gt;
 
-&lt;h3 id=&quot;por-que-alpine&quot;&gt;Por que alpine&lt;/h3&gt;
+Esto nos va a facilitar virtualizar el sistema operativo.
 
-&lt;p&gt;Solo cuenta con un peso minimo de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;133MB&lt;/code&gt; y por eso es  adecuado para  manejan contenedores, especialmente Docker. 💢&lt;/p&gt;
+### Por que alpine
 
-&lt;h1 id=&quot;intalacion&quot;&gt;Intalacion&lt;/h1&gt;
+Solo cuenta con un peso minimo de `133MB` y por eso es  adecuado para  manejan contenedores, especialmente Docker. 💢
 
-&lt;p&gt;Vamos a proceder a instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;termux-doker-qemu&lt;/code&gt; com un:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;termux-doker-qemu
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+# Intalacion 
 
-&lt;p&gt;Puedes contar con una explicasion mas detallada de todo el proceso y configuracion en el sigiente video 👇 espero que lo disfute&lt;/p&gt;
+Vamos a proceder a instalar `termux-doker-qemu` com un:
 
-&lt;h1 id=&quot;video&quot;&gt;Video&lt;/h1&gt;
 
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-&lt;div class=&quot;responsive-video-container&quot;&gt;
+```sh
+apt install termux-doker-qemu
+```
 
-  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/CXvTUEG1oPs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+Puedes contar con una explicasion mas detallada de todo el proceso y configuracion en el sigiente video 👇 espero que lo disfute 
 
-&lt;/div&gt;
 
+
+# Video
+
+{% include video id=&quot;CXvTUEG1oPs&quot; provider=&quot;youtube&quot;%}
+
+
+
+
+{% if page.comments %}
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
     (function() { // DON&apos;T EDIT BELOW THIS LINE
@@ -160,80 +220,83 @@ Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;r
     (d.head || d.body).appendChild(s);
     })();
 &lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+{% endif %}</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Notas de git</title><link href="http://localhost:4000/GIT/" rel="alternate" type="text/html" title="Notas de git" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/GIT</id><content type="html" xml:base="http://localhost:4000/GIT/">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Notas de git</title><link href="http://localhost:4000/GIT/" rel="alternate" type="text/html" title="Notas de git" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/GIT</id><content type="html" xml:base="http://localhost:4000/GIT/">&lt;p&gt;Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.&lt;/p&gt;
+Para configurar un token de acceso personal, sigue estos pasos:
 
-&lt;p&gt;Para configurar un token de acceso personal, sigue estos pasos:&lt;/p&gt;
+1. Ingrese a tu cuenta de Git y crea un nuevo token de acceso personal. Asegúrate de seleccionar los permisos necesarios para editar o subir proyectos.
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ingrese a tu cuenta de Git y crea un nuevo token de acceso personal. Asegúrate de seleccionar los permisos necesarios para editar o subir proyectos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Abre la línea de comandos de Linux y escribe lo siguiente:&lt;/p&gt;
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global credential.helper store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+2. Abre la línea de comandos de Linux y escribe lo siguiente:
+```
+git config --global credential.helper store
+```
 
-&lt;p&gt;Esto configurará el almacenamiento de tus credenciales en un archivo en tu sistema local.&lt;/p&gt;
+Esto configurará el almacenamiento de tus credenciales en un archivo en tu sistema local.
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ahora, cada vez que deseas autenticarte en Git desde la línea de comandos, ingresa tus credenciales una vez. Git almacenará tus credenciales en el archivo local, lo que significa que no tendrás que ingresarlas de nuevo en el futuro.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Para usar tu token de acceso personal, deberás actualizar tus credenciales en la línea de comandos de la siguiente manera:&lt;/p&gt;
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global credential.helper &apos;store --file ~/.my-credentials&apos;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+3. Ahora, cada vez que deseas autenticarte en Git desde la línea de comandos, ingresa tus credenciales una vez. Git almacenará tus credenciales en el archivo local, lo que significa que no tendrás que ingresarlas de nuevo en el futuro.
 
-&lt;p&gt;Reemplaza &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.my-credentials&lt;/code&gt; con tu archivo configurado para almacenar tus credenciales. Luego ingresa tu nombre de usuario en Git y el token de acceso personal como contraseña.&lt;/p&gt;
+4. Para usar tu token de acceso personal, deberás actualizar tus credenciales en la línea de comandos de la siguiente manera:
+```
+git config --global credential.helper &apos;store --file ~/.my-credentials&apos;
+```
 
-&lt;p&gt;Con estos pasos, ya no tendrás que autenticarte cada vez que desees subir o editar un proyecto en Git desde la terminal de Linux.&lt;/p&gt;
+Reemplaza `~/.my-credentials` con tu archivo configurado para almacenar tus credenciales. Luego ingresa tu nombre de usuario en Git y el token de acceso personal como contraseña.
 
-&lt;h2 id=&quot;branches&quot;&gt;Branches&lt;/h2&gt;
+Con estos pasos, ya no tendrás que autenticarte cada vez que desees subir o editar un proyecto en Git desde la terminal de Linux.
 
-&lt;p&gt;Las ramas son una parte muy importante de git.
- La ramificación permite hacer una “copia” de su proyecto de trabajo y cambiarlo sin afectar la rama principal (rama maestra), lo que brinda la oportunidad de trabajar en el mismo proyecto con diferentes compromisos.
- Cuando desee agregar una nueva función o corregir un error, sin importar cuán grande o pequeño sea, debe crear una nueva rama para encapsular sus cambios.&lt;/p&gt;
 
-&lt;p&gt;Una vez finalizada la función, puede fusionarla con la rama principal.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;&amp;quot;/assets/images/GIT/branch_git.png&amp;quot;&quot; alt=&quot;branch_git&quot; /&gt;&lt;/p&gt;
+## Branches
 
-&lt;p&gt;La creación de una nueva rama se realiza con el comando branch:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch my_new_branch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+ Las ramas son una parte muy importante de git.
+ La ramificación permite hacer una &quot;copia&quot; de su proyecto de trabajo y cambiarlo sin afectar la rama principal (rama maestra), lo que brinda la oportunidad de trabajar en el mismo proyecto con diferentes compromisos.
+ Cuando desee agregar una nueva función o corregir un error, sin importar cuán grande o pequeño sea, debe crear una nueva rama para encapsular sus cambios.
 
-&lt;p&gt;Luego, debemos cambiar a la sucursal usando el comando de pago:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git checkout  my_new_branch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Hay un atajo para crear y cambiar a una nueva rama:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; my_new_branch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Ahora, cada cambio realizado en la nueva rama llamada my_new_branch no afectará a la rama principal.
- Esto significa que puede trabajar con seguridad en el proyecto sin romper nada.  Cada sucursal tiene su propia historia, área de preparación y directorio de trabajo.&lt;/p&gt;
+ Una vez finalizada la función, puede fusionarla con la rama principal.
 
-&lt;p&gt;Para ver la lista de sus sucursales, ejecute el comando ==git branch== en el directorio del proyecto.&lt;/p&gt;
+![branch_git](&quot;/assets/images/GIT/branch_git.png&quot;)
 
-&lt;h1 id=&quot;fusionar-sucursales&quot;&gt;Fusionar sucursales&lt;/h1&gt;
+La creación de una nueva rama se realiza con el comando branch:
+```
+git branch my_new_branch
+``` 
 
-&lt;p&gt;Primero, necesitamos cambiar a la rama maestra:&lt;/p&gt;
+Luego, debemos cambiar a la sucursal usando el comando de pago:
+```bash
+  git checkout  my_new_branch
+```
+Hay un atajo para crear y cambiar a una nueva rama:
+```bash
+  git checkout -b my_new_branch
+```
+Ahora, cada cambio realizado en la nueva rama llamada my_new_branch no afectará a la rama principal.
+ Esto significa que puede trabajar con seguridad en el proyecto sin romper nada.  Cada sucursal tiene su propia historia, área de preparación y directorio de trabajo.
+ 
+Para ver la lista de sus sucursales, ejecute el comando ==git branch== en el directorio del proyecto.
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Ahora fusionamos la rama con:&lt;/p&gt;
+# Fusionar sucursales
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git merge &amp;lt;nombre_de_la_rama&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+Primero, necesitamos cambiar a la rama maestra:
 
-&lt;h1 id=&quot;eliminar-sucursales&quot;&gt;Eliminar sucursales&lt;/h1&gt;
+```bash
+git checkout main
+```
+Ahora fusionamos la rama con:
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;nombre_de_la_rama&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```bash
+git merge &lt;nombre_de_la_rama&gt;
+```
 
+# Eliminar sucursales
+
+```bash
+git branch -d &lt;nombre_de_la_rama&gt;
+```
+
+
+
+{% if page.comments %}
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
     (function() { // DON&apos;T EDIT BELOW THIS LINE
@@ -243,43 +306,53 @@ Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;r
     (d.head || d.body).appendChild(s);
     })();
 &lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+{% endif %}</content><author><name>Demon Hunter</name></author><category term="soluciones" /><category term="notas" /><category term="termux" /><category term="tips" /><summary type="html">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.</summary></entry><entry><title type="html">Alternativas para `ngrok`</title><link href="http://localhost:4000/ngrok_alternativas/" rel="alternate" type="text/html" title="Alternativas para `ngrok`" /><published>2023-04-18T00:00:00-04:00</published><updated>2023-04-18T00:00:00-04:00</updated><id>http://localhost:4000/ngrok_alternativas</id><content type="html" xml:base="http://localhost:4000/ngrok_alternativas/">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado 
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="soluciones" /><category term="notas" /><category term="termux" /><category term="tips" /><summary type="html">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.</summary></entry><entry><title type="html">Alternativas para `ngrok`</title><link href="http://localhost:4000/ngrok_alternativas/" rel="alternate" type="text/html" title="Alternativas para `ngrok`" /><published>2023-04-18T00:00:00-04:00</published><updated>2023-04-18T00:00:00-04:00</updated><id>http://localhost:4000/ngrok_alternativas</id><content type="html" xml:base="http://localhost:4000/ngrok_alternativas/">&lt;p&gt;Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado&lt;/p&gt;
-
-&lt;h1 id=&quot;opcion-1&quot;&gt;Opcion 1&lt;/h1&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://pagekite.net
-curl &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; https://pagekite.net/pk/pagekite.py 
+# Opcion 1
+```bash
+https://pagekite.net
+curl -O https://pagekite.net/pk/pagekite.py 
 python2 pagekite.py 80 yourname.pagekite.me
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;opcion-2&quot;&gt;Opcion 2&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://portmap.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+# Opcion 2
+```
+https://portmap.io
+```
 
-&lt;h1 id=&quot;opcion-3&quot;&gt;Opcion 3&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/antoniomika/sish
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+# Opcion 3
+```
+https://github.com/antoniomika/sish
+```
 
-&lt;h1 id=&quot;opcion-4&quot;&gt;Opcion 4&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://forwardhq.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+# Opcion 4
+```
+https://forwardhq.com
+```
 
-&lt;h1 id=&quot;opcion-5&quot;&gt;Opcion 5&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.beame.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+# Opcion 5
+```
+https://www.beame.io
+```
 
-&lt;h1 id=&quot;opcion-6&quot;&gt;Opcion 6&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://localhost.run
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+# Opcion 6
+```
+https://localhost.run
+```
 
-&lt;h1 id=&quot;opcion-7&quot;&gt;Opcion 7&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://holepunch.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+# Opcion 7
+```
+https://holepunch.io
+```
 
-&lt;h1 id=&quot;opcion-8&quot;&gt;Opcion 8&lt;/h1&gt;
+# Opcion 8
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://burrow.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+https://burrow.io
+```
 
+
+{% if page.comments %}
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
     (function() { // DON&apos;T EDIT BELOW THIS LINE
@@ -289,95 +362,106 @@ python2 pagekite.py 80 yourname.pagekite.me
     (d.head || d.body).appendChild(s);
     })();
 &lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+{% endif %}</content><author><name>Demon Hunter</name></author><category term="alternativa" /><category term="termux" /><category term="tips" /><summary type="html">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">En esta oportunidad vamos a aprender como  instalar `localtunel` en nuestra terminal sin errores  
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="alternativa" /><category term="termux" /><category term="tips" /><summary type="html">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
+# Instalacion
 
-&lt;h1 id=&quot;instalacion&quot;&gt;Instalacion&lt;/h1&gt;
+## Paso 1: actualizar paquetes
 
-&lt;h2 id=&quot;paso-1-actualizar-paquetes&quot;&gt;Paso 1: actualizar paquetes&lt;/h2&gt;
+Ejecute el siguiente comando
 
-&lt;p&gt;Ejecute el siguiente comando&lt;/p&gt;
+```bash
+apt update &amp;&amp; apt upgrade -y
+```
+## Paso 2: Instalar termux-api
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;paso-2-instalar-termux-api&quot;&gt;Paso 2: Instalar termux-api&lt;/h2&gt;
+Ahora debe asegurarse de que termux tenga acceso a las funciones de hardware de Android y Chrome. Ejecute el siguiente comando.
 
-&lt;p&gt;Ahora debe asegurarse de que termux tenga acceso a las funciones de hardware de Android y Chrome. Ejecute el siguiente comando.&lt;/p&gt;
+```bash
+apt install termux-api
+```
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;termux-api
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+## Paso 3: Install paquete de nodejs
 
-&lt;h2 id=&quot;paso-3-install-paquete-de-nodejs&quot;&gt;Paso 3: Install paquete de nodejs&lt;/h2&gt;
+Para su intalacion ejecutar
 
-&lt;p&gt;Para su intalacion ejecutar&lt;/p&gt;
+```bash
+apt  install nodejs
+``` 
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt  &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nodejs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+## Paso 4: Instalar localtunel
 
-&lt;h2 id=&quot;paso-4-instalar-localtunel&quot;&gt;Paso 4: Instalar localtunel&lt;/h2&gt;
+```bash
+npm install -g localtunnel
+```
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; localtunnel
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+Despues de que finalice la instalacion tendremos un error la ejecutal el comado `lt` que seria la 
+abreviatura de `localtunel` mostrando por pantalla lo siguente 
 
-&lt;p&gt;Despues de que finalice la instalacion tendremos un error la ejecutal el comado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lt&lt;/code&gt; que seria la 
-abreviatura de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; mostrando por pantalla lo siguente&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16
-        throw new Error&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Unsupported platform: &apos;&lt;/span&gt; + process.platform&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+```shell
+/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16
+        throw new Error(&apos;Unsupported platform: &apos; + process.platform);
         ^
 
 Error: Unsupported platform: android
-    at Object.&amp;lt;anonymous&amp;gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16:15&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._compile &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1275:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._extensions..js &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1329:10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module.load &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1133:32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._load &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:972:12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module.require &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1157:19&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at require &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/helpers:119:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Object.&amp;lt;anonymous&amp;gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/bin/lt.js:4:17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._compile &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1275:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._extensions..js &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1329:10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Object.&lt;anonymous&gt; (/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16:15)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Module.require (node:internal/modules/cjs/loader:1157:19)
+    at require (node:internal/modules/helpers:119:18)
+    at Object.&lt;anonymous&gt; (/data/data/com.termux/files/usr/lib/node_modules/localtunnel/bin/lt.js:4:17)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
 
 Node.js v19.6.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;p&gt;Para solucionar lo siguente procederemos a untilizar nuestro editor de texto faborito y editaremos el siguiente archivo&lt;/p&gt;
+Para solucionar lo siguente procederemos a untilizar nuestro editor de texto faborito y editaremos el siguiente archivo 
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvim &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/lib/node_modules/localtunnel/node_modules/openurl/openurl.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```bash
+nvim $PREFIX/lib/node_modules/localtunnel/node_modules/openurl/openurl.js
+```
 
-&lt;p&gt;Nos pocisionaremos en la linea numero &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;14&lt;/code&gt; gregamos la siguente fracmento de codigo despues de el 
-ultimo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&lt;/code&gt;&lt;/p&gt;
+Nos pocisionaremos en la linea numero `14` gregamos la siguente fracmento de codigo despues de el 
+ultimo `break` 
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;android&apos;&lt;/span&gt;:
-    &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;termux&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;resultado-final&quot;&gt;Resultado final&lt;/h2&gt;
+```bash
+case &apos;android&apos;:
+    command = &apos;termux&apos;;
+    break;
+```
+## Resultado final
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    5 switch&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;process.platform&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    6     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;darwin&apos;&lt;/span&gt;:
-    7         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;open&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                      
-    8         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    9     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;win32&apos;&lt;/span&gt;:
-   10         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;explorer.exe&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   11         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   12     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;linux&apos;&lt;/span&gt;:
-   13         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;xdg-open&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   14         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   15     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;android&apos;&lt;/span&gt;:
-   16         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;termux&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                   
-   17         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+```bash
+    5 switch(process.platform) {
+    6     case &apos;darwin&apos;:
+    7         command = &apos;open&apos;;                      
+    8         break;
+    9     case &apos;win32&apos;:
+   10         command = &apos;explorer.exe&apos;;
+   11         break;
+   12     case &apos;linux&apos;:
+   13         command = &apos;xdg-open&apos;;
+   14         break;
+   15     case &apos;android&apos;:
+   16         command = &apos;termux&apos;;                   
+   17         break;
    18     default:
-   19         throw new Error&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Unsupported platform: &apos;&lt;/span&gt; + process.platform&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   20 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;usar&quot;&gt;usar&lt;/h1&gt;
-&lt;p&gt;Suponiendo que su servidor local se está ejecutando en el puerto 8000, simplemente use el ltcomando para iniciar el túnel.&lt;/p&gt;
+   19         throw new Error(&apos;Unsupported platform: &apos; + process.platform);
+   20 }
+```
+# usar
+Suponiendo que su servidor local se está ejecutando en el puerto 8000, simplemente use el ltcomando para iniciar el túnel.
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lt &lt;span class=&quot;nt&quot;&gt;--port&lt;/span&gt; 8000
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```bash
+lt --port 8000
+```
 
+
+{% if page.comments %}
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
     (function() { // DON&apos;T EDIT BELOW THIS LINE
@@ -387,5 +471,5 @@ ultimo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&
     (d.head || d.body).appendChild(s);
     })();
 &lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+{% endif %}</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
