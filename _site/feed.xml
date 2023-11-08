@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-07T23:17:55-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-08T08:53:48-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Abre un editor de texto y crea un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mi_programa.desktop&lt;/code&gt; con el siguiente contenido:&lt;/li&gt;
@@ -143,7 +143,7 @@ apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/i_Haklab/" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/i_Haklab</id><content type="html" xml:base="http://localhost:4000/i_Haklab/">&lt;h1 id=&quot;laboratorios-hacking&quot;&gt;Laboratorios Hacking&lt;/h1&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/i_Haklab/" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/i_Haklab</id><content type="html" xml:base="http://localhost:4000/i_Haklab/">&lt;h1 id=&quot;menu&quot;&gt;Menu&lt;/h1&gt;
 
 &lt;p&gt;i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.&lt;/p&gt;
 
@@ -531,12 +531,10 @@ apt upgrade
 
 &lt;h1 id=&quot;comando-i-haklab&quot;&gt;Comando &lt;strong&gt;i-haklab&lt;/strong&gt;&lt;/h1&gt;
 
-&lt;p&gt;En estos momentos solo disponenes de un grupo de herramientas pero no de todas más a contontar con todo lo que le brindamos cuan ejecute&lt;/p&gt;
+&lt;p&gt;Este comando es nuestra navaja Suiza y su intalacion nos brindará en su totalidad toda la configuración del laboratorio.&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;i-haklab 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Que es el primer herramienta que mencioné, la cual es nuestro laboratorio en su totalidad.&lt;/p&gt;
 
 &lt;h2 id=&quot;mmmm-para-que-instalarlo-si-ya-tengo-las-herramientas&quot;&gt;Mmmm… Para que instalarlo si ya tengo las herramientas&lt;/h2&gt;
 
@@ -563,20 +561,14 @@ apt upgrade
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;i-Haklab share
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Y muchas cosas más que esperó que te causen curiosidad en saver que son&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Espera no es todo&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Hora tendrás un comando llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i-haklab&lt;/code&gt; el cual te invito a ejecutar para que veas su menú de ayuda&lt;/p&gt;
+&lt;p&gt;Y muchas cosas más que esperó que te causen curiosidad en saver y te brindó ver su menú de ayuda&lt;/p&gt;
 
 &lt;p&gt;Imagen&lt;/p&gt;
 
-&lt;p&gt;Solprendido verdad&lt;/p&gt;
-
 &lt;h1 id=&quot;shell-disponibles&quot;&gt;Shell disponibles&lt;/h1&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; te va a dar la posibilidad de elegir entre dos shell total mente personalizadas qué serían &lt;a href=&quot;&quot;&gt;zsh&lt;/a&gt;
-Y &lt;a href=&quot;&quot;&gt;fish&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; te va a dar la posibilidad de elegir entre dos shell total mente personalizadas qué serían &lt;a href=&quot;https://es.m.wikipedia.org/wiki/Zsh&quot;&gt;zsh&lt;/a&gt;
+Y &lt;a href=&quot;https://fishshell.com/&quot;&gt;fish&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Imagen fish&lt;/p&gt;
 
@@ -612,14 +604,6 @@ Y &lt;a href=&quot;&quot;&gt;fish&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Imagen&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Puede dividir aún más los paneles utilizando la misma metodología.  Por ejemplo, en la captura de pantalla anterior, la pantalla primero se dividió horizontalmente usando ctrl+s / y luego se dividió verticalmente dentro del panel inferior usando ctrl+s&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
 &lt;p&gt;&lt;strong&gt;Cambiar el tamaño de los paneles&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Digamos que necesitamos un poco más de espacio para respirar para uno de nuestros paneles y queremos expandir el panel unas cuantas líneas.  Para esto, ingresaremos al indicador de tmux:&lt;/p&gt;
@@ -629,12 +613,72 @@ Y &lt;a href=&quot;&quot;&gt;fish&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Se utiliza también   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + teclas de flecha (←→ ↑↓)&lt;/code&gt; para cambiar paneles
 Y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + teclas de flecha (←→ ↑↓)&lt;/code&gt; para cambiar ventanas&lt;/p&gt;
 
-&lt;p&gt;Y todo es total mente configurable&lt;/p&gt;
+&lt;h2 id=&quot;configuración&quot;&gt;Configuración&lt;/h2&gt;
+
+&lt;h3 id=&quot;instalación-de-complementos&quot;&gt;Instalación de complementos&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Agregar nuevo 
+complemento en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/.tmux.conf&lt;/code&gt;con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set -g @plugin &apos;...&apos;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Presione &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefix+ I&lt;/code&gt;(i mayúscula, como en Instalar ) para recuperar el complemento.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;desinstalar-complementos&quot;&gt;Desinstalar complementos&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Elimine (o comente) el complemento de la lista.&lt;/li&gt;
+  &lt;li&gt;Presione &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefix&lt;/code&gt;+ alt+ u(u minúscula como en &lt;strong&gt;u&lt;/strong&gt; desinstalar) para eliminar el complemento.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Todos los complementos están instalados, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/plugins/&lt;/code&gt; por lo que, alternativamente, puede encontrar el directorio de complementos allí y eliminarlo.&lt;/p&gt;
+
+&lt;p&gt;Para recargar las configuraciones de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; sin salir de la sección &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Prefijo + r&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-estado-de-cpu-y-gpu-de-tmux&quot;&gt;💀 &lt;a href=&quot;https://github.com/tmux-plugins/tmux-cpu&quot;&gt;Estado de CPU y GPU de Tmux&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Permite mostrar información de CPU y GPU en Tmux status-righty status-left. Porcentaje configurable y visualización de iconos.&lt;/p&gt;
+
+&lt;h3 id=&quot;-tema-de-tmux&quot;&gt;🎨 Tema de tmux&lt;/h3&gt;
+
+&lt;p&gt;Configure este tema si desea respetar el esquema de colores del terminal. Para ser usado con algo como &lt;a href=&quot;https://github.com/dylanaraps/pywal&quot;&gt;pywal,&lt;/a&gt;  por ejemplo.&lt;/p&gt;
+
+&lt;h3 id=&quot;-personalización&quot;&gt;⚙ Personalización&lt;/h3&gt;
+
+&lt;p&gt;Puedes definir tu color principal favorito si no te gusta ninguno de los anteriores.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_theme &lt;span class=&quot;s1&quot;&gt;&apos;#483D8B&apos;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# dark slate blue&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;También puedes personalizar los iconos. Como ejemplo, las siguientes configuraciones pueden generar el tema que se muestra en la primera captura de pantalla:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;wfxr/tmux-power&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;wfxr/tmux-net-speed&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_theme &lt;span class=&quot;s1&quot;&gt;&apos;everforest&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_date_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_time_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_user_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_session_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_upload_speed    &lt;span class=&quot;nb&quot;&gt;true
+set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_download_speed  &lt;span class=&quot;nb&quot;&gt;true
+set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_web_reachable   &lt;span class=&quot;nb&quot;&gt;true
+set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_right_arrow_icon     &lt;span class=&quot;s1&quot;&gt;&apos;&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_left_arrow_icon      &lt;span class=&quot;s1&quot;&gt;&apos;&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_upload_speed_icon    &lt;span class=&quot;s1&quot;&gt;&apos;󰕒&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_download_speed_icon  &lt;span class=&quot;s1&quot;&gt;&apos;󰇚&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_prefix_highlight_pos &lt;span class=&quot;s1&quot;&gt;&apos;R&apos;&lt;/span&gt;
+Los íconos
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;-compatibilidad-con-complementos-pendiente-mas&quot;&gt;📦 Compatibilidad con complementos (pendiente mas)&lt;/h3&gt;
 
 &lt;h1 id=&quot;desintalar-laboratorio&quot;&gt;Desintalar laboratorio&lt;/h1&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">Laboratorios Hacking</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">Menu</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
 Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
 
 &lt;ul&gt;

@@ -286,7 +286,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="i-Haklab">
-    <meta itemprop="description" content="Laboratorios Hacking">
+    <meta itemprop="description" content="Menu">
     <meta itemprop="datePublished" content="April 29, 2023">
     
 
@@ -305,7 +305,7 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> </h4></header>
               <ul class="toc__menu">
-  <li><a href="#laboratorios-hacking">Laboratorios Hacking</a></li>
+  <li><a href="#menu">Menu</a></li>
   <li><a href="#intalacion">Intalacion</a>
     <ul>
       <li><a href="#lista-de-herramientas">Lista de herramientas</a></li>
@@ -320,6 +320,16 @@
   <li><a href="#tmux">Tmux</a>
     <ul>
       <li><a href="#usando-prefijo">Usando prefijo</a></li>
+      <li><a href="#configuración">Configuración</a>
+        <ul>
+          <li><a href="#instalación-de-complementos">Instalación de complementos</a></li>
+          <li><a href="#desinstalar-complementos">Desinstalar complementos</a></li>
+          <li><a href="#-estado-de-cpu-y-gpu-de-tmux">💀 Estado de CPU y GPU de Tmux</a></li>
+          <li><a href="#-tema-de-tmux">🎨 Tema de tmux</a></li>
+          <li><a href="#-personalización">⚙ Personalización</a></li>
+          <li><a href="#-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li><a href="#desintalar-laboratorio">Desintalar laboratorio</a></li>
@@ -333,7 +343,7 @@
           
           
         </p>
-        <h1 id="laboratorios-hacking">Laboratorios Hacking</h1>
+        <h1 id="menu">Menu</h1>
 
 <p>i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</p>
 
@@ -721,12 +731,10 @@ apt upgrade
 
 <h1 id="comando-i-haklab">Comando <strong>i-haklab</strong></h1>
 
-<p>En estos momentos solo disponenes de un grupo de herramientas pero no de todas más a contontar con todo lo que le brindamos cuan ejecute</p>
+<p>Este comando es nuestra navaja Suiza y su intalacion nos brindará en su totalidad toda la configuración del laboratorio.</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>i-haklab 
 </code></pre></div></div>
-
-<p>Que es el primer herramienta que mencioné, la cual es nuestro laboratorio en su totalidad.</p>
 
 <h2 id="mmmm-para-que-instalarlo-si-ya-tengo-las-herramientas">Mmmm… Para que instalarlo si ya tengo las herramientas</h2>
 
@@ -753,20 +761,14 @@ apt upgrade
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i-Haklab share
 </code></pre></div></div>
 
-<p>Y muchas cosas más que esperó que te causen curiosidad en saver que son</p>
-
-<p><strong>Espera no es todo</strong></p>
-
-<p>Hora tendrás un comando llamado <code class="language-plaintext highlighter-rouge">i-haklab</code> el cual te invito a ejecutar para que veas su menú de ayuda</p>
+<p>Y muchas cosas más que esperó que te causen curiosidad en saver y te brindó ver su menú de ayuda</p>
 
 <p>Imagen</p>
 
-<p>Solprendido verdad</p>
-
 <h1 id="shell-disponibles">Shell disponibles</h1>
 
-<p><code class="language-plaintext highlighter-rouge">I-haklab</code> te va a dar la posibilidad de elegir entre dos shell total mente personalizadas qué serían <a href="">zsh</a>
-Y <a href="">fish</a></p>
+<p><code class="language-plaintext highlighter-rouge">I-haklab</code> te va a dar la posibilidad de elegir entre dos shell total mente personalizadas qué serían <a href="https://es.m.wikipedia.org/wiki/Zsh">zsh</a>
+Y <a href="https://fishshell.com/">fish</a></p>
 
 <p>Imagen fish</p>
 
@@ -802,14 +804,6 @@ Y <a href="">fish</a></p>
 
 <p>Imagen</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Puede dividir aún más los paneles utilizando la misma metodología.  Por ejemplo, en la captura de pantalla anterior, la pantalla primero se dividió horizontalmente usando ctrl+s / y luego se dividió verticalmente dentro del panel inferior usando ctrl+s</td>
-    </tr>
-  </tbody>
-</table>
-
 <p><strong>Cambiar el tamaño de los paneles</strong></p>
 
 <p>Digamos que necesitamos un poco más de espacio para respirar para uno de nuestros paneles y queremos expandir el panel unas cuantas líneas.  Para esto, ingresaremos al indicador de tmux:</p>
@@ -819,7 +813,67 @@ Y <a href="">fish</a></p>
 <p>Se utiliza también   <code class="language-plaintext highlighter-rouge">Alt + teclas de flecha (←→ ↑↓)</code> para cambiar paneles
 Y <code class="language-plaintext highlighter-rouge">Shift + teclas de flecha (←→ ↑↓)</code> para cambiar ventanas</p>
 
-<p>Y todo es total mente configurable</p>
+<h2 id="configuración">Configuración</h2>
+
+<h3 id="instalación-de-complementos">Instalación de complementos</h3>
+
+<ol>
+  <li>
+    <p>Agregar nuevo 
+complemento en <code class="language-plaintext highlighter-rouge">~/.tmux/.tmux.conf</code>con <code class="language-plaintext highlighter-rouge">set -g @plugin '...'</code></p>
+  </li>
+  <li>
+    <p>Presione <code class="language-plaintext highlighter-rouge">prefix+ I</code>(i mayúscula, como en Instalar ) para recuperar el complemento.</p>
+  </li>
+</ol>
+
+<h3 id="desinstalar-complementos">Desinstalar complementos</h3>
+
+<ol>
+  <li>Elimine (o comente) el complemento de la lista.</li>
+  <li>Presione <code class="language-plaintext highlighter-rouge">prefix</code>+ alt+ u(u minúscula como en <strong>u</strong> desinstalar) para eliminar el complemento.</li>
+</ol>
+
+<p>Todos los complementos están instalados, <code class="language-plaintext highlighter-rouge">~/.tmux/plugins/</code> por lo que, alternativamente, puede encontrar el directorio de complementos allí y eliminarlo.</p>
+
+<p>Para recargar las configuraciones de <code class="language-plaintext highlighter-rouge">tmux</code> sin salir de la sección <code class="language-plaintext highlighter-rouge">Prefijo + r</code></p>
+
+<h3 id="-estado-de-cpu-y-gpu-de-tmux">💀 <a href="https://github.com/tmux-plugins/tmux-cpu">Estado de CPU y GPU de Tmux</a></h3>
+
+<p>Permite mostrar información de CPU y GPU en Tmux status-righty status-left. Porcentaje configurable y visualización de iconos.</p>
+
+<h3 id="-tema-de-tmux">🎨 Tema de tmux</h3>
+
+<p>Configure este tema si desea respetar el esquema de colores del terminal. Para ser usado con algo como <a href="https://github.com/dylanaraps/pywal">pywal,</a>  por ejemplo.</p>
+
+<h3 id="-personalización">⚙ Personalización</h3>
+
+<p>Puedes definir tu color principal favorito si no te gusta ninguno de los anteriores.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-g</span> @tmux_power_theme <span class="s1">'#483D8B'</span> <span class="c"># dark slate blue</span>
+</code></pre></div></div>
+
+<p>También puedes personalizar los iconos. Como ejemplo, las siguientes configuraciones pueden generar el tema que se muestra en la primera captura de pantalla:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-g</span> @plugin <span class="s1">'wfxr/tmux-power'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @plugin <span class="s1">'wfxr/tmux-net-speed'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_theme <span class="s1">'everforest'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_date_icon <span class="s1">' '</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_time_icon <span class="s1">' '</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_user_icon <span class="s1">' '</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_session_icon <span class="s1">' '</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_show_upload_speed    <span class="nb">true
+set</span> <span class="nt">-g</span> @tmux_power_show_download_speed  <span class="nb">true
+set</span> <span class="nt">-g</span> @tmux_power_show_web_reachable   <span class="nb">true
+set</span> <span class="nt">-g</span> @tmux_power_right_arrow_icon     <span class="s1">''</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_left_arrow_icon      <span class="s1">''</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_upload_speed_icon    <span class="s1">'󰕒'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_download_speed_icon  <span class="s1">'󰇚'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_prefix_highlight_pos <span class="s1">'R'</span>
+Los íconos
+</code></pre></div></div>
+
+<h3 id="-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</h3>
 
 <h1 id="desintalar-laboratorio">Desintalar laboratorio</h1>
 
