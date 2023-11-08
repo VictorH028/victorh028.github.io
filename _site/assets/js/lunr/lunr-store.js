@@ -1,6 +1,6 @@
 var store = [{
         "title": "Como intalar localtunnel",
-        "excerpt":"En esta oportunidad vamos a aprender como instalar `localtunel` en nuestra terminal sin errores # Instalacion ## Paso 1: actualizar paquetes Ejecute el siguiente comando ```bash apt update && apt upgrade -y ``` ## Paso 2: Instalar termux-api Ahora debe asegurarse de que termux tenga acceso a las funciones de...","categories": ["termux"],
+        "excerpt":"En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores Instalacion Paso 1: actualizar paquetes Ejecute el siguiente comando apt update &amp;&amp; apt upgrade -y Paso 2: Instalar termux-api Ahora debe asegurarse de que termux tenga acceso a las funciones de hardware de Android y Chrome....","categories": ["termux"],
         "tags": ["error","termux"],
         "url": "/install-localtunel/",
         "teaser": "/assets/images/localtunnel/icon-localtunnel.png"
@@ -23,15 +23,27 @@ var store = [{
         "url": "/Alpine/",
         "teaser": null
       },{
+        "title": "i-Haklab",
+        "excerpt":"Laboratorios Hacking i-Haklab es un laboratorio de hacking para Termux que que nos ofrece de manera ordenada y secuencial un conjunto herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux. Imagen Intalacion Su intalacion no es como estamos acostumbrados hacer...","categories": ["Laboratorio"],
+        "tags": ["Termux"],
+        "url": "/i_Haklab/",
+        "teaser": "/assets/images/"
+      },{
         "title": "Criptografía_RSA",
-        "excerpt":"En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos. Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando: ```sh apt update apt install...","categories": [null,""],
+        "excerpt":"En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos. Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando: apt update apt install openssl...","categories": [null,""],
         "tags": ["RSA"],
         "url": "/RSA/",
         "teaser": null
       },{
-        "title": "Como grabar archivos locales en alpine",
-        "excerpt":"En esta oportunidad vamos a estar viendo como pasar un archivio que tenemos en termux a alpine: # Informacion Un servidor es un conjunto de computadoras capaces de atender las peticiones de un cliente y devolverle una respuesta en concordancia el cual podemos crear condiversos comandos como (nc,python,localtunnel,php,..etc) el cual...","categories": ["termux"],
+        "title": "pendiente",
+        "excerpt":"    Please enable JavaScript to view the comments powered by Disqus.  ","categories": ["termux"],
         "tags": ["alpine"],
         "url": "/aline-get_file/",
+        "teaser": "/assets/images/"
+      },{
+        "title": "desktop",
+        "excerpt":"Para mostrar tu aplicaciones en el menu de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.: Abre un editor de...","categories": ["notas"],
+        "tags": ["Linux","tips"],
+        "url": "/desktop-linux/",
         "teaser": "/assets/images/"
       }]

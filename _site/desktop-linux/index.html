@@ -9,27 +9,29 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Alpine en termux - Ciberseguridad y Hacking Ético</title>
-<meta name="description" content="Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.">
+<!-- begin _includes/seo.html --><title>desktop - Ciberseguridad y Hacking Ético</title>
+<meta name="description" content="Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Ciberseguridad y Hacking Ético">
-<meta property="og:title" content="Alpine en termux">
-<meta property="og:url" content="http://localhost:4000/Alpine/">
+<meta property="og:title" content="desktop">
+<meta property="og:url" content="http://localhost:4000/desktop-linux/">
 
 
-  <meta property="og:description" content="Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.">
-
-
-
+  <meta property="og:description" content="Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:">
 
 
 
+  <meta property="og:image" content="http://localhost:4000/assets/images/">
 
-  <meta property="article:published_time" content="2023-04-21T00:00:00-04:00">
+
+
+
+
+  <meta property="article:published_time" content="2023-10-10T00:00:00-04:00">
 
 
 
@@ -40,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/Alpine/">
+<link rel="canonical" href="http://localhost:4000/desktop-linux/">
 
 
 
@@ -166,7 +168,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Alpine en termux</li>
+        <li class="current">desktop</li>
       
     
   </ol>
@@ -283,15 +285,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Alpine en termux">
-    <meta itemprop="description" content="Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.">
-    <meta itemprop="datePublished" content="April 21, 2023">
+    <meta itemprop="headline" content="desktop">
+    <meta itemprop="description" content="Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:">
+    <meta itemprop="datePublished" content="October 10, 2023">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Alpine en termux
+          <h1 id="page-title" class="page__title" itemprop="headline">desktop
 </h1>
           
         </header>
@@ -301,74 +303,46 @@
         
         <p class="page__meta">
           
-            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2023-04-21T00:00:00-04:00">April 21, 2023 </time>&emsp;
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2023-10-10T00:00:00-04:00">October 10, 2023 </time>&emsp;
           
           
         </p>
-        <p>Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
-Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la <a href="https://t.me/Ivam3by_Cinderella">comunidad</a> a probado su funcionalidad al 100% en Android.</p>
+        <p>Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo <code class="language-plaintext highlighter-rouge">.desktop</code>. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo <code class="language-plaintext highlighter-rouge">.desktop</code>.:</p>
 
-<ul>
-  <li>Puedes revisa el listado de todas las herramientas disponibles  <a href="https://github.com/ivam3/termux-packages">aqui</a>:</li>
-</ul>
+<ol>
+  <li>Abre un editor de texto y crea un archivo llamado <code class="language-plaintext highlighter-rouge">mi_programa.desktop</code> con el siguiente contenido:</li>
+</ol>
 
-<h1 id="configuracion">Configuracion</h1>
+<pre><code class="language-desktop">[Desktop Entry]
+Type=Application
+Name=Mi Programa
+Exec=/ruta/a/tu/programa
+Icon=/ruta/a/una/imagen/icono.png
+Terminal=false
+Categories=Development;
+</code></pre>
 
-<p>Para tener el acceso a todas las herramientas solo debes de agregar la llave(key) de acceso a las configuraciones de APT en Termux :</p>
+<p>Asegúrate de reemplazar <code class="language-plaintext highlighter-rouge">/ruta/a/tu/programa</code> con la ruta completa de la aplicación que deseas ejecutar y <code class="language-plaintext highlighter-rouge">/ruta/a/una/imagen/icono.png</code> con la ruta completa de la imagen de icono que deseas utilizar para tu aplicación.</p>
 
-<h3 id="crea-el-directorio-">Crea el directorio :</h3>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d 
-</code></pre></div></div>
-<ul>
-  <li>Descarga la Key(llave) :
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>wget
-</code></pre></div>    </div>
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list <span class="nt">-O</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d/ivam3-termux-packages.list
-</code></pre></div>    </div>
-    <h3 id="actualiza-termux-">Actualiza Termux :</h3>
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update <span class="o">&amp;&amp;</span> apt upgrade
-</code></pre></div>    </div>
+<ol>
+  <li>
+    <p>Guarda el archivo <code class="language-plaintext highlighter-rouge">mi_programa.desktop</code> en el directorio <code class="language-plaintext highlighter-rouge">~/.local/share/applications</code> para que esté disponible solo para tu usuario, o en <code class="language-plaintext highlighter-rouge">/usr/share/applications</code> si deseas que esté disponible para todos los usuarios en el sistema.</p>
   </li>
-</ul>
+  <li>
+    <p>Asegúrate de que el archivo <code class="language-plaintext highlighter-rouge">.desktop</code> tenga permisos de ejecución. Puedes hacerlo con el siguiente comando en la terminal:</p>
+  </li>
+</ol>
 
-<p>En ese listado de herramientas que hemos optenido vamos a tener a <strong>termux-doker-qemu</strong></p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>❯ apt show  termux-docker-qemu                             
-Package: termux-docker-qemu                                Version: 0.3.3
-Maintainer: Ivam3 &lt;https://t.me/Ivam3_Bot&gt;
-Installed-Size: 2048 B
-Depends: termux-api, openssh, wget, procps, qemu-utils, qemu-common, qemu-system-x86-64-headless
-Suggests: i-haklab
-Homepage: https://www.docker.com/products/docker-desktop/
-Download-Size: 3840 B
-APT-Manual-Installed: <span class="nb">yes
-</span>APT-Sources: https://ivam3.github.io/termux-packages stable/extras all Packages
-Description: Docker container <span class="k">for </span>running x86,x86_64,armv7 and aarch64 Linux virtual machines using QEMU
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x /ruta/a/tu/archivo.desktop
 </code></pre></div></div>
 
-<p>Esto nos va a facilitar virtualizar el sistema operativo.</p>
+<ol>
+  <li>Después de hacer esto, deberías ver “Mi Probgrama” en el menú de aplicaciones de tu entorno de escritorio Linux, y al hacer clic en él, se ejecutará tu programa.</li>
+</ol>
 
-<h3 id="por-que-alpine">Por que alpine</h3>
+<p>Nota: Asegúrate de que el archivo <code class="language-plaintext highlighter-rouge">.desktop</code> tenga los permisos adecuados y que la ruta a tu programa y al icono sean correctas para que funcione correctamente. El icono debe ser una imagen en formato PNG de 48x48 píxeles (aunque puedes ajustar el tamaño según tus necesidades).</p>
 
-<p>Solo cuenta con un peso minimo de <code class="language-plaintext highlighter-rouge">133MB</code> y por eso es  adecuado para  manejan contenedores, especialmente Docker. 💢</p>
-
-<h1 id="intalacion">Intalacion</h1>
-
-<p>Vamos a proceder a instalar <code class="language-plaintext highlighter-rouge">termux-doker-qemu</code> com un:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>termux-doker-qemu
-</code></pre></div></div>
-
-<p>Puedes contar con una explicasion mas detallada de todo el proceso y configuracion en el sigiente video 👇 espero que lo disfute</p>
-
-<h1 id="video">Video</h1>
-
-<!-- Courtesy of embedresponsively.com //-->
-<div class="responsive-video-container">
-
-  <iframe src="https://www.youtube-nocookie.com/embed/CXvTUEG1oPs" frameborder="0" allowfullscreen=""></iframe>
-
-</div>
+<p>Este es un ejemplo simple de cómo crear un acceso directo en el menú de aplicaciones en Linux para tu programa en C++. Puedes personalizar el archivo <code class="language-plaintext highlighter-rouge">.desktop</code> según tus necesidades específicas.</p>
 
 <div id="disqus_thread"></div>
 <script>
@@ -402,11 +376,11 @@ Description: Docker container <span class="k">for </span>running x86,x86_64,armv
     
       
       
-      <a href="/tags/#intalacion" class="page__taxonomy-item" rel="tag">intalacion</a><span class="sep">, </span>
+      <a href="/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#termux" class="page__taxonomy-item" rel="tag">termux</a>
+      <a href="/tags/#tips" class="page__taxonomy-item" rel="tag">tips</a>
     
     </span>
   </p>
@@ -427,18 +401,14 @@ Description: Docker container <span class="k">for </span>running x86,x86_64,armv
     
       
       
-      <a href="/categories/#root" class="page__taxonomy-item" rel="tag">root</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/categories/#termux" class="page__taxonomy-item" rel="tag">termux</a>
+      <a href="/categories/#notas" class="page__taxonomy-item" rel="tag">notas</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Fecha:</strong> <time datetime="2023-04-21T00:00:00-04:00">April 21, 2023</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Fecha:</strong> <time datetime="2023-10-10T00:00:00-04:00">October 10, 2023</time></p>
         
       </footer>
 
@@ -447,12 +417,11 @@ Description: Docker container <span class="k">for </span>running x86,x86_64,armv
       
   <nav class="pagination">
     
-      <a href="/GIT/" class="pagination--pager" title="Notas de git
+      <a href="/aline-get_file/" class="pagination--pager" title="pendiente
 ">Previous</a>
     
     
-      <a href="/i_Haklab/" class="pagination--pager" title="i-Haklab
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 

@@ -269,7 +269,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-include-cache
   jekyll-toc
-  jemoji
   minima (~> 2.0)
   minimal-mistakes-jekyll
   tzinfo-data
