@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Ciberseguridad y Hacking Ético"
+title                    : "Hacking Ético vs Termux"
 title_separator          : "-"
-name                     : "Demon Hunter"
-description              : "Artículos sobre ciberseguridad "
-url                      : "https://termuxdn.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "DemonHunter"
+description              : "Ciberseguridad desde Termux"
+url                      : "https://victorh028.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "victorh028/termuxdn.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-#logo                     : "/assets/images/masthead.png"
+repository               : "victorh028/victorh028.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+logo                     : # "/assets/images/masthead.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Demon Hunter"
   avatar           : "/assets/images/avatar.png"
-  bio              : "....?"
+  bio              : "Siempre me he sentido atraído por la forma en que la tecnología cambia nuestras vidas, pero también soy consciente de los riesgos y desafíos que enfrentamos en un mundo interconectado. Quiero ser parte de la solución, ayudando a asegurar sistemas y datos para proteger a los usuarios y las organizaciones."
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -129,7 +129,7 @@ author:
   weibo            :
   xing             :
   youtube          : #"https://youtube.com/c/"
-
+  telegram         : "@demon_rip"
 
 # Reading Files
 include:
