@@ -34,4 +34,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'jekyll-toc'
 gem "minimal-mistakes-jekyll"
 gem  "webrick"
-
+gem  "faraday-retry"
