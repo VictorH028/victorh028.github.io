@@ -1,0 +1,16 @@
+Package: vpkg
+Version: 0.0.1
+Architecture: all
+Maintainer: GithubNick <GithubNick@gmail.com>
+Installed-Size: 1
+Description: This is the hello world package
+ It is just an example for termux-create-package
+ .
+ It is just prints 'Hello, world'
+Filename: dists/stable/extras/binary-all/vpkg_0.0.1_all.deb
+Size: 1040
+MD5Sum: 36d87c65026ba997dff474240710d1ba
+SHA1: b3f4d15d16eed0c1bc77d39440e9ab516fba590a
+SHA256: 25f53dfa48a5501d3fb21c914628dd6f679c41a21f9dd50b44d6a273d1aace00
+SHA512: 37d65a999cf269429e9a5ccd401c3304fc72be2a3adc2b0cd54a446aba8606000b0e40acf38729f3c54148248c275694a5b158f9850cb3c5aaccc6c68a04d40b
+
