@@ -1,0 +1,21 @@
+{
+  "control": {
+     "Package": "vpkg",
+     "Version": "0.0.1",
+     "Architecture": "all",
+     "Maintainer": "DemonHunter <demonhunternauta@gmail.com>",
+     "Depends": ["cmake", "git", "tar", "curl", "zip", "unzip"],
+     "Description": [
+            " manage C and C++ libraries",
+            " It ",
+            " .",
+            " vpkg"
+            ]
+ },
+
+"deb_dir": "../../",
+
+ "files": {
+    "src/vcpkg": "vcpkg"
+  }
+}
