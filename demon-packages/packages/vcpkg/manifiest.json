@@ -1,7 +1,7 @@
 {
   "control": {
-     "Package": "vpkg",
-     "Version": "0.0.1",
+     "Package": "vcpkg",
+     "Version": "0.1.1",
      "Architecture": "all",
      "Maintainer": "DemonHunter <demonhunternauta@gmail.com>",
      "Depends": ["cmake", "git", "tar", "curl", "zip", "unzip"],
