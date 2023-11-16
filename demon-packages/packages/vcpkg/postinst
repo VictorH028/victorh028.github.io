@@ -3,8 +3,15 @@
 #
 # DemonHunter
 #
-# se ejecuta después de que el paquete se instala en el sistema.
+# se ejecuta después de que el paquete se instala en el sistema
+echo "Cloning repository ..."
+git clone  --quiet https://github.com/Microsoft/vcpkg.git | pv -lep \
+${HOME}/.local/share/vcpkg
 if [[ -d ${HOME}/.local/share/vcpkg ]]; then
-  cd ${HOME}/.local/share/vcpkg
-  ./bootstrap-vcpkg.sh
+echo "Compilando vcpkg ..."
+  ./${HOME}/.local/share/vcpkg
 fi
+
+
+
+
