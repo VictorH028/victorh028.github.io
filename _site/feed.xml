@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-11T23:25:53-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abre un editor de texto y crea un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mi_programa.desktop&lt;/code&gt; con el siguiente contenido:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-desktop&quot;&gt;[Desktop Entry]
+Type=Application
+Name=Mi Programa
+Exec=/ruta/a/tu/programa
+Icon=/ruta/a/una/imagen/icono.png
+Terminal=false
+Categories=Development;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Asegúrate de reemplazar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/ruta/a/tu/programa&lt;/code&gt; con la ruta completa de la aplicación que deseas ejecutar y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/ruta/a/una/imagen/icono.png&lt;/code&gt; con la ruta completa de la imagen de icono que deseas utilizar para tu aplicación.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Guarda el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mi_programa.desktop&lt;/code&gt; en el directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.local/share/applications&lt;/code&gt; para que esté disponible solo para tu usuario, o en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/share/applications&lt;/code&gt; si deseas que esté disponible para todos los usuarios en el sistema.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Asegúrate de que el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt; tenga permisos de ejecución. Puedes hacerlo con el siguiente comando en la terminal:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x /ruta/a/tu/archivo.desktop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Después de hacer esto, deberías ver “Mi Probgrama” en el menú de aplicaciones de tu entorno de escritorio Linux, y al hacer clic en él, se ejecutará tu programa.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Nota: Asegúrate de que el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt; tenga los permisos adecuados y que la ruta a tu programa y al icono sean correctas para que funcione correctamente. El icono debe ser una imagen en formato PNG de 48x48 píxeles (aunque puedes ajustar el tamaño según tus necesidades).&lt;/p&gt;
+
+&lt;p&gt;Este es un ejemplo simple de cómo crear un acceso directo en el menú de aplicaciones en Linux para tu programa en C++. Puedes personalizar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt; según tus necesidades específicas.&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="notas" /><category term="Linux" /><category term="tips" /><summary type="html">Para mostrar tu aplicaciones en el menu de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:</summary></entry><entry><title type="html">pendiente</title><link href="http://localhost:4000/aline-get_file/" rel="alternate" type="text/html" title="pendiente" /><published>2023-07-05T00:00:00-04:00</published><updated>2023-07-05T00:00:00-04:00</updated><id>http://localhost:4000/aline-get_file</id><content type="html" xml:base="http://localhost:4000/aline-get_file/">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="alpine" /><summary type="html">Please enable JavaScript to view the comments powered by Disqus.</summary></entry><entry><title type="html">RSA</title><link href="http://localhost:4000/RSA/" rel="alternate" type="text/html" title="RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/RSA</id><content type="html" xml:base="http://localhost:4000/RSA/">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
+
+&lt;p&gt;Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update
+apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;clave-privada&quot;&gt;Clave privada&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Podemos  generar un llaves RSA privada con el siguiente comando en la terminal:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl genrsa &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_privada.pem 2048
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El número &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2048&lt;/code&gt; es la longitud de la clave. Si necesitas una clave más larga, puedes cambiar este valor.&lt;/p&gt;
+
+&lt;h1 id=&quot;clave-publia&quot;&gt;Clave publia&lt;/h1&gt;
+
+&lt;p&gt;Para extraer la clave pública de la clave privada que acabamos  de generar.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;El siguiente comando utilizará la clave privada que acabamos de generar para obtener la clave pública:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsa &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; clave_privada.pem &lt;span class=&quot;nt&quot;&gt;-pubout&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; clave_publica.pem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt; contendrá ahora la clave pública que necesitas para cifrar un archivo utilizando RSA.&lt;/p&gt;
+
+&lt;h1 id=&quot;cifrar-el-archivo-utilizando-la-clave-pública&quot;&gt;Cifrar el archivo utilizando la clave pública.&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;El siguiente comando cifrará el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_a_cifrar&lt;/code&gt;  utilizando la clave pública contenida en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-encrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_a_cifrar &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; clave_publica.pem &lt;span class=&quot;nt&quot;&gt;-pubin&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El archivo cifrado resultante se almacenará en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_cifrado&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Es importante tener en cuenta que la clave privada que se ha utilizado para generar la clave pública, debe mantenerse en un lugar seguro y no debe ser distribuida. Sólo la clave pública debe ser compartida con aquellos que necesitan cifrar información para que la persona que posee la clave privada pueda descifrar la información cifrada utilizando sus funciones privadas.&lt;/p&gt;
+
+&lt;h1 id=&quot;de-sesencriptar-el-archivo-en-rsa&quot;&gt;De sesencriptar el archivo en RSA&lt;/h1&gt;
+
+&lt;p&gt;Para desencriptar un archivo utilizando RSA, necesitarás los siguientes elementos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;La clave pública que se utilizó para cifrar el archivo.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;El archivo cifrado que se desea desencriptar.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Antes de comenzar, es importante señalar que la operación de desencriptación se suele hacer en local y no suele ser una buena práctica compartir información de este tipo con terceros.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tener a la mano el archivo cifrado y la clave pública que se utilizó para cifrar. Esta debe estar en un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clave_publica.pem&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finalmente, ejecutar el siguiente comando para obtener el texto claro:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl rsautl &lt;span class=&quot;nt&quot;&gt;-decrypt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; archivo_cifrado &lt;span class=&quot;nt&quot;&gt;-inkey&lt;/span&gt; public_key.pem &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; archivo_plano
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Donde &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_cifrado&lt;/code&gt; es el archivo que deseas desencriptar y que debería haber llegado junto con la clave pública, y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo_plano&lt;/code&gt; es el archivo donde se almacenará el resultado del proceso de desencriptación.&lt;/p&gt;
+
+&lt;p&gt;También puedes especificar la ruta completa del archivo si no está en la carpeta actual.&lt;/p&gt;
+
+&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/i_Haklab/" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/i_Haklab</id><content type="html" xml:base="http://localhost:4000/i_Haklab/">&lt;h1 id=&quot;menu&quot;&gt;Menu&lt;/h1&gt;
+
+&lt;p&gt;i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.&lt;/p&gt;
+
+&lt;p&gt;Imagen&lt;/p&gt;
+
+&lt;h1 id=&quot;intalacion&quot;&gt;Intalacion&lt;/h1&gt;
+
+&lt;p&gt;Su intalacion no es como estamos acostumbrados hacer avitual mente de &lt;em&gt;clonar&lt;/em&gt;  un repocitorio. &lt;a href=&quot;&quot;&gt;Termux &lt;/a&gt; cuenta en su alvor de directorio con un &lt;strong&gt;sources.list&lt;/strong&gt; en la sigiente ruta &lt;em&gt;$PREFIX/etc/apt/&lt;/em&gt;   el cual nos permite descarga paquetes de uno o más repositorios de software (fuentes) y los instalarlos que dichos paquetes que anterior mente le mensionaba que son mas de 100 son mantenidos por Ivam para una intalacion limpia en nuestro emulador de entorno Linux atraver de APT que es el principal administrador de paquetes de línea de comandos.&lt;/p&gt;
+
+&lt;p&gt;Nos vamos a segurar que tenemos las dependencias nesesarias que a continuación les muestro :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wget&lt;/code&gt; Que sirve para recuperar contenido y archivos de varios servidores web.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir&lt;/code&gt; Que nos permite crear un nuevo directorio o carpeta.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Y a continuación les muestro como tendríamos que Ejecutar los contenidos&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;wget
+&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d
+wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d/ivam3-termux-packages.list
+apt update
+apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ya en este punto tendríamos disponible todas las herramientas.&lt;/p&gt;
+
+&lt;h2 id=&quot;lista-de-herramientas&quot;&gt;Lista de herramientas&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/i-Haklab&quot;&gt;i-Haklab&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Laboratorio de ciberseguridad y pentesting para Termux&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/qashqao/acccheck&quot;&gt;acccheck&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta de ataque del diccionario de contraseñas SMB de Windows&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.android.com/studio/command-line/adb&quot;&gt;adbfastboot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Versátil herramienta de línea de comandos que facilita una variedad de acciones del dispositivo&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Techzindia/admin_penal&quot;&gt;Panel de administrador&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Encuentra el panel de administración del sitio web&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/OWASP/Amass&quot;&gt;acumular&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mapeo detallado de la superficie de ataque y descubrimiento de activos&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/AndroBugs/AndroBugs_Framework&quot;&gt;androbichos&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Escáner de vulnerabilidades de Android&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.android.com/studio/index.html#command-tools&quot;&gt;androidsdk-cli&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Línea de comando oficial Entorno de desarrollo integrado (IDE) para el desarrollo de aplicaciones de Android&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/bytedance/appshark&quot;&gt;appshark&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una plataforma de análisis de contaminación estática para escanear vulnerabilidades en una aplicación de Android&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.beefproject.com/&quot;&gt;carne de res&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;herramienta de seguridad poderosa e intuitiva que se enfoca en aprovechar las vulnerabilidades del navegador para evaluar la postura de seguridad de un objetivo&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ReFirmLabs/binwalk&quot;&gt;binwalk&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta para análisis, ingeniería inversa y extracción de imágenes de firmware&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/surya-dev-singh/BITB-framwork&quot;&gt;bitb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Técnica de phishing que simula una ventana de navegador dentro del navegador para falsificar un dominio legítimo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jothatron/blackbox&quot;&gt;caja negra&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un marco de pruebas de penetración&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/botgram&quot;&gt;botgrama&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Obtén toda la información sobre los miembros del grupo de Telegram&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://portswigger.net/burp&quot;&gt;burpsuite&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta gráfica para realizar pruebas de seguridad de aplicaciones web&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/digininja/CeWL&quot;&gt;cewl&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Listas de palabras personalizadas rastreando un sitio web objetivo&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Warflop/CloudBunny&quot;&gt;conejito de las nubes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Captura la IP real del servidor que usa un WAF como proxy o protección&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Leask/code-server-nodejs&quot;&gt;servidor de código&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;VS Code con el entorno de desarrollo Nodejs ejecutándose en un servidor remoto&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/miluxmil/milux/blob/master/converter&quot;&gt;convertidor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Fácil convertidor de archivos multimedia&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/lightos/credmap&quot;&gt;Mapa de credenciales&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pruebe las credenciales de usuario proporcionadas en varios sitios web populares para ver si la contraseña se ha reutilizado en alguno de ellos.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/shawarkhanethicalhacker/D-TECT-1&quot;&gt;d-tect&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pentest la web moderna&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/DoS-A-Tool&quot;&gt;dos-una-herramienta&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Realiza ataques de denegación de servicio bajo el método SYN Flood&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/pxb1988/dex2jar&quot;&gt;dex2jar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Toolkit para trabajar con archivos android .dex y java .class&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/fwaeytens/dnsenum&quot;&gt;dnsenum&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Enumerar información de DNS&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/embed&quot;&gt;empotrar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Incruste la carga útil de metasploit en un APK legítimo&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kgretzky/evilginx2&quot;&gt;maleginx2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marco de ataque de hombre en el medio independiente utilizado para credenciales de inicio de sesión de phishing junto con cookies de sesión, lo que permite eludir la autenticación de 2 factores.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/UndeadSec/EvilURL&quot;&gt;URL malvada&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Generar dominios Unicode para IDN Homograph Attack y detectarlos.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/ExiF&quot;&gt;exif&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Extraer información (metadatos) de archivos.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/offensive-security/exploitdb&quot;&gt;explotardb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;El repositorio oficial &lt;a href=&quot;https://www.exploit-db.com/&quot;&gt;de la base de datos de exploits&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/machine1337/fake-sms&quot;&gt;sms-falsos&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Enviar mensajes (sms) de forma anónima.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/xHak9x/fbi&quot;&gt;FBI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Recopilación de información de la cuenta de Facebook&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/fuzzdb-project/fuzzdb&quot;&gt;fuzzdb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Diccionario de patrones de ataque y primitivas para inyección de fallas de aplicaciones de caja negra y descubrimiento de recursos&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/radioactivetobi/geo-recon&quot;&gt;reconocimiento geográfico&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una herramienta OSINT CLI diseñada para realizar un seguimiento rápido de la reputación de IP y la búsqueda de ubicación geográfica para los analistas de seguridad.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/SecureAuthCorp/impacket/blob/master/examples/GetNPUsers.py&quot;&gt;getnpusers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Enumere y obtenga TGT para aquellos usuarios que tienen propiedad&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/NationalSecurityAgency/ghidra&quot;&gt;ghidra&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un marco de ingeniería inversa de software (SRE).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/EntySec/ghost&quot;&gt;fantasma&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marco de post-explotación de Android que explota Android Debug Bridge para acceder de forma remota a un dispositivo Android.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/OJ/gobuster/&quot;&gt;gobuster&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta de detección de directorio/archivo, DNS y VHost escrita en Go&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gophish/gophish&quot;&gt;tonto&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Kit de herramientas de phishing avanzado de código abierto&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/4shadoww/hakkuframework&quot;&gt;hakku&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Plataforma de pruebas de penetración de código abierto utilizada para realizar pruebas de penetración relacionadas con la red y la web.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/CiKu370/hasher&quot;&gt;picador&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Cracker de hash con hash de detección automática&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gitlab.com/kalilinux/packages/hash-identifier/&quot;&gt;hashid&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Software para identificar los diferentes tipos de hash utilizados para cifrar datos y especialmente contraseñas.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/HatBashBR/HatCloud&quot;&gt;nube de sombrero&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Haga bypass en CloudFlare para descubrir una IP real.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/b3-v3r/Hunner&quot;&gt;cazador&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marco de piratería para sitios DOS, ftp&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/vanhauser-thc/thc-hydra&quot;&gt;hidra-gtk&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta número uno de fuerza bruta en ciberseguridad.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/m4ll0k/infoga&quot;&gt;infoga&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Recopilar información de cuentas de correo electrónico de diferentes fuentes públicas y verificar si los correos electrónicos se filtraron utilizando la API de haveibeenpwned.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/maldevel/IPGeoLocation&quot;&gt;ipgeolocalizaciones&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una herramienta para recuperar información de Geolocalización IP.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/openwall/john&quot;&gt;johntheripper&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Descifrador de contraseñas sin conexión avanzado, que admite cientos de tipos de cifrado y hash, y se ejecuta en muchos sistemas operativos, CPU, GPU e incluso algunos FPGA.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.jython.org/&quot;&gt;jython&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;El proyecto Jython proporciona implementaciones de Python en Java, proporcionando a Python los beneficios de ejecutarse en JVM y acceder a clases escritas en Java.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/TarlogicSecurity/kerbrute&quot;&gt;Kerbrute&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un script para realizar la fuerza bruta de kerberos mediante el uso de la biblioteca Impacket.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kali.org/get-kali/#kali-mobile&quot;&gt;kalilinux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;El proyecto de código abierto Kali-Linux para dispositivos Android&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/JasonJerry/lockphish&quot;&gt;phishing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una herramienta para ataques de phishing en la pantalla de bloqueo, diseñada para obtener credenciales de Windows, PIN de Android.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/rapid7/metasploit-framework&quot;&gt;marco de metasploit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marco penetrante de código abierto líder en el mundo&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.maltego.com/&quot;&gt;maltego&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Maltego es un software enfocado principalmente al análisis forense y desarrollado para hacer más propicio el análisis de enlaces y la minería de datos a partir de dominios IP, correos electrónicos, teléfonos, ubicaciones geográficas… es decir, el punto de partida de una investigación.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/htr-tech/nexphisher&quot;&gt;nefisher&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta avanzada de phishing para Termux.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ngrok.com/&quot;&gt;ngrok&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Proxy inverso distribuido globalmente frente a sus servicios web que se ejecutan en cualquier nube o red privada, o su máquina.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/datalux/Osintgram&quot;&gt;osintgrama&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una herramienta OSINT en Instagram. Ofrece un shell interactivo para realizar análisis en la cuenta de Instagram de cualquier usuario por su apodo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/s41r4j/phomber&quot;&gt;fomero&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta de recopilación de información que realiza búsquedas inversas de números de teléfono y obtiene sus detalles.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/aerosol-can/PhoneSploit&quot;&gt;teléfonosploit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una herramienta para la explotación remota de ADB para todas las máquinas.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ssh.com/academy/ssh/putty/linux&quot;&gt;Masilla&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Programa de terminal gráfico que admite los protocolos SSH, telnet y rlogin y se conecta a puertos serie.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Ekultek/Pybelt&quot;&gt;pybelt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un cinturón de herramientas de código abierto para hackers completo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Monkey-hk4/quack&quot;&gt;curandero&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Toolkit con herramienta de ataque SMS, herramienta de ataque HTTP y muchas otras herramientas de ataque.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;ransomux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;“Simule una búsqueda de efectos de ransomware para bloquear y cifrar archivos en archivos internos&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/lanmaster53/recon-ng&quot;&gt;reconocimiento&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta de recopilación de inteligencia de código abierto destinada a reducir el tiempo dedicado a recopilar información de fuentes abiertas.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/s0md3v/ReconDog&quot;&gt;reconocimiento&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Navaja suiza de reconocimiento&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Tuhinshubhra/RED_HAWK&quot;&gt;Halcón Rojo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta todo en uno para la recopilación de información, el análisis de vulnerabilidades y el rastreo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/threat9/routersploit&quot;&gt;enrutadores&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marco de explotación de código abierto dedicado a dispositivos integrados.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/hangetzzu/saycheese&quot;&gt;decir queso&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Captura las tomas de la cámara web del objetivo mediante un enlace.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/d093w1z/sayhello&quot;&gt;di hola&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Captura de audio (.wav) del objetivo mediante un enlace.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/thewhiteh4t/seeker&quot;&gt;buscador&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Localice con precisión los teléfonos inteligentes utilizando ingeniería social.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.datsi.fi.upm.es/~frosal/sources/shc.html&quot;&gt;shc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Shell Script Compiler (SHC) codifica y cifra los scripts de shell en archivos binarios ejecutables.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/vasco2016/shellsploit-framework&quot;&gt;conchas&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Le permite generar shellcodes personalizados, puertas traseras, inyectores para varios sistemas operativos. Y vamos a ofuscar cada byte a través de codificadores.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/sherlock-project/sherlock&quot;&gt;sherlock&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Busque cuentas de redes sociales por nombre de usuario en todas las redes sociales.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/shekyan/slowhttptest&quot;&gt;lentohttptest&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una herramienta altamente configurable que simula algunos ataques de denegación de servicio de la capa de aplicación al prolongar las conexiones HTTP de diferentes maneras.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/the-robot/sqliv&quot;&gt;sqliv&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Escáner masivo de vulnerabilidades de inyección de SQL.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kali.org/tools/stegsnow/&quot;&gt;stegsnow&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ocultar mensajes en texto ASCII agregando espacios en blanco al final de las líneas&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/aboul3la/Sublist3r&quot;&gt;sublista3r&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta de enumeración rápida de subdominios para probadores de penetración.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/VictorH028/termux-packages/blob/main/github.com/elcuervo/tangalanga&quot;&gt;tangalanga&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;La herramienta de pirateo del escáner de conferencias Zoom.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Yisus7u7/termux-desktop-xfce&quot;&gt;termux-desktop-xfce&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Configure un hermoso escritorio xfce en termux.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://telegra.ph/Docker-en-Android-10-26&quot;&gt;termux-doker-qemu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Proporcione una capa adicional de virtualización de aplicaciones con funciones de aislamiento de recursos del kernel de Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jofpin/trape&quot;&gt;trampa&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Herramienta de análisis e investigación OSINT.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/yanncam/UnSHc&quot;&gt;unshc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Shell Script UnCompiler (UNSHC) decodifica y descifra el archivo SHC en la arquitectura X86/x64.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/issamelferkh/userrecon&quot;&gt;usuariorecon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Encuentra nombres de usuario en más de 75 redes sociales.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/anouarbensaad/vulnx&quot;&gt;vulnerabilidad&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un autoinyector de caparazón de bot inteligente que detecta vulnerabilidades en múltiples tipos de cms.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/wuseman/WBRUTER&quot;&gt;wbruter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Deshabilite el código pin del dispositivo, así como la depuración de usb y los métodos de fuerza bruta, como los ataques de diccionario para gmail, ftp, rar, zip y algunas otras extensiones de archivo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Fenrir-00/investigar-web&quot;&gt;escaneo web&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una herramienta ligera de escáner web.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/The404Hacking/websploit&quot;&gt;websploit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marco MITM.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/urbanadventurer/WhatWeb&quot;&gt;whatweb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Reconoce las tecnologías web, incluidos los sistemas de administración de contenido (CMS), las plataformas de blogs, los paquetes de estadísticas/análisis, las bibliotecas de JavaScript, los servidores web y los dispositivos integrados.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/wpscanteam/wpscan&quot;&gt;escanear wps&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Escáner de seguridad de WordPress.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/xapt-management&quot;&gt;xapt-management&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Interfaz gráfica X-Desktop para la herramienta de paquete avanzado (APT) escrita en python.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/LionSec/xerosploit&quot;&gt;xerosploit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un conjunto de herramientas de prueba de penetración cuyo objetivo es realizar ataques de hombre en el medio con fines de prueba.&lt;/p&gt;
+
+&lt;h1 id=&quot;comando-i-haklab&quot;&gt;Comando &lt;strong&gt;i-haklab&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;Este comando es nuestra navaja Suiza y su intalacion nos brindará en su totalidad toda la configuración del laboratorio.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;i-haklab 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;mmmm-para-que-instalarlo-si-ya-tengo-las-herramientas&quot;&gt;Mmmm… Para que instalarlo si ya tengo las herramientas&lt;/h2&gt;
+
+&lt;p&gt;Porque nosva a brindar un grupo de comandos y configuración que no vas a tener disponible sin su ejecución que ahora le menciono&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tendra una sesión de inicio de sesión por contraseña (predeterminada = Ivam3byCinderella) o huella digital (depende de las características del dispositivo).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La cual podremos cambiar o quitar de la siquiente forma&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;i-Haklab passwd &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;O cambiarlo ejecutando:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;i-Haklab passwd new
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tendrá un servidor de sitio web que se ejecuta en su dispositivo con &lt;a href=&quot;https://github.com/termux/termux-app&quot;&gt;Termux&lt;/a&gt; , con el que podrá compartir varios archivos en Internet. Habilítelo en ejecución:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;i-Haklab share
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Y muchas cosas más que esperó que te causen curiosidad en saver y te brindó ver su menú de ayuda&lt;/p&gt;
+
+&lt;p&gt;Imagen&lt;/p&gt;
+
+&lt;h1 id=&quot;shell-disponibles&quot;&gt;Shell disponibles&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; te va a dar la posibilidad de elegir entre dos shell total mente personalizadas qué serían &lt;a href=&quot;https://es.m.wikipedia.org/wiki/Zsh&quot;&gt;zsh&lt;/a&gt;
+Y &lt;a href=&quot;https://fishshell.com/&quot;&gt;fish&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagen fish&lt;/p&gt;
+
+&lt;p&gt;Imagen zsh&lt;/p&gt;
+
+&lt;h1 id=&quot;tmux&quot;&gt;Tmux&lt;/h1&gt;
+
+&lt;p&gt;También vas a contar con tmux qué es un multiplexor de terminal para sistemas tipo unix, similar a GNU Screen o Byobu que permite dividir una consola en múltiples secciones o generar sesiones independientes en la misma terminal, ue la la shell de zsh vas a tener predeterminada&lt;/p&gt;
+
+&lt;p&gt;Imagen&lt;/p&gt;
+
+&lt;h2 id=&quot;usando-prefijo&quot;&gt;Usando prefijo&lt;/h2&gt;
+
+&lt;p&gt;Todos los comandos en tmux requieren el atajo de prefijo, que de forma predeterminada es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+b&lt;/code&gt; pero en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt; qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.  Después de ingresar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt;, puede ejecutar un comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; o escribir: para obtener un mensaje de tmux.&lt;/p&gt;
+
+&lt;p&gt;Imagen&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Administrar paneles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;En un entorno de escritorio GUI, tiene Windows.  En &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt;, tienes paneles.  Al igual que las ventanas en una GUI, estos paneles le permiten interactuar con múltiples aplicaciones y, de manera similar, se pueden abrir, cerrar, cambiar de tamaño y mover.&lt;/p&gt;
+
+&lt;p&gt;A diferencia de un escritorio GUI estándar, estos paneles están en mosaico y se administran principalmente mediante atajos de tmux en lugar de un mouse (aunque se puede agregar funcionalidad de mouse).  Para crear un nuevo panel, simplemente divide la pantalla horizontal o verticalmente.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Para dividir un panel horizontalmente&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Prefijo + / 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Para dividir el panel verticalmente:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Prefijo + |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Imagen&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cambiar el tamaño de los paneles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Digamos que necesitamos un poco más de espacio para respirar para uno de nuestros paneles y queremos expandir el panel unas cuantas líneas.  Para esto, ingresaremos al indicador de tmux:&lt;/p&gt;
+
+&lt;p&gt;Imagen&lt;/p&gt;
+
+&lt;p&gt;Se utiliza también   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + teclas de flecha (←→ ↑↓)&lt;/code&gt; para cambiar paneles
+Y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + teclas de flecha (←→ ↑↓)&lt;/code&gt; para cambiar ventanas&lt;/p&gt;
+
+&lt;h2 id=&quot;configuración&quot;&gt;Configuración&lt;/h2&gt;
+
+&lt;h3 id=&quot;instalación-de-complementos&quot;&gt;Instalación de complementos&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Agregar nuevo 
+complemento en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/.tmux.conf&lt;/code&gt;con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set -g @plugin &apos;...&apos;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Presione &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefix+ I&lt;/code&gt;(i mayúscula, como en Instalar ) para recuperar el complemento.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;desinstalar-complementos&quot;&gt;Desinstalar complementos&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Elimine (o comente) el complemento de la lista.&lt;/li&gt;
+  &lt;li&gt;Presione &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefix&lt;/code&gt;+ alt+ u(u minúscula como en &lt;strong&gt;u&lt;/strong&gt; desinstalar) para eliminar el complemento.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Todos los complementos están instalados, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/plugins/&lt;/code&gt; por lo que, alternativamente, puede encontrar el directorio de complementos allí y eliminarlo.&lt;/p&gt;
+
+&lt;p&gt;Para recargar las configuraciones de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; sin salir de la sección &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Prefijo + r&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-estado-de-cpu-y-gpu-de-tmux&quot;&gt;💀 &lt;a href=&quot;https://github.com/tmux-plugins/tmux-cpu&quot;&gt;Estado de CPU y GPU de Tmux&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Permite mostrar información de CPU y GPU en Tmux status-righty status-left. Porcentaje configurable y visualización de iconos.&lt;/p&gt;
+
+&lt;h3 id=&quot;-tema-de-tmux&quot;&gt;🎨 Tema de tmux&lt;/h3&gt;
+
+&lt;p&gt;Configure este tema si desea respetar el esquema de colores del terminal. Para ser usado con algo como &lt;a href=&quot;https://github.com/dylanaraps/pywal&quot;&gt;pywal,&lt;/a&gt;  por ejemplo.&lt;/p&gt;
+
+&lt;h3 id=&quot;-personalización&quot;&gt;⚙ Personalización&lt;/h3&gt;
+
+&lt;p&gt;Puedes definir tu color principal favorito si no te gusta ninguno de los anteriores.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_theme &lt;span class=&quot;s1&quot;&gt;&apos;#483D8B&apos;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# dark slate blue&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;También puedes personalizar los iconos. Como ejemplo, las siguientes configuraciones pueden generar el tema que se muestra en la primera captura de pantalla:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;wfxr/tmux-power&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;wfxr/tmux-net-speed&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_theme &lt;span class=&quot;s1&quot;&gt;&apos;everforest&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_date_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_time_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_user_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_session_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_upload_speed    &lt;span class=&quot;nb&quot;&gt;true
+set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_download_speed  &lt;span class=&quot;nb&quot;&gt;true
+set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_web_reachable   &lt;span class=&quot;nb&quot;&gt;true
+set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_right_arrow_icon     &lt;span class=&quot;s1&quot;&gt;&apos;&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_left_arrow_icon      &lt;span class=&quot;s1&quot;&gt;&apos;&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_upload_speed_icon    &lt;span class=&quot;s1&quot;&gt;&apos;󰕒&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_download_speed_icon  &lt;span class=&quot;s1&quot;&gt;&apos;󰇚&apos;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_prefix_highlight_pos &lt;span class=&quot;s1&quot;&gt;&apos;R&apos;&lt;/span&gt;
+Los íconos
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;-compatibilidad-con-complementos-pendiente-mas&quot;&gt;📦 Compatibilidad con complementos (pendiente mas)&lt;/h3&gt;
+
+&lt;h1 id=&quot;desintalar-laboratorio&quot;&gt;Desintalar laboratorio&lt;/h1&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">Menu</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
+Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Puedes revisa el listado de todas las herramientas disponibles  &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;aqui&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;configuracion&quot;&gt;Configuracion&lt;/h1&gt;
+
+&lt;p&gt;Para tener el acceso a todas las herramientas solo debes de agregar la llave(key) de acceso a las configuraciones de APT en Termux :&lt;/p&gt;
+
+&lt;h3 id=&quot;crea-el-directorio-&quot;&gt;Crea el directorio :&lt;/h3&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Descarga la Key(llave) :
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;wget
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d/ivam3-termux-packages.list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h3 id=&quot;actualiza-termux-&quot;&gt;Actualiza Termux :&lt;/h3&gt;
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En ese listado de herramientas que hemos optenido vamos a tener a &lt;strong&gt;termux-doker-qemu&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ apt show  termux-docker-qemu                             
+Package: termux-docker-qemu                                Version: 0.3.3
+Maintainer: Ivam3 &amp;lt;https://t.me/Ivam3_Bot&amp;gt;
+Installed-Size: 2048 B
+Depends: termux-api, openssh, wget, procps, qemu-utils, qemu-common, qemu-system-x86-64-headless
+Suggests: i-haklab
+Homepage: https://www.docker.com/products/docker-desktop/
+Download-Size: 3840 B
+APT-Manual-Installed: &lt;span class=&quot;nb&quot;&gt;yes
+&lt;/span&gt;APT-Sources: https://ivam3.github.io/termux-packages stable/extras all Packages
+Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;running x86,x86_64,armv7 and aarch64 Linux virtual machines using QEMU
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Esto nos va a facilitar virtualizar el sistema operativo.&lt;/p&gt;
+
+&lt;h3 id=&quot;por-que-alpine&quot;&gt;Por que alpine&lt;/h3&gt;
+
+&lt;p&gt;Solo cuenta con un peso minimo de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;133MB&lt;/code&gt; y por eso es  adecuado para  manejan contenedores, especialmente Docker. 💢&lt;/p&gt;
+
+&lt;h1 id=&quot;intalacion&quot;&gt;Intalacion&lt;/h1&gt;
+
+&lt;p&gt;Vamos a proceder a instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;termux-doker-qemu&lt;/code&gt; com un:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;termux-doker-qemu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Puedes contar con una explicasion mas detallada de todo el proceso y configuracion en el sigiente video 👇 espero que lo disfute&lt;/p&gt;
+
+&lt;h1 id=&quot;video&quot;&gt;Video&lt;/h1&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+
+  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/CXvTUEG1oPs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Notas de git</title><link href="http://localhost:4000/GIT/" rel="alternate" type="text/html" title="Notas de git" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/GIT</id><content type="html" xml:base="http://localhost:4000/GIT/">&lt;p&gt;Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.&lt;/p&gt;
+
+&lt;p&gt;Para configurar un token de acceso personal, sigue estos pasos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ingrese a tu cuenta de Git y crea un nuevo token de acceso personal. Asegúrate de seleccionar los permisos necesarios para editar o subir proyectos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Abre la línea de comandos de Linux y escribe lo siguiente:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Esto configurará el almacenamiento de tus credenciales en un archivo en tu sistema local.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ahora, cada vez que deseas autenticarte en Git desde la línea de comandos, ingresa tus credenciales una vez. Git almacenará tus credenciales en el archivo local, lo que significa que no tendrás que ingresarlas de nuevo en el futuro.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Para usar tu token de acceso personal, deberás actualizar tus credenciales en la línea de comandos de la siguiente manera:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global credential.helper &apos;store --file ~/.my-credentials&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Reemplaza &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.my-credentials&lt;/code&gt; con tu archivo configurado para almacenar tus credenciales. Luego ingresa tu nombre de usuario en Git y el token de acceso personal como contraseña.&lt;/p&gt;
+
+&lt;p&gt;Con estos pasos, ya no tendrás que autenticarte cada vez que desees subir o editar un proyecto en Git desde la terminal de Linux.&lt;/p&gt;
+
+&lt;h2 id=&quot;branches&quot;&gt;Branches&lt;/h2&gt;
+
+&lt;p&gt;Las ramas son una parte muy importante de git.
+ La ramificación permite hacer una “copia” de su proyecto de trabajo y cambiarlo sin afectar la rama principal (rama maestra), lo que brinda la oportunidad de trabajar en el mismo proyecto con diferentes compromisos.
+ Cuando desee agregar una nueva función o corregir un error, sin importar cuán grande o pequeño sea, debe crear una nueva rama para encapsular sus cambios.&lt;/p&gt;
+
+&lt;p&gt;Una vez finalizada la función, puede fusionarla con la rama principal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&amp;quot;/assets/images/GIT/branch_git.png&amp;quot;&quot; alt=&quot;branch_git&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La creación de una nueva rama se realiza con el comando branch:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch my_new_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Luego, debemos cambiar a la sucursal usando el comando de pago:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git checkout  my_new_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Hay un atajo para crear y cambiar a una nueva rama:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; my_new_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ahora, cada cambio realizado en la nueva rama llamada my_new_branch no afectará a la rama principal.
+ Esto significa que puede trabajar con seguridad en el proyecto sin romper nada.  Cada sucursal tiene su propia historia, área de preparación y directorio de trabajo.&lt;/p&gt;
+
+&lt;p&gt;Para ver la lista de sus sucursales, ejecute el comando ==git branch== en el directorio del proyecto.&lt;/p&gt;
+
+&lt;h1 id=&quot;fusionar-sucursales&quot;&gt;Fusionar sucursales&lt;/h1&gt;
+
+&lt;p&gt;Primero, necesitamos cambiar a la rama maestra:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ahora fusionamos la rama con:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git merge &amp;lt;nombre_de_la_rama&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;eliminar-sucursales&quot;&gt;Eliminar sucursales&lt;/h1&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;nombre_de_la_rama&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="soluciones" /><category term="notas" /><category term="termux" /><category term="tips" /><summary type="html">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.</summary></entry><entry><title type="html">Alternativas para `ngrok`</title><link href="http://localhost:4000/ngrok_alternativas/" rel="alternate" type="text/html" title="Alternativas para `ngrok`" /><published>2023-04-18T00:00:00-04:00</published><updated>2023-04-18T00:00:00-04:00</updated><id>http://localhost:4000/ngrok_alternativas</id><content type="html" xml:base="http://localhost:4000/ngrok_alternativas/">&lt;p&gt;Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado&lt;/p&gt;
+
+&lt;h1 id=&quot;opcion-1&quot;&gt;Opcion 1&lt;/h1&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://pagekite.net
+curl &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; https://pagekite.net/pk/pagekite.py 
+python2 pagekite.py 80 yourname.pagekite.me
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;opcion-2&quot;&gt;Opcion 2&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://portmap.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-3&quot;&gt;Opcion 3&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/antoniomika/sish
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-4&quot;&gt;Opcion 4&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://forwardhq.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-5&quot;&gt;Opcion 5&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.beame.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-6&quot;&gt;Opcion 6&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://localhost.run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-7&quot;&gt;Opcion 7&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://holepunch.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;opcion-8&quot;&gt;Opcion 8&lt;/h1&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://burrow.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="alternativa" /><category term="termux" /><category term="tips" /><summary type="html">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
+
+&lt;h1 id=&quot;instalacion&quot;&gt;Instalacion&lt;/h1&gt;
+
+&lt;h2 id=&quot;paso-1-actualizar-paquetes&quot;&gt;Paso 1: actualizar paquetes&lt;/h2&gt;
+
+&lt;p&gt;Ejecute el siguiente comando&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;paso-2-instalar-termux-api&quot;&gt;Paso 2: Instalar termux-api&lt;/h2&gt;
+
+&lt;p&gt;Ahora debe asegurarse de que termux tenga acceso a las funciones de hardware de Android y Chrome. Ejecute el siguiente comando.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;termux-api
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;paso-3-install-paquete-de-nodejs&quot;&gt;Paso 3: Install paquete de nodejs&lt;/h2&gt;
+
+&lt;p&gt;Para su intalacion ejecutar&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt  &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nodejs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;paso-4-instalar-localtunel&quot;&gt;Paso 4: Instalar localtunel&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; localtunnel
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Despues de que finalice la instalacion tendremos un error la ejecutal el comado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lt&lt;/code&gt; que seria la 
+abreviatura de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; mostrando por pantalla lo siguente&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16
+        throw new Error&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Unsupported platform: &apos;&lt;/span&gt; + process.platform&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        ^
+
+Error: Unsupported platform: android
+    at Object.&amp;lt;anonymous&amp;gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16:15&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._compile &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1275:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._extensions..js &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1329:10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module.load &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1133:32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._load &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:972:12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module.require &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1157:19&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at require &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/helpers:119:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Object.&amp;lt;anonymous&amp;gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/bin/lt.js:4:17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._compile &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1275:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    at Module._extensions..js &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1329:10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+Node.js v19.6.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para solucionar lo siguente procederemos a untilizar nuestro editor de texto faborito y editaremos el siguiente archivo&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvim &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/lib/node_modules/localtunnel/node_modules/openurl/openurl.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Nos pocisionaremos en la linea numero &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;14&lt;/code&gt; gregamos la siguente fracmento de codigo despues de el 
+ultimo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;android&apos;&lt;/span&gt;:
+    &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;termux&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;resultado-final&quot;&gt;Resultado final&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    5 switch&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;process.platform&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    6     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;darwin&apos;&lt;/span&gt;:
+    7         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;open&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                      
+    8         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    9     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;win32&apos;&lt;/span&gt;:
+   10         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;explorer.exe&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   11         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   12     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;linux&apos;&lt;/span&gt;:
+   13         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;xdg-open&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   14         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   15     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;android&apos;&lt;/span&gt;:
+   16         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;termux&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                   
+   17         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   18     default:
+   19         throw new Error&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Unsupported platform: &apos;&lt;/span&gt; + process.platform&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+   20 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;usar&quot;&gt;usar&lt;/h1&gt;
+&lt;p&gt;Suponiendo que su servidor local se está ejecutando en el puerto 8000, simplemente use el ltcomando para iniciar el túnel.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lt &lt;span class=&quot;nt&quot;&gt;--port&lt;/span&gt; 8000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
