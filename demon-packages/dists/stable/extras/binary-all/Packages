@@ -1,16 +1,17 @@
 Package: vpkg
 Version: 0.0.1
 Architecture: all
-Maintainer: GithubNick <GithubNick@gmail.com>
+Maintainer: DemonHunter <demonhunternauta@gmail.com>
 Installed-Size: 1
-Description: This is the hello world package
- It is just an example for termux-create-package
+Depends: cmake, git, tar, curl, zip, unzip
+Description:  manage C and C++ libraries
+ It 
  .
- It is just prints 'Hello, world'
+ vpkg
 Filename: dists/stable/extras/binary-all/vpkg_0.0.1_all.deb
-Size: 1040
-MD5Sum: 36d87c65026ba997dff474240710d1ba
-SHA1: b3f4d15d16eed0c1bc77d39440e9ab516fba590a
-SHA256: 25f53dfa48a5501d3fb21c914628dd6f679c41a21f9dd50b44d6a273d1aace00
-SHA512: 37d65a999cf269429e9a5ccd401c3304fc72be2a3adc2b0cd54a446aba8606000b0e40acf38729f3c54148248c275694a5b158f9850cb3c5aaccc6c68a04d40b
+Size: 1072
+MD5Sum: d6690f14f524ba475286d8ec6f935015
+SHA1: f218759b4936d8d9205a1140b63de45c404c6bfc
+SHA256: 72e340ac910fd1fb20c051a6140e06b65108c6f7907e790c8f5b11bfca503b6b
+SHA512: c8d593366b32dd5f0c6bc457819968bfcdb388f179355ffb2b26b0db449291743c5d1e994e53f00547ee331d066639a4b723515b326b599bf8ccdb6e1be05577
 
