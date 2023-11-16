@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#
+# DemonHunter
+#
+# se ejecuta después de que el paquete se instala en el sistema.
+if [[ -d ${HOME}/.local/share/vcpkg ]]; then
+  cd ${HOME}/.local/share/vcpkg
+  ./bootstrap-vcpkg.sh
+fi
