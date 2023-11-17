@@ -5,12 +5,12 @@
 #
 # se ejecuta después de que el paquete se instala en el sistema
 echo "Cloning repository ..."
-git clone -q  https://github.com/microsoft/vcpkg.git | pv -lep \
+mkdir  -p ${HOME}/.local/share/vcpkg
+git clone   https://github.com/Microsoft/vcpkg.git \
 ${HOME}/.local/share/vcpkg
-# "-d" es un directorio 
 if [[ -d ${HOME}/.local/share/vcpkg ]]; then
 echo "Compilando vcpkg ..."
-${HOME}/.local/share/vcpkg/bootstrap-vcpkg.bat  
+  .${HOME}/.local/share/vcpkg 1> /dev/null
 fi
   
 

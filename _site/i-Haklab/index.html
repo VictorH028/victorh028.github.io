@@ -1,0 +1,726 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>i-Haklab - Hacking Ético vs Termux</title>
+<meta name="description" content="Probando 1">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Hacking Ético vs Termux">
+<meta property="og:title" content="i-Haklab">
+<meta property="og:url" content="http://localhost:4000/i-Haklab/">
+
+
+  <meta property="og:description" content="Probando 1">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/i-haklab/logo_de_inivio_de_i-haklab.jpeg">
+
+
+
+
+
+  <meta property="article:published_time" content="2023-04-29T00:00:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/i-Haklab/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "DemonHunter",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Hacking Ético vs Termux Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+                
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Artículos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categorías</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Etiquetas</a>
+            </li><li class="masthead__menu-item">
+              <a href="/videos/" >Vídeos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/buscador/" >Buscador</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >Contacto</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">i-Haklab</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/avatar.png" alt="Demon Hunter" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Demon Hunter</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Siempre me he sentido atraído por la forma en que la tecnología cambia nuestras vidas, pero también soy consciente de los riesgos y desafíos que enfrentamos en un mundo interconectado. Quiero ser parte de la solución, ayudando a asegurar sistemas y datos para proteger a los usuarios y las organizaciones.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/victorh028" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="i-Haklab">
+    <meta itemprop="description" content="i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.">
+    <meta itemprop="datePublished" content="April 29, 2023">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">i-Haklab
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> </h4></header>
+              <ul class="toc__menu">
+  <li><a href="#-intalacion">📥 Intalacion</a></li>
+  <li><a href="#️-herramientas">🗄️ Herramientas</a></li>
+  <li><a href="#-uso">👨‍🔧 Uso</a></li>
+  <li><a href="#️-mapa-de-teclas">⌨️ Mapa de teclas</a>
+    <ul>
+      <li><a href="#termux">Termux</a></li>
+      <li><a href="#tmux">Tmux</a>
+        <ul>
+          <li><a href="#administrar-paneles">Administrar paneles</a></li>
+          <li><a href="#cambiar-el-tamaño-de-los-paneles">Cambiar el tamaño de los paneles</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#-comandos-adisionales">🤖 Comandos adisionales</a></li>
+  <li><a href="#-zsh">🤗 ZSH</a>
+    <ul>
+      <li><a href="#globbing">globbing</a></li>
+      <li><a href="#archivos-de-inicio">Archivos de inicio</a></li>
+    </ul>
+  </li>
+  <li><a href="#temas">TEMAS</a>
+    <ul>
+      <li><a href="#configuracion-de-powerlevek10">Configuracion de Powerlevek10</a></li>
+      <li><a href="#cambio-de-tema">Cambio de tema</a></li>
+    </ul>
+  </li>
+  <li><a href="#-tmux">📺 TMUX</a>
+    <ul>
+      <li><a href="#️-configuracion-de-tmux">🛠️ Configuracion de TMUX</a>
+        <ul>
+          <li><a href="#archivos">Archivos</a></li>
+          <li><a href="#instalación-de-complementos">Instalación de complementos</a></li>
+          <li><a href="#desinstalar-complementos">Desinstalar complementos</a></li>
+        </ul>
+      </li>
+      <li><a href="#configuracion-de-complementos-disponibles">Configuracion de complementos disponibles</a>
+        <ul>
+          <li><a href="#-estado-de-cpu-y-gpu-de-tmux">💀 Estado de CPU y GPU de Tmux</a></li>
+          <li><a href="#-tema-de-tmux">🎨 Tema de tmux</a></li>
+          <li><a href="#-personalización">⚙ Personalización</a></li>
+          <li><a href="#-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#desintalar-laboratorio">Desintalar laboratorio</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p class="page__meta">
+          
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2023-04-29T00:00:00-04:00">April 29, 2023 </time>&emsp;
+          
+          
+        </p>
+        <p>i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</p>
+
+<p>Imagen</p>
+
+<h1 id="-intalacion">📥 Intalacion</h1>
+
+<p>Su intalacion no es como estamos acostumbrados hacer avitual mente de <em>clonar</em>  un repocitorio. <a href="">Termux </a> cuenta en su alvor de directorio con un <strong>sources.list</strong> en la sigiente ruta <code class="language-plaintext highlighter-rouge">$PREFIX/etc/apt/</code>   el cual nos permite descarga paquetes de uno o más repositorios de software (fuentes) y los instalarlos que dichos paquetes que anterior mente le mensionaba que son mas de 100 son mantenidos por Ivam para una intalacion limpia en nuestro emulador de entorno Linux atraver de APT que es el principal administrador de paquetes de línea de comandos.</p>
+
+<p>Nos vamos a segurar que tenemos las dependencias nesesarias que a continuación les muestro :</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">wget</code> Que sirve para recuperar contenido y archivos de varios servidores web.</li>
+  <li><code class="language-plaintext highlighter-rouge">mkdir</code> Que nos permite crear un nuevo directorio o carpeta.</li>
+</ol>
+
+<p>Y a continuación les muestro como tendríamos que Ejecutar los contenidos</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>wget
+<span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d
+wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list <span class="nt">-O</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d/ivam3-termux-packages.list
+apt update
+apt upgrade
+apt <span class="nb">install </span>i-haklab
+</code></pre></div></div>
+
+<h1 id="️-herramientas">🗄️ Herramientas</h1>
+
+<p>Fueron creadas para el  propósito de ofrecer acceso fácil y rápido a la instalación de herramientas y / o marcos proporcionados
+para el laboratorio de seguridad cibernética y de Pentesting <code class="language-plaintext highlighter-rouge">I-Haklab</code>, para el sistema operativo Android en la aplicación Termux.</p>
+
+<p>Para ver lista <a href="https://github.com/ivam3/termux-packages">aqui</a></p>
+
+<p>Ya en este punto tienes esa lists disponible.</p>
+
+<h1 id="-uso">👨‍🔧 Uso</h1>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i-Haklab passwd <span class="nb">set</span>
+</code></pre></div></div>
+
+<p>O cambiarlo ejecutando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i-Haklab passwd new
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i-Haklab share
+</code></pre></div></div>
+
+<h1 id="️-mapa-de-teclas">⌨️ Mapa de teclas</h1>
+
+<h2 id="termux">Termux</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl+u <span class="c"># borra todo a la izq</span>
+ctrl+k <span class="c"># borra todo a la der</span>
+ctrl+w <span class="c"># borra la ultima palabra</span>
+ctrl+l <span class="c"># limpia la pantalla</span>
+ctrl+y <span class="c"># restaura lo borrado</span>
+ctrl+e <span class="c"># mueve cursor al final de la linea</span>
+ctrl+a <span class="c"># mueve el cursor al inicio de la linea</span>
+</code></pre></div></div>
+
+<h2 id="tmux">Tmux</h2>
+
+<p>Todos los comandos en <code class="language-plaintext highlighter-rouge">tmux</code> requieren el atajo de prefijo, que de forma predeterminada es <code class="language-plaintext highlighter-rouge">ctrl+b</code> pero en <code class="language-plaintext highlighter-rouge">I-haklab</code> es <code class="language-plaintext highlighter-rouge">ctrl+s</code> qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.<br />
+Después de ingresar <code class="language-plaintext highlighter-rouge">ctrl+s</code>, puede ejecutar un comando <code class="language-plaintext highlighter-rouge">tmux</code> o escribir: para obtener un mensaje de tmux.</p>
+
+<h3 id="administrar-paneles">Administrar paneles</h3>
+
+<p>En un entorno de escritorio GUI, tiene Windows.  En <code class="language-plaintext highlighter-rouge">tmux</code>, tienes paneles.  Al igual que las ventanas en una GUI, estos paneles le permiten interactuar con múltiples aplicaciones y, de manera similar, se pueden abrir, cerrar, cambiar de tamaño y mover.</p>
+
+<p>A diferencia de un escritorio GUI estándar, estos paneles están en mosaico y se administran principalmente mediante atajos de tmux en lugar de un mouse (aunque se puede agregar funcionalidad de mouse).  Para crear un nuevo panel, simplemente divide la pantalla horizontal o verticalmente.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Prefijo + / <span class="c"># Para dividir un panel horizontalmente</span>
+
+Prefijo + | <span class="c"># Para dividir el panel verticalmente</span>
+</code></pre></div></div>
+
+<p>Imagen</p>
+
+<h3 id="cambiar-el-tamaño-de-los-paneles">Cambiar el tamaño de los paneles</h3>
+
+<p>Digamos que necesitamos un poco más de espacio para respirar para uno de nuestros paneles y queremos expandir el panel unas cuantas líneas.<br />
+Para esto, ingresaremos al indicador de <code class="language-plaintext highlighter-rouge">tmux</code>:</p>
+
+<p>Imagen</p>
+
+<p>Se utiliza también   <code class="language-plaintext highlighter-rouge">Alt + teclas de flecha (←→ ↑↓)</code> para cambiar paneles
+Y <code class="language-plaintext highlighter-rouge">Shift + teclas de flecha (←→ ↑↓)</code> para cambiar ventanas</p>
+
+<h1 id="-comandos-adisionales">🤖 Comandos adisionales</h1>
+
+<h1 id="-zsh">🤗 ZSH</h1>
+
+<p>Contamos con <code class="language-plaintext highlighter-rouge">zsh</code> que es  un shell diseñado para uso interactivo, aunque también es un potente lenguaje de programación. Muchas de las funciones útiles de bash, ksh y tcsh se incorporaron a zsh; Se agregaron muchas características originales</p>
+
+<h2 id="globbing"><a href="https://zsh.sourceforge.io/Intro/intro_toc.html#SEC2">globbing</a></h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% <span class="nb">ls
+</span>Makefile   file.pro   foo.o      main.o     q.c        run234     stuff
+bar.o      foo        <span class="nb">link       </span>morestuff  run123     run240     sub
+file.h     foo.c      main.h     pipe       run2       run303
+% <span class="nb">ls</span> <span class="k">*</span>.c
+foo.c  q.c
+% <span class="nb">ls</span> <span class="k">*</span>.[co]
+bar.o   foo.c   foo.o   main.o  q.c
+% <span class="nb">ls </span>foo.?
+foo.c  foo.o
+% <span class="nb">ls</span> <span class="k">*</span>.[^c]
+bar.o   file.h  foo.o   main.h  main.o
+% <span class="nb">ls</span> <span class="k">*</span>.[^oh]
+foo.c  q.c  
+</code></pre></div></div>
+<p>Una expresión de la forma <x-y>coincide con un rango de números enteros:</x-y></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% <span class="nb">ls </span>run&lt;200-300&gt; 
+run234 run240 
+% <span class="nb">ls </span>run&lt;300-400&gt; 
+run303 
+% <span class="nb">ls </span>run&lt;<span class="nt">-200</span><span class="o">&gt;</span> 
+run123 run2 
+% <span class="nb">ls </span>run&lt;300-&gt; 
+run303 
+% <span class="nb">ls </span>run&lt;<span class="o">&gt;</span> 
+run123 run2 run234 run240 run303
+</code></pre></div></div>
+<p>Es posible agrupar:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% <span class="nb">ls</span> <span class="o">(</span>foo|bar<span class="o">)</span>.<span class="k">*</span> 
+bar.o foo.c foo.o 
+% <span class="nb">ls</span> <span class="k">*</span>.<span class="o">(</span>c|o|pro<span class="o">)</span> 
+bar.o archivo.pro foo.c foo.o main.o qc
+</code></pre></div></div>
+
+<h2 id="archivos-de-inicio"><a href="https://zsh.sourceforge.io/Intro/intro_toc.html#SEC3">Archivos de inicio</a></h2>
+
+<p>Hay cinco archivos de inicio desde los que zsh leerá los comandos:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ZDOTDIR</span>/.zshenv
+<span class="nv">$ZDOTDIR</span>/.zprofile
+<span class="nv">$ZDOTDIR</span>/.zshrc
+<span class="nv">$ZDOTDIR</span>/.zlogin
+<span class="nv">$ZDOTDIR</span>/.zlogout
+</code></pre></div></div>
+
+<p><strong>zshenv:</strong> Contien comandos para establecer la ruta de búsqueda de comandos, además de otras variables de entorno importantes.</p>
+
+<p><strong>zshrc:</strong> Debe contener comandos para configurar alias, funciones, opciones, combinaciones de teclas, etc.</p>
+
+<p><strong>zlogin:</strong> Debe contener comandos que deben ejecutarse sólo en shells de inicio de sesión. `.zlogout’ se obtiene cuando se cierran los shells de inicio de sesió</p>
+
+<p><strong>zprofile:</strong> pretende ser una alternativa a `.zlogin’ para los fanáticos de ksh.</p>
+
+<h1 id="temas">TEMAS</h1>
+
+<p>Por default (Powerlevel10k)</p>
+
+<p><img src="https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png" alt="Powerlevel10k" /></p>
+
+<h2 id="configuracion-de-powerlevek10">Configuracion de Powerlevek10</h2>
+
+<p>Pase por el repositorio oficial <a href="https://github.com/romkatv/powerlevel10k#configuration">aqui</a></p>
+
+<h2 id="cambio-de-tema">Cambio de tema</h2>
+
+<p>En el directiri <code class="language-plaintext highlighter-rouge">.zsh/themes</code></p>
+
+<h1 id="-tmux">📺 TMUX</h1>
+
+<p>También vas a contar con <code class="language-plaintext highlighter-rouge">tmux</code> qué es un multiplexor de terminal para sistemas tipo unix, 
+similar a GNU Screen o Byobu que permite dividir una consola en múltiples secciones o generar 
+sesiones independientes en la misma terminal.</p>
+
+<p>Imagen</p>
+
+<h2 id="️-configuracion-de-tmux">🛠️ Configuracion de <code class="language-plaintext highlighter-rouge">TMUX</code></h2>
+
+<h3 id="archivos">Archivos</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.tmux/plugins
+.tmux.conf
+</code></pre></div></div>
+
+<h3 id="instalación-de-complementos">Instalación de complementos</h3>
+
+<p>Cuentas con un administrador de complementos de <code class="language-plaintext highlighter-rouge">Tmux</code>.</p>
+
+<ol>
+  <li>
+    <p>Agregar nuevo complemento en <code class="language-plaintext highlighter-rouge">~/.tmux/.tmux.conf</code> con <code class="language-plaintext highlighter-rouge">set -g @plugin '...'</code></p>
+  </li>
+  <li>
+    <p>Presione <code class="language-plaintext highlighter-rouge">prefix+ I</code>(i mayúscula, como en Instalar ) para recuperar el complemento.</p>
+  </li>
+</ol>
+
+<p>Todos los complementos están instalados  en <code class="language-plaintext highlighter-rouge">~/.tmux/plugins/</code></p>
+
+<h3 id="desinstalar-complementos">Desinstalar complementos</h3>
+
+<ol>
+  <li>Elimine (o comente) el complemento de la lista.</li>
+  <li>Presione <code class="language-plaintext highlighter-rouge">prefix</code>+ alt+ u(u minúscula como en <strong>u</strong> desinstalar) para eliminar el complemento.</li>
+</ol>
+
+<p>Todos los complementos están instalados, <code class="language-plaintext highlighter-rouge">~/.tmux/plugins/</code> por lo que, alternativamente, puede encontrar el directorio de complementos allí y eliminarlo.</p>
+
+<p>Para recargar las configuraciones de <code class="language-plaintext highlighter-rouge">tmux</code> sin salir de la sección <code class="language-plaintext highlighter-rouge">Prefijo + r</code></p>
+
+<h2 id="configuracion-de-complementos-disponibles">Configuracion de complementos disponibles</h2>
+
+<h3 id="-estado-de-cpu-y-gpu-de-tmux">💀 <a href="https://github.com/tmux-plugins/tmux-cpu">Estado de CPU y GPU de Tmux</a></h3>
+
+<p>Permite mostrar información de CPU y GPU en Tmux status-righty status-left. Porcentaje configurable y visualización de iconos.</p>
+
+<h3 id="-tema-de-tmux">🎨 Tema de tmux</h3>
+
+<p>Configure este tema si desea respetar el esquema de colores del terminal. Para ser usado con algo como <a href="https://github.com/dylanaraps/pywal">pywal,</a>  por ejemplo.</p>
+
+<h3 id="-personalización">⚙ Personalización</h3>
+
+<p>Puedes definir tu color principal favorito si no te gusta ninguno de los anteriores.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-g</span> @tmux_power_theme <span class="s1">'#483D8B'</span> <span class="c"># dark slate blue</span>
+</code></pre></div></div>
+
+<p>También puedes personalizar los iconos. Como ejemplo, las siguientes configuraciones pueden generar el tema que se muestra en la primera captura de pantalla:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-g</span> @plugin <span class="s1">'wfxr/tmux-power'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @plugin <span class="s1">'wfxr/tmux-net-speed'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_theme <span class="s1">'everforest'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_date_icon <span class="s1">' '</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_time_icon <span class="s1">' '</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_user_icon <span class="s1">' '</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_session_icon <span class="s1">' '</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_show_upload_speed    <span class="nb">true
+set</span> <span class="nt">-g</span> @tmux_power_show_download_speed  <span class="nb">true
+set</span> <span class="nt">-g</span> @tmux_power_show_web_reachable   <span class="nb">true
+set</span> <span class="nt">-g</span> @tmux_power_right_arrow_icon     <span class="s1">''</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_left_arrow_icon      <span class="s1">''</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_upload_speed_icon    <span class="s1">'󰕒'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_download_speed_icon  <span class="s1">'󰇚'</span>
+<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_prefix_highlight_pos <span class="s1">'R'</span>
+Los íconos
+</code></pre></div></div>
+
+<h3 id="-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</h3>
+
+<h1 id="desintalar-laboratorio">Desintalar laboratorio</h1>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove i-haklab 
+</code></pre></div></div>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#termux" class="page__taxonomy-item" rel="tag">Termux</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#laboratorio" class="page__taxonomy-item" rel="tag">Laboratorio</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Fecha:</strong> <time datetime="2023-04-29T00:00:00-04:00">April 29, 2023</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/Alpine/" class="pagination--pager" title="Alpine en termux
+">Previous</a>
+    
+    
+      <a href="/RSA/" class="pagination--pager" title="RSA
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 DemonHunter</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,17 @@
+Package: vcpkg
+Version: 0.1.1
+Architecture: all
+Maintainer: DemonHunter <demonhunternauta@gmail.com>
+Installed-Size: 1
+Depends: cmake, git, tar, curl, zip, unzip
+Description:  manage C and C++ libraries
+ It 
+ .
+ vpkg
+Filename: dists/stable/extras/binary-all/vcpkg_0.1.1_all.deb
+Size: 1160
+MD5Sum: e362df801647879c3c8ef9b4538b906c
+SHA1: 6eb72efee7769a483a3e10b486e3a1b599dc66ab
+SHA256: 997a817a2d43ba9a0211749943d9c705f534b6b7a093a1301cf7895b762f4e47
+SHA512: 2ff88a706d001c8c21fe53e7e22c24847ea81279084094ef3a70e0e290530ddccdf37f559cc73439fe4573f52951b929dbc06ea3bb8fb888a40ed1292df93c5a
+

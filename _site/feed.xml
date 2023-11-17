@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-11T23:25:53-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ciberseguridad y Hacking Ético</title><subtitle>Artículos sobre ciberseguridad </subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-16T18:26:05-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacking Ético vs Termux</title><subtitle>Ciberseguridad desde Termux</subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Abre un editor de texto y crea un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mi_programa.desktop&lt;/code&gt; con el siguiente contenido:&lt;/li&gt;
@@ -143,15 +143,13 @@ apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/i_Haklab/" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/i_Haklab</id><content type="html" xml:base="http://localhost:4000/i_Haklab/">&lt;h1 id=&quot;menu&quot;&gt;Menu&lt;/h1&gt;
-
-&lt;p&gt;i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/i-Haklab/" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/i-Haklab</id><content type="html" xml:base="http://localhost:4000/i-Haklab/">&lt;p&gt;i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.&lt;/p&gt;
 
 &lt;p&gt;Imagen&lt;/p&gt;
 
-&lt;h1 id=&quot;intalacion&quot;&gt;Intalacion&lt;/h1&gt;
+&lt;h1 id=&quot;-intalacion&quot;&gt;📥 Intalacion&lt;/h1&gt;
 
-&lt;p&gt;Su intalacion no es como estamos acostumbrados hacer avitual mente de &lt;em&gt;clonar&lt;/em&gt;  un repocitorio. &lt;a href=&quot;&quot;&gt;Termux &lt;/a&gt; cuenta en su alvor de directorio con un &lt;strong&gt;sources.list&lt;/strong&gt; en la sigiente ruta &lt;em&gt;$PREFIX/etc/apt/&lt;/em&gt;   el cual nos permite descarga paquetes de uno o más repositorios de software (fuentes) y los instalarlos que dichos paquetes que anterior mente le mensionaba que son mas de 100 son mantenidos por Ivam para una intalacion limpia en nuestro emulador de entorno Linux atraver de APT que es el principal administrador de paquetes de línea de comandos.&lt;/p&gt;
+&lt;p&gt;Su intalacion no es como estamos acostumbrados hacer avitual mente de &lt;em&gt;clonar&lt;/em&gt;  un repocitorio. &lt;a href=&quot;&quot;&gt;Termux &lt;/a&gt; cuenta en su alvor de directorio con un &lt;strong&gt;sources.list&lt;/strong&gt; en la sigiente ruta &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$PREFIX/etc/apt/&lt;/code&gt;   el cual nos permite descarga paquetes de uno o más repositorios de software (fuentes) y los instalarlos que dichos paquetes que anterior mente le mensionaba que son mas de 100 son mantenidos por Ivam para una intalacion limpia en nuestro emulador de entorno Linux atraver de APT que es el principal administrador de paquetes de línea de comandos.&lt;/p&gt;
 
 &lt;p&gt;Nos vamos a segurar que tenemos las dependencias nesesarias que a continuación les muestro :&lt;/p&gt;
 
@@ -167,384 +165,19 @@ apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
 wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d/ivam3-termux-packages.list
 apt update
 apt upgrade
+apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;i-haklab
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Ya en este punto tendríamos disponible todas las herramientas.&lt;/p&gt;
+&lt;h1 id=&quot;️-herramientas&quot;&gt;🗄️ Herramientas&lt;/h1&gt;
 
-&lt;h2 id=&quot;lista-de-herramientas&quot;&gt;Lista de herramientas&lt;/h2&gt;
+&lt;p&gt;Fueron creadas para el  propósito de ofrecer acceso fácil y rápido a la instalación de herramientas y / o marcos proporcionados
+para el laboratorio de seguridad cibernética y de Pentesting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-Haklab&lt;/code&gt;, para el sistema operativo Android en la aplicación Termux.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/i-Haklab&quot;&gt;i-Haklab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para ver lista &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Laboratorio de ciberseguridad y pentesting para Termux&lt;/p&gt;
+&lt;p&gt;Ya en este punto tienes esa lists disponible.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/qashqao/acccheck&quot;&gt;acccheck&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta de ataque del diccionario de contraseñas SMB de Windows&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.android.com/studio/command-line/adb&quot;&gt;adbfastboot&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Versátil herramienta de línea de comandos que facilita una variedad de acciones del dispositivo&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Techzindia/admin_penal&quot;&gt;Panel de administrador&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Encuentra el panel de administración del sitio web&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/OWASP/Amass&quot;&gt;acumular&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Mapeo detallado de la superficie de ataque y descubrimiento de activos&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/AndroBugs/AndroBugs_Framework&quot;&gt;androbichos&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Escáner de vulnerabilidades de Android&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.android.com/studio/index.html#command-tools&quot;&gt;androidsdk-cli&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Línea de comando oficial Entorno de desarrollo integrado (IDE) para el desarrollo de aplicaciones de Android&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/bytedance/appshark&quot;&gt;appshark&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Una plataforma de análisis de contaminación estática para escanear vulnerabilidades en una aplicación de Android&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.beefproject.com/&quot;&gt;carne de res&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;herramienta de seguridad poderosa e intuitiva que se enfoca en aprovechar las vulnerabilidades del navegador para evaluar la postura de seguridad de un objetivo&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ReFirmLabs/binwalk&quot;&gt;binwalk&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta para análisis, ingeniería inversa y extracción de imágenes de firmware&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/surya-dev-singh/BITB-framwork&quot;&gt;bitb&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Técnica de phishing que simula una ventana de navegador dentro del navegador para falsificar un dominio legítimo.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/jothatron/blackbox&quot;&gt;caja negra&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Un marco de pruebas de penetración&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/botgram&quot;&gt;botgrama&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Obtén toda la información sobre los miembros del grupo de Telegram&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://portswigger.net/burp&quot;&gt;burpsuite&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta gráfica para realizar pruebas de seguridad de aplicaciones web&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/digininja/CeWL&quot;&gt;cewl&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Listas de palabras personalizadas rastreando un sitio web objetivo&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Warflop/CloudBunny&quot;&gt;conejito de las nubes&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Captura la IP real del servidor que usa un WAF como proxy o protección&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Leask/code-server-nodejs&quot;&gt;servidor de código&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;VS Code con el entorno de desarrollo Nodejs ejecutándose en un servidor remoto&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/miluxmil/milux/blob/master/converter&quot;&gt;convertidor&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Fácil convertidor de archivos multimedia&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/lightos/credmap&quot;&gt;Mapa de credenciales&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Pruebe las credenciales de usuario proporcionadas en varios sitios web populares para ver si la contraseña se ha reutilizado en alguno de ellos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/shawarkhanethicalhacker/D-TECT-1&quot;&gt;d-tect&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Pentest la web moderna&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/DoS-A-Tool&quot;&gt;dos-una-herramienta&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Realiza ataques de denegación de servicio bajo el método SYN Flood&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/pxb1988/dex2jar&quot;&gt;dex2jar&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Toolkit para trabajar con archivos android .dex y java .class&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/fwaeytens/dnsenum&quot;&gt;dnsenum&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Enumerar información de DNS&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/embed&quot;&gt;empotrar&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Incruste la carga útil de metasploit en un APK legítimo&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/kgretzky/evilginx2&quot;&gt;maleginx2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marco de ataque de hombre en el medio independiente utilizado para credenciales de inicio de sesión de phishing junto con cookies de sesión, lo que permite eludir la autenticación de 2 factores.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/UndeadSec/EvilURL&quot;&gt;URL malvada&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Generar dominios Unicode para IDN Homograph Attack y detectarlos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/ExiF&quot;&gt;exif&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Extraer información (metadatos) de archivos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/offensive-security/exploitdb&quot;&gt;explotardb&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;El repositorio oficial &lt;a href=&quot;https://www.exploit-db.com/&quot;&gt;de la base de datos de exploits&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/machine1337/fake-sms&quot;&gt;sms-falsos&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Enviar mensajes (sms) de forma anónima.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/xHak9x/fbi&quot;&gt;FBI&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Recopilación de información de la cuenta de Facebook&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/fuzzdb-project/fuzzdb&quot;&gt;fuzzdb&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Diccionario de patrones de ataque y primitivas para inyección de fallas de aplicaciones de caja negra y descubrimiento de recursos&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/radioactivetobi/geo-recon&quot;&gt;reconocimiento geográfico&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Una herramienta OSINT CLI diseñada para realizar un seguimiento rápido de la reputación de IP y la búsqueda de ubicación geográfica para los analistas de seguridad.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/SecureAuthCorp/impacket/blob/master/examples/GetNPUsers.py&quot;&gt;getnpusers&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Enumere y obtenga TGT para aquellos usuarios que tienen propiedad&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/NationalSecurityAgency/ghidra&quot;&gt;ghidra&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Un marco de ingeniería inversa de software (SRE).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/EntySec/ghost&quot;&gt;fantasma&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marco de post-explotación de Android que explota Android Debug Bridge para acceder de forma remota a un dispositivo Android.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/OJ/gobuster/&quot;&gt;gobuster&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta de detección de directorio/archivo, DNS y VHost escrita en Go&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/gophish/gophish&quot;&gt;tonto&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Kit de herramientas de phishing avanzado de código abierto&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/4shadoww/hakkuframework&quot;&gt;hakku&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Plataforma de pruebas de penetración de código abierto utilizada para realizar pruebas de penetración relacionadas con la red y la web.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/CiKu370/hasher&quot;&gt;picador&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Cracker de hash con hash de detección automática&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://gitlab.com/kalilinux/packages/hash-identifier/&quot;&gt;hashid&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Software para identificar los diferentes tipos de hash utilizados para cifrar datos y especialmente contraseñas.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/HatBashBR/HatCloud&quot;&gt;nube de sombrero&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Haga bypass en CloudFlare para descubrir una IP real.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/b3-v3r/Hunner&quot;&gt;cazador&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marco de piratería para sitios DOS, ftp&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/vanhauser-thc/thc-hydra&quot;&gt;hidra-gtk&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta número uno de fuerza bruta en ciberseguridad.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/m4ll0k/infoga&quot;&gt;infoga&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Recopilar información de cuentas de correo electrónico de diferentes fuentes públicas y verificar si los correos electrónicos se filtraron utilizando la API de haveibeenpwned.com.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/maldevel/IPGeoLocation&quot;&gt;ipgeolocalizaciones&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Una herramienta para recuperar información de Geolocalización IP.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/openwall/john&quot;&gt;johntheripper&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Descifrador de contraseñas sin conexión avanzado, que admite cientos de tipos de cifrado y hash, y se ejecuta en muchos sistemas operativos, CPU, GPU e incluso algunos FPGA.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.jython.org/&quot;&gt;jython&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;El proyecto Jython proporciona implementaciones de Python en Java, proporcionando a Python los beneficios de ejecutarse en JVM y acceder a clases escritas en Java.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/TarlogicSecurity/kerbrute&quot;&gt;Kerbrute&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Un script para realizar la fuerza bruta de kerberos mediante el uso de la biblioteca Impacket.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kali.org/get-kali/#kali-mobile&quot;&gt;kalilinux&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;El proyecto de código abierto Kali-Linux para dispositivos Android&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/JasonJerry/lockphish&quot;&gt;phishing&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Una herramienta para ataques de phishing en la pantalla de bloqueo, diseñada para obtener credenciales de Windows, PIN de Android.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/rapid7/metasploit-framework&quot;&gt;marco de metasploit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marco penetrante de código abierto líder en el mundo&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.maltego.com/&quot;&gt;maltego&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Maltego es un software enfocado principalmente al análisis forense y desarrollado para hacer más propicio el análisis de enlaces y la minería de datos a partir de dominios IP, correos electrónicos, teléfonos, ubicaciones geográficas… es decir, el punto de partida de una investigación.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/htr-tech/nexphisher&quot;&gt;nefisher&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta avanzada de phishing para Termux.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ngrok.com/&quot;&gt;ngrok&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Proxy inverso distribuido globalmente frente a sus servicios web que se ejecutan en cualquier nube o red privada, o su máquina.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/datalux/Osintgram&quot;&gt;osintgrama&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Una herramienta OSINT en Instagram. Ofrece un shell interactivo para realizar análisis en la cuenta de Instagram de cualquier usuario por su apodo.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/s41r4j/phomber&quot;&gt;fomero&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta de recopilación de información que realiza búsquedas inversas de números de teléfono y obtiene sus detalles.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/aerosol-can/PhoneSploit&quot;&gt;teléfonosploit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Una herramienta para la explotación remota de ADB para todas las máquinas.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.ssh.com/academy/ssh/putty/linux&quot;&gt;Masilla&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Programa de terminal gráfico que admite los protocolos SSH, telnet y rlogin y se conecta a puertos serie.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Ekultek/Pybelt&quot;&gt;pybelt&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Un cinturón de herramientas de código abierto para hackers completo.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Monkey-hk4/quack&quot;&gt;curandero&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Toolkit con herramienta de ataque SMS, herramienta de ataque HTTP y muchas otras herramientas de ataque.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;ransomux&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;“Simule una búsqueda de efectos de ransomware para bloquear y cifrar archivos en archivos internos&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/lanmaster53/recon-ng&quot;&gt;reconocimiento&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta de recopilación de inteligencia de código abierto destinada a reducir el tiempo dedicado a recopilar información de fuentes abiertas.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/s0md3v/ReconDog&quot;&gt;reconocimiento&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Navaja suiza de reconocimiento&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Tuhinshubhra/RED_HAWK&quot;&gt;Halcón Rojo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta todo en uno para la recopilación de información, el análisis de vulnerabilidades y el rastreo.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/threat9/routersploit&quot;&gt;enrutadores&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marco de explotación de código abierto dedicado a dispositivos integrados.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/hangetzzu/saycheese&quot;&gt;decir queso&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Captura las tomas de la cámara web del objetivo mediante un enlace.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/d093w1z/sayhello&quot;&gt;di hola&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Captura de audio (.wav) del objetivo mediante un enlace.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/thewhiteh4t/seeker&quot;&gt;buscador&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Localice con precisión los teléfonos inteligentes utilizando ingeniería social.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.datsi.fi.upm.es/~frosal/sources/shc.html&quot;&gt;shc&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Shell Script Compiler (SHC) codifica y cifra los scripts de shell en archivos binarios ejecutables.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/vasco2016/shellsploit-framework&quot;&gt;conchas&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Le permite generar shellcodes personalizados, puertas traseras, inyectores para varios sistemas operativos. Y vamos a ofuscar cada byte a través de codificadores.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/sherlock-project/sherlock&quot;&gt;sherlock&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Busque cuentas de redes sociales por nombre de usuario en todas las redes sociales.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/shekyan/slowhttptest&quot;&gt;lentohttptest&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Una herramienta altamente configurable que simula algunos ataques de denegación de servicio de la capa de aplicación al prolongar las conexiones HTTP de diferentes maneras.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/the-robot/sqliv&quot;&gt;sqliv&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Escáner masivo de vulnerabilidades de inyección de SQL.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.kali.org/tools/stegsnow/&quot;&gt;stegsnow&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ocultar mensajes en texto ASCII agregando espacios en blanco al final de las líneas&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/aboul3la/Sublist3r&quot;&gt;sublista3r&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta de enumeración rápida de subdominios para probadores de penetración.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/VictorH028/termux-packages/blob/main/github.com/elcuervo/tangalanga&quot;&gt;tangalanga&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;La herramienta de pirateo del escáner de conferencias Zoom.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Yisus7u7/termux-desktop-xfce&quot;&gt;termux-desktop-xfce&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Configure un hermoso escritorio xfce en termux.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://telegra.ph/Docker-en-Android-10-26&quot;&gt;termux-doker-qemu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Proporcione una capa adicional de virtualización de aplicaciones con funciones de aislamiento de recursos del kernel de Linux.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/jofpin/trape&quot;&gt;trampa&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herramienta de análisis e investigación OSINT.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/yanncam/UnSHc&quot;&gt;unshc&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Shell Script UnCompiler (UNSHC) decodifica y descifra el archivo SHC en la arquitectura X86/x64.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/issamelferkh/userrecon&quot;&gt;usuariorecon&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Encuentra nombres de usuario en más de 75 redes sociales.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/anouarbensaad/vulnx&quot;&gt;vulnerabilidad&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Un autoinyector de caparazón de bot inteligente que detecta vulnerabilidades en múltiples tipos de cms.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/wuseman/WBRUTER&quot;&gt;wbruter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Deshabilite el código pin del dispositivo, así como la depuración de usb y los métodos de fuerza bruta, como los ataques de diccionario para gmail, ftp, rar, zip y algunas otras extensiones de archivo.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Fenrir-00/investigar-web&quot;&gt;escaneo web&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Una herramienta ligera de escáner web.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/The404Hacking/websploit&quot;&gt;websploit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marco MITM.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/urbanadventurer/WhatWeb&quot;&gt;whatweb&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Reconoce las tecnologías web, incluidos los sistemas de administración de contenido (CMS), las plataformas de blogs, los paquetes de estadísticas/análisis, las bibliotecas de JavaScript, los servidores web y los dispositivos integrados.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/wpscanteam/wpscan&quot;&gt;escanear wps&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Escáner de seguridad de WordPress.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ivam3/xapt-management&quot;&gt;xapt-management&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Interfaz gráfica X-Desktop para la herramienta de paquete avanzado (APT) escrita en python.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/LionSec/xerosploit&quot;&gt;xerosploit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Un conjunto de herramientas de prueba de penetración cuyo objetivo es realizar ataques de hombre en el medio con fines de prueba.&lt;/p&gt;
-
-&lt;h1 id=&quot;comando-i-haklab&quot;&gt;Comando &lt;strong&gt;i-haklab&lt;/strong&gt;&lt;/h1&gt;
-
-&lt;p&gt;Este comando es nuestra navaja Suiza y su intalacion nos brindará en su totalidad toda la configuración del laboratorio.&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;mmmm-para-que-instalarlo-si-ya-tengo-las-herramientas&quot;&gt;Mmmm… Para que instalarlo si ya tengo las herramientas&lt;/h2&gt;
-
-&lt;p&gt;Porque nosva a brindar un grupo de comandos y configuración que no vas a tener disponible sin su ejecución que ahora le menciono&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tendra una sesión de inicio de sesión por contraseña (predeterminada = Ivam3byCinderella) o huella digital (depende de las características del dispositivo).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La cual podremos cambiar o quitar de la siquiente forma&lt;/p&gt;
+&lt;h1 id=&quot;-uso&quot;&gt;👨‍🔧 Uso&lt;/h1&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;i-Haklab passwd &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -554,78 +187,157 @@ apt upgrade
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;i-Haklab passwd new
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Tendrá un servidor de sitio web que se ejecuta en su dispositivo con &lt;a href=&quot;https://github.com/termux/termux-app&quot;&gt;Termux&lt;/a&gt; , con el que podrá compartir varios archivos en Internet. Habilítelo en ejecución:&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;i-Haklab share
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Y muchas cosas más que esperó que te causen curiosidad en saver y te brindó ver su menú de ayuda&lt;/p&gt;
+&lt;h1 id=&quot;️-mapa-de-teclas&quot;&gt;⌨️ Mapa de teclas&lt;/h1&gt;
 
-&lt;p&gt;Imagen&lt;/p&gt;
+&lt;h2 id=&quot;termux&quot;&gt;Termux&lt;/h2&gt;
 
-&lt;h1 id=&quot;shell-disponibles&quot;&gt;Shell disponibles&lt;/h1&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ctrl+u &lt;span class=&quot;c&quot;&gt;# borra todo a la izq&lt;/span&gt;
+ctrl+k &lt;span class=&quot;c&quot;&gt;# borra todo a la der&lt;/span&gt;
+ctrl+w &lt;span class=&quot;c&quot;&gt;# borra la ultima palabra&lt;/span&gt;
+ctrl+l &lt;span class=&quot;c&quot;&gt;# limpia la pantalla&lt;/span&gt;
+ctrl+y &lt;span class=&quot;c&quot;&gt;# restaura lo borrado&lt;/span&gt;
+ctrl+e &lt;span class=&quot;c&quot;&gt;# mueve cursor al final de la linea&lt;/span&gt;
+ctrl+a &lt;span class=&quot;c&quot;&gt;# mueve el cursor al inicio de la linea&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; te va a dar la posibilidad de elegir entre dos shell total mente personalizadas qué serían &lt;a href=&quot;https://es.m.wikipedia.org/wiki/Zsh&quot;&gt;zsh&lt;/a&gt;
-Y &lt;a href=&quot;https://fishshell.com/&quot;&gt;fish&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;tmux&quot;&gt;Tmux&lt;/h2&gt;
 
-&lt;p&gt;Imagen fish&lt;/p&gt;
+&lt;p&gt;Todos los comandos en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; requieren el atajo de prefijo, que de forma predeterminada es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+b&lt;/code&gt; pero en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt; qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.&lt;br /&gt;
+Después de ingresar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt;, puede ejecutar un comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; o escribir: para obtener un mensaje de tmux.&lt;/p&gt;
 
-&lt;p&gt;Imagen zsh&lt;/p&gt;
-
-&lt;h1 id=&quot;tmux&quot;&gt;Tmux&lt;/h1&gt;
-
-&lt;p&gt;También vas a contar con tmux qué es un multiplexor de terminal para sistemas tipo unix, similar a GNU Screen o Byobu que permite dividir una consola en múltiples secciones o generar sesiones independientes en la misma terminal, ue la la shell de zsh vas a tener predeterminada&lt;/p&gt;
-
-&lt;p&gt;Imagen&lt;/p&gt;
-
-&lt;h2 id=&quot;usando-prefijo&quot;&gt;Usando prefijo&lt;/h2&gt;
-
-&lt;p&gt;Todos los comandos en tmux requieren el atajo de prefijo, que de forma predeterminada es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+b&lt;/code&gt; pero en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt; qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.  Después de ingresar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt;, puede ejecutar un comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; o escribir: para obtener un mensaje de tmux.&lt;/p&gt;
-
-&lt;p&gt;Imagen&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Administrar paneles&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;administrar-paneles&quot;&gt;Administrar paneles&lt;/h3&gt;
 
 &lt;p&gt;En un entorno de escritorio GUI, tiene Windows.  En &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt;, tienes paneles.  Al igual que las ventanas en una GUI, estos paneles le permiten interactuar con múltiples aplicaciones y, de manera similar, se pueden abrir, cerrar, cambiar de tamaño y mover.&lt;/p&gt;
 
 &lt;p&gt;A diferencia de un escritorio GUI estándar, estos paneles están en mosaico y se administran principalmente mediante atajos de tmux en lugar de un mouse (aunque se puede agregar funcionalidad de mouse).  Para crear un nuevo panel, simplemente divide la pantalla horizontal o verticalmente.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Para dividir un panel horizontalmente&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Prefijo + / &lt;span class=&quot;c&quot;&gt;# Para dividir un panel horizontalmente&lt;/span&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Prefijo + / 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Para dividir el panel verticalmente:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Prefijo + |
+Prefijo + | &lt;span class=&quot;c&quot;&gt;# Para dividir el panel verticalmente&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Imagen&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Cambiar el tamaño de los paneles&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;cambiar-el-tamaño-de-los-paneles&quot;&gt;Cambiar el tamaño de los paneles&lt;/h3&gt;
 
-&lt;p&gt;Digamos que necesitamos un poco más de espacio para respirar para uno de nuestros paneles y queremos expandir el panel unas cuantas líneas.  Para esto, ingresaremos al indicador de tmux:&lt;/p&gt;
+&lt;p&gt;Digamos que necesitamos un poco más de espacio para respirar para uno de nuestros paneles y queremos expandir el panel unas cuantas líneas.&lt;br /&gt;
+Para esto, ingresaremos al indicador de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt;:&lt;/p&gt;
 
 &lt;p&gt;Imagen&lt;/p&gt;
 
 &lt;p&gt;Se utiliza también   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + teclas de flecha (←→ ↑↓)&lt;/code&gt; para cambiar paneles
 Y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + teclas de flecha (←→ ↑↓)&lt;/code&gt; para cambiar ventanas&lt;/p&gt;
 
-&lt;h2 id=&quot;configuración&quot;&gt;Configuración&lt;/h2&gt;
+&lt;h1 id=&quot;-comandos-adisionales&quot;&gt;🤖 Comandos adisionales&lt;/h1&gt;
+
+&lt;h1 id=&quot;-zsh&quot;&gt;🤗 ZSH&lt;/h1&gt;
+
+&lt;p&gt;Contamos con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zsh&lt;/code&gt; que es  un shell diseñado para uso interactivo, aunque también es un potente lenguaje de programación. Muchas de las funciones útiles de bash, ksh y tcsh se incorporaron a zsh; Se agregaron muchas características originales&lt;/p&gt;
+
+&lt;h2 id=&quot;globbing&quot;&gt;&lt;a href=&quot;https://zsh.sourceforge.io/Intro/intro_toc.html#SEC2&quot;&gt;globbing&lt;/a&gt;&lt;/h2&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;% &lt;span class=&quot;nb&quot;&gt;ls
+&lt;/span&gt;Makefile   file.pro   foo.o      main.o     q.c        run234     stuff
+bar.o      foo        &lt;span class=&quot;nb&quot;&gt;link       &lt;/span&gt;morestuff  run123     run240     sub
+file.h     foo.c      main.h     pipe       run2       run303
+% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.c
+foo.c  q.c
+% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.[co]
+bar.o   foo.c   foo.o   main.o  q.c
+% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;foo.?
+foo.c  foo.o
+% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.[^c]
+bar.o   file.h  foo.o   main.h  main.o
+% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.[^oh]
+foo.c  q.c  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Una expresión de la forma &lt;x-y&gt;coincide con un rango de números enteros:&lt;/x-y&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;200-300&amp;gt; 
+run234 run240 
+% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;300-400&amp;gt; 
+run303 
+% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;&lt;span class=&quot;nt&quot;&gt;-200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 
+run123 run2 
+% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;300-&amp;gt; 
+run303 
+% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 
+run123 run2 run234 run240 run303
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Es posible agrupar:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;foo|bar&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 
+bar.o foo.c foo.o 
+% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c|o|pro&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
+bar.o archivo.pro foo.c foo.o main.o qc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;archivos-de-inicio&quot;&gt;&lt;a href=&quot;https://zsh.sourceforge.io/Intro/intro_toc.html#SEC3&quot;&gt;Archivos de inicio&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Hay cinco archivos de inicio desde los que zsh leerá los comandos:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zshenv
+&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zprofile
+&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zshrc
+&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zlogin
+&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zlogout
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;zshenv:&lt;/strong&gt; Contien comandos para establecer la ruta de búsqueda de comandos, además de otras variables de entorno importantes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;zshrc:&lt;/strong&gt; Debe contener comandos para configurar alias, funciones, opciones, combinaciones de teclas, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;zlogin:&lt;/strong&gt; Debe contener comandos que deben ejecutarse sólo en shells de inicio de sesión. `.zlogout’ se obtiene cuando se cierran los shells de inicio de sesió&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;zprofile:&lt;/strong&gt; pretende ser una alternativa a `.zlogin’ para los fanáticos de ksh.&lt;/p&gt;
+
+&lt;h1 id=&quot;temas&quot;&gt;TEMAS&lt;/h1&gt;
+
+&lt;p&gt;Por default (Powerlevel10k)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png&quot; alt=&quot;Powerlevel10k&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;configuracion-de-powerlevek10&quot;&gt;Configuracion de Powerlevek10&lt;/h2&gt;
+
+&lt;p&gt;Pase por el repositorio oficial &lt;a href=&quot;https://github.com/romkatv/powerlevel10k#configuration&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cambio-de-tema&quot;&gt;Cambio de tema&lt;/h2&gt;
+
+&lt;p&gt;En el directiri &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zsh/themes&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;-tmux&quot;&gt;📺 TMUX&lt;/h1&gt;
+
+&lt;p&gt;También vas a contar con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; qué es un multiplexor de terminal para sistemas tipo unix, 
+similar a GNU Screen o Byobu que permite dividir una consola en múltiples secciones o generar 
+sesiones independientes en la misma terminal.&lt;/p&gt;
+
+&lt;p&gt;Imagen&lt;/p&gt;
+
+&lt;h2 id=&quot;️-configuracion-de-tmux&quot;&gt;🛠️ Configuracion de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TMUX&lt;/code&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;archivos&quot;&gt;Archivos&lt;/h3&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.tmux/plugins
+.tmux.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;instalación-de-complementos&quot;&gt;Instalación de complementos&lt;/h3&gt;
 
+&lt;p&gt;Cuentas con un administrador de complementos de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tmux&lt;/code&gt;.&lt;/p&gt;
+
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Agregar nuevo 
-complemento en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/.tmux.conf&lt;/code&gt;con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set -g @plugin &apos;...&apos;&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Agregar nuevo complemento en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/.tmux.conf&lt;/code&gt; con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set -g @plugin &apos;...&apos;&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Presione &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefix+ I&lt;/code&gt;(i mayúscula, como en Instalar ) para recuperar el complemento.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;Todos los complementos están instalados  en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/plugins/&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;desinstalar-complementos&quot;&gt;Desinstalar complementos&lt;/h3&gt;
 
@@ -637,6 +349,8 @@ complemento en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&g
 &lt;p&gt;Todos los complementos están instalados, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/plugins/&lt;/code&gt; por lo que, alternativamente, puede encontrar el directorio de complementos allí y eliminarlo.&lt;/p&gt;
 
 &lt;p&gt;Para recargar las configuraciones de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; sin salir de la sección &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Prefijo + r&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;configuracion-de-complementos-disponibles&quot;&gt;Configuracion de complementos disponibles&lt;/h2&gt;
 
 &lt;h3 id=&quot;-estado-de-cpu-y-gpu-de-tmux&quot;&gt;💀 &lt;a href=&quot;https://github.com/tmux-plugins/tmux-cpu&quot;&gt;Estado de CPU y GPU de Tmux&lt;/a&gt;&lt;/h3&gt;
 
@@ -678,7 +392,7 @@ Los íconos
 &lt;h1 id=&quot;desintalar-laboratorio&quot;&gt;Desintalar laboratorio&lt;/h1&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">Menu</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">i-Haklab es un laboratorio de hacking para Termux que que nos ofrece de manera ordenada y secuencial un conjunto herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
 Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
 
 &lt;ul&gt;

@@ -6,10 +6,10 @@
      "Maintainer": "DemonHunter <demonhunternauta@gmail.com>",
      "Depends": ["cmake", "git", "tar", "curl", "zip", "unzip"],
      "Description": [
-            " Administrador de paquetes de C/C++",
+            " manage C and C++ libraries",
             " It ",
             " .",
-            " Obtenga acceso a miles de bibliotecas de código abierto de alta calidad para capacitar a la aplicación y compartir internamente colecciones de componentes privados."
+            " vpkg"
             ]
  },
    

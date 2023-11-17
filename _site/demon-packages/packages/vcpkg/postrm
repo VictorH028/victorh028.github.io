@@ -1,0 +1,6 @@
+#!/data/data/com.termux/file/usr/bin/bash
+# Se ejecuta después de que el paquete se desinstala del sistema.
+echo "Remove ... "
+if [[ -d ${HOME}/.local/share/vcpkg ]]; then
+ rm -rfd ${HOME}/.local/share/vcpkg
+fi
