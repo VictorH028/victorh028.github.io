@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# https://guides.codepath.com/android/installing-android-sdk-tools
+
+echo "Cloning repository ..."
+wget https://dl.google.com/android/repository/tools_r25.2.3-macosx.zip
+
+

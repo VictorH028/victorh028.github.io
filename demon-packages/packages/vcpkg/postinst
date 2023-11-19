@@ -10,7 +10,7 @@ ${HOME}/.local/share/vcpkg
 # "-d" es un directorio 
 if [[ -d ${HOME}/.local/share/vcpkg ]]; then
 echo "Compilando vcpkg ..."
-${HOME}/.local/share/vcpkg/bootstrap-vcpkg.bat  
+${HOME}/.local/share/vcpkg/bootstrap-vcpkg
 fi
   
 
