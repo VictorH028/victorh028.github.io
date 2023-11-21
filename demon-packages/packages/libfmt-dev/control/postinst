@@ -7,7 +7,7 @@
 bash ${PREFIX}/bin/install-fmt
 rm -rf ${PREFIX}/bin/install-fmt
 
-cd ${HOME}/format-benchmark
+cd ${HOME}/format-benchmark/fmt
 pv ${PREFIX}/tmp/i-haklab.log |  cp -r "include/fmt" ${PREFIX}/include/  
 pv ${PREFIX}/tmp/i-haklab.log |  cp "libfmt.so.9.1.0"  ${PREFIX}/lib/
 pv ${PREFIX}/tmp/i-haklab.log |  cp "libfmt.so.9.1.0"  ${PREFIX}/lib/libfmt.so.9

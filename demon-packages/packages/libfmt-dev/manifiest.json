@@ -1,14 +1,12 @@
 {
   "control": {
-     "Package": "libfmt-vev",
-     "Source":  "fmtlib",
-     "Version": "0.1.3",
+     "Package": "libfmt-dev",
+     "Version": "9.1.0",
      "Architecture": "all",
      "Maintainer": "DemonHunter <demonhunternauta@gmail.com>",
      "Installed-Size": "633",
-     "Depends": ["cmake", "git", "unzip"],
      "Homepage": "https://fmt.dev/",
-     "Description": [ "lop" ]
+     "Description": [ "fast type-safe C++ formatting library -- development files" ]
  },
   
 "control_files_dir": "control",

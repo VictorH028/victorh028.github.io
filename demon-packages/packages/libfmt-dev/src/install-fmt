@@ -7,4 +7,11 @@ pv  ${PREFIX}/tmp/i-haklab.log | git clone --recursive --quiet  https://github.c
 printf  "[%d] Cloning repository...\n" $(echo $?)
 cd format-benchmark 
 cmake . &>/dev/null
+if [ -d ${HOME}/format-benchmark/fmt ];
+then
+cd ${HOME}/format-benchmark/fmt
+cmake --build . 
+else
+echo "Error"
+fi
 printf "[%d] Compiling...\n" $(echo $?)
