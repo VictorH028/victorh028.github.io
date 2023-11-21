@@ -9,8 +9,9 @@ then
   rm -rf ${PREFIX}/include/fmt 
 fi
 
-if ![[ -d ${PREFIX}/lib/cmake/fmt ]];
-then
-  rm -rf  ${PREFIX}/lib/cmake/fmt 
-fi
+cd ${PREFIX}/lib
+rm -f  "libfmt.so.9.1.0" 
+rm -f  "libfmt.so.9" 
+rm -f  "libfmt.so" 
 
+printf "%d Bey..." ${echo $?}

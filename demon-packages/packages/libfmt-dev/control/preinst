@@ -10,12 +10,4 @@ then
   mkdir -p ${PREFIX}/include/fmt 
 fi
 
-if [ ! -d ${PREFIX}/lib/cmake/fmt ];
-then
-  mkdir -p  ${PREFIX}/lib/cmake/fmt 
-fi
 
-if [ ! -d ${PREFIX}/lib/cmake/fmt ];
-then 
-  mkdir -p  ${PREFIX}/lib/cmake/fmt
-fi
