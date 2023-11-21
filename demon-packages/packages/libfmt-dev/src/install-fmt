@@ -13,5 +13,6 @@ cd ${HOME}/format-benchmark/fmt
 cmake --build . 
 else
 echo "Error"
+exit 1
 fi
 printf "[%d] Compiling...\n" $(echo $?)

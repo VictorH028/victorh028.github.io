@@ -5,6 +5,8 @@
      "Architecture": "all",
      "Maintainer": "DemonHunter <demonhunternauta@gmail.com>",
      "Installed-Size": "633",
+     "Priority": "optional",
+     "Multi-Arch": "same",
      "Homepage": "https://fmt.dev/",
      "Description": [ "fast type-safe C++ formatting library -- development files" ]
  },

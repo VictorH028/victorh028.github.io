@@ -13,5 +13,6 @@ pv ${PREFIX}/tmp/i-haklab.log |  cp "libfmt.so.9.1.0"  ${PREFIX}/lib/
 pv ${PREFIX}/tmp/i-haklab.log |  cp "libfmt.so.9.1.0"  ${PREFIX}/lib/libfmt.so.9
 pv ${PREFIX}/tmp/i-haklab.log |  cp "libfmt.so.9.1.0" ${PREFIX}/lib/libfmt.so
 
+rm -rf  ${HOME}/format-benchmark 
 
 echo "[*] Installation finished."
