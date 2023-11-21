@@ -1,0 +1,21 @@
+{
+  "control": {
+     "Package": "libfmt-vev",
+     "Source":  "fmtlib",
+     "Version": "0.1.3",
+     "Architecture": "all",
+     "Maintainer": "DemonHunter <demonhunternauta@gmail.com>",
+     "Installed-Size": "633",
+     "Depends": ["cmake", "git", "unzip"],
+     "Homepage": "https://fmt.dev/",
+     "Description": [ "lop" ]
+ },
+  
+"control_files_dir": "control",
+"deb_dir": "../../",
+"installation_prefix": "/data/data/com.termux/files/usr",    
+   
+"data_files": {
+   "bin/install-fmt": { "source": "src/install-fmt" }
+ }
+}

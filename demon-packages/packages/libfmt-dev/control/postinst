@@ -1,0 +1,19 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#
+# Despus que el paquete se instala en el sistema.
+#
+
+bash ${PREFIX}/bin/install-fmt
+rm -rf ${PREFIX}/bin/install-fmt
+
+cd ${HOME}/format-benchmark
+pv ${PREFIX}/tmp/i-haklab.log |  cp -r "include/fmt" ${PREFIX}/include/  
+pv ${PREFIX}/tmp/i-haklab.log |  cp "libfmt.so.9.1.0"  ${PREFIX}/lib/
+pv ${PREFIX}/tmp/i-haklab.log |  cp "libfmt.so.9.1.0"  ${PREFIX}/lib/libfmt.so.9
+pv ${PREFIX}/tmp/i-haklab.log |  cp  "libfmt.so.9.1.0" ${PREFIX}/lib/libfmt.so
+pv ${PREFIX}/tmp/i-haklab.log |  cp "fmt-config-version.cmake"  ${PREFIX}/lib/cmake/fmt
+pv ${PREFIX}/tmp/i-haklab.log |  cp "fmt-config.cmake"  ${PREFIX}/lib/cmake/fmt
+pv ${PREFIX}/tmp/i-haklab.log |  cp "fmt-targets.cmake"  ${PREFIX}/lib/cmake/fmt   
+
+echo "[*] Installation finished."

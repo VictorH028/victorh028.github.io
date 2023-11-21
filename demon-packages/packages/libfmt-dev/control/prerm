@@ -1,0 +1,16 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#
+# Antes de que el paquete se desinstale del sistema.
+#
+
+if [[ -d ${PREFIX}/include/fmt ]];
+then 
+  rm -rf ${PREFIX}/include/fmt 
+fi
+
+if ![[ -d ${PREFIX}/lib/cmake/fmt ]];
+then
+  rm -rf  ${PREFIX}/lib/cmake/fmt 
+fi
+

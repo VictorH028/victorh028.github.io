@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+touch ${PREFIX}/tmp/i-haklab.log 
+printf "A log was created in PREFIX/tmp/i-haklab.log\n"
+cd ${HOME}
+pv  ${PREFIX}/tmp/i-haklab.log | git clone --recursive --quiet  https://github.com/fmtlib/format-benchmark.git  2>/dev/null
+printf  "[%d] Cloning repository...\n" $(echo $?)
+cd format-benchmark 
+cmake . &>/dev/null
+printf "[%d] Compiling...\n" $(echo $?)

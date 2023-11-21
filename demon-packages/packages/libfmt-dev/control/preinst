@@ -1,0 +1,21 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#
+# Antes que el paquete se instale 
+#
+
+echo "Preparing enviroment ..."
+if [ ! -d ${PREFIX}/include/fmt ];
+then 
+  mkdir -p ${PREFIX}/include/fmt 
+fi
+
+if [ ! -d ${PREFIX}/lib/cmake/fmt ];
+then
+  mkdir -p  ${PREFIX}/lib/cmake/fmt 
+fi
+
+if [ ! -d ${PREFIX}/lib/cmake/fmt ];
+then 
+  mkdir -p  ${PREFIX}/lib/cmake/fmt
+fi
