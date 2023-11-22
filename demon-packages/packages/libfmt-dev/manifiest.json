@@ -11,9 +11,8 @@
   
 "control_files_dir": "control",
 "deb_dir": "../../",
-"installation_prefix": "/data/data/com.termux/files/usr",    
    
 "data_files": {
-   "bin/install-fmt": { "source": "src/install-fmt" }
+   "bin/libfmt-dev": { "source": "src/libfmt-dev" }
  }
 }

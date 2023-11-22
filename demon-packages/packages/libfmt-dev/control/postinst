@@ -4,15 +4,21 @@
 # Despus que el paquete se instala en el sistema.
 #
 
-bash ${PREFIX}/bin/install-fmt
-rm -rf ${PREFIX}/bin/install-fmt
+bash ${PREFIX}/bin/libfmt-dev
+rm -rf ${PREFIX}/bin/libfmt-dev
 
-cd ${HOME}/format-benchmark/fmt
-cp -r "include/fmt" ${PREFIX}/include/          2>/dev/null
-cp "libfmt.so.9.1.0"  ${PREFIX}/lib/            2>/dev/null
-cp "libfmt.so.9.1.0"  ${PREFIX}/lib/libfmt.so.9 2>/dev/null
-cp "libfmt.so.9.1.0" ${PREFIX}/lib/libfmt.so    2>/dev/null
-
+if [ -d ${HOME}/format-benchmark/fmt ];
+then
+  cd ${HOME}/format-benchmark/fmt
+  cp -r "include/fmt" ${PREFIX}/include/          2>/dev/null
+  cp "libfmt.so.9.1.0"  ${PREFIX}/lib/            2>/dev/null
+  cp "libfmt.so.9.1.0"  ${PREFIX}/lib/libfmt.so.9 2>/dev/null
+  cp "libfmt.so.9.1.0" ${PREFIX}/lib/libfmt.so    2>/dev/null
+else
+  echo "Error dir ..."
+  exit 1
+fi
+echo "[*] ......................"
 rm -rf  ${HOME}/format-benchmark 
 
 echo "[*] Installation finished."
