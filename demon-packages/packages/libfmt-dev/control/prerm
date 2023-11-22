@@ -14,4 +14,4 @@ rm -f  "libfmt.so.9.1.0"
 rm -f  "libfmt.so.9" 
 rm -f  "libfmt.so" 
 
-printf "%d Bey..." ${echo $?}
+echo  "Bey..." 
