@@ -1,0 +1,22 @@
+#!/data/data/com.termux/files/usr/bin/bash  
+
+#
+# Ante que  el paquete se desintale del sistema 
+#
+
+rm -rf  /data/data/com.termux/files/usr/lib/libmd4c.so.0.4.8
+rm -rf  /data/data/com.termux/files/usr/lib/libmd4c.so.0
+rm -rf  /data/data/com.termux/files/usr/lib/libmd4c.so
+rm -rf  /data/data/com.termux/files/usr/include/md4c.h
+rm -rf  /data/data/com.termux/files/usr/lib/pkgconfig/md4c.pc
+rm -rf  /data/data/com.termux/files/usr/lib/libmd4c-html.so.0.4.8
+rm -rf  /data/data/com.termux/files/usr/lib/libmd4c-html.so.0
+rm -rf  /data/data/com.termux/files/usr/lib/libmd4c-html.so.0.4.8
+rm -rf  /data/data/com.termux/files/usr/lib/libmd4c-html.so
+rm -rf  /data/data/com.termux/files/usr/include/md4c-html.h
+rm -rf  /data/data/com.termux/files/usr/lib/pkgconfig/md4c-html.pc
+rm -rf  /data/data/com.termux/files/usr/lib/cmake/md4c/md4cConfig.cmake
+rm -rf  /data/data/com.termux/files/usr/lib/cmake/md4c/md4cConfig-relwithdebinfo.cmake
+rm -rf  /data/data/com.termux/files/usr/bin/md2html
+rm -rf  /data/data/com.termux/files/usr/bin/md2html
+rm -rf  /data/data/com.termux/files/usr/share/man/man1/md2html.1
