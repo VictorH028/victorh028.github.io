@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#
+#  Se ejecuta antes que el paquete se desintale sel sistema 
+#
+
+if [ -d ${PREFIX}/include/nlohmann ];
+then
+   echo "Borrando algunas cosas.."
+   rm ${PREFIX}/include/nlohmann
+fi

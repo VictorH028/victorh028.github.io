@@ -13,6 +13,7 @@
 "deb_dir": "../../",
    
 "data_files": {
-   "bin/libfmt-dev": { "source": "src/libfmt-dev" }
+   "bin/libfmt-dev": { 
+         "source": "bin/libfmt-dev" }
  }
 }
