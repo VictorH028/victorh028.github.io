@@ -1,16 +1,16 @@
-Package: android-sdk-linux
-Version: 0.1.1
+Package: libfmt-dev
+Version: 9.1.0
 Architecture: all
 Maintainer: DemonHunter <demonhunternauta@gmail.com>
-Installed-Size: 2
-Depends: cmake, wget, tar, unzip
-Description: Probando
-Filename: dists/stable/extras/binary-all/android-sdk-linux_0.1.1_all.deb
-Size: 1384
-MD5Sum: fbc875e7f00a9489390a87ceca8cdf25
-SHA1: 5a290f47ec6782dae0fdd646b5ecb92e0c465b5d
-SHA256: b9aa6632c46b5c83464c34ca9d665c98bc6a17d51c40bf96aa192b5ec291da7b
-SHA512: a485e7559d86840b555c170b571f98859323d2fab2590141f3f3026f51aebbdf8c69b2e4eaed3f41f88be0727b3903533a782ace8434e39b2b1135b181e387cc
+Installed-Size: 633
+Homepage: https://fmt.dev/
+Description: fast type-safe C++ formatting library -- development files
+Filename: dists/stable/extras/binary-all/libfmt-dev_9.1.0_all.deb
+Size: 1512
+MD5Sum: 9a048eee7dcd89c5a4f1b1624c39b6e9
+SHA1: b751763a0a993da3cc74d41516777c1d440bfe21
+SHA256: f8fc0d50066baf74c0d5b048d240f2298b8ec30761c60e0dd83f3d40f145478d
+SHA512: ddf805fd4346734fd965009770ff75ca60da4623807c4fb23c12b06c27037b9fc9a38f10d944c1b528916246a98ef1290553d2ac819dc5ea6fbe867cc2872f5d
 
 Package: vcpkg
 Version: 0.1.1
