@@ -1,21 +1,21 @@
 {
   "control": {
-     "Package": "vpkg",
-     "Version": "0.0.1",
+     "Package": "vcpkg",
+     "Version": "0.1.1",
      "Architecture": "all",
      "Maintainer": "DemonHunter <demonhunternauta@gmail.com>",
      "Depends": ["cmake", "git", "tar", "curl", "zip", "unzip"],
      "Description": [
-            " manage C and C++ libraries",
+            " Administrador de paquetes de C/C++",
             " It ",
             " .",
-            " vpkg"
+            " Obtenga acceso a miles de bibliotecas de código abierto de alta calidad para capacitar a la aplicación y compartir internamente colecciones de componentes privados."
             ]
  },
-
-"deb_dir": "../../",
+   
+ "deb_dir": "../../",
 
  "files": {
-    "src/vcpkg": "vcpkg"
+    "": ""
   }
 }

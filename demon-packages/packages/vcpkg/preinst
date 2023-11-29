@@ -1,5 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/bash
-
-echo "Cloning repository ..."
-git clone --quiet https://github.com/Microsoft/vcpkg.git \
-${HOME}/.local/share/vcpkg

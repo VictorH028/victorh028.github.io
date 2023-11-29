@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#
+#  Se ejecuta despues que el paquete esta en el sistema
+#
+
+bash nljson
+
+echo "Fin..."

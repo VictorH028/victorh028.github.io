@@ -1,17 +1,31 @@
-Package: vpkg
-Version: 0.0.1
+Package: android-sdk-linux
+Version: 0.1.1
 Architecture: all
 Maintainer: DemonHunter <demonhunternauta@gmail.com>
-Installed-Size: 1
+Installed-Size: 2
+Depends: cmake, wget, tar, unzip
+Description: Probando
+Filename: dists/stable/extras/binary-all/android-sdk-linux_0.1.1_all.deb
+Size: 1384
+MD5Sum: fbc875e7f00a9489390a87ceca8cdf25
+SHA1: 5a290f47ec6782dae0fdd646b5ecb92e0c465b5d
+SHA256: b9aa6632c46b5c83464c34ca9d665c98bc6a17d51c40bf96aa192b5ec291da7b
+SHA512: a485e7559d86840b555c170b571f98859323d2fab2590141f3f3026f51aebbdf8c69b2e4eaed3f41f88be0727b3903533a782ace8434e39b2b1135b181e387cc
+
+Package: vcpkg
+Version: 0.1.1
+Architecture: all
+Maintainer: DemonHunter <demonhunternauta@gmail.com>
+Installed-Size: 3
 Depends: cmake, git, tar, curl, zip, unzip
-Description:  manage C and C++ libraries
+Description:  Administrador de paquetes de C/C++
  It 
  .
- vpkg
-Filename: dists/stable/extras/binary-all/vpkg_0.0.1_all.deb
-Size: 1152
-MD5Sum: a369f02accc454cdf2b20568ef81b370
-SHA1: ae0fcf98f52af2d3661c7a36dc47e76be188f855
-SHA256: 682b5666d263fb73d3e47d2f83d0913e8b8d7fa01cdaa6368964e816b9634a42
-SHA512: e7c14cf5e0fa8c19e0f3ab011ac6784e09e0b7f8da6fae7b6c0c019b0e4cff38ced59d8d97818be08d28101ee0f13819e605d58e54475defe14bd2996782ea93
+ Obtenga acceso a miles de bibliotecas de código abierto de alta calidad para capacitar a la aplicación y compartir internamente colecciones de componentes privados.
+Filename: dists/stable/extras/binary-all/vcpkg_0.1.1_all.deb
+Size: 2040
+MD5Sum: 688968942499336c675b3d6f9bd69fc0
+SHA1: a53dcd2dd34d922392b28b1c42a55442badb3f0d
+SHA256: af9f28e7211a411316adb2a1ba108094711c0e9f5ac1f5b9cb057e85ff2744f0
+SHA512: 10254d7780dad7f78f884be8f976a51d56661cc50e20dce520bb604dcc0bcf80d2af7d610903fc3a13c4c0cf376261e0322c249d88559d1d932863fcf93378b9
 
