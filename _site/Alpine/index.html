@@ -316,20 +316,22 @@ Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la <a hr
 
 <p>Para tener el acceso a todas las herramientas solo debes de agregar la llave(key) de acceso a las configuraciones de APT en Termux :</p>
 
-<h3 id="crea-el-directorio-">Crea el directorio :</h3>
+<h2 id="crea-el-directorio-">Crea el directorio :</h2>
+
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d 
 </code></pre></div></div>
 <ul>
-  <li>Descarga la Key(llave) :
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>wget
-</code></pre></div>    </div>
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list <span class="nt">-O</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d/ivam3-termux-packages.list
-</code></pre></div>    </div>
-    <h3 id="actualiza-termux-">Actualiza Termux :</h3>
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update <span class="o">&amp;&amp;</span> apt upgrade
-</code></pre></div>    </div>
-  </li>
+  <li>Descarga la Key(llave) :</li>
 </ul>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>wget
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list <span class="nt">-O</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d/ivam3-termux-packages.list
+</code></pre></div></div>
+<h2 id="actualiza-termux-">Actualiza Termux :</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update <span class="o">&amp;&amp;</span> apt upgrade
+</code></pre></div></div>
 
 <p>En ese listado de herramientas que hemos optenido vamos a tener a <strong>termux-doker-qemu</strong></p>
 
@@ -359,7 +361,7 @@ Description: Docker container <span class="k">for </span>running x86,x86_64,armv
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>termux-doker-qemu
 </code></pre></div></div>
 
-<p>Puedes contar con una explicasion mas detallada de todo el proceso y configuracion en el sigiente video 👇 espero que lo disfute</p>
+<p>Puedes contar con una explicasion mas detallada de todo el proceso y configuracion en el sigiente video 👇 espero que lo disfrute</p>
 
 <h1 id="video">Video</h1>
 

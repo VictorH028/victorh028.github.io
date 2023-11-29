@@ -319,8 +319,12 @@
       </li>
     </ul>
   </li>
-  <li><a href="#-comandos-adisionales">🤖 Comandos adisionales</a></li>
-  <li><a href="#-zsh">🤗 ZSH</a>
+  <li><a href="#-comandos-adisionales">🤖 Comandos adisionales</a>
+    <ul>
+      <li><a href="#como-crear-más">Como crear más</a></li>
+    </ul>
+  </li>
+  <li><a href="#-zsh-default">🤗 ZSH (Default)</a>
     <ul>
       <li><a href="#globbing">globbing</a></li>
       <li><a href="#archivos-de-inicio">Archivos de inicio</a></li>
@@ -339,19 +343,16 @@
           <li><a href="#archivos">Archivos</a></li>
           <li><a href="#instalación-de-complementos">Instalación de complementos</a></li>
           <li><a href="#desinstalar-complementos">Desinstalar complementos</a></li>
-        </ul>
-      </li>
-      <li><a href="#configuracion-de-complementos-disponibles">Configuracion de complementos disponibles</a>
-        <ul>
-          <li><a href="#-estado-de-cpu-y-gpu-de-tmux">💀 Estado de CPU y GPU de Tmux</a></li>
           <li><a href="#-tema-de-tmux">🎨 Tema de tmux</a></li>
           <li><a href="#-personalización">⚙ Personalización</a></li>
-          <li><a href="#-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</a></li>
+          <li><a href="#-compatibilidad-con-complementos">📦 Compatibilidad con complementos</a></li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><a href="#desintalar-laboratorio">Desintalar laboratorio</a></li>
+  <li><a href="#desintalar-laboratorio">Desintalar laboratorio</a>
+      - {:.} <a href="#-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</a></li>
+  <li><a href="#desintalar-laboratorio-1">Desintalar laboratorio</a></li>
 </ul>
             </nav>
           </aside>
@@ -370,16 +371,7 @@
 
 <p>Su intalacion no es como estamos acostumbrados hacer avitual mente de <em>clonar</em>  un repocitorio. <a href="">Termux </a> cuenta en su alvor de directorio con un <strong>sources.list</strong> en la sigiente ruta <code class="language-plaintext highlighter-rouge">$PREFIX/etc/apt/</code>   el cual nos permite descarga paquetes de uno o más repositorios de software (fuentes) y los instalarlos que dichos paquetes que anterior mente le mensionaba que son mas de 100 son mantenidos por Ivam para una intalacion limpia en nuestro emulador de entorno Linux atraver de APT que es el principal administrador de paquetes de línea de comandos.</p>
 
-<p>Nos vamos a segurar que tenemos las dependencias nesesarias que a continuación les muestro :</p>
-
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">wget</code> Que sirve para recuperar contenido y archivos de varios servidores web.</li>
-  <li><code class="language-plaintext highlighter-rouge">mkdir</code> Que nos permite crear un nuevo directorio o carpeta.</li>
-</ol>
-
-<p>Y a continuación les muestro como tendríamos que Ejecutar los contenidos</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>wget
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>wget <span class="nt">-y</span>
 <span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d
 wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list <span class="nt">-O</span> <span class="nv">$PREFIX</span>/etc/apt/sources.list.d/ivam3-termux-packages.list
 apt update
@@ -397,17 +389,6 @@ para el laboratorio de seguridad cibernética y de Pentesting <code class="langu
 <p>Ya en este punto tienes esa lists disponible.</p>
 
 <h1 id="-uso">👨‍🔧 Uso</h1>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i-Haklab passwd <span class="nb">set</span>
-</code></pre></div></div>
-
-<p>O cambiarlo ejecutando:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i-Haklab passwd new
-</code></pre></div></div>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i-Haklab share
-</code></pre></div></div>
 
 <h1 id="️-mapa-de-teclas">⌨️ Mapa de teclas</h1>
 
@@ -452,7 +433,28 @@ Y <code class="language-plaintext highlighter-rouge">Shift + teclas de flecha (�
 
 <h1 id="-comandos-adisionales">🤖 Comandos adisionales</h1>
 
-<h1 id="-zsh">🤗 ZSH</h1>
+<p>Los comandos a adicionales son funciones  que se agregan a <code class="language-plaintext highlighter-rouge">fpath</code> y se encuentran en <code class="language-plaintext highlighter-rouge">. zsh/functions</code></p>
+
+<h2 id="como-crear-más">Como crear más</h2>
+
+<p><strong>Agregar archivo en el directorio de carga automática</strong></p>
+
+<ul>
+  <li>El nombre del archivo será el nombre del comando.</li>
+  <li>No se necesita permiso ejecutable.</li>
+  <li>No es necesario definir la función en el archivo.</li>
+</ul>
+
+<p><strong>Agregar nuevo comando mediante carga automática</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autoload <span class="nt">-U</span> <span class="nb">command</span> 
+</code></pre></div></div>
+
+<p>En el directorio <code class="language-plaintext highlighter-rouge">plugins</code> es para lo que no son creados por nosotros ni la comunidad que puedes tener una lista de ellos <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins">agui</a></p>
+
+<p>Para agregar unos de ello solo clonelo en el directorio y ponga el nombre del mismo en el <code class="language-plaintext highlighter-rouge">. zshrc </code> en plugins=(…).</p>
+
+<h1 id="-zsh-default">🤗 ZSH (Default)</h1>
 
 <p>Contamos con <code class="language-plaintext highlighter-rouge">zsh</code> que es  un shell diseñado para uso interactivo, aunque también es un potente lenguaje de programación. Muchas de las funciones útiles de bash, ksh y tcsh se incorporaron a zsh; Se agregaron muchas características originales</p>
 
@@ -515,7 +517,7 @@ bar.o archivo.pro foo.c foo.o main.o qc
 
 <h1 id="temas">TEMAS</h1>
 
-<p>Por default (Powerlevel10k)</p>
+<p><strong>Por default (Powerlevel10k)</strong></p>
 
 <p><img src="https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png" alt="Powerlevel10k" /></p>
 
@@ -569,24 +571,25 @@ sesiones independientes en la misma terminal.</p>
 
 <p>Para recargar las configuraciones de <code class="language-plaintext highlighter-rouge">tmux</code> sin salir de la sección <code class="language-plaintext highlighter-rouge">Prefijo + r</code></p>
 
-<h2 id="configuracion-de-complementos-disponibles">Configuracion de complementos disponibles</h2>
-
-<h3 id="-estado-de-cpu-y-gpu-de-tmux">💀 <a href="https://github.com/tmux-plugins/tmux-cpu">Estado de CPU y GPU de Tmux</a></h3>
-
-<p>Permite mostrar información de CPU y GPU en Tmux status-righty status-left. Porcentaje configurable y visualización de iconos.</p>
-
 <h3 id="-tema-de-tmux">🎨 Tema de tmux</h3>
-
-<p>Configure este tema si desea respetar el esquema de colores del terminal. Para ser usado con algo como <a href="https://github.com/dylanaraps/pywal">pywal,</a>  por ejemplo.</p>
 
 <h3 id="-personalización">⚙ Personalización</h3>
 
-<p>Puedes definir tu color principal favorito si no te gusta ninguno de los anteriores.</p>
+<p>Puedes  definir tu color principal favorito si no te gusta el proporcionado.</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-g</span> @tmux_power_theme <span class="s1">'#483D8B'</span> <span class="c"># dark slate blue</span>
 </code></pre></div></div>
 
-<p>También puedes personalizar los iconos. Como ejemplo, las siguientes configuraciones pueden generar el tema que se muestra en la primera captura de pantalla:</p>
+<h3 id="-compatibilidad-con-complementos">📦 Compatibilidad con complementos</h3>
+
+<p>(pendiente mas)</p>
+
+<h1 id="desintalar-laboratorio">Desintalar laboratorio</h1>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove i-haklab 
+</code></pre></div></div>
+
+<p>n la primera captura de pantalla:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-g</span> @plugin <span class="s1">'wfxr/tmux-power'</span>
 <span class="nb">set</span> <span class="nt">-g</span> @plugin <span class="s1">'wfxr/tmux-net-speed'</span>
@@ -608,9 +611,66 @@ Los íconos
 
 <h3 id="-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</h3>
 
-<h1 id="desintalar-laboratorio">Desintalar laboratorio</h1>
+<h1 id="desintalar-laboratorio-1">Desintalar laboratorio</h1>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove i-haklab 
+</code></pre></div></div>
+
+<p>eed  true
+set -g @tmux_power_show_web_reachable   true
+set -g @tmux_power_right_arrow_icon     ‘’
+set -g @tmux_power_left_arrow_icon      ‘’
+set -g @tmux_power_upload_speed_icon    ‘󰕒’
+set -g @tmux_power_download_speed_icon  ‘󰇚’
+set -g @tmux_power_prefix_highlight_pos ‘R’
+Los íconos</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### 📦 Compatibilidad con complementos (pendiente mas)
+
+
+
+
+
+
+# Desintalar laboratorio 
+
+```sh
+apt remove i-haklab 
+</code></pre></div></div>
+
+<p>mux_power_prefix_highlight_pos ‘R’
+Los íconos</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### 📦 Compatibilidad con complementos (pendiente mas)
+
+
+
+
+
+
+# Desintalar laboratorio 
+
+```sh
+apt remove i-haklab 
+</code></pre></div></div>
+
+<p>tmux_power_left_arrow_icon      ‘’
+set -g @tmux_power_upload_speed_icon    ‘󰕒’
+set -g @tmux_power_download_speed_icon  ‘󰇚’
+set -g @tmux_power_prefix_highlight_pos ‘R’
+Los íconos</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### 📦 Compatibilidad con complementos (pendiente mas)
+
+
+
+
+
+
+# Desintalar laboratorio 
+
+```sh
+apt remove i-haklab 
 </code></pre></div></div>
 
 
