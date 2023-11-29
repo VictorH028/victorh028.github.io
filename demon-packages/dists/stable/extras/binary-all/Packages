@@ -1,0 +1,31 @@
+Package: libfmt-dev
+Version: 9.1.0
+Architecture: all
+Maintainer: DemonHunter <demonhunternauta@gmail.com>
+Installed-Size: 633
+Homepage: https://fmt.dev/
+Description: fast type-safe C++ formatting library -- development files
+Filename: dists/stable/extras/binary-all/libfmt-dev_9.1.0_all.deb
+Size: 1512
+MD5Sum: 9a048eee7dcd89c5a4f1b1624c39b6e9
+SHA1: b751763a0a993da3cc74d41516777c1d440bfe21
+SHA256: f8fc0d50066baf74c0d5b048d240f2298b8ec30761c60e0dd83f3d40f145478d
+SHA512: ddf805fd4346734fd965009770ff75ca60da4623807c4fb23c12b06c27037b9fc9a38f10d944c1b528916246a98ef1290553d2ac819dc5ea6fbe867cc2872f5d
+
+Package: vcpkg
+Version: 0.1.1
+Architecture: all
+Maintainer: DemonHunter <demonhunternauta@gmail.com>
+Installed-Size: 3
+Depends: cmake, git, tar, curl, zip, unzip
+Description:  Administrador de paquetes de C/C++
+ It 
+ .
+ Obtenga acceso a miles de bibliotecas de código abierto de alta calidad para capacitar a la aplicación y compartir internamente colecciones de componentes privados.
+Filename: dists/stable/extras/binary-all/vcpkg_0.1.1_all.deb
+Size: 2040
+MD5Sum: 688968942499336c675b3d6f9bd69fc0
+SHA1: a53dcd2dd34d922392b28b1c42a55442badb3f0d
+SHA256: af9f28e7211a411316adb2a1ba108094711c0e9f5ac1f5b9cb057e85ff2744f0
+SHA512: 10254d7780dad7f78f884be8f976a51d56661cc50e20dce520bb604dcc0bcf80d2af7d610903fc3a13c4c0cf376261e0322c249d88559d1d932863fcf93378b9
+
