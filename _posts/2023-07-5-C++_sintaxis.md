@@ -20,7 +20,7 @@ Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++
 
 ```cpp
 #include <iostream >
-
+#include <string>
 
 enum 
 class Color 
@@ -43,13 +43,16 @@ void
 syntax_highlight(const std::string &code);  
 
 
+int main() {
+    std::string codigo = R"(
+#include <iostream>
 
-
-Int 
-main() {
-
-return 0;
-} 
+int main() {
+    // Esto es un comentario
+    std::cout << "Hola, mundo!" << std::endl;
+    return 0;
+}
+)";
 
 std::string 
 setColor(Color color) {
