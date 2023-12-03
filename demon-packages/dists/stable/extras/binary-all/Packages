@@ -1,16 +1,16 @@
-Package: libfmt-dev
-Version: 9.1.0
+Package: nljson
+Version: 0.0.1
 Architecture: all
-Maintainer: DemonHunter <demonhunternauta@gmail.com>
-Installed-Size: 633
-Homepage: https://fmt.dev/
-Description: fast type-safe C++ formatting library -- development files
-Filename: dists/stable/extras/binary-all/libfmt-dev_9.1.0_all.deb
-Size: 1512
-MD5Sum: 9a048eee7dcd89c5a4f1b1624c39b6e9
-SHA1: b751763a0a993da3cc74d41516777c1d440bfe21
-SHA256: f8fc0d50066baf74c0d5b048d240f2298b8ec30761c60e0dd83f3d40f145478d
-SHA512: ddf805fd4346734fd965009770ff75ca60da4623807c4fb23c12b06c27037b9fc9a38f10d944c1b528916246a98ef1290553d2ac819dc5ea6fbe867cc2872f5d
+Maintainer: DemonHunter
+Installed-Size: 600
+Homepage: https://github.com/nlohmann/json
+Description: There are myriads of JSON libraries out there, and each may even have its reason to exist. Our class had these design goals
+Filename: dists/stable/extras/binary-all/nljson_0.0.1_all.deb
+Size: 1320
+MD5Sum: 27633a91560a86b52bb921a719777867
+SHA1: f1038b776f713d00adcc37e3c741edad6f75aeb3
+SHA256: b5843dfce9eca0d5565f3b50d44a2dfc12211a04927cef5fbe0f05c9afc3ea05
+SHA512: a3ce5246e5e0f522dc377214f2cf5b50112cb23588f98d2a66d71fae9e67c8bd0745ee6234bdf45d31897bcfb05b8f35502a7474f46d62fd547647ae35b4c627
 
 Package: vcpkg
 Version: 0.1.1

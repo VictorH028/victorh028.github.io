@@ -2,7 +2,6 @@
 #
 #  Se ejecuta antes que el paquete se desintale sel sistema 
 #
-
 if [ -d ${PREFIX}/include/nlohmann ];
 then
    echo "Borrando algunas cosas.."
