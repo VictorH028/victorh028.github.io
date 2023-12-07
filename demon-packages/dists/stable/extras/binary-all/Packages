@@ -6,11 +6,11 @@ Installed-Size: 600
 Homepage: https://github.com/nlohmann/json
 Description: There are myriads of JSON libraries out there, and each may even have its reason to exist. Our class had these design goals
 Filename: dists/stable/extras/binary-all/nljson_0.0.1_all.deb
-Size: 1320
-MD5Sum: 27633a91560a86b52bb921a719777867
-SHA1: f1038b776f713d00adcc37e3c741edad6f75aeb3
-SHA256: b5843dfce9eca0d5565f3b50d44a2dfc12211a04927cef5fbe0f05c9afc3ea05
-SHA512: a3ce5246e5e0f522dc377214f2cf5b50112cb23588f98d2a66d71fae9e67c8bd0745ee6234bdf45d31897bcfb05b8f35502a7474f46d62fd547647ae35b4c627
+Size: 1464
+MD5Sum: 6cb6c300767163b2f6513f8a2764a835
+SHA1: d10c227adc2f5d015f3afa34292b98050f223285
+SHA256: 9d56a53c8ccd2e25b9443049577dd1b45f2ed99cab28619d6533d31687d3fc68
+SHA512: e15f8625658a6b0977e3acec68cd7c4b1b4970d41edd52eec0adfd0df0b4a14116dd123aa8b286a2edfd058278f6a139d7252195ef0e94b10bf93db1ed8aabfd
 
 Package: vcpkg
 Version: 0.1.1
