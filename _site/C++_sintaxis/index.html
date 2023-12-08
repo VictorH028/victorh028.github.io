@@ -310,8 +310,8 @@
         <p>Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream &gt;
+#include &lt;string&gt;
 </span>
-
 <span class="k">enum</span> 
 <span class="k">class</span> <span class="nc">Color</span> 
 <span class="p">{</span>
@@ -333,16 +333,19 @@
 <span class="nf">syntax_highlight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">code</span><span class="p">);</span>  
 
 
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">codigo</span> <span class="o">=</span> <span class="s">R"(
+#include &lt;iostream&gt;
 
-
-<span class="n">Int</span> 
-<span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-
-<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span> 
+int main() {
+    // Esto es un comentario
+    std::cout &lt;&lt; "Hola, mundo!" &lt;&lt; std::endl;
+    return 0;
+}
+)"</span><span class="p">;</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">string</span> 
-<span class="nf">setColor</span><span class="p">(</span><span class="n">Color</span> <span class="n">color</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">setColor</span><span class="p">(</span><span class="n">Color</span> <span class="n">color</span><span class="p">)</span> <span class="p">{</span>
  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">code</span> <span class="o">=</span> <span class="s">"</span><span class="se">\033</span><span class="s">["</span><span class="p">;</span>
  <span class="k">switch</span> <span class="p">(</span><span class="n">color</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">case</span> <span class="n">Color</span><span class="o">::</span><span class="n">Default</span><span class="p">:</span>
@@ -382,7 +385,7 @@
 
 
 <span class="kt">void</span> 
-<span class="nf">syntax_highlight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">code</span><span class="p">){</span>
+<span class="n">syntax_highlight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">code</span><span class="p">){</span>
     <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">highlightedCode</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
     <span class="c1">// Colores para cada parte del código</span>
     <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">colorKeywords</span> <span class="o">=</span> <span class="n">setColor</span><span class="p">(</span><span class="n">Color</span><span class="o">::</span><span class="n">Blue</span><span class="p">);</span>

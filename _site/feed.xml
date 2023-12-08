@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-28T18:34:40-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacking Ético vs Termux</title><subtitle>Ciberseguridad desde Termux</subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-07T20:11:37-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacking Ético vs Termux</title><subtitle>Ciberseguridad desde Termux</subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Abre un editor de texto y crea un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mi_programa.desktop&lt;/code&gt; con el siguiente contenido:&lt;/li&gt;
@@ -48,8 +48,8 @@ Categories=Development;
 &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="notas" /><category term="Linux" /><category term="tips" /><summary type="html">Para mostrar tu aplicaciones en el menu de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:</summary></entry><entry><title type="html">Resaltado de sintaxis en C++</title><link href="http://localhost:4000/C++_sintaxis/" rel="alternate" type="text/html" title="Resaltado de sintaxis en C++" /><published>2023-07-05T00:00:00-04:00</published><updated>2023-07-05T00:00:00-04:00</updated><id>http://localhost:4000/C++_sintaxis</id><content type="html" xml:base="http://localhost:4000/C++_sintaxis/">&lt;p&gt;Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++&lt;/p&gt;
 
 &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream &amp;gt;
+#include &amp;lt;string&amp;gt;
 &lt;/span&gt;
-
 &lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; 
 &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Color&lt;/span&gt; 
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -71,16 +71,19 @@ Categories=Development;
 &lt;span class=&quot;nf&quot;&gt;syntax_highlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
 
 
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;codigo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;R&quot;(
+#include &amp;lt;iostream&amp;gt;
 
-
-&lt;span class=&quot;n&quot;&gt;Int&lt;/span&gt; 
-&lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+int main() {
+    // Esto es un comentario
+    std::cout &amp;lt;&amp;lt; &quot;Hola, mundo!&quot; &amp;lt;&amp;lt; std::endl;
+    return 0;
+}
+)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; 
-&lt;span class=&quot;nf&quot;&gt;setColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;setColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
  &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\033&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;[&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
  &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -120,7 +123,7 @@ Categories=Development;
 
 
 &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; 
-&lt;span class=&quot;nf&quot;&gt;syntax_highlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;syntax_highlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;highlightedCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// Colores para cada parte del código&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorKeywords&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -273,7 +276,7 @@ apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
 
 &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/i-Haklab/" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/i-Haklab</id><content type="html" xml:base="http://localhost:4000/i-Haklab/">&lt;p&gt;i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.&lt;/p&gt;
 
-&lt;p&gt;Imagen&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;-intalacion&quot;&gt;📥 Intalacion&lt;/h1&gt;
 
@@ -292,14 +295,204 @@ apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;i-haklab
 &lt;p&gt;Fueron creadas para el  propósito de ofrecer acceso fácil y rápido a la instalación de herramientas y / o marcos proporcionados
 para el laboratorio de seguridad cibernética y de Pentesting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-Haklab&lt;/code&gt;, para el sistema operativo Android en la aplicación Termux.&lt;/p&gt;
 
-&lt;p&gt;Para ver lista &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para ver lista 👉 &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Ya en este punto tienes esa lists disponible.&lt;/p&gt;
+&lt;h1 id=&quot;aprendizaje&quot;&gt;👨‍🎓Aprendizaje&lt;/h1&gt;
 
-&lt;h1 id=&quot;-uso&quot;&gt;👨‍🔧 Uso&lt;/h1&gt;
+&lt;p&gt;Para su cultura persolan y para mi vivencia de cada dia.&lt;/p&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;h1 id=&quot;️-uso&quot;&gt;🛠️ Uso&lt;/h1&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ i-haklab &lt;span class=&quot;nt&quot;&gt;--help&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;-editores-de-texto&quot;&gt;📖 Editores de texto&lt;/h1&gt;
+
+&lt;p&gt;Contamos con dos editores total mente configurados para usted.&lt;/p&gt;
+
+&lt;h2 id=&quot;️nvim&quot;&gt;🖋️&lt;a href=&quot;&quot;&gt;nvim&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;alvor-de-directorios&quot;&gt;Alvor de directorios&lt;/h3&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.config/nvim
+├── init.lua
+└── lua                                                                        ├── keymaps.lua
+    ├── plugins
+    │   ├── 1
+    │   ├── blankline.lua                                                      │   ├── bufferline.lua
+    │   ├── git.lua
+    │   ├── lsp-zero.lua
+    │   ├── lualine.lua
+    │   ├── neural.lua
+    │   ├── packer.lua
+    │   ├── telescope.lua
+    │   ├── toggleterm.lua
+    │   ├── tokyonight.lua
+    │   ├── tree.lua
+    │   └── zk.lua
+    └── settings.lua
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;configuraciones&quot;&gt;Configuraciones&lt;/h3&gt;
+
+&lt;p&gt;Como tal solo hare breve receñas de la configuracion que se va a tener disponible.&lt;/p&gt;
+
+&lt;h3 id=&quot;atajos-de-tecla&quot;&gt;Atajos de tecla&lt;/h3&gt;
+
+&lt;p&gt;Neovim no tiene suficientes, tenemos que crear más. Para esto debemos aprender a usar la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Les mostraré un ejemplo.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;n&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;space&amp;gt;w&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;cmd&amp;gt;write&amp;lt;cr&amp;gt;&apos;&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;desc &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;Guardar&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Después de ejecutar esta función la combinación &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Espacio + w&lt;/code&gt; nos permitirá usar el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;write&lt;/code&gt;. 
+Podremos &lt;strong&gt;guardar el archivo actual&lt;/strong&gt; con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Espacio + w&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora déjenme explicarles qué hace cada parámetro.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;mode&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;lhs&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;rhs&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;opts&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{mode}&lt;/code&gt; es el modo donde tendrá efecto nuestro atajo (puede ser una lista de modos).
+Pero no necesitamos nombres, necesitamos la abreviación. 
+Estas son las más comunes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt;: Modo normal.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt;: Modo de inserción.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt;: Modo visual.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;: Modo de selección.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v&lt;/code&gt;: Visual y selección.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;t&lt;/code&gt;: Modo de terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;o&lt;/code&gt;: Modo de espera de operador.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;&apos;&lt;/code&gt;: Sí, una cadena de texto vacía. Es el equivalente a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n + v + o&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{lhs}&lt;/code&gt; es el atajo que queremos crear.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{rhs}&lt;/code&gt; es la acción que queremos ejecutar. Puede ser un comando, una expresión o una función de lua.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{opts}&lt;/code&gt; este parámetro debe ser una tabla de lua. Si no saben qué es una tabla, sólo piensen que es una manera albergar varios tipos de datos en un lugar. En fin, estas son las propiedades de uso común.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;desc&lt;/code&gt;: Cadena de texto que describe qué hace el comando. Aquí podemos escribir cualquier cosa.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;remap&lt;/code&gt;: Booleano que controla si nuestro atajo debe ser recursivo. Su valor por defecto es false. Los atajos recursivos pueden crear conflictos, así que no lo habiliten si no saben todos los detalles de lo que quieren lograr. Luego les explico con más detalle.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buffer&lt;/code&gt;: Puede ser un Booleano o un número. Si el valor es el booleano true quiere decir que al atajo sólo tendrá efecto en el archivo actual. Si es un número deberá ser el “id” de un archivo que tenemos abierto.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;silent&lt;/code&gt;: Booleano que controla si el atajo puede mostrar un mensaje. Su valor por defecto es false.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expr&lt;/code&gt;: Booleano. Si lo habilitamos tendremos la posibilidad de usar vimscript o lua para generar el valor del parámetro {rhs}. Su valor por defecto es false&lt;/p&gt;
+
+&lt;h3 id=&quot;la-tecla-líde&quot;&gt;La tecla líde&lt;/h3&gt;
+
+&lt;p&gt;Cuando definimos nuestros atajos podemos usar la secuencia especial &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; en el parámetro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{lhs}&lt;/code&gt;, esta toma el valor que tenemos en la variable global &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mapleader&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;mapleader es una variable que debe ser una cadena texto. Por ejemplo.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.g.mapleader &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;C-s&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Con esto podríamos usar la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CTRL + s&lt;/code&gt; como un prefijo para nuestros atajos.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;n&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;leader&amp;gt;w&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;cmd&amp;gt;write&amp;lt;cr&amp;gt;&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Y así la secuencia &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CTRL + s + w&lt;/code&gt; guarda el archivo actual.&lt;/p&gt;
+
+&lt;h3 id=&quot;initlua&quot;&gt;init.lua&lt;/h3&gt;
+
+&lt;p&gt;El administrador de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugins&lt;/code&gt; que posehemos es &lt;a href=&quot;https://github.com/folke/lazy.nvim&quot;&gt;lazy.nvim&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/292349/208301737-68fb279c-ba70-43ef-a369-8c3e8367d6b1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nuestra especificasion de la ruta donde se intla nuestros plugins es.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lazy.path &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; vim.fn.stdpath&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;data&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; .. &lt;span class=&quot;s1&quot;&gt;&apos;/lazy/lazy.nvim&apos;&lt;/span&gt;
+lazy.opts &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+
+lazy.setup&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; Lista de plugins
+  &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Aquí utilizamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stdpath(&apos;data&apos;)&lt;/code&gt; para que la ruta de los plugins quede en una carpeta manejada por Neovim. Ustedes pueden cambiar la ruta si quieren. Pero de esta manera no tenemos que preocuparnos por cambiar la ruta dependiendo del sistema operativo donde estamos.&lt;/p&gt;
+
+&lt;p&gt;Si quieren saber donde estarán los plugins usen este comando.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:echo stdpath&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;data&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;/lazy/lazy.nvim&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
+
+&lt;p&gt;En nuestra configuracion contamos con un total de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;12&lt;/code&gt; plugins los cuales explicare en breve.&lt;/p&gt;
+
+&lt;p&gt;1) &lt;a href=&quot;https://github.com/mickael-menu/zk-nvim&quot;&gt;zk-nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Este plugins es para el &lt;a href=&quot;https://github.com/mickael-menu/zk&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zk&lt;/code&gt;&lt;/a&gt; asistente de toma de notas en texto plano.&lt;/p&gt;
+
+&lt;p&gt;2) &lt;a href=&quot;https://github.com/rhysd/vim-grammarous&quot;&gt;vim-grammarous&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;vim-grammarous es un potente corrector gramatical para Vim. Simplemente hazlo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:GrammarousCheck&lt;/code&gt; para ver la poderosa verificación.
+Este complemento descarga automáticamente &lt;a href=&quot;https://www.languagetool.org/&quot;&gt;LanguageTool&lt;/a&gt; , que requiere Java 8+.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/rhysd/ss/blob/master/vim-grammarous/demo.gif?raw=true&quot; alt=&quot;pantalla de demostración&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3) &lt;a href=&quot;https://github.com/folke/tokyonight.nvim&quot;&gt;tokyonight.nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Para temas&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/292349/190951628-10ba28a1-57ff-4479-8eab-47400a402242.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4) &lt;a href=&quot;https://github.com/nvim-lualine/lualine.nvim&quot;&gt;lualine.nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Una línea de estado de Neovim increíblemente rápida y fácil de configurar escrita en Lua.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;examples/evil_lualine.lua&quot;&gt;evil_lualine&lt;/a&gt;
+&lt;img width=&quot;700&quot; src=&quot;https://user-images.githubusercontent.com/13149513/113875129-4453ba00-97d8-11eb-8f21-94a9ef565db3.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5) &lt;a href=&quot;&quot;&gt;telescope.nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;telescope.nvim&lt;/code&gt; es un buscador difuso altamente extensible sobre listas. Construido sobre las últimas características impresionantes del neovimnúcleo. El telescopio se centra en la modularidad, lo que permite una fácil personalización.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/TTTja6t.gif&quot; alt=&quot;Preview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;6) &lt;a href=&quot;https://github.com/nvim-tree/nvim-tree.lua&quot;&gt;nvim-tree.lua&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un interezante explorador de archivo&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/nvim-tree/nvim-tree.lua/actions/workflows/ci.yml&quot;&gt;&lt;img src=&quot;https://github.com/nvim-tree/nvim-tree.lua/actions/workflows/ci.yml/badge.svg&quot; alt=&quot;CI&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;helix&quot;&gt;&lt;a href=&quot;&quot;&gt;helix&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;️-mapa-de-teclas&quot;&gt;⌨️ Mapa de teclas&lt;/h1&gt;
 
+&lt;p&gt;&lt;strong&gt;i-Haklab&lt;/strong&gt; cuanta con diversas configuraciones de teclas que no son las que te topatias en un tutorial&lt;/p&gt;
 &lt;h2 id=&quot;termux&quot;&gt;Termux&lt;/h2&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ctrl+u &lt;span class=&quot;c&quot;&gt;# borra todo a la izq&lt;/span&gt;
@@ -310,34 +503,6 @@ ctrl+y &lt;span class=&quot;c&quot;&gt;# restaura lo borrado&lt;/span&gt;
 ctrl+e &lt;span class=&quot;c&quot;&gt;# mueve cursor al final de la linea&lt;/span&gt;
 ctrl+a &lt;span class=&quot;c&quot;&gt;# mueve el cursor al inicio de la linea&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;tmux&quot;&gt;Tmux&lt;/h2&gt;
-
-&lt;p&gt;Todos los comandos en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; requieren el atajo de prefijo, que de forma predeterminada es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+b&lt;/code&gt; pero en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt; qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.&lt;br /&gt;
-Después de ingresar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt;, puede ejecutar un comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; o escribir: para obtener un mensaje de tmux.&lt;/p&gt;
-
-&lt;h3 id=&quot;administrar-paneles&quot;&gt;Administrar paneles&lt;/h3&gt;
-
-&lt;p&gt;En un entorno de escritorio GUI, tiene Windows.  En &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt;, tienes paneles.  Al igual que las ventanas en una GUI, estos paneles le permiten interactuar con múltiples aplicaciones y, de manera similar, se pueden abrir, cerrar, cambiar de tamaño y mover.&lt;/p&gt;
-
-&lt;p&gt;A diferencia de un escritorio GUI estándar, estos paneles están en mosaico y se administran principalmente mediante atajos de tmux en lugar de un mouse (aunque se puede agregar funcionalidad de mouse).  Para crear un nuevo panel, simplemente divide la pantalla horizontal o verticalmente.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Prefijo + / &lt;span class=&quot;c&quot;&gt;# Para dividir un panel horizontalmente&lt;/span&gt;
-
-Prefijo + | &lt;span class=&quot;c&quot;&gt;# Para dividir el panel verticalmente&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Imagen&lt;/p&gt;
-
-&lt;h3 id=&quot;cambiar-el-tamaño-de-los-paneles&quot;&gt;Cambiar el tamaño de los paneles&lt;/h3&gt;
-
-&lt;p&gt;Digamos que necesitamos un poco más de espacio para respirar para uno de nuestros paneles y queremos expandir el panel unas cuantas líneas.&lt;br /&gt;
-Para esto, ingresaremos al indicador de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;Imagen&lt;/p&gt;
-
-&lt;p&gt;Se utiliza también   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + teclas de flecha (←→ ↑↓)&lt;/code&gt; para cambiar paneles
-Y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + teclas de flecha (←→ ↑↓)&lt;/code&gt; para cambiar ventanas&lt;/p&gt;
 
 &lt;h1 id=&quot;-comandos-adisionales&quot;&gt;🤖 Comandos adisionales&lt;/h1&gt;
 
@@ -355,14 +520,16 @@ Y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + tec
 
 &lt;p&gt;&lt;strong&gt;Agregar nuevo comando mediante carga automática&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; 
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; comamdo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;En el directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugins&lt;/code&gt; es para lo que no son creados por nosotros ni la comunidad que puedes tener una lista de ellos &lt;a href=&quot;https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins&quot;&gt;agui&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Para agregar unos de ello solo clonelo en el directorio y ponga el nombre del mismo en el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;. zshrc &lt;/code&gt; en plugins=(…).&lt;/p&gt;
 
-&lt;h1 id=&quot;-zsh-default&quot;&gt;🤗 ZSH (Default)&lt;/h1&gt;
+&lt;h1 id=&quot;-reasignación-de-claves&quot;&gt;🙈 Reasignación de claves&lt;/h1&gt;
+
+&lt;h1 id=&quot;-shell-default-zsh&quot;&gt;🤗 SHELL (Default zsh)&lt;/h1&gt;
 
 &lt;p&gt;Contamos con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zsh&lt;/code&gt; que es  un shell diseñado para uso interactivo, aunque también es un potente lenguaje de programación. Muchas de las funciones útiles de bash, ksh y tcsh se incorporaron a zsh; Se agregaron muchas características originales&lt;/p&gt;
 
@@ -383,7 +550,7 @@ bar.o   file.h  foo.o   main.h  main.o
 % &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.[^oh]
 foo.c  q.c  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Una expresión de la forma &lt;x-y&gt;coincide con un rango de números enteros:&lt;/x-y&gt;&lt;/p&gt;
+&lt;p&gt;Una expresión de la forma &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;x-y&amp;gt;&lt;/code&gt; coincide con un rango de números enteros:&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;200-300&amp;gt; 
 run234 run240 
@@ -423,19 +590,19 @@ bar.o archivo.pro foo.c foo.o main.o qc
 
 &lt;p&gt;&lt;strong&gt;zprofile:&lt;/strong&gt; pretende ser una alternativa a `.zlogin’ para los fanáticos de ksh.&lt;/p&gt;
 
-&lt;h1 id=&quot;temas&quot;&gt;TEMAS&lt;/h1&gt;
+&lt;h1 id=&quot;-temas&quot;&gt;🎨 TEMAS&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Por default (Powerlevel10k)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png&quot; alt=&quot;Powerlevel10k&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;configuracion-de-powerlevek10&quot;&gt;Configuracion de Powerlevek10&lt;/h2&gt;
+&lt;p&gt;Para agregar un tema en esta ruta para carga automática &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;. zsh/themes&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Pase por el repositorio oficial &lt;a href=&quot;https://github.com/romkatv/powerlevel10k#configuration&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;-asistente-de-configuración&quot;&gt;👨‍🔧 Asistente de configuración&lt;/h1&gt;
 
-&lt;h2 id=&quot;cambio-de-tema&quot;&gt;Cambio de tema&lt;/h2&gt;
+&lt;p&gt;Escriba &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p10k configure&lt;/code&gt; para acceder al asistente de configuración incorporado directamente desde su terminal.&lt;/p&gt;
 
-&lt;p&gt;En el directiri &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zsh/themes&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Para más información 👉 &lt;a href=&quot;https://github.com/romkatv/powerlevel10k#configuration-wizard&quot;&gt;agui&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;-tmux&quot;&gt;📺 TMUX&lt;/h1&gt;
 
@@ -443,142 +610,27 @@ bar.o archivo.pro foo.c foo.o main.o qc
 similar a GNU Screen o Byobu que permite dividir una consola en múltiples secciones o generar 
 sesiones independientes en la misma terminal.&lt;/p&gt;
 
-&lt;p&gt;Imagen&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;️-configuracion-de-tmux&quot;&gt;🛠️ Configuracion de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TMUX&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;️-tmux&quot;&gt;⌨️ tmux&lt;/h2&gt;
 
-&lt;h3 id=&quot;archivos&quot;&gt;Archivos&lt;/h3&gt;
+&lt;p&gt;Todos los comandos en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; requieren el atajo de prefijo, que de forma predeterminada es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+b&lt;/code&gt; pero en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt; qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.&lt;br /&gt;
+Después de ingresar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt;, puede ejecutar un comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; o escribir: para obtener un mensaje de tmux.&lt;/p&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.tmux/plugins
-.tmux.conf
+&lt;h3 id=&quot;-configuracion&quot;&gt;👨‍🔧 Configuracion&lt;/h3&gt;
+
+&lt;p&gt;Ruta de alchivo de configuración&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/.tmux.conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;instalación-de-complementos&quot;&gt;Instalación de complementos&lt;/h3&gt;
-
-&lt;p&gt;Cuentas con un administrador de complementos de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tmux&lt;/code&gt;.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Agregar nuevo complemento en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/.tmux.conf&lt;/code&gt; con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set -g @plugin &apos;...&apos;&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Presione &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefix+ I&lt;/code&gt;(i mayúscula, como en Instalar ) para recuperar el complemento.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Todos los complementos están instalados  en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/plugins/&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;desinstalar-complementos&quot;&gt;Desinstalar complementos&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Elimine (o comente) el complemento de la lista.&lt;/li&gt;
-  &lt;li&gt;Presione &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefix&lt;/code&gt;+ alt+ u(u minúscula como en &lt;strong&gt;u&lt;/strong&gt; desinstalar) para eliminar el complemento.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Todos los complementos están instalados, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.tmux/plugins/&lt;/code&gt; por lo que, alternativamente, puede encontrar el directorio de complementos allí y eliminarlo.&lt;/p&gt;
-
-&lt;p&gt;Para recargar las configuraciones de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; sin salir de la sección &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Prefijo + r&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;-tema-de-tmux&quot;&gt;🎨 Tema de tmux&lt;/h3&gt;
-
-&lt;h3 id=&quot;-personalización&quot;&gt;⚙ Personalización&lt;/h3&gt;
-
-&lt;p&gt;Puedes  definir tu color principal favorito si no te gusta el proporcionado.&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_theme &lt;span class=&quot;s1&quot;&gt;&apos;#483D8B&apos;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# dark slate blue&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;-compatibilidad-con-complementos&quot;&gt;📦 Compatibilidad con complementos&lt;/h3&gt;
-
-&lt;p&gt;(pendiente mas)&lt;/p&gt;
-
-&lt;h1 id=&quot;desintalar-laboratorio&quot;&gt;Desintalar laboratorio&lt;/h1&gt;
+&lt;h1 id=&quot;️-desintalar-laboratorio&quot;&gt;⚰️ Desintalar laboratorio&lt;/h1&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;n la primera captura de pantalla:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;wfxr/tmux-power&apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;wfxr/tmux-net-speed&apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_theme &lt;span class=&quot;s1&quot;&gt;&apos;everforest&apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_date_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_time_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_user_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_session_icon &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_upload_speed    &lt;span class=&quot;nb&quot;&gt;true
-set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_download_speed  &lt;span class=&quot;nb&quot;&gt;true
-set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_show_web_reachable   &lt;span class=&quot;nb&quot;&gt;true
-set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_right_arrow_icon     &lt;span class=&quot;s1&quot;&gt;&apos;&apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_left_arrow_icon      &lt;span class=&quot;s1&quot;&gt;&apos;&apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_upload_speed_icon    &lt;span class=&quot;s1&quot;&gt;&apos;󰕒&apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_download_speed_icon  &lt;span class=&quot;s1&quot;&gt;&apos;󰇚&apos;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @tmux_power_prefix_highlight_pos &lt;span class=&quot;s1&quot;&gt;&apos;R&apos;&lt;/span&gt;
-Los íconos
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;-compatibilidad-con-complementos-pendiente-mas&quot;&gt;📦 Compatibilidad con complementos (pendiente mas)&lt;/h3&gt;
-
-&lt;h1 id=&quot;desintalar-laboratorio-1&quot;&gt;Desintalar laboratorio&lt;/h1&gt;
+&lt;p&gt;r laboratorio&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;eed  true
-set -g @tmux_power_show_web_reachable   true
-set -g @tmux_power_right_arrow_icon     ‘’
-set -g @tmux_power_left_arrow_icon      ‘’
-set -g @tmux_power_upload_speed_icon    ‘󰕒’
-set -g @tmux_power_download_speed_icon  ‘󰇚’
-set -g @tmux_power_prefix_highlight_pos ‘R’
-Los íconos&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-### 📦 Compatibilidad con complementos (pendiente mas)
-
-
-
-
-
-
-# Desintalar laboratorio 
-
-```sh
-apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;mux_power_prefix_highlight_pos ‘R’
-Los íconos&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-### 📦 Compatibilidad con complementos (pendiente mas)
-
-
-
-
-
-
-# Desintalar laboratorio 
-
-```sh
-apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;tmux_power_left_arrow_icon      ‘’
-set -g @tmux_power_upload_speed_icon    ‘󰕒’
-set -g @tmux_power_download_speed_icon  ‘󰇚’
-set -g @tmux_power_prefix_highlight_pos ‘R’
-Los íconos&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-### 📦 Compatibilidad con complementos (pendiente mas)
-
-
-
-
-
-
-# Desintalar laboratorio 
-
-```sh
-apt remove i-haklab 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">i-Haklab es un laboratorio de hacking para Termux que que nos ofrece de manera ordenada y secuencial un conjunto herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
 Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
 

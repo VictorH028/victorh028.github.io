@@ -3,6 +3,8 @@
 #  Se ejecuta despues que el paquete esta en el sistema
 #
 
-bash nljson
-
+bash /data/data/com.termux/files/usr/bin/nljson
+rm -rf /data/data/com.termux/files/usr/bin/nljson 
 echo "Fin..."
+
+

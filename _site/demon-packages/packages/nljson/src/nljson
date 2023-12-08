@@ -1,8 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/bash
-
-cd ${HOME}
-echo "Cloning repository..."
-wget --progress=# -tries=100 https://github.com/nlohmann/json/releases/download/v3.11.2/json.tar.xz
-echo "Decompilando..."
-tar -xf json.tar.xz
-cp -r json/include/nlohmann  ${PREFIX}/include

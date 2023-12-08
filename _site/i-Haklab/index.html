@@ -307,16 +307,26 @@
               <ul class="toc__menu">
   <li><a href="#-intalacion">📥 Intalacion</a></li>
   <li><a href="#️-herramientas">🗄️ Herramientas</a></li>
-  <li><a href="#-uso">👨‍🔧 Uso</a></li>
+  <li><a href="#aprendizaje">👨‍🎓Aprendizaje</a></li>
+  <li><a href="#️-uso">🛠️ Uso</a></li>
+  <li><a href="#-editores-de-texto">📖 Editores de texto</a>
+    <ul>
+      <li><a href="#️nvim">🖋️nvim</a>
+        <ul>
+          <li><a href="#alvor-de-directorios">Alvor de directorios</a></li>
+          <li><a href="#configuraciones">Configuraciones</a></li>
+          <li><a href="#atajos-de-tecla">Atajos de tecla</a></li>
+          <li><a href="#la-tecla-líde">La tecla líde</a></li>
+          <li><a href="#initlua">init.lua</a></li>
+          <li><a href="#plugins">Plugins</a></li>
+        </ul>
+      </li>
+      <li><a href="#helix">helix</a></li>
+    </ul>
+  </li>
   <li><a href="#️-mapa-de-teclas">⌨️ Mapa de teclas</a>
     <ul>
       <li><a href="#termux">Termux</a></li>
-      <li><a href="#tmux">Tmux</a>
-        <ul>
-          <li><a href="#administrar-paneles">Administrar paneles</a></li>
-          <li><a href="#cambiar-el-tamaño-de-los-paneles">Cambiar el tamaño de los paneles</a></li>
-        </ul>
-      </li>
     </ul>
   </li>
   <li><a href="#-comandos-adisionales">🤖 Comandos adisionales</a>
@@ -324,35 +334,25 @@
       <li><a href="#como-crear-más">Como crear más</a></li>
     </ul>
   </li>
-  <li><a href="#-zsh-default">🤗 ZSH (Default)</a>
+  <li><a href="#-reasignación-de-claves">🙈 Reasignación de claves</a></li>
+  <li><a href="#-shell-default-zsh">🤗 SHELL (Default zsh)</a>
     <ul>
       <li><a href="#globbing">globbing</a></li>
       <li><a href="#archivos-de-inicio">Archivos de inicio</a></li>
     </ul>
   </li>
-  <li><a href="#temas">TEMAS</a>
-    <ul>
-      <li><a href="#configuracion-de-powerlevek10">Configuracion de Powerlevek10</a></li>
-      <li><a href="#cambio-de-tema">Cambio de tema</a></li>
-    </ul>
-  </li>
+  <li><a href="#-temas">🎨 TEMAS</a></li>
+  <li><a href="#-asistente-de-configuración">👨‍🔧 Asistente de configuración</a></li>
   <li><a href="#-tmux">📺 TMUX</a>
     <ul>
-      <li><a href="#️-configuracion-de-tmux">🛠️ Configuracion de TMUX</a>
+      <li><a href="#️-tmux">⌨️ tmux</a>
         <ul>
-          <li><a href="#archivos">Archivos</a></li>
-          <li><a href="#instalación-de-complementos">Instalación de complementos</a></li>
-          <li><a href="#desinstalar-complementos">Desinstalar complementos</a></li>
-          <li><a href="#-tema-de-tmux">🎨 Tema de tmux</a></li>
-          <li><a href="#-personalización">⚙ Personalización</a></li>
-          <li><a href="#-compatibilidad-con-complementos">📦 Compatibilidad con complementos</a></li>
+          <li><a href="#-configuracion">👨‍🔧 Configuracion</a></li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><a href="#desintalar-laboratorio">Desintalar laboratorio</a>
-      - {:.} <a href="#-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</a></li>
-  <li><a href="#desintalar-laboratorio-1">Desintalar laboratorio</a></li>
+  <li><a href="#️-desintalar-laboratorio">⚰️ Desintalar laboratorio</a></li>
 </ul>
             </nav>
           </aside>
@@ -365,7 +365,7 @@
         </p>
         <p>i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</p>
 
-<p>Imagen</p>
+<p><img src="" alt="Imagen" /></p>
 
 <h1 id="-intalacion">📥 Intalacion</h1>
 
@@ -384,14 +384,204 @@ apt <span class="nb">install </span>i-haklab
 <p>Fueron creadas para el  propósito de ofrecer acceso fácil y rápido a la instalación de herramientas y / o marcos proporcionados
 para el laboratorio de seguridad cibernética y de Pentesting <code class="language-plaintext highlighter-rouge">I-Haklab</code>, para el sistema operativo Android en la aplicación Termux.</p>
 
-<p>Para ver lista <a href="https://github.com/ivam3/termux-packages">aqui</a></p>
+<p>Para ver lista 👉 <a href="https://github.com/ivam3/termux-packages">aqui</a></p>
 
-<p>Ya en este punto tienes esa lists disponible.</p>
+<h1 id="aprendizaje">👨‍🎓Aprendizaje</h1>
 
-<h1 id="-uso">👨‍🔧 Uso</h1>
+<p>Para su cultura persolan y para mi vivencia de cada dia.</p>
+
+<p>-</p>
+
+<p>-</p>
+
+<p>-</p>
+
+<h1 id="️-uso">🛠️ Uso</h1>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>❯ i-haklab <span class="nt">--help</span>
+</code></pre></div></div>
+
+<h1 id="-editores-de-texto">📖 Editores de texto</h1>
+
+<p>Contamos con dos editores total mente configurados para usted.</p>
+
+<h2 id="️nvim">🖋️<a href="">nvim</a></h2>
+
+<p><img src="" alt="Imagen" /></p>
+
+<h3 id="alvor-de-directorios">Alvor de directorios</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.config/nvim
+├── init.lua
+└── lua                                                                        ├── keymaps.lua
+    ├── plugins
+    │   ├── 1
+    │   ├── blankline.lua                                                      │   ├── bufferline.lua
+    │   ├── git.lua
+    │   ├── lsp-zero.lua
+    │   ├── lualine.lua
+    │   ├── neural.lua
+    │   ├── packer.lua
+    │   ├── telescope.lua
+    │   ├── toggleterm.lua
+    │   ├── tokyonight.lua
+    │   ├── tree.lua
+    │   └── zk.lua
+    └── settings.lua
+</code></pre></div></div>
+
+<h3 id="configuraciones">Configuraciones</h3>
+
+<p>Como tal solo hare breve receñas de la configuracion que se va a tener disponible.</p>
+
+<h3 id="atajos-de-tecla">Atajos de tecla</h3>
+
+<p>Neovim no tiene suficientes, tenemos que crear más. Para esto debemos aprender a usar la función <code class="language-plaintext highlighter-rouge">vim.keymap.set</code>.</p>
+
+<p>Les mostraré un ejemplo.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim.keymap.set<span class="o">(</span><span class="s1">'n'</span>, <span class="s1">'&lt;space&gt;w'</span>, <span class="s1">'&lt;cmd&gt;write&lt;cr&gt;'</span>, <span class="o">{</span>desc <span class="o">=</span> <span class="s1">'Guardar'</span><span class="o">})</span>
+</code></pre></div></div>
+
+<p>Después de ejecutar esta función la combinación <code class="language-plaintext highlighter-rouge">Espacio + w</code> nos permitirá usar el comando <code class="language-plaintext highlighter-rouge">write</code>. 
+Podremos <strong>guardar el archivo actual</strong> con <code class="language-plaintext highlighter-rouge">Espacio + w</code>.</p>
+
+<p>Ahora déjenme explicarles qué hace cada parámetro.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim.keymap.set<span class="o">({</span>mode<span class="o">}</span>, <span class="o">{</span>lhs<span class="o">}</span>, <span class="o">{</span>rhs<span class="o">}</span>, <span class="o">{</span>opts<span class="o">})</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">{mode}</code> es el modo donde tendrá efecto nuestro atajo (puede ser una lista de modos).
+Pero no necesitamos nombres, necesitamos la abreviación. 
+Estas son las más comunes.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">n</code>: Modo normal.</p>
+
+<p><code class="language-plaintext highlighter-rouge">i</code>: Modo de inserción.</p>
+
+<p><code class="language-plaintext highlighter-rouge">x</code>: Modo visual.</p>
+
+<p><code class="language-plaintext highlighter-rouge">s</code>: Modo de selección.</p>
+
+<p><code class="language-plaintext highlighter-rouge">v</code>: Visual y selección.</p>
+
+<p><code class="language-plaintext highlighter-rouge">t</code>: Modo de terminal.</p>
+
+<p><code class="language-plaintext highlighter-rouge">o</code>: Modo de espera de operador.</p>
+
+<p><code class="language-plaintext highlighter-rouge">''</code>: Sí, una cadena de texto vacía. Es el equivalente a <code class="language-plaintext highlighter-rouge">n + v + o</code>.</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">{lhs}</code> es el atajo que queremos crear.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">{rhs}</code> es la acción que queremos ejecutar. Puede ser un comando, una expresión o una función de lua.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">{opts}</code> este parámetro debe ser una tabla de lua. Si no saben qué es una tabla, sólo piensen que es una manera albergar varios tipos de datos en un lugar. En fin, estas son las propiedades de uso común.</p>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">desc</code>: Cadena de texto que describe qué hace el comando. Aquí podemos escribir cualquier cosa.</p>
+
+<p><code class="language-plaintext highlighter-rouge">remap</code>: Booleano que controla si nuestro atajo debe ser recursivo. Su valor por defecto es false. Los atajos recursivos pueden crear conflictos, así que no lo habiliten si no saben todos los detalles de lo que quieren lograr. Luego les explico con más detalle.</p>
+
+<p><code class="language-plaintext highlighter-rouge">buffer</code>: Puede ser un Booleano o un número. Si el valor es el booleano true quiere decir que al atajo sólo tendrá efecto en el archivo actual. Si es un número deberá ser el “id” de un archivo que tenemos abierto.</p>
+
+<p><code class="language-plaintext highlighter-rouge">silent</code>: Booleano que controla si el atajo puede mostrar un mensaje. Su valor por defecto es false.</p>
+
+<p><code class="language-plaintext highlighter-rouge">expr</code>: Booleano. Si lo habilitamos tendremos la posibilidad de usar vimscript o lua para generar el valor del parámetro {rhs}. Su valor por defecto es false</p>
+
+<h3 id="la-tecla-líde">La tecla líde</h3>
+
+<p>Cuando definimos nuestros atajos podemos usar la secuencia especial <code class="language-plaintext highlighter-rouge">&lt;leader&gt;</code> en el parámetro <code class="language-plaintext highlighter-rouge">{lhs}</code>, esta toma el valor que tenemos en la variable global <code class="language-plaintext highlighter-rouge">mapleader</code>.</p>
+
+<p>mapleader es una variable que debe ser una cadena texto. Por ejemplo.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim.g.mapleader <span class="o">=</span> <span class="s1">'C-s'</span>
+</code></pre></div></div>
+
+<p>Con esto podríamos usar la tecla <code class="language-plaintext highlighter-rouge">CTRL + s</code> como un prefijo para nuestros atajos.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim.keymap.set<span class="o">(</span><span class="s1">'n'</span>, <span class="s1">'&lt;leader&gt;w'</span>, <span class="s1">'&lt;cmd&gt;write&lt;cr&gt;'</span><span class="o">)</span>
+</code></pre></div></div>
+<p>Y así la secuencia <code class="language-plaintext highlighter-rouge">CTRL + s + w</code> guarda el archivo actual.</p>
+
+<h3 id="initlua">init.lua</h3>
+
+<p>El administrador de <code class="language-plaintext highlighter-rouge">plugins</code> que posehemos es <a href="https://github.com/folke/lazy.nvim">lazy.nvim</a>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/292349/208301737-68fb279c-ba70-43ef-a369-8c3e8367d6b1.png" alt="image" /></p>
+
+<p>Nuestra especificasion de la ruta donde se intla nuestros plugins es.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lazy.path <span class="o">=</span> vim.fn.stdpath<span class="o">(</span><span class="s1">'data'</span><span class="o">)</span> .. <span class="s1">'/lazy/lazy.nvim'</span>
+lazy.opts <span class="o">=</span> <span class="o">{}</span>
+
+lazy.setup<span class="o">({</span>
+  <span class="nt">---</span>
+  <span class="nt">--</span> Lista de plugins
+  <span class="nt">---</span>
+<span class="o">})</span>
+</code></pre></div></div>
+<p>Aquí utilizamos <code class="language-plaintext highlighter-rouge">stdpath('data')</code> para que la ruta de los plugins quede en una carpeta manejada por Neovim. Ustedes pueden cambiar la ruta si quieren. Pero de esta manera no tenemos que preocuparnos por cambiar la ruta dependiendo del sistema operativo donde estamos.</p>
+
+<p>Si quieren saber donde estarán los plugins usen este comando.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:echo stdpath<span class="o">(</span><span class="s1">'data'</span><span class="o">)</span> <span class="nb">.</span> <span class="s1">'/lazy/lazy.nvim'</span>
+</code></pre></div></div>
+<h3 id="plugins">Plugins</h3>
+
+<p>En nuestra configuracion contamos con un total de <code class="language-plaintext highlighter-rouge">12</code> plugins los cuales explicare en breve.</p>
+
+<p>1) <a href="https://github.com/mickael-menu/zk-nvim">zk-nvim</a></p>
+
+<p>Este plugins es para el <a href="https://github.com/mickael-menu/zk"><code class="language-plaintext highlighter-rouge">zk</code></a> asistente de toma de notas en texto plano.</p>
+
+<p>2) <a href="https://github.com/rhysd/vim-grammarous">vim-grammarous</a></p>
+
+<p>vim-grammarous es un potente corrector gramatical para Vim. Simplemente hazlo <code class="language-plaintext highlighter-rouge">:GrammarousCheck</code> para ver la poderosa verificación.
+Este complemento descarga automáticamente <a href="https://www.languagetool.org/">LanguageTool</a> , que requiere Java 8+.</p>
+
+<p><img src="https://github.com/rhysd/ss/blob/master/vim-grammarous/demo.gif?raw=true" alt="pantalla de demostración" /></p>
+
+<p>3) <a href="https://github.com/folke/tokyonight.nvim">tokyonight.nvim</a></p>
+
+<p>Para temas</p>
+
+<p><img src="https://user-images.githubusercontent.com/292349/190951628-10ba28a1-57ff-4479-8eab-47400a402242.png" alt="image" /></p>
+
+<p>4) <a href="https://github.com/nvim-lualine/lualine.nvim">lualine.nvim</a></p>
+
+<p>Una línea de estado de Neovim increíblemente rápida y fácil de configurar escrita en Lua.</p>
+
+<ul>
+  <li><a href="examples/evil_lualine.lua">evil_lualine</a>
+<img width="700" src="https://user-images.githubusercontent.com/13149513/113875129-4453ba00-97d8-11eb-8f21-94a9ef565db3.png" /></li>
+</ul>
+
+<p>5) <a href="">telescope.nvim</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">telescope.nvim</code> es un buscador difuso altamente extensible sobre listas. Construido sobre las últimas características impresionantes del neovimnúcleo. El telescopio se centra en la modularidad, lo que permite una fácil personalización.</p>
+
+<p><img src="https://i.imgur.com/TTTja6t.gif" alt="Preview" /></p>
+
+<p>6) <a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree.lua</a></p>
+
+<p>Un interezante explorador de archivo</p>
+
+<p><a href="https://github.com/nvim-tree/nvim-tree.lua/actions/workflows/ci.yml"><img src="https://github.com/nvim-tree/nvim-tree.lua/actions/workflows/ci.yml/badge.svg" alt="CI" /></a></p>
+
+<h2 id="helix"><a href="">helix</a></h2>
+
+<p><img src="" alt="Imagen" /></p>
 
 <h1 id="️-mapa-de-teclas">⌨️ Mapa de teclas</h1>
 
+<p><strong>i-Haklab</strong> cuanta con diversas configuraciones de teclas que no son las que te topatias en un tutorial</p>
 <h2 id="termux">Termux</h2>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl+u <span class="c"># borra todo a la izq</span>
@@ -402,34 +592,6 @@ ctrl+y <span class="c"># restaura lo borrado</span>
 ctrl+e <span class="c"># mueve cursor al final de la linea</span>
 ctrl+a <span class="c"># mueve el cursor al inicio de la linea</span>
 </code></pre></div></div>
-
-<h2 id="tmux">Tmux</h2>
-
-<p>Todos los comandos en <code class="language-plaintext highlighter-rouge">tmux</code> requieren el atajo de prefijo, que de forma predeterminada es <code class="language-plaintext highlighter-rouge">ctrl+b</code> pero en <code class="language-plaintext highlighter-rouge">I-haklab</code> es <code class="language-plaintext highlighter-rouge">ctrl+s</code> qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.<br />
-Después de ingresar <code class="language-plaintext highlighter-rouge">ctrl+s</code>, puede ejecutar un comando <code class="language-plaintext highlighter-rouge">tmux</code> o escribir: para obtener un mensaje de tmux.</p>
-
-<h3 id="administrar-paneles">Administrar paneles</h3>
-
-<p>En un entorno de escritorio GUI, tiene Windows.  En <code class="language-plaintext highlighter-rouge">tmux</code>, tienes paneles.  Al igual que las ventanas en una GUI, estos paneles le permiten interactuar con múltiples aplicaciones y, de manera similar, se pueden abrir, cerrar, cambiar de tamaño y mover.</p>
-
-<p>A diferencia de un escritorio GUI estándar, estos paneles están en mosaico y se administran principalmente mediante atajos de tmux en lugar de un mouse (aunque se puede agregar funcionalidad de mouse).  Para crear un nuevo panel, simplemente divide la pantalla horizontal o verticalmente.</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Prefijo + / <span class="c"># Para dividir un panel horizontalmente</span>
-
-Prefijo + | <span class="c"># Para dividir el panel verticalmente</span>
-</code></pre></div></div>
-
-<p>Imagen</p>
-
-<h3 id="cambiar-el-tamaño-de-los-paneles">Cambiar el tamaño de los paneles</h3>
-
-<p>Digamos que necesitamos un poco más de espacio para respirar para uno de nuestros paneles y queremos expandir el panel unas cuantas líneas.<br />
-Para esto, ingresaremos al indicador de <code class="language-plaintext highlighter-rouge">tmux</code>:</p>
-
-<p>Imagen</p>
-
-<p>Se utiliza también   <code class="language-plaintext highlighter-rouge">Alt + teclas de flecha (←→ ↑↓)</code> para cambiar paneles
-Y <code class="language-plaintext highlighter-rouge">Shift + teclas de flecha (←→ ↑↓)</code> para cambiar ventanas</p>
 
 <h1 id="-comandos-adisionales">🤖 Comandos adisionales</h1>
 
@@ -447,14 +609,16 @@ Y <code class="language-plaintext highlighter-rouge">Shift + teclas de flecha (�
 
 <p><strong>Agregar nuevo comando mediante carga automática</strong></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autoload <span class="nt">-U</span> <span class="nb">command</span> 
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autoload <span class="nt">-U</span> comamdo
 </code></pre></div></div>
 
 <p>En el directorio <code class="language-plaintext highlighter-rouge">plugins</code> es para lo que no son creados por nosotros ni la comunidad que puedes tener una lista de ellos <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins">agui</a></p>
 
 <p>Para agregar unos de ello solo clonelo en el directorio y ponga el nombre del mismo en el <code class="language-plaintext highlighter-rouge">. zshrc </code> en plugins=(…).</p>
 
-<h1 id="-zsh-default">🤗 ZSH (Default)</h1>
+<h1 id="-reasignación-de-claves">🙈 Reasignación de claves</h1>
+
+<h1 id="-shell-default-zsh">🤗 SHELL (Default zsh)</h1>
 
 <p>Contamos con <code class="language-plaintext highlighter-rouge">zsh</code> que es  un shell diseñado para uso interactivo, aunque también es un potente lenguaje de programación. Muchas de las funciones útiles de bash, ksh y tcsh se incorporaron a zsh; Se agregaron muchas características originales</p>
 
@@ -475,7 +639,7 @@ bar.o   file.h  foo.o   main.h  main.o
 % <span class="nb">ls</span> <span class="k">*</span>.[^oh]
 foo.c  q.c  
 </code></pre></div></div>
-<p>Una expresión de la forma <x-y>coincide con un rango de números enteros:</x-y></p>
+<p>Una expresión de la forma <code class="language-plaintext highlighter-rouge">&lt;x-y&gt;</code> coincide con un rango de números enteros:</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% <span class="nb">ls </span>run&lt;200-300&gt; 
 run234 run240 
@@ -515,19 +679,19 @@ bar.o archivo.pro foo.c foo.o main.o qc
 
 <p><strong>zprofile:</strong> pretende ser una alternativa a `.zlogin’ para los fanáticos de ksh.</p>
 
-<h1 id="temas">TEMAS</h1>
+<h1 id="-temas">🎨 TEMAS</h1>
 
 <p><strong>Por default (Powerlevel10k)</strong></p>
 
 <p><img src="https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png" alt="Powerlevel10k" /></p>
 
-<h2 id="configuracion-de-powerlevek10">Configuracion de Powerlevek10</h2>
+<p>Para agregar un tema en esta ruta para carga automática <code class="language-plaintext highlighter-rouge">. zsh/themes</code></p>
 
-<p>Pase por el repositorio oficial <a href="https://github.com/romkatv/powerlevel10k#configuration">aqui</a></p>
+<h1 id="-asistente-de-configuración">👨‍🔧 Asistente de configuración</h1>
 
-<h2 id="cambio-de-tema">Cambio de tema</h2>
+<p>Escriba <code class="language-plaintext highlighter-rouge">p10k configure</code> para acceder al asistente de configuración incorporado directamente desde su terminal.</p>
 
-<p>En el directiri <code class="language-plaintext highlighter-rouge">.zsh/themes</code></p>
+<p>Para más información 👉 <a href="https://github.com/romkatv/powerlevel10k#configuration-wizard">agui</a></p>
 
 <h1 id="-tmux">📺 TMUX</h1>
 
@@ -535,144 +699,28 @@ bar.o archivo.pro foo.c foo.o main.o qc
 similar a GNU Screen o Byobu que permite dividir una consola en múltiples secciones o generar 
 sesiones independientes en la misma terminal.</p>
 
-<p>Imagen</p>
+<p><img src="" alt="Imagen" /></p>
 
-<h2 id="️-configuracion-de-tmux">🛠️ Configuracion de <code class="language-plaintext highlighter-rouge">TMUX</code></h2>
+<h2 id="️-tmux">⌨️ tmux</h2>
 
-<h3 id="archivos">Archivos</h3>
+<p>Todos los comandos en <code class="language-plaintext highlighter-rouge">tmux</code> requieren el atajo de prefijo, que de forma predeterminada es <code class="language-plaintext highlighter-rouge">ctrl+b</code> pero en <code class="language-plaintext highlighter-rouge">I-haklab</code> es <code class="language-plaintext highlighter-rouge">ctrl+s</code> qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.<br />
+Después de ingresar <code class="language-plaintext highlighter-rouge">ctrl+s</code>, puede ejecutar un comando <code class="language-plaintext highlighter-rouge">tmux</code> o escribir: para obtener un mensaje de tmux.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.tmux/plugins
-.tmux.conf
+<h3 id="-configuracion">👨‍🔧 Configuracion</h3>
+
+<p>Ruta de alchivo de configuración</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.tmux.conf
 </code></pre></div></div>
 
-<h3 id="instalación-de-complementos">Instalación de complementos</h3>
-
-<p>Cuentas con un administrador de complementos de <code class="language-plaintext highlighter-rouge">Tmux</code>.</p>
-
-<ol>
-  <li>
-    <p>Agregar nuevo complemento en <code class="language-plaintext highlighter-rouge">~/.tmux/.tmux.conf</code> con <code class="language-plaintext highlighter-rouge">set -g @plugin '...'</code></p>
-  </li>
-  <li>
-    <p>Presione <code class="language-plaintext highlighter-rouge">prefix+ I</code>(i mayúscula, como en Instalar ) para recuperar el complemento.</p>
-  </li>
-</ol>
-
-<p>Todos los complementos están instalados  en <code class="language-plaintext highlighter-rouge">~/.tmux/plugins/</code></p>
-
-<h3 id="desinstalar-complementos">Desinstalar complementos</h3>
-
-<ol>
-  <li>Elimine (o comente) el complemento de la lista.</li>
-  <li>Presione <code class="language-plaintext highlighter-rouge">prefix</code>+ alt+ u(u minúscula como en <strong>u</strong> desinstalar) para eliminar el complemento.</li>
-</ol>
-
-<p>Todos los complementos están instalados, <code class="language-plaintext highlighter-rouge">~/.tmux/plugins/</code> por lo que, alternativamente, puede encontrar el directorio de complementos allí y eliminarlo.</p>
-
-<p>Para recargar las configuraciones de <code class="language-plaintext highlighter-rouge">tmux</code> sin salir de la sección <code class="language-plaintext highlighter-rouge">Prefijo + r</code></p>
-
-<h3 id="-tema-de-tmux">🎨 Tema de tmux</h3>
-
-<h3 id="-personalización">⚙ Personalización</h3>
-
-<p>Puedes  definir tu color principal favorito si no te gusta el proporcionado.</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-g</span> @tmux_power_theme <span class="s1">'#483D8B'</span> <span class="c"># dark slate blue</span>
-</code></pre></div></div>
-
-<h3 id="-compatibilidad-con-complementos">📦 Compatibilidad con complementos</h3>
-
-<p>(pendiente mas)</p>
-
-<h1 id="desintalar-laboratorio">Desintalar laboratorio</h1>
+<h1 id="️-desintalar-laboratorio">⚰️ Desintalar laboratorio</h1>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove i-haklab 
 </code></pre></div></div>
-
-<p>n la primera captura de pantalla:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-g</span> @plugin <span class="s1">'wfxr/tmux-power'</span>
-<span class="nb">set</span> <span class="nt">-g</span> @plugin <span class="s1">'wfxr/tmux-net-speed'</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_theme <span class="s1">'everforest'</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_date_icon <span class="s1">' '</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_time_icon <span class="s1">' '</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_user_icon <span class="s1">' '</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_session_icon <span class="s1">' '</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_show_upload_speed    <span class="nb">true
-set</span> <span class="nt">-g</span> @tmux_power_show_download_speed  <span class="nb">true
-set</span> <span class="nt">-g</span> @tmux_power_show_web_reachable   <span class="nb">true
-set</span> <span class="nt">-g</span> @tmux_power_right_arrow_icon     <span class="s1">''</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_left_arrow_icon      <span class="s1">''</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_upload_speed_icon    <span class="s1">'󰕒'</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_download_speed_icon  <span class="s1">'󰇚'</span>
-<span class="nb">set</span> <span class="nt">-g</span> @tmux_power_prefix_highlight_pos <span class="s1">'R'</span>
-Los íconos
-</code></pre></div></div>
-
-<h3 id="-compatibilidad-con-complementos-pendiente-mas">📦 Compatibilidad con complementos (pendiente mas)</h3>
-
-<h1 id="desintalar-laboratorio-1">Desintalar laboratorio</h1>
+<p>r laboratorio</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove i-haklab 
 </code></pre></div></div>
-
-<p>eed  true
-set -g @tmux_power_show_web_reachable   true
-set -g @tmux_power_right_arrow_icon     ‘’
-set -g @tmux_power_left_arrow_icon      ‘’
-set -g @tmux_power_upload_speed_icon    ‘󰕒’
-set -g @tmux_power_download_speed_icon  ‘󰇚’
-set -g @tmux_power_prefix_highlight_pos ‘R’
-Los íconos</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-### 📦 Compatibilidad con complementos (pendiente mas)
-
-
-
-
-
-
-# Desintalar laboratorio 
-
-```sh
-apt remove i-haklab 
-</code></pre></div></div>
-
-<p>mux_power_prefix_highlight_pos ‘R’
-Los íconos</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-### 📦 Compatibilidad con complementos (pendiente mas)
-
-
-
-
-
-
-# Desintalar laboratorio 
-
-```sh
-apt remove i-haklab 
-</code></pre></div></div>
-
-<p>tmux_power_left_arrow_icon      ‘’
-set -g @tmux_power_upload_speed_icon    ‘󰕒’
-set -g @tmux_power_download_speed_icon  ‘󰇚’
-set -g @tmux_power_prefix_highlight_pos ‘R’
-Los íconos</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-### 📦 Compatibilidad con complementos (pendiente mas)
-
-
-
-
-
-
-# Desintalar laboratorio 
-
-```sh
-apt remove i-haklab 
-</code></pre></div></div>
-
 
         
       </section>

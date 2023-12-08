@@ -2,7 +2,7 @@
   "control": {
     "Package": "nljson",
     "Version": "0.0.1",
-    "Architerture": "all",
+    "Architecture": "all",
     "Maintainer": "DemonHunter",
     "Installed-Size": "600",
     "Homepage": "https://github.com/nlohmann/json",
@@ -11,8 +11,8 @@
   "control_files_dir": "control",
   "deb_dir": "../../",
   "data_files": {
-    "bin/*": {
-      "source": "src/*"
+    "bin/nljson": {
+      "source": "bin/nljson"
     }
   }
 }

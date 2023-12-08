@@ -1,16 +1,16 @@
-Package: android-sdk-linux
-Version: 0.1.1
+Package: nljson
+Version: 0.0.1
 Architecture: all
-Maintainer: DemonHunter <demonhunternauta@gmail.com>
-Installed-Size: 2
-Depends: cmake, wget, tar, unzip
-Description: Probando
-Filename: dists/stable/extras/binary-all/android-sdk-linux_0.1.1_all.deb
-Size: 1384
-MD5Sum: fbc875e7f00a9489390a87ceca8cdf25
-SHA1: 5a290f47ec6782dae0fdd646b5ecb92e0c465b5d
-SHA256: b9aa6632c46b5c83464c34ca9d665c98bc6a17d51c40bf96aa192b5ec291da7b
-SHA512: a485e7559d86840b555c170b571f98859323d2fab2590141f3f3026f51aebbdf8c69b2e4eaed3f41f88be0727b3903533a782ace8434e39b2b1135b181e387cc
+Maintainer: DemonHunter
+Installed-Size: 600
+Homepage: https://github.com/nlohmann/json
+Description: There are myriads of JSON libraries out there, and each may even have its reason to exist. Our class had these design goals
+Filename: dists/stable/extras/binary-all/nljson_0.0.1_all.deb
+Size: 1464
+MD5Sum: 6cb6c300767163b2f6513f8a2764a835
+SHA1: d10c227adc2f5d015f3afa34292b98050f223285
+SHA256: 9d56a53c8ccd2e25b9443049577dd1b45f2ed99cab28619d6533d31687d3fc68
+SHA512: e15f8625658a6b0977e3acec68cd7c4b1b4970d41edd52eec0adfd0df0b4a14116dd123aa8b286a2edfd058278f6a139d7252195ef0e94b10bf93db1ed8aabfd
 
 Package: vcpkg
 Version: 0.1.1
