@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                   : "minimal-mistakes-jekyll"
-# remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
+# theme                   : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
 minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Demon Hunter"
   avatar           : "/assets/images/avatar.png"
-  bio              : "Siempre me he sentido atraído por la forma en que la tecnología cambia nuestras vidas, pero también soy consciente de los riesgos y desafíos que enfrentamos en un mundo interconectado. Quiero ser parte de la solución, ayudando a asegurar sistemas y datos para proteger a los usuarios y las organizaciones."
+  bio              : "Siempre me he sentido atraído por la  tecnología."
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
