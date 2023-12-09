@@ -201,7 +201,7 @@
     
     
       <p class="author__bio" itemprop="description">
-        Siempre me he sentido atraído por la forma en que la tecnología cambia nuestras vidas, pero también soy consciente de los riesgos y desafíos que enfrentamos en un mundo interconectado. Quiero ser parte de la solución, ayudando a asegurar sistemas y datos para proteger a los usuarios y las organizaciones.
+        Siempre me he sentido atraído por la  tecnología.
       </p>
     
   </div>
@@ -318,10 +318,23 @@
           <li><a href="#atajos-de-tecla">Atajos de tecla</a></li>
           <li><a href="#la-tecla-líde">La tecla líde</a></li>
           <li><a href="#initlua">init.lua</a></li>
-          <li><a href="#plugins">Plugins</a></li>
+          <li><a href="#plugins">Plugins</a>
+            <ul>
+              <li><a href="#combinaciones-de-teclas">Combinaciones de teclas</a></li>
+            </ul>
+          </li>
+          <li><a href="#️-keymap-nvim">⌨️ keymap nvim</a>
+            <ul>
+              <li><a href="#">😼</a></li>
+              <li><a href="#explorador-de-archivo">Explorador de archivo</a></li>
+              <li><a href="#buffer">Buffer</a></li>
+              <li><a href="#cambiar-tamaño-de-ventana">Cambiar tamaño de ventana</a></li>
+              <li><a href="#telescope">Telescope</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
-      <li><a href="#helix">helix</a></li>
+      <li><a href="#️helix">🖋️helix</a></li>
     </ul>
   </li>
   <li><a href="#️-mapa-de-teclas">⌨️ Mapa de teclas</a>
@@ -535,7 +548,7 @@ lazy.setup<span class="o">({</span>
 </code></pre></div></div>
 <h3 id="plugins">Plugins</h3>
 
-<p>En nuestra configuracion contamos con un total de <code class="language-plaintext highlighter-rouge">12</code> plugins los cuales explicare en breve.</p>
+<p>En nuestra configuracion contamos con un total de <code class="language-plaintext highlighter-rouge">13</code> plugins los cuales explicare en breve.</p>
 
 <p>1) <a href="https://github.com/mickael-menu/zk-nvim">zk-nvim</a></p>
 
@@ -573,9 +586,94 @@ Este complemento descarga automáticamente <a href="https://www.languagetool.org
 
 <p>Un interezante explorador de archivo</p>
 
-<p><a href="https://github.com/nvim-tree/nvim-tree.lua/actions/workflows/ci.yml"><img src="https://github.com/nvim-tree/nvim-tree.lua/actions/workflows/ci.yml/badge.svg" alt="CI" /></a></p>
+<h4 id="combinaciones-de-teclas">Combinaciones de teclas</h4>
 
-<h2 id="helix"><a href="">helix</a></h2>
+<p><code class="language-plaintext highlighter-rouge">leader + f</code>: Abre explorador
+Mostrar las asignaciones: <code class="language-plaintext highlighter-rouge">leader + g?</code></p>
+
+<p><img src="" alt="tree-explo" /></p>
+
+<p>7) <a href="https://github.com/lukas-reineke/indent-blankline.nvim">indent-blankline.nvim</a></p>
+
+<p>Este complemento agrega guías de sangría a Neovim.</p>
+
+<p><img width="900" src="https://github.com/lukas-reineke/indent-blankline.nvim/assets/12900252/69ca7bb2-e294-4437-818b-8b47e63244b3" alt="Screenshot" /></p>
+
+<p>De querér personalizar algo por su cuenta de este complemento le recomiendo ejecutar <code class="language-plaintext highlighter-rouge">:help ibl.config.scope</code> y echarle una leída.</p>
+
+<p>8)  <a href="https://github.com/akinsho/toggleterm.nvim">toggleterm.nvim</a></p>
+
+<p>Un complemento de neovim para persistir y alternar entre múltiples terminales durante una sesión de edición</p>
+
+<p><img src="https://user-images.githubusercontent.com/22454918/224485816-8b0cb1b8-b0e6-4da6-9d71-a7299d39f1a0.gif" alt="toggleterm in action" /></p>
+
+<p>9)  <a href="https://github.com/dense-analysis/neural">neural</a></p>
+
+<p>¡Un complemento ChatGPT Vim, un complemento OpenAI Neovim y mucho más! Neural integra varias herramientas de aprendizaje automático para que puedas dejar que la IA escriba código por ti en Vim/Neovim, entre otras cosas útiles.</p>
+
+<p>10) <a href="https://github.com/MunifTanjim/nui.nvim">nui.nvim</a></p>
+
+<p>Biblioteca de componentes de interfaz de usuario para Neovim.</p>
+
+<p><img src="https://github.com/MunifTanjim/nui.nvim/wiki/media/layout.gif" alt="Diseño GIF" /></p>
+
+<p>11) <a href="https://github.com/ElPiloto/significant.nvim">significant.nvim</a></p>
+
+<p>😬 Cuando tienes algo importante que decir</p>
+
+<p>12) <a href="https://github.com/VonHeikemen/lsp-zero.nvim">lsp-zero.nvim</a></p>
+
+<p>Colección de funciones que le ayudarán a configurar el cliente LSP de Neovim, para que pueda obtener funciones similares a IDE con el mínimo esfuerzo.</p>
+
+<h3 id="️-keymap-nvim">⌨️ keymap nvim</h3>
+
+<p>…</p>
+
+<h4>😼</h4>
+
+<ul>
+  <li>
+    <p>Abrir archivo de configuración <code class="language-plaintext highlighter-rouge">init.lua</code>
+<code class="language-plaintext highlighter-rouge">vim.keymap.set('n', '&lt;leader&gt;ei', '&lt;cmd&gt;:e $MYVIMRC&lt;cr&gt;')</code></p>
+  </li>
+  <li>
+    <p>Cerrar neovim sin guardar
+<code class="language-plaintext highlighter-rouge">vim.keymap.set('n', '&lt;leader&gt;qq', '&lt;cmd&gt;:q!&lt;cr&gt;')</code></p>
+  </li>
+  <li>
+    <p>Guardar cambios
+<code class="language-plaintext highlighter-rouge">vim.keymap.set('n', '&lt;leader&gt;w', '&lt;cmd&gt;:w&lt;cr&gt;')</code></p>
+  </li>
+  <li>
+    <p>Guardar cambios y Cerrar neovim
+<code class="language-plaintext highlighter-rouge">vim.keymap.set('n', '&lt;leader&gt;x', '&lt;cmd&gt;:x&lt;cr&gt;')</code></p>
+  </li>
+</ul>
+
+<h4 id="explorador-de-archivo">Explorador de archivo</h4>
+
+<h4 id="buffer">Buffer</h4>
+
+<ul>
+  <li>Moverse entre búffer</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim.keymap.set('n', '&lt;C-b&gt;n', '&lt;cmd&gt;:bnext&lt;cr&gt;') 
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim.keymap.set('n', '&lt;C-b&gt;p', '&lt;cmd&gt;:bprevious&lt;cr&gt;')
+</code></pre></div></div>
+<ul>
+  <li>Cerrer el buffer actual</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim.keymap.set('n', '&lt;C-b&gt;q', '&lt;cmd&gt;:bdelete&lt;cr&gt;')
+</code></pre></div></div>
+
+<h4 id="cambiar-tamaño-de-ventana">Cambiar tamaño de ventana</h4>
+
+<h4 id="telescope">Telescope</h4>
+
+<h2 id="️helix">🖋️<a href="">helix</a></h2>
 
 <p><img src="" alt="Imagen" /></p>
 
@@ -721,6 +819,21 @@ Después de ingresar <code class="language-plaintext highlighter-rouge">ctrl+s</
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove i-haklab 
 </code></pre></div></div>
+<p>~/.tmux.conf</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+# ⚰️ Desintalar laboratorio 
+
+```sh
+apt remove i-haklab 
+</code></pre></div></div>
+<p>r laboratorio</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt remove i-haklab 
+</code></pre></div></div>
+<p>```</p>
+
 
         
       </section>

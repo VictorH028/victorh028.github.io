@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-07T20:11:37-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacking Ético vs Termux</title><subtitle>Ciberseguridad desde Termux</subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-09T09:51:11-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacking Ético vs Termux</title><subtitle>Ciberseguridad desde Termux</subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Abre un editor de texto y crea un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mi_programa.desktop&lt;/code&gt; con el siguiente contenido:&lt;/li&gt;
@@ -446,7 +446,7 @@ lazy.setup&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
 
-&lt;p&gt;En nuestra configuracion contamos con un total de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;12&lt;/code&gt; plugins los cuales explicare en breve.&lt;/p&gt;
+&lt;p&gt;En nuestra configuracion contamos con un total de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;13&lt;/code&gt; plugins los cuales explicare en breve.&lt;/p&gt;
 
 &lt;p&gt;1) &lt;a href=&quot;https://github.com/mickael-menu/zk-nvim&quot;&gt;zk-nvim&lt;/a&gt;&lt;/p&gt;
 
@@ -484,9 +484,94 @@ Este complemento descarga automáticamente &lt;a href=&quot;https://www.language
 
 &lt;p&gt;Un interezante explorador de archivo&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/nvim-tree/nvim-tree.lua/actions/workflows/ci.yml&quot;&gt;&lt;img src=&quot;https://github.com/nvim-tree/nvim-tree.lua/actions/workflows/ci.yml/badge.svg&quot; alt=&quot;CI&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;combinaciones-de-teclas&quot;&gt;Combinaciones de teclas&lt;/h4&gt;
 
-&lt;h2 id=&quot;helix&quot;&gt;&lt;a href=&quot;&quot;&gt;helix&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;leader + f&lt;/code&gt;: Abre explorador
+Mostrar las asignaciones: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;leader + g?&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;tree-explo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;7) &lt;a href=&quot;https://github.com/lukas-reineke/indent-blankline.nvim&quot;&gt;indent-blankline.nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Este complemento agrega guías de sangría a Neovim.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;900&quot; src=&quot;https://github.com/lukas-reineke/indent-blankline.nvim/assets/12900252/69ca7bb2-e294-4437-818b-8b47e63244b3&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;De querér personalizar algo por su cuenta de este complemento le recomiendo ejecutar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:help ibl.config.scope&lt;/code&gt; y echarle una leída.&lt;/p&gt;
+
+&lt;p&gt;8)  &lt;a href=&quot;https://github.com/akinsho/toggleterm.nvim&quot;&gt;toggleterm.nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un complemento de neovim para persistir y alternar entre múltiples terminales durante una sesión de edición&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/22454918/224485816-8b0cb1b8-b0e6-4da6-9d71-a7299d39f1a0.gif&quot; alt=&quot;toggleterm in action&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;9)  &lt;a href=&quot;https://github.com/dense-analysis/neural&quot;&gt;neural&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;¡Un complemento ChatGPT Vim, un complemento OpenAI Neovim y mucho más! Neural integra varias herramientas de aprendizaje automático para que puedas dejar que la IA escriba código por ti en Vim/Neovim, entre otras cosas útiles.&lt;/p&gt;
+
+&lt;p&gt;10) &lt;a href=&quot;https://github.com/MunifTanjim/nui.nvim&quot;&gt;nui.nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Biblioteca de componentes de interfaz de usuario para Neovim.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/MunifTanjim/nui.nvim/wiki/media/layout.gif&quot; alt=&quot;Diseño GIF&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;11) &lt;a href=&quot;https://github.com/ElPiloto/significant.nvim&quot;&gt;significant.nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;😬 Cuando tienes algo importante que decir&lt;/p&gt;
+
+&lt;p&gt;12) &lt;a href=&quot;https://github.com/VonHeikemen/lsp-zero.nvim&quot;&gt;lsp-zero.nvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Colección de funciones que le ayudarán a configurar el cliente LSP de Neovim, para que pueda obtener funciones similares a IDE con el mínimo esfuerzo.&lt;/p&gt;
+
+&lt;h3 id=&quot;️-keymap-nvim&quot;&gt;⌨️ keymap nvim&lt;/h3&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;h4&gt;😼&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Abrir archivo de configuración &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;init.lua&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;ei&apos;, &apos;&amp;lt;cmd&amp;gt;:e $MYVIMRC&amp;lt;cr&amp;gt;&apos;)&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cerrar neovim sin guardar
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;qq&apos;, &apos;&amp;lt;cmd&amp;gt;:q!&amp;lt;cr&amp;gt;&apos;)&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Guardar cambios
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;w&apos;, &apos;&amp;lt;cmd&amp;gt;:w&amp;lt;cr&amp;gt;&apos;)&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Guardar cambios y Cerrar neovim
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;x&apos;, &apos;&amp;lt;cmd&amp;gt;:x&amp;lt;cr&amp;gt;&apos;)&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;explorador-de-archivo&quot;&gt;Explorador de archivo&lt;/h4&gt;
+
+&lt;h4 id=&quot;buffer&quot;&gt;Buffer&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moverse entre búffer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;C-b&amp;gt;n&apos;, &apos;&amp;lt;cmd&amp;gt;:bnext&amp;lt;cr&amp;gt;&apos;) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;C-b&amp;gt;p&apos;, &apos;&amp;lt;cmd&amp;gt;:bprevious&amp;lt;cr&amp;gt;&apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cerrer el buffer actual&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;C-b&amp;gt;q&apos;, &apos;&amp;lt;cmd&amp;gt;:bdelete&amp;lt;cr&amp;gt;&apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;cambiar-tamaño-de-ventana&quot;&gt;Cambiar tamaño de ventana&lt;/h4&gt;
+
+&lt;h4 id=&quot;telescope&quot;&gt;Telescope&lt;/h4&gt;
+
+&lt;h2 id=&quot;️helix&quot;&gt;🖋️&lt;a href=&quot;&quot;&gt;helix&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
 
@@ -631,7 +716,21 @@ Después de ingresar &lt;code class=&quot;language-plaintext highlighter-rouge&q
 &lt;p&gt;r laboratorio&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">i-Haklab es un laboratorio de hacking para Termux que que nos ofrece de manera ordenada y secuencial un conjunto herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;~/.tmux.conf&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+
+# ⚰️ Desintalar laboratorio 
+
+```sh
+apt remove i-haklab 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;r laboratorio&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;```&lt;/p&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">i-Haklab es un laboratorio de hacking para Termux que que nos ofrece de manera ordenada y secuencial un conjunto herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
 Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
 
 &lt;ul&gt;
