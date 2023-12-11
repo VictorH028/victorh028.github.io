@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-09T09:51:11-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacking Ético vs Termux</title><subtitle>Ciberseguridad desde Termux</subtitle><author><name>Demon Hunter</name></author><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-10T20:24:04-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">victorh028.github.io</title><subtitle>Un espacio para la práctica y la información en un emulador de terminar Linux para Android </subtitle><entry><title type="html">desktop</title><link href="http://localhost:4000/notas/2023/10/10/desktop-linux.html" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/notas/2023/10/10/desktop-linux</id><content type="html" xml:base="http://localhost:4000/notas/2023/10/10/desktop-linux.html">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Abre un editor de texto y crea un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mi_programa.desktop&lt;/code&gt; con el siguiente contenido:&lt;/li&gt;
@@ -45,7 +45,7 @@ Categories=Development;
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="notas" /><category term="Linux" /><category term="tips" /><summary type="html">Para mostrar tu aplicaciones en el menu de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:</summary></entry><entry><title type="html">Resaltado de sintaxis en C++</title><link href="http://localhost:4000/C++_sintaxis/" rel="alternate" type="text/html" title="Resaltado de sintaxis en C++" /><published>2023-07-05T00:00:00-04:00</published><updated>2023-07-05T00:00:00-04:00</updated><id>http://localhost:4000/C++_sintaxis</id><content type="html" xml:base="http://localhost:4000/C++_sintaxis/">&lt;p&gt;Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="notas" /><category term="Linux" /><category term="tips" /><summary type="html">Para mostrar tu aplicaciones en el menu de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:</summary></entry><entry><title type="html">Resaltado de sintaxis en C++</title><link href="http://localhost:4000/programacion/2023/07/05/C++_sintaxis.html" rel="alternate" type="text/html" title="Resaltado de sintaxis en C++" /><published>2023-07-05T00:00:00-04:00</published><updated>2023-07-05T00:00:00-04:00</updated><id>http://localhost:4000/programacion/2023/07/05/C++_sintaxis</id><content type="html" xml:base="http://localhost:4000/programacion/2023/07/05/C++_sintaxis.html">&lt;p&gt;Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++&lt;/p&gt;
 
 &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream &amp;gt;
 #include &amp;lt;string&amp;gt;
@@ -186,7 +186,7 @@ int main() {
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="Programacion" /><category term="termux" /><category term="linux" /><summary type="html">Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++</summary></entry><entry><title type="html">RSA</title><link href="http://localhost:4000/RSA/" rel="alternate" type="text/html" title="RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/RSA</id><content type="html" xml:base="http://localhost:4000/RSA/">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="Programacion" /><category term="termux" /><category term="linux" /><summary type="html">Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++</summary></entry><entry><title type="html">RSA</title><link href="http://localhost:4000/2023/05/25/RSA.html" rel="alternate" type="text/html" title="RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/2023/05/25/RSA</id><content type="html" xml:base="http://localhost:4000/2023/05/25/RSA.html">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
 
 &lt;p&gt;Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:&lt;/p&gt;
 
@@ -262,19 +262,7 @@ apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
 
 &lt;p&gt;También puedes especificar la ruta completa del archivo si no está en la carpeta actual.&lt;/p&gt;
 
-&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-    (function() { // DON&apos;T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement(&apos;script&apos;);
-    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
-    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/i-Haklab/" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/i-Haklab</id><content type="html" xml:base="http://localhost:4000/i-Haklab/">&lt;p&gt;i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.&lt;/p&gt;
+&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.&lt;/p&gt;</content><author><name></name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/laboratorio/2023/04/29/i-Haklab.html" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/laboratorio/2023/04/29/i-Haklab</id><content type="html" xml:base="http://localhost:4000/laboratorio/2023/04/29/i-Haklab.html">&lt;p&gt;i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
 
@@ -412,14 +400,14 @@ Estas son las más comunes.&lt;/li&gt;
 
 &lt;p&gt;mapleader es una variable que debe ser una cadena texto. Por ejemplo.&lt;/p&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.g.mapleader &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;C-s&apos;&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.g.mapleader &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;,&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Con esto podríamos usar la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CTRL + s&lt;/code&gt; como un prefijo para nuestros atajos.&lt;/p&gt;
+&lt;p&gt;Con esto podríamos usar la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt; como un prefijo para nuestros atajos.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;n&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;leader&amp;gt;w&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;cmd&amp;gt;write&amp;lt;cr&amp;gt;&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Y así la secuencia &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CTRL + s + w&lt;/code&gt; guarda el archivo actual.&lt;/p&gt;
+&lt;p&gt;Y así la secuencia &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;, + w&lt;/code&gt; guarda el archivo actual.&lt;/p&gt;
 
 &lt;h3 id=&quot;initlua&quot;&gt;init.lua&lt;/h3&gt;
 
@@ -445,8 +433,6 @@ lazy.setup&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:echo stdpath&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;data&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;/lazy/lazy.nvim&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
-
-&lt;p&gt;En nuestra configuracion contamos con un total de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;13&lt;/code&gt; plugins los cuales explicare en breve.&lt;/p&gt;
 
 &lt;p&gt;1) &lt;a href=&quot;https://github.com/mickael-menu/zk-nvim&quot;&gt;zk-nvim&lt;/a&gt;&lt;/p&gt;
 
@@ -487,7 +473,7 @@ Este complemento descarga automáticamente &lt;a href=&quot;https://www.language
 &lt;h4 id=&quot;combinaciones-de-teclas&quot;&gt;Combinaciones de teclas&lt;/h4&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;leader + f&lt;/code&gt;: Abre explorador
-Mostrar las asignaciones: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;leader + g?&lt;/code&gt;&lt;/p&gt;
+Mostrar las asignaciones del explorador: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;leader + g?&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;tree-explo&quot; /&gt;&lt;/p&gt;
 
@@ -523,61 +509,115 @@ Mostrar las asignaciones: &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;p&gt;Colección de funciones que le ayudarán a configurar el cliente LSP de Neovim, para que pueda obtener funciones similares a IDE con el mínimo esfuerzo.&lt;/p&gt;
 
-&lt;h3 id=&quot;️-keymap-nvim&quot;&gt;⌨️ keymap nvim&lt;/h3&gt;
+&lt;h3 id=&quot;️-keymap-nvimm&quot;&gt;⌨️ keymap nvimm&lt;/h3&gt;
 
 &lt;p&gt;…&lt;/p&gt;
 
-&lt;h4&gt;😼&lt;/h4&gt;
+&lt;h4 id=&quot;mias-&quot;&gt;Mias 😼&lt;/h4&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Abrir archivo de configuración &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;init.lua&lt;/code&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;ei&apos;, &apos;&amp;lt;cmd&amp;gt;:e $MYVIMRC&amp;lt;cr&amp;gt;&apos;)&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;ei&lt;/code&gt;: Abrir archivo de configuración &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;init.lua&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Cerrar neovim sin guardar
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;qq&apos;, &apos;&amp;lt;cmd&amp;gt;:q!&amp;lt;cr&amp;gt;&apos;)&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;qq&lt;/code&gt;: Cerrar neovim sin guardar&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Guardar cambios
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;w&apos;, &apos;&amp;lt;cmd&amp;gt;:w&amp;lt;cr&amp;gt;&apos;)&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;w&lt;/code&gt;: Guardar cambios&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Guardar cambios y Cerrar neovim
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;x&apos;, &apos;&amp;lt;cmd&amp;gt;:x&amp;lt;cr&amp;gt;&apos;)&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;x&lt;/code&gt;: Guardar cambios y Cerrar neovim&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h4 id=&quot;explorador-de-archivo&quot;&gt;Explorador de archivo&lt;/h4&gt;
 
 &lt;h4 id=&quot;buffer&quot;&gt;Buffer&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Moverse entre búffer&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;C-b&amp;gt;n&lt;/code&gt;,&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;C-b&amp;gt;p&lt;/code&gt;: Moverse entre búffer&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;C-b&amp;gt;q&lt;/code&gt;: Cerrer el buffer actual&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;C-b&amp;gt;n&apos;, &apos;&amp;lt;cmd&amp;gt;:bnext&amp;lt;cr&amp;gt;&apos;) 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;C-b&amp;gt;p&apos;, &apos;&amp;lt;cmd&amp;gt;:bprevious&amp;lt;cr&amp;gt;&apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;ventana&quot;&gt;Ventana&lt;/h4&gt;
+
+&lt;h4 id=&quot;cmp-y-luasnip&quot;&gt;cmp y luasnip&lt;/h4&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Cerrer el buffer actual&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;K&lt;/code&gt;: Muestra información sobre símbolo debajo del cursor&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;C-b&amp;gt;q&apos;, &apos;&amp;lt;cmd&amp;gt;:bdelete&amp;lt;cr&amp;gt;&apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;cambiar-tamaño-de-ventana&quot;&gt;Cambiar tamaño de ventana&lt;/h4&gt;
 
 &lt;h4 id=&quot;telescope&quot;&gt;Telescope&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;&amp;lt;space&amp;gt;&lt;/code&gt;: Muestra la lista de archivos abiertos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;?&lt;/code&gt;: Muestra el historial de archivos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;ff&lt;/code&gt;: Muestra los archivos del directorio de trabajo actual&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;fg&lt;/code&gt;: Ejecuta una búsqueda interactiva en cada línea código de cada archivo en el directorio actual.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;fd&lt;/code&gt;: Muestra la lista de “&lt;strong&gt;diagnósticos&lt;/strong&gt;” del archivo actual. Un diagnóstico puede ser un error de sintaxis, una advertencia o una sugerencia.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;fs&lt;/code&gt;: Ejecuta una búsqueda interactiva en el archivo actual&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;neural&quot;&gt;Neural&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;n&lt;/code&gt;: Activa interaccion con chatGPT de openAI con neura&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Activar / desactivar fondo transparente&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;be&apos;, &apos;&amp;lt;cmd&amp;gt;TransparentEnable&amp;lt;cr&amp;gt;&apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;bd&apos;, &apos;&amp;lt;cmd&amp;gt;TransparentDisable&amp;lt;cr&amp;gt;&apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;bt&apos;, &apos;&amp;lt;cmd&amp;gt;TransparentToggle&amp;lt;cr&amp;gt;&apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h4 id=&quot;lsp&quot;&gt;LSP&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estas son las combinaciones de teclas de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lsp-zero&lt;/code&gt; y sus complemento adisionales.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Ctrl-y&amp;gt;&lt;/code&gt;: Confirma la selección.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Ctrl-e&amp;gt;&lt;/code&gt;: Cancelar la finalización.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Down&amp;gt;&lt;/code&gt;: navegue al siguiente elemento de la lista.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Up&amp;gt;&lt;/code&gt;: navega al elemento anterior de la lista.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Ctrl-n&amp;gt;&lt;/code&gt;: Vaya al siguiente elemento del menú de finalización o active el menú de finalización.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Ctrl-p&amp;gt;&lt;/code&gt;: Vaya al elemento anterior del menú de finalización o active el menú de finalizació.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;️helix&quot;&gt;🖋️&lt;a href=&quot;&quot;&gt;helix&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;️-mapa-de-teclas&quot;&gt;⌨️ Mapa de teclas&lt;/h1&gt;
+&lt;h1 id=&quot;️-mapa-de-teclass&quot;&gt;⌨️ Mapa de teclass&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;i-Haklab&lt;/strong&gt; cuanta con diversas configuraciones de teclas que no son las que te topatias en un tutorial&lt;/p&gt;
+
 &lt;h2 id=&quot;termux&quot;&gt;Termux&lt;/h2&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ctrl+u &lt;span class=&quot;c&quot;&gt;# borra todo a la izq&lt;/span&gt;
@@ -719,7 +759,11 @@ Después de ingresar &lt;code class=&quot;language-plaintext highlighter-rouge&q
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;~/.tmux.conf&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+# 👨‍🎓  Como puedo ayudar 
 
+Contribuya con informando cualquier problema o realizando solicitudes push.
+
+Únase a nuestro [servidor de telegrama]() . 
 
 # ⚰️ Desintalar laboratorio 
 
@@ -729,8 +773,7 @@ apt remove i-haklab
 &lt;p&gt;r laboratorio&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;```&lt;/p&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">i-Haklab es un laboratorio de hacking para Termux que que nos ofrece de manera ordenada y secuencial un conjunto herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">i-Haklab es un laboratorio de hacking para Termux que que nos ofrece de manera ordenada y secuencial un conjunto herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/termux/root/2023/04/21/Alpine.html" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/termux/root/2023/04/21/Alpine</id><content type="html" xml:base="http://localhost:4000/termux/root/2023/04/21/Alpine.html">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
 Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -807,7 +850,7 @@ Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;r
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Notas de git</title><link href="http://localhost:4000/GIT/" rel="alternate" type="text/html" title="Notas de git" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/GIT</id><content type="html" xml:base="http://localhost:4000/GIT/">&lt;p&gt;Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Notas de git</title><link href="http://localhost:4000/soluciones/notas/2023/04/20/GIT.html" rel="alternate" type="text/html" title="Notas de git" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/soluciones/notas/2023/04/20/GIT</id><content type="html" xml:base="http://localhost:4000/soluciones/notas/2023/04/20/GIT.html">&lt;p&gt;Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.&lt;/p&gt;
 
 &lt;p&gt;Para configurar un token de acceso personal, sigue estos pasos:&lt;/p&gt;
 
@@ -890,7 +933,7 @@ Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;r
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="soluciones" /><category term="notas" /><category term="termux" /><category term="tips" /><summary type="html">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.</summary></entry><entry><title type="html">Alternativas para `ngrok`</title><link href="http://localhost:4000/ngrok_alternativas/" rel="alternate" type="text/html" title="Alternativas para `ngrok`" /><published>2023-04-18T00:00:00-04:00</published><updated>2023-04-18T00:00:00-04:00</updated><id>http://localhost:4000/ngrok_alternativas</id><content type="html" xml:base="http://localhost:4000/ngrok_alternativas/">&lt;p&gt;Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="soluciones" /><category term="notas" /><category term="termux" /><category term="tips" /><summary type="html">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.</summary></entry><entry><title type="html">Alternativas para `ngrok`</title><link href="http://localhost:4000/alternativa/2023/04/18/ngrok_alternativas.html" rel="alternate" type="text/html" title="Alternativas para `ngrok`" /><published>2023-04-18T00:00:00-04:00</published><updated>2023-04-18T00:00:00-04:00</updated><id>http://localhost:4000/alternativa/2023/04/18/ngrok_alternativas</id><content type="html" xml:base="http://localhost:4000/alternativa/2023/04/18/ngrok_alternativas.html">&lt;p&gt;Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado&lt;/p&gt;
 
 &lt;h1 id=&quot;opcion-1&quot;&gt;Opcion 1&lt;/h1&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://pagekite.net
@@ -924,19 +967,7 @@ python2 pagekite.py 80 yourname.pagekite.me
 &lt;h1 id=&quot;opcion-8&quot;&gt;Opcion 8&lt;/h1&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://burrow.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-    (function() { // DON&apos;T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement(&apos;script&apos;);
-    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
-    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="alternativa" /><category term="termux" /><category term="tips" /><summary type="html">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/install-localtunel/" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/install-localtunel</id><content type="html" xml:base="http://localhost:4000/install-localtunel/">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="alternativa" /><category term="termux" /><category term="tips" /><summary type="html">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/termux/2023/04/17/install-localtunel.html" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/termux/2023/04/17/install-localtunel</id><content type="html" xml:base="http://localhost:4000/termux/2023/04/17/install-localtunel.html">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
 
 &lt;h1 id=&quot;instalacion&quot;&gt;Instalacion&lt;/h1&gt;
 
@@ -1034,4 +1065,4 @@ ultimo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="termux" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
