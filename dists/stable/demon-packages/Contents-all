@@ -1,4 +1,0 @@
-data/data/com.termux/files/usr/bin/nljson                                        nljson
-data/data/com.termux/files/usr/manifiest.json                                    vcpkg
-data/data/com.termux/files/usr/postinst                                          vcpkg
-data/data/com.termux/files/usr/postrm                                            vcpkg
