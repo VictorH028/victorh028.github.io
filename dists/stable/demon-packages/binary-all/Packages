@@ -1,0 +1,31 @@
+Package: nljson
+Version: 0.0.1
+Architecture: all
+Maintainer: DemonHunter
+Installed-Size: 600
+Homepage: https://github.com/nlohmann/json
+Description: There are myriads of JSON libraries out there, and each may even have its reason to exist. Our class had these design goals
+Filename: dists/stable/demon-packages/binary-all/nljson_0.0.1_all.deb
+Size: 1464
+MD5Sum: 6cb6c300767163b2f6513f8a2764a835
+SHA1: d10c227adc2f5d015f3afa34292b98050f223285
+SHA256: 9d56a53c8ccd2e25b9443049577dd1b45f2ed99cab28619d6533d31687d3fc68
+SHA512: e15f8625658a6b0977e3acec68cd7c4b1b4970d41edd52eec0adfd0df0b4a14116dd123aa8b286a2edfd058278f6a139d7252195ef0e94b10bf93db1ed8aabfd
+
+Package: vcpkg
+Version: 0.1.1
+Architecture: all
+Maintainer: DemonHunter <demonhunternauta@gmail.com>
+Installed-Size: 3
+Depends: cmake, git, tar, curl, zip, unzip
+Description:  Administrador de paquetes de C/C++
+ It 
+ .
+ Obtenga acceso a miles de bibliotecas de código abierto de alta calidad para capacitar a la aplicación y compartir internamente colecciones de componentes privados.
+Filename: dists/stable/demon-packages/binary-all/vcpkg_0.1.1_all.deb
+Size: 2040
+MD5Sum: 688968942499336c675b3d6f9bd69fc0
+SHA1: a53dcd2dd34d922392b28b1c42a55442badb3f0d
+SHA256: af9f28e7211a411316adb2a1ba108094711c0e9f5ac1f5b9cb057e85ff2744f0
+SHA512: 10254d7780dad7f78f884be8f976a51d56661cc50e20dce520bb604dcc0bcf80d2af7d610903fc3a13c4c0cf376261e0322c249d88559d1d932863fcf93378b9
+
