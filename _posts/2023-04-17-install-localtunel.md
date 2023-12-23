@@ -105,8 +105,8 @@ case 'android':
    19         throw new Error('Unsupported platform: ' + process.platform);
    20 }
 ```
-# usar
-Suponiendo que su servidor local se está ejecutando en el puerto 8000, simplemente use el ltcomando para iniciar el túnel.
+# uso 
+Suponiendo que su servidor local se está ejecutando en el puerto 8000, simplemente use el `lt` comando para iniciar el túnel.
 
 ```bash
 lt --port 8000
