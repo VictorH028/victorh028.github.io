@@ -7,53 +7,54 @@ header:
   teaser: /assets/images/ngrok/ngrok-blue.png
   teaser_home_page: true
 categories:
-  - alternativa
+  - error
 tags:
   - termux
-  - tips
 ---
 
 
-Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado 
+Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en `ngrok.com`, uno `http` y otro con `https` pero en ocasiones tenemos problemas con dicho sevicio.
 
-# Opcion 1
+
+# Lisa de acternativas 
+
+-  Opcion 1
 ```bash
 https://pagekite.net
 curl -O https://pagekite.net/pk/pagekite.py 
 python2 pagekite.py 80 yourname.pagekite.me
 ```
-# Opcion 2
+- Opcion 2
 ```
 https://portmap.io
 ```
 
-# Opcion 3
+- Opcion 3
 ```
 https://github.com/antoniomika/sish
 ```
 
-# Opcion 4
+- Opcion 4
 ```
 https://forwardhq.com
 ```
 
-# Opcion 5
+- Opcion 5
 ```
 https://www.beame.io
 ```
 
-# Opcion 6
+- Opcion 6
 ```
 https://localhost.run
 ```
 
-# Opcion 7
+- Opcion 7
 ```
 https://holepunch.io
 ```
 
-# Opcion 8
-
+- Opcion 8
 ```
 https://burrow.io
 ```
