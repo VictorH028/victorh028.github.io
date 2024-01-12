@@ -1,0 +1,654 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Notas C++ - Hacking Ético vs Termux</title>
+<meta name="description" content="">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Hacking Ético vs Termux">
+<meta property="og:title" content="Notas C++">
+<meta property="og:url" content="http://localhost:4000/notas-c++/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-12-25T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/notas-c++/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "DemonHunter",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Hacking Ético vs Termux Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+                
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Artículos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categorías</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Etiquetas</a>
+            </li><li class="masthead__menu-item">
+              <a href="/videos/" >Vídeos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/buscador/" >Buscador</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >Contacto</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Notas C++</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/avatar.png" alt="Demon Hunter" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Demon Hunter</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Siempre me he sentido atraído por la  tecnología.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/victorh028" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Notas C++">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="December 25, 2023">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Notas C++
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p class="page__meta">
+          
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2023-12-25T00:00:00-05:00">December 25, 2023 </time>&emsp;
+          
+          <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;
+
+
+
+
+  8 minute read
+
+        </p>
+        
+<h1 id="declaracion-y-extructura-de-un-programa">Declaracion y extructura de un programa</h1>
+
+<ul>
+  <li><strong>Declaraciones</strong></li>
+</ul>
+
+<p>Un programa de computadora es una secuencia de instrucciones que le dicen a la computadora qué hacer. Una <strong>declaración</strong> es un tipo de instrucción que hace que el programa realice alguna acción</p>
+
+<blockquote>
+  <p>nota : La mayoría (pero no todas) las declaraciones en C++ terminan en punto y coma. Si ve una línea que termina en punto y coma, probablemente sea una declaración</p>
+</blockquote>
+
+<ul>
+  <li><strong>Funciones y función principal</strong></li>
+</ul>
+
+<p>En C++, las declaraciones normalmente se agrupan en unidades llamadas <strong>funciones.</strong> Una función es una colección de declaraciones que se ejecutan secuencialmente (en orden, de arriba a abajo).</p>
+
+<blockquote>
+  <p>Regala: Cada programa C++ debe tener una función especial llamada <strong>main</strong> (todas las letras minúsculas). Cuando se ejecuta el programa, las declaraciones dentro de mainse ejecutan en orden secuencial.</p>
+</blockquote>
+
+<ul>
+  <li><strong>Errores de sintaxis y sintaxis</strong></li>
+</ul>
+
+<p>En inglés, las oraciones se construyen de acuerdo con reglas gramaticales específicas que probablemente aprendiste en la clase de inglés en la escuela. Por ejemplo, las oraciones normales terminan en un punto. Las reglas que gobiernan cómo se construyen las oraciones en un idioma se llaman <strong>sintaxis</strong> . Si olvida el punto y ejecuta dos oraciones juntas, esto es una violación de la sintaxis del idioma inglés.</p>
+
+<h1 id="comentarios">Comentarios</h1>
+
+<p>Un comentario es una nota legible por el programador que se inserta directamente en el código fuente del programa. El compilador ignora los comentarios y son para uso exclusivo del programador</p>
+
+<ul>
+  <li><strong>comentario de una sola linea</strong></li>
+</ul>
+
+<p>El <code class="language-plaintext highlighter-rouge">//</code> símbolo comienza un comentario de una sola línea de C++, que le indica al compilador que ignore todo, desde el <code class="language-plaintext highlighter-rouge">//</code>símbolo hasta el final de la línea. Por ejemplo:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hola Mundo"</span><span class="p">;</span> <span class="err">\\</span> <span class="n">Esto</span> <span class="n">es</span> <span class="n">un</span> <span class="n">comentario</span>
+</code></pre></div></div>
+
+<ul>
+  <li><strong>comentario de varias lineas</strong></li>
+</ul>
+
+<p>El par de símbolos <code class="language-plaintext highlighter-rouge">/*</code> y <code class="language-plaintext highlighter-rouge">*/</code> denota un comentario de varias líneas de estilo C. Todo lo que se encuentre entre los símbolos se ignora</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Todo lo que
+esta
+aca es un comentario
+*/</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>⚠️ Advertencia: No utilice comentarios de varias líneas dentro de otros comentarios de varias líneas. Está bien incluir comentarios de una sola línea dentro de un comentario de varias líneas.</p>
+</blockquote>
+
+<blockquote>
+  <p>Nota : Comente su código generosamente y escriba sus comentarios como si hablara con alguien que no tiene idea de lo que hace el código. No asuma que recordará por qué tomó decisiones específicas.</p>
+</blockquote>
+
+<h1 id="introducción-a-objetos-y-variables">Introducción a objetos y variables</h1>
+
+<p>Los <code class="language-plaintext highlighter-rouge">datos</code> son cualquier información que una computadora puede mover, procesar o almacenar.</p>
+
+<p>Un <code class="language-plaintext highlighter-rouge">valor</code> es una letra (p. ej. <code class="language-plaintext highlighter-rouge">a</code>), un número (p. ej. <code class="language-plaintext highlighter-rouge">5</code>), un texto (p. ej. <code class="language-plaintext highlighter-rouge">hello</code>) o una instancia de algún otro concepto útil que pueda representarse como datos.</p>
+
+<blockquote>
+  <p>nota : Los programas son conjuntos de instrucciones que manipulan datos para producir un resultado deseado.</p>
+</blockquote>
+
+<ul>
+  <li><strong>Memoria de acceso aleatorio</strong></li>
+</ul>
+
+<p>La memoria principal de una computadora se llama memoria de acceso aleatorio (a menudo llamada <a href="">RAM</a> para abreviar). Cuando ejecutamos un programa, el sistema operativo carga el programa en la <em>RAM</em>. Cualquier dato que esté codificado en el propio programa (por ejemplo, texto como “¡Hola, mundo!”) se carga en este punto.</p>
+
+<ul>
+  <li><strong>Objetos y variables</strong></li>
+</ul>
+
+<p>En C++, se desaconseja el acceso directo a la memoria. En cambio, accedemos a la memoria indirectamente a través de un objeto. Un objeto es una región de almacenamiento (normalmente memoria) que puede almacenar un valor y tiene otras propiedades asociadas.</p>
+
+<ul>
+  <li><strong>Creación de instancias variables</strong></li>
+</ul>
+
+<p>Para crear una variable, utilizamos un tipo especial de declaración llamada <strong>definición</strong></p>
+
+<p>Ejemplo de cómo definir una variable denominada <code class="language-plaintext highlighter-rouge">x</code>:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">x</span><span class="p">;</span> <span class="c1">// Define una variable x de tipo int</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Nota: Cuando se ejecuta el programa (llamado <strong>tiempo de ejecución</strong> ), se creará una instancia de la variable. La creación de instancias es una palabra elegante que significa que el objeto se creará y se le asignará una dirección de memoria. Se deben crear instancias de las variables antes de poder usarlas para almacenar valores. A modo de ejemplo, digamos que se crea una instancia de la variable x en la ubicación de memoria 140. Siempre que el programa use la variable x, accederá al valor en la ubicación de memoria 140. Un objeto instanciado a veces se denomina instancia .</p>
+</blockquote>
+
+<ul>
+  <li><strong>Tipos de datos</strong></li>
+</ul>
+
+<p>En C++, el tipo de una variable debe conocerse en <strong>tiempo de compilación</strong> (cuando se compila el programa), y ese tipo no se puede cambiar sin volver a compilar el programa. Esto significa que una variable entera sólo puede contener valores enteros. Si desea almacenar algún otro tipo de valor, deberá utilizar un tipo diferente.</p>
+
+<h1 id="asignación-e-inicialización-de-variables">Asignación e inicialización de variables</h1>
+
+<h1 id="412--introducción-a-la-conversión-de-tipos-y-static_cast">4.12  Introducción a la conversión de tipos y <code class="language-plaintext highlighter-rouge">static_cast</code></h1>
+
+<ul>
+  <li><strong>Conversión de tipo implícita</strong></li>
+</ul>
+
+<p>Cuando el compilador realiza una conversión de tipos en nuestro nombre sin que se lo solicitemos explícitamente, a esto lo llamamos <strong>conversión de tipos implícita</strong> .</p>
+
+<blockquote>
+  <p>Nota: Algunas conversiones de tipos siempre son seguras (como inta double), mientras que otras pueden provocar que el valor cambie durante la conversión (como doublea int). Las conversiones implícitas inseguras normalmente generarán una advertencia del compilador o (en el caso de la inicialización de llaves) un error.</p>
+</blockquote>
+
+<p>Esta es una de las razones principales por las que la inicialización con llaves es la forma de inicialización preferida. La inicialización de llaves garantizará que no intentemos inicializar una variable con un inicializador que perderá valor cuando se convierta implícitamente:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">double</span> <span class="n">d</span> <span class="p">{</span> <span class="mi">5</span> <span class="p">};</span> <span class="c1">// okay: int to double is safe</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="p">{</span> <span class="mf">5.5</span> <span class="p">};</span> <span class="c1">// error: double to int not safe</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h2 id="una-introducción-a-la-conversión-de-tipos-explícita-a-través-del-operador-static_cast">Una introducción a la conversión de tipos explícita a través del operador <code class="language-plaintext highlighter-rouge">static_cast</code></h2>
+
+<p>C++ admite un segundo método de conversión de tipos, llamado conversión de tipos explícita. <strong>La conversión de tipos explícita</strong> nos permite (al programador) decirle explícitamente al compilador que convierta un valor de un tipo a otro, y que asumimos toda la responsabilidad por el resultado de esa conversión (lo que significa que si la conversión resulta en la pérdida de valor, es culpa nuestra).</p>
+
+<p>Para realizar una conversión de tipo explícita, en la mayoría de los casos usaremos el <em>static_castoperador</em>. La sintaxis parece <strong>static_cast</strong> un poco divertida:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static_cast&lt;nuevo_tipo&gt;(expresión)
+</code></pre></div></div>
+
+<p><strong>static_cast</strong> toma el valor de una expresión como entrada y devuelve ese valor convertido al tipo especificado por <code class="language-plaintext highlighter-rouge">new_type</code> (por ejemplo, int, bool, char, double).</p>
+
+<p><strong>Convertir números sin signo a números con signo</strong></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+  <span class="n">usingend</span> <span class="kt">int</span> <span class="n">u</span> <span class="p">{</span><span class="mi">5</span><span class="p">};</span>
+  <span class="kt">int</span> <span class="n">s</span> <span class="p">{</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">u</span><span class="p">)};</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Nota: El operador   <code class="language-plaintext highlighter-rouge">static_cast</code> producirá un comportamiento indefinido si el valor que se está convirtiendo no encaja en el rango del nuevo tipo.</p>
+</blockquote>
+
+<h1 id="21-conceptos-básicos-de--funciones-y-archivo">2.1 Conceptos básicos de  funciones y archivo</h1>
+
+<p>Como avia mencionado anterior mente una función es una colección de declaraciones que se ejecutan secuencialmente.</p>
+
+<ul>
+  <li><strong>sintaxis más básica para definir una función</strong></li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">retunType</span> <span class="nf">functionName</span><span class="p">(){</span>
+   <span class="c1">// body</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<blockquote>
+  <p>Nota : Una funcion puede llamar otra funcion</p>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">a</span><span class="p">(){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">b</span><span class="p">(){</span>
+  <span class="n">a</span><span class="p">();</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="n">sdt</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+  <span class="n">b</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Salida:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a
+b
+</code></pre></div></div>
+
+<blockquote>
+  <p>Nota: Las funciones anidadas no son compatibles</p>
+</blockquote>
+
+<h1 id="116--plantillas-de-funciones">11.6 — Plantillas de funciones</h1>
+
+<p>En C++, el sistema de plantillas fue diseñado para simplificar el proceso de creación de funciones (o clases) que puedan trabajar con diferentes tipos de datos</p>
+
+<blockquote>
+  <p>: Nota  El compilador puede usar una única plantilla para generar una familia de funciones o clases relacionadas, cada una usando un conjunto diferente de tipos</p>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">&gt;</span> <span class="c1">// esta es la declaración del parámetro de plantilla</span>
+<span class="n">T</span> <span class="nf">max</span><span class="p">(</span> <span class="n">T</span> <span class="n">x</span><span class="p">,</span> <span class="n">T</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">)</span> <span class="o">?</span> <span class="n">x</span> <span class="o">:</span> <span class="n">y</span> <span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h1 id="117--creación-de-instancias-de-plantilla-de-función">11.7 — Creación de instancias de plantilla de función</h1>
+
+<p><strong>Usando una plantilla de función</strong></p>
+
+<p>Para usar nuestra <code class="language-plaintext highlighter-rouge">max&lt;T&gt;</code>  plantilla de funciones, podemos realizar una llamada de función con la siguiente sintaxis:</p>
+
+<p><code class="language-plaintext highlighter-rouge">max&lt;tipo_actual&gt;(arg1, arg2); // tipo_actual es algún tipo real, como int o double</code></p>
+
+<p>Podemos usar la <strong>deducción de argumentos de plantilla</strong> para que el compilador deduzca el tipo real que debe usarse a partir de los tipos de argumentos. en la llamada a la función.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">max</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Mejores prácticas
+Favorezca la sintaxis de llamada de función normal al realizar llamadas a una función instanciada a partir de una plantilla de función (a menos que necesite que se prefiera la versión de la plantilla de función a una función coincidente que no sea de plantilla).</p>
+</blockquote>
+
+<p><strong>Usar plantillas de funciones en múltiples archivos</strong></p>
+
+<p>La forma más convencional de abordar este problema es colocar todo el código de la plantilla en un archivo de encabezado (.h) en lugar de un archivo fuente (.cpp):</p>
+
+<h1 id="141--introducción-a-la-programación-orientada-a-objetos">14.1 — Introducción a la programación orientada a objetos</h1>
+
+<h1 id="206---introducción-a-lambdas-funciones-anónimas">20.6 - Introducción a lambdas (funciones anónimas)</h1>
+
+<p><strong>Lambdas son funciones anónimas</strong></p>
+
+<p>Una expresión lambda (también llamada lambda o cierre ) nos permite definir una función anónima dentro de otra función. El anidamiento es importante, ya que nos permite evitar la contaminación de nombres de espacios de nombres y definir la función lo más cerca posible de donde se usa (proporcionando contexto adicional).</p>
+
+<p>La sintaxis de lambdas es una de las cosas más extrañas en C++ y requiere un poco de tiempo para acostumbrarse. Lambdas toman la forma:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">captureClause</span><span class="p">]</span> <span class="p">(</span><span class="n">par</span><span class="err">á</span><span class="n">metros</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">tipo</span> <span class="n">de</span> <span class="n">retorno</span>
+<span class="p">{</span>
+    <span class="n">declaraciones</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>La cláusula de captura puede estar vacía si no se necesitan capturas.</p>
+  </li>
+  <li>
+    <p>La lista de parámetros puede estar vacía si no se requieren parámetros. También se puede omitir por completo a menos que se especifique un tipo de devolución</p>
+  </li>
+  <li>
+    <p>El tipo de devolución es opcional y, si se omite, autose asumirá (por lo tanto, se utilizará la deducción de tipo utilizada para determinar el tipo de devolución). Si bien anteriormente señalamos que se debe evitar la deducción de tipos para los tipos de retorno de funciones, en este contexto, está bien usarla (porque estas funciones suelen ser muy triviales).</p>
+  </li>
+</ul>
+
+<p>También tenga en cuenta que las lambdas (al ser anónimas) no tienen nombre, por lo que no es necesario que proporcionemos uno.</p>
+
+<h1 id="211--introducción-a-la-sobrecarga-del-operador">21.1 — Introducción a la sobrecarga del operador</h1>
+
+<p>El uso de la sobrecarga de funciones para sobrecargar operadores se denomina sobrecarga de operadores .</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Fecha:</strong> <time datetime="2023-12-25T00:00:00-05:00">December 25, 2023</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/desktop-linux/" class="pagination--pager" title="desktop
+">Previous</a>
+    
+    
+      <a href="/boost-asio/" class="pagination--pager" title="Boost Asio
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 DemonHunter</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -59,6 +59,13 @@ https://holepunch.io
 https://burrow.io
 ```
 
+- Opcion 
+
+```
+apt install cloudflared
+```
+
+Dec: Un demonio de túnel que dirige el tráfico desde la red de `Cloudflare` a sus orígenes
 
 {% if page.comments %}
 <div id="disqus_thread"></div>

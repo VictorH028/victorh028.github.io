@@ -1,0 +1,537 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Como intalar localtunnel - Hacking Ético vs Termux</title>
+<meta name="description" content="En esta oportunidad vamos a aprender como  instalar localtunel en nuestra terminal sin errores">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Hacking Ético vs Termux">
+<meta property="og:title" content="Como intalar localtunnel">
+<meta property="og:url" content="http://localhost:4000/install-localtunel/">
+
+
+  <meta property="og:description" content="En esta oportunidad vamos a aprender como  instalar localtunel en nuestra terminal sin errores">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/localtunnel/icon-localtunnel.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2023-04-17T00:00:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/install-localtunel/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "DemonHunter",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Hacking Ético vs Termux Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+                
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Artículos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categorías</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Etiquetas</a>
+            </li><li class="masthead__menu-item">
+              <a href="/videos/" >Vídeos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/buscador/" >Buscador</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >Contacto</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Como intalar localtunnel</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/avatar.png" alt="Demon Hunter" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Demon Hunter</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Siempre me he sentido atraído por la  tecnología.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/victorh028" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Como intalar localtunnel">
+    <meta itemprop="description" content="En esta oportunidad vamos a aprender como  instalar localtunel en nuestra terminal sin errores">
+    <meta itemprop="datePublished" content="April 17, 2023">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Como intalar localtunnel
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p class="page__meta">
+          
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2023-04-17T00:00:00-04:00">April 17, 2023 </time>&emsp;
+          
+          <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;
+
+
+
+
+  1 minute read
+
+        </p>
+        <p>En esta oportunidad vamos a aprender como  instalar <code class="language-plaintext highlighter-rouge">localtunel</code> en nuestra terminal sin errores</p>
+
+<h1 id="instalacion">Instalacion</h1>
+
+<h2 id="paso-1-actualizar-paquetes">Paso 1: actualizar paquetes</h2>
+
+<p>Ejecute el siguiente comando</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update <span class="o">&amp;&amp;</span> apt upgrade <span class="nt">-y</span>
+</code></pre></div></div>
+<h2 id="paso-2-instalar-termux-api">Paso 2: Instalar termux-api</h2>
+
+<p>Ahora debe asegurarse de que termux tenga acceso a las funciones de hardware de Android y Chrome. Ejecute el siguiente comando.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>termux-api
+</code></pre></div></div>
+
+<h2 id="paso-3-install-paquete-de-nodejs">Paso 3: Install paquete de nodejs</h2>
+
+<p>Para su intalacion ejecutar</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt  <span class="nb">install </span>nodejs
+</code></pre></div></div>
+
+<h2 id="paso-4-instalar-localtunel">Paso 4: Instalar localtunel</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> localtunnel
+</code></pre></div></div>
+
+<p>Despues de que finalice la instalacion tendremos un error la ejecutal el comado <code class="language-plaintext highlighter-rouge">lt</code> que seria la 
+abreviatura de <code class="language-plaintext highlighter-rouge">localtunel</code> mostrando por pantalla lo siguente</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16
+        throw new Error<span class="o">(</span><span class="s1">'Unsupported platform: '</span> + process.platform<span class="o">)</span><span class="p">;</span>
+        ^
+
+Error: Unsupported platform: android
+    at Object.&lt;anonymous&gt; <span class="o">(</span>/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16:15<span class="o">)</span>
+    at Module._compile <span class="o">(</span>node:internal/modules/cjs/loader:1275:14<span class="o">)</span>
+    at Module._extensions..js <span class="o">(</span>node:internal/modules/cjs/loader:1329:10<span class="o">)</span>
+    at Module.load <span class="o">(</span>node:internal/modules/cjs/loader:1133:32<span class="o">)</span>
+    at Module._load <span class="o">(</span>node:internal/modules/cjs/loader:972:12<span class="o">)</span>
+    at Module.require <span class="o">(</span>node:internal/modules/cjs/loader:1157:19<span class="o">)</span>
+    at require <span class="o">(</span>node:internal/modules/helpers:119:18<span class="o">)</span>
+    at Object.&lt;anonymous&gt; <span class="o">(</span>/data/data/com.termux/files/usr/lib/node_modules/localtunnel/bin/lt.js:4:17<span class="o">)</span>
+    at Module._compile <span class="o">(</span>node:internal/modules/cjs/loader:1275:14<span class="o">)</span>
+    at Module._extensions..js <span class="o">(</span>node:internal/modules/cjs/loader:1329:10<span class="o">)</span>
+
+Node.js v19.6.1
+</code></pre></div></div>
+
+<p>Para solucionar lo siguente procederemos a untilizar nuestro editor de texto faborito y editaremos el siguiente archivo</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvim <span class="nv">$PREFIX</span>/lib/node_modules/localtunnel/node_modules/openurl/openurl.js
+</code></pre></div></div>
+
+<p>Nos pocisionaremos en la linea numero <code class="language-plaintext highlighter-rouge">14</code> gregamos la siguente fracmento de codigo despues de el 
+ultimo <code class="language-plaintext highlighter-rouge">break</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">case</span> <span class="s1">'android'</span>:
+    <span class="nb">command</span> <span class="o">=</span> <span class="s1">'termux'</span><span class="p">;</span>
+    <span class="nb">break</span><span class="p">;</span>
+</code></pre></div></div>
+<h2 id="resultado-final">Resultado final</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    5 switch<span class="o">(</span>process.platform<span class="o">)</span> <span class="o">{</span>
+    6     <span class="k">case</span> <span class="s1">'darwin'</span>:
+    7         <span class="nb">command</span> <span class="o">=</span> <span class="s1">'open'</span><span class="p">;</span>                      
+    8         <span class="nb">break</span><span class="p">;</span>
+    9     <span class="k">case</span> <span class="s1">'win32'</span>:
+   10         <span class="nb">command</span> <span class="o">=</span> <span class="s1">'explorer.exe'</span><span class="p">;</span>
+   11         <span class="nb">break</span><span class="p">;</span>
+   12     <span class="k">case</span> <span class="s1">'linux'</span>:
+   13         <span class="nb">command</span> <span class="o">=</span> <span class="s1">'xdg-open'</span><span class="p">;</span>
+   14         <span class="nb">break</span><span class="p">;</span>
+   15     <span class="k">case</span> <span class="s1">'android'</span>:
+   16         <span class="nb">command</span> <span class="o">=</span> <span class="s1">'termux'</span><span class="p">;</span>                   
+   17         <span class="nb">break</span><span class="p">;</span>
+   18     default:
+   19         throw new Error<span class="o">(</span><span class="s1">'Unsupported platform: '</span> + process.platform<span class="p">);</span>
+   20 <span class="o">}</span>
+</code></pre></div></div>
+<h1 id="uso">uso</h1>
+<p>Suponiendo que su servidor local se está ejecutando en el puerto 8000, simplemente use el <code class="language-plaintext highlighter-rouge">lt</code> comando para iniciar el túnel.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lt <span class="nt">--port</span> 8000
+</code></pre></div></div>
+
+<div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://blok-termux.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#error" class="page__taxonomy-item" rel="tag">error</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#termux" class="page__taxonomy-item" rel="tag">termux</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#termux" class="page__taxonomy-item" rel="tag">termux</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Fecha:</strong> <time datetime="2023-04-17T00:00:00-04:00">April 17, 2023</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/ngrok_alternativas/" class="pagination--pager" title="Alternativas para ngrok
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 DemonHunter</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

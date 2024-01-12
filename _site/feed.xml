@@ -1,4 +1,261 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-10T20:24:04-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">victorh028.github.io</title><subtitle>Un espacio para la práctica y la información en un emulador de terminar Linux para Android </subtitle><entry><title type="html">desktop</title><link href="http://localhost:4000/notas/2023/10/10/desktop-linux.html" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/notas/2023/10/10/desktop-linux</id><content type="html" xml:base="http://localhost:4000/notas/2023/10/10/desktop-linux.html">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-06T01:47:15-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacking Ético vs Termux</title><subtitle>Ciberseguridad desde Termux</subtitle><author><name>Demon Hunter</name></author><entry><title type="html">Boost Asio</title><link href="http://localhost:4000/boost-asio/" rel="alternate" type="text/html" title="Boost Asio" /><published>2023-12-29T00:00:00-05:00</published><updated>2023-12-29T00:00:00-05:00</updated><id>http://localhost:4000/boost-asio</id><content type="html" xml:base="http://localhost:4000/boost-asio/"></content><author><name>Demon Hunter</name></author><summary type="html"></summary></entry><entry><title type="html">Notas C++</title><link href="http://localhost:4000/notas-c++/" rel="alternate" type="text/html" title="Notas C++" /><published>2023-12-25T00:00:00-05:00</published><updated>2023-12-25T00:00:00-05:00</updated><id>http://localhost:4000/notas-c++</id><content type="html" xml:base="http://localhost:4000/notas-c++/">&lt;h1 id=&quot;declaracion-y-extructura-de-un-programa&quot;&gt;Declaracion y extructura de un programa&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Declaraciones&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Un programa de computadora es una secuencia de instrucciones que le dicen a la computadora qué hacer. Una &lt;strong&gt;declaración&lt;/strong&gt; es un tipo de instrucción que hace que el programa realice alguna acción&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;nota : La mayoría (pero no todas) las declaraciones en C++ terminan en punto y coma. Si ve una línea que termina en punto y coma, probablemente sea una declaración&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Funciones y función principal&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En C++, las declaraciones normalmente se agrupan en unidades llamadas &lt;strong&gt;funciones.&lt;/strong&gt; Una función es una colección de declaraciones que se ejecutan secuencialmente (en orden, de arriba a abajo).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Regala: Cada programa C++ debe tener una función especial llamada &lt;strong&gt;main&lt;/strong&gt; (todas las letras minúsculas). Cuando se ejecuta el programa, las declaraciones dentro de mainse ejecutan en orden secuencial.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Errores de sintaxis y sintaxis&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En inglés, las oraciones se construyen de acuerdo con reglas gramaticales específicas que probablemente aprendiste en la clase de inglés en la escuela. Por ejemplo, las oraciones normales terminan en un punto. Las reglas que gobiernan cómo se construyen las oraciones en un idioma se llaman &lt;strong&gt;sintaxis&lt;/strong&gt; . Si olvida el punto y ejecuta dos oraciones juntas, esto es una violación de la sintaxis del idioma inglés.&lt;/p&gt;
+
+&lt;h1 id=&quot;comentarios&quot;&gt;Comentarios&lt;/h1&gt;
+
+&lt;p&gt;Un comentario es una nota legible por el programador que se inserta directamente en el código fuente del programa. El compilador ignora los comentarios y son para uso exclusivo del programador&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;comentario de una sola linea&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt; símbolo comienza un comentario de una sola línea de C++, que le indica al compilador que ignore todo, desde el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt;símbolo hasta el final de la línea. Por ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\\&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Esto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;es&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;un&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;comentario&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;comentario de varias lineas&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El par de símbolos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt; denota un comentario de varias líneas de estilo C. Todo lo que se encuentre entre los símbolos se ignora&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/* Todo lo que
+esta
+aca es un comentario
+*/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;⚠️ Advertencia: No utilice comentarios de varias líneas dentro de otros comentarios de varias líneas. Está bien incluir comentarios de una sola línea dentro de un comentario de varias líneas.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nota : Comente su código generosamente y escriba sus comentarios como si hablara con alguien que no tiene idea de lo que hace el código. No asuma que recordará por qué tomó decisiones específicas.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;introducción-a-objetos-y-variables&quot;&gt;Introducción a objetos y variables&lt;/h1&gt;
+
+&lt;p&gt;Los &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;datos&lt;/code&gt; son cualquier información que una computadora puede mover, procesar o almacenar.&lt;/p&gt;
+
+&lt;p&gt;Un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;valor&lt;/code&gt; es una letra (p. ej. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt;), un número (p. ej. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt;), un texto (p. ej. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello&lt;/code&gt;) o una instancia de algún otro concepto útil que pueda representarse como datos.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;nota : Los programas son conjuntos de instrucciones que manipulan datos para producir un resultado deseado.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Memoria de acceso aleatorio&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La memoria principal de una computadora se llama memoria de acceso aleatorio (a menudo llamada &lt;a href=&quot;&quot;&gt;RAM&lt;/a&gt; para abreviar). Cuando ejecutamos un programa, el sistema operativo carga el programa en la &lt;em&gt;RAM&lt;/em&gt;. Cualquier dato que esté codificado en el propio programa (por ejemplo, texto como “¡Hola, mundo!”) se carga en este punto.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Objetos y variables&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En C++, se desaconseja el acceso directo a la memoria. En cambio, accedemos a la memoria indirectamente a través de un objeto. Un objeto es una región de almacenamiento (normalmente memoria) que puede almacenar un valor y tiene otras propiedades asociadas.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Creación de instancias variables&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para crear una variable, utilizamos un tipo especial de declaración llamada &lt;strong&gt;definición&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ejemplo de cómo definir una variable denominada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Define una variable x de tipo int&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nota: Cuando se ejecuta el programa (llamado &lt;strong&gt;tiempo de ejecución&lt;/strong&gt; ), se creará una instancia de la variable. La creación de instancias es una palabra elegante que significa que el objeto se creará y se le asignará una dirección de memoria. Se deben crear instancias de las variables antes de poder usarlas para almacenar valores. A modo de ejemplo, digamos que se crea una instancia de la variable x en la ubicación de memoria 140. Siempre que el programa use la variable x, accederá al valor en la ubicación de memoria 140. Un objeto instanciado a veces se denomina instancia .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Tipos de datos&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En C++, el tipo de una variable debe conocerse en &lt;strong&gt;tiempo de compilación&lt;/strong&gt; (cuando se compila el programa), y ese tipo no se puede cambiar sin volver a compilar el programa. Esto significa que una variable entera sólo puede contener valores enteros. Si desea almacenar algún otro tipo de valor, deberá utilizar un tipo diferente.&lt;/p&gt;
+
+&lt;h1 id=&quot;asignación-e-inicialización-de-variables&quot;&gt;Asignación e inicialización de variables&lt;/h1&gt;
+
+&lt;h1 id=&quot;412--introducción-a-la-conversión-de-tipos-y-static_cast&quot;&gt;4.12  Introducción a la conversión de tipos y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;static_cast&lt;/code&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Conversión de tipo implícita&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cuando el compilador realiza una conversión de tipos en nuestro nombre sin que se lo solicitemos explícitamente, a esto lo llamamos &lt;strong&gt;conversión de tipos implícita&lt;/strong&gt; .&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nota: Algunas conversiones de tipos siempre son seguras (como inta double), mientras que otras pueden provocar que el valor cambie durante la conversión (como doublea int). Las conversiones implícitas inseguras normalmente generarán una advertencia del compilador o (en el caso de la inicialización de llaves) un error.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta es una de las razones principales por las que la inicialización con llaves es la forma de inicialización preferida. La inicialización de llaves garantizará que no intentemos inicializar una variable con un inicializador que perderá valor cuando se convierta implícitamente:&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// okay: int to double is safe&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.5&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// error: double to int not safe&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;una-introducción-a-la-conversión-de-tipos-explícita-a-través-del-operador-static_cast&quot;&gt;Una introducción a la conversión de tipos explícita a través del operador &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;static_cast&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;C++ admite un segundo método de conversión de tipos, llamado conversión de tipos explícita. &lt;strong&gt;La conversión de tipos explícita&lt;/strong&gt; nos permite (al programador) decirle explícitamente al compilador que convierta un valor de un tipo a otro, y que asumimos toda la responsabilidad por el resultado de esa conversión (lo que significa que si la conversión resulta en la pérdida de valor, es culpa nuestra).&lt;/p&gt;
+
+&lt;p&gt;Para realizar una conversión de tipo explícita, en la mayoría de los casos usaremos el &lt;em&gt;static_castoperador&lt;/em&gt;. La sintaxis parece &lt;strong&gt;static_cast&lt;/strong&gt; un poco divertida:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;static_cast&amp;lt;nuevo_tipo&amp;gt;(expresión)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;static_cast&lt;/strong&gt; toma el valor de una expresión como entrada y devuelve ese valor convertido al tipo especificado por &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new_type&lt;/code&gt; (por ejemplo, int, bool, char, double).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Convertir números sin signo a números con signo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;usingend&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;static_cast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)};&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nota: El operador   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;static_cast&lt;/code&gt; producirá un comportamiento indefinido si el valor que se está convirtiendo no encaja en el rango del nuevo tipo.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;21-conceptos-básicos-de--funciones-y-archivo&quot;&gt;2.1 Conceptos básicos de  funciones y archivo&lt;/h1&gt;
+
+&lt;p&gt;Como avia mencionado anterior mente una función es una colección de declaraciones que se ejecutan secuencialmente.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;sintaxis más básica para definir una función&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;retunType&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;functionName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;// body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Nota : Una funcion puede llamar otra funcion&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sdt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Salida:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a
+b
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nota: Las funciones anidadas no son compatibles&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;116--plantillas-de-funciones&quot;&gt;11.6 — Plantillas de funciones&lt;/h1&gt;
+
+&lt;p&gt;En C++, el sistema de plantillas fue diseñado para simplificar el proceso de creación de funciones (o clases) que puedan trabajar con diferentes tipos de datos&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;: Nota  El compilador puede usar una única plantilla para generar una familia de funciones o clases relacionadas, cada una usando un conjunto diferente de tipos&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;template&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typename&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// esta es la declaración del parámetro de plantilla&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;117--creación-de-instancias-de-plantilla-de-función&quot;&gt;11.7 — Creación de instancias de plantilla de función&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Usando una plantilla de función&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para usar nuestra &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;max&amp;lt;T&amp;gt;&lt;/code&gt;  plantilla de funciones, podemos realizar una llamada de función con la siguiente sintaxis:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;max&amp;lt;tipo_actual&amp;gt;(arg1, arg2); // tipo_actual es algún tipo real, como int o double&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Podemos usar la &lt;strong&gt;deducción de argumentos de plantilla&lt;/strong&gt; para que el compilador deduzca el tipo real que debe usarse a partir de los tipos de argumentos. en la llamada a la función.&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Mejores prácticas
+Favorezca la sintaxis de llamada de función normal al realizar llamadas a una función instanciada a partir de una plantilla de función (a menos que necesite que se prefiera la versión de la plantilla de función a una función coincidente que no sea de plantilla).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Usar plantillas de funciones en múltiples archivos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;La forma más convencional de abordar este problema es colocar todo el código de la plantilla en un archivo de encabezado (.h) en lugar de un archivo fuente (.cpp):&lt;/p&gt;
+
+&lt;h1 id=&quot;141--introducción-a-la-programación-orientada-a-objetos&quot;&gt;14.1 — Introducción a la programación orientada a objetos&lt;/h1&gt;
+
+&lt;h1 id=&quot;206---introducción-a-lambdas-funciones-anónimas&quot;&gt;20.6 - Introducción a lambdas (funciones anónimas)&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Lambdas son funciones anónimas&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Una expresión lambda (también llamada lambda o cierre ) nos permite definir una función anónima dentro de otra función. El anidamiento es importante, ya que nos permite evitar la contaminación de nombres de espacios de nombres y definir la función lo más cerca posible de donde se usa (proporcionando contexto adicional).&lt;/p&gt;
+
+&lt;p&gt;La sintaxis de lambdas es una de las cosas más extrañas en C++ y requiere un poco de tiempo para acostumbrarse. Lambdas toman la forma:&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;captureClause&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;par&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;á&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;metros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tipo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;de&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;retorno&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;declaraciones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;La cláusula de captura puede estar vacía si no se necesitan capturas.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;La lista de parámetros puede estar vacía si no se requieren parámetros. También se puede omitir por completo a menos que se especifique un tipo de devolución&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;El tipo de devolución es opcional y, si se omite, autose asumirá (por lo tanto, se utilizará la deducción de tipo utilizada para determinar el tipo de devolución). Si bien anteriormente señalamos que se debe evitar la deducción de tipos para los tipos de retorno de funciones, en este contexto, está bien usarla (porque estas funciones suelen ser muy triviales).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;También tenga en cuenta que las lambdas (al ser anónimas) no tienen nombre, por lo que no es necesario que proporcionemos uno.&lt;/p&gt;
+
+&lt;h1 id=&quot;211--introducción-a-la-sobrecarga-del-operador&quot;&gt;21.1 — Introducción a la sobrecarga del operador&lt;/h1&gt;
+
+&lt;p&gt;El uso de la sobrecarga de funciones para sobrecargar operadores se denomina sobrecarga de operadores .&lt;/p&gt;</content><author><name>Demon Hunter</name></author><summary type="html"></summary></entry><entry><title type="html">desktop</title><link href="http://localhost:4000/desktop-linux/" rel="alternate" type="text/html" title="desktop" /><published>2023-10-10T00:00:00-04:00</published><updated>2023-10-10T00:00:00-04:00</updated><id>http://localhost:4000/desktop-linux</id><content type="html" xml:base="http://localhost:4000/desktop-linux/">&lt;p&gt;Para mostrar tu aplicaciones en el menu  de Linux, puedes crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt;.:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Abre un editor de texto y crea un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mi_programa.desktop&lt;/code&gt; con el siguiente contenido:&lt;/li&gt;
@@ -31,9 +288,11 @@ Categories=Development;
   &lt;li&gt;Después de hacer esto, deberías ver “Mi Probgrama” en el menú de aplicaciones de tu entorno de escritorio Linux, y al hacer clic en él, se ejecutará tu programa.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Nota: Asegúrate de que el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt; tenga los permisos adecuados y que la ruta a tu programa y al icono sean correctas para que funcione correctamente. El icono debe ser una imagen en formato PNG de 48x48 píxeles (aunque puedes ajustar el tamaño según tus necesidades).&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Nota: Asegúrate de que el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt; tenga los permisos adecuados y que la ruta a tu programa y al icono sean correctas para que funcione correctamente. El &lt;em&gt;icono debe ser una imagen en formato PNG de 48x48 píxeles&lt;/em&gt; (aunque puedes ajustar el tamaño según tus necesidades).&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Este es un ejemplo simple de cómo crear un acceso directo en el menú de aplicaciones en Linux para tu programa en C++. Puedes personalizar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.desktop&lt;/code&gt; según tus necesidades específicas.&lt;/p&gt;
+&lt;p&gt;Este es un ejemplo simple de cómo crear un acceso directo en el menú de aplicaciones en Linux para tu programa.&lt;/p&gt;
 
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -45,7 +304,7 @@ Categories=Development;
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="notas" /><category term="Linux" /><category term="tips" /><summary type="html">Para mostrar tu aplicaciones en el menu de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:</summary></entry><entry><title type="html">Resaltado de sintaxis en C++</title><link href="http://localhost:4000/programacion/2023/07/05/C++_sintaxis.html" rel="alternate" type="text/html" title="Resaltado de sintaxis en C++" /><published>2023-07-05T00:00:00-04:00</published><updated>2023-07-05T00:00:00-04:00</updated><id>http://localhost:4000/programacion/2023/07/05/C++_sintaxis</id><content type="html" xml:base="http://localhost:4000/programacion/2023/07/05/C++_sintaxis.html">&lt;p&gt;Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="notas" /><category term="Linux" /><category term="tips" /><summary type="html">Para mostrar tu aplicaciones en el menu de Linux, puedes crear un archivo .desktop. Estos archivos se utilizan para definir las propiedades de una aplicación y cómo se mostrará en el menú de aplicaciones. A continuación, te proporciono un ejemplo de cómo crear un archivo .desktop.:</summary></entry><entry><title type="html">Resaltado de sintaxis en C++</title><link href="http://localhost:4000/C++_sintaxis/" rel="alternate" type="text/html" title="Resaltado de sintaxis en C++" /><published>2023-07-05T00:00:00-04:00</published><updated>2023-07-05T00:00:00-04:00</updated><id>http://localhost:4000/C++_sintaxis</id><content type="html" xml:base="http://localhost:4000/C++_sintaxis/">&lt;p&gt;Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++&lt;/p&gt;
 
 &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream &amp;gt;
 #include &amp;lt;string&amp;gt;
@@ -186,7 +445,7 @@ int main() {
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="Programacion" /><category term="termux" /><category term="linux" /><summary type="html">Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++</summary></entry><entry><title type="html">RSA</title><link href="http://localhost:4000/2023/05/25/RSA.html" rel="alternate" type="text/html" title="RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/2023/05/25/RSA</id><content type="html" xml:base="http://localhost:4000/2023/05/25/RSA.html">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="Programacion" /><category term="termux" /><category term="linux" /><summary type="html">Esto es un pequeño ejemplo de como crear un resaltado de sintaxis en C++</summary></entry><entry><title type="html">RSA</title><link href="http://localhost:4000/RSA/" rel="alternate" type="text/html" title="RSA" /><published>2023-05-25T00:00:00-04:00</published><updated>2023-05-25T00:00:00-04:00</updated><id>http://localhost:4000/RSA</id><content type="html" xml:base="http://localhost:4000/RSA/">&lt;p&gt;En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.&lt;/p&gt;
 
 &lt;p&gt;Antes asegurarse de que tienes OpenSSL instalado. Si no dispones del mismo, se puede instalar esta herramienta con el siguiente comando:&lt;/p&gt;
 
@@ -262,55 +521,91 @@ apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;openssl
 
 &lt;p&gt;También puedes especificar la ruta completa del archivo si no está en la carpeta actual.&lt;/p&gt;
 
-&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.&lt;/p&gt;</content><author><name></name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/laboratorio/2023/04/29/i-Haklab.html" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/laboratorio/2023/04/29/i-Haklab</id><content type="html" xml:base="http://localhost:4000/laboratorio/2023/04/29/i-Haklab.html">&lt;p&gt;i-Haklab es un laboratorio de hacking para Termux  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.&lt;/p&gt;
+&lt;p&gt;Una vez ejecutado este comando, el archivo resultante debería contener el texto claro del archivo archivo_cifrado.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
 
-&lt;h1 id=&quot;-intalacion&quot;&gt;📥 Intalacion&lt;/h1&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="" /><category term="" /><category term="RSA" /><summary type="html">En esta oportinidad le enseñare como cifrará un archivo y la creacion de tu llave publia y tu llave privada en unos simple pasos.</summary></entry><entry><title type="html">i-Haklab</title><link href="http://localhost:4000/i-Haklab/" rel="alternate" type="text/html" title="i-Haklab" /><published>2023-04-29T00:00:00-04:00</published><updated>2023-04-29T00:00:00-04:00</updated><id>http://localhost:4000/i-Haklab</id><content type="html" xml:base="http://localhost:4000/i-Haklab/">&lt;header&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#-intalacion&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tutoriales&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Cursos&lt;/a&gt;&amp;lt;/l&amp;gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Bootcamps&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+	 &amp;lt;/ul&amp;gt;
+    &amp;lt;/nav&amp;gt;
+&amp;lt;/header&amp;gt;
 
-&lt;p&gt;Su intalacion no es como estamos acostumbrados hacer avitual mente de &lt;em&gt;clonar&lt;/em&gt;  un repocitorio. &lt;a href=&quot;&quot;&gt;Termux &lt;/a&gt; cuenta en su alvor de directorio con un &lt;strong&gt;sources.list&lt;/strong&gt; en la sigiente ruta &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$PREFIX/etc/apt/&lt;/code&gt;   el cual nos permite descarga paquetes de uno o más repositorios de software (fuentes) y los instalarlos que dichos paquetes que anterior mente le mensionaba que son mas de 100 son mantenidos por Ivam para una intalacion limpia en nuestro emulador de entorno Linux atraver de APT que es el principal administrador de paquetes de línea de comandos.&lt;/p&gt;
+⚠️⚠️    **Toda la ducumentacion aca vista esta en purono desaroyo**  ⚠️⚠️
 
-&lt;div class=&quot;language-zsh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;wget &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d
-wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d/ivam3-termux-packages.list
+&amp;gt; Nota : Pero la gran parte esta disponible 
+
+i-Haklab es un _laboratorio_ de [hacking]() para [Termux]()  que que nos ofrece de manera ordenada y secuencial un conjunto  herramientas de código abierto para pentesting, que nos proporciona mas de **100 herramientas/marcos** que no estan disponible en termux. 
+
+![Imagen]()
+
+# 📥 Intalacion 
+
+Su intalacion no es como estamos acostumbrados hacer avitual mente de *clonar*  un repocitorio. [Termux ]() cuenta en su alvor de directorio con un **sources.list** en la sigiente ruta `$PREFIX/etc/apt/`   el cual nos permite descarga paquetes de uno o más repositorios de software (fuentes) y los instalarlos que dichos paquetes que anterior mente le mensionaba que son mas de 100 son mantenidos por Ivam para una intalacion limpia en nuestro emulador de entorno Linux atraver de APT que es el principal administrador de paquetes de línea de comandos.
+
+```zsh 
+apt install wget -y
+mkdir -p $PREFIX/etc/apt/sources.list.d
+wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list -O $PREFIX/etc/apt/sources.list.d/ivam3-termux-packages.list
 apt update
 apt upgrade
-apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;i-haklab
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+apt install i-haklab
+```
 
-&lt;h1 id=&quot;️-herramientas&quot;&gt;🗄️ Herramientas&lt;/h1&gt;
+# 🗄️ Herramientas
 
-&lt;p&gt;Fueron creadas para el  propósito de ofrecer acceso fácil y rápido a la instalación de herramientas y / o marcos proporcionados
-para el laboratorio de seguridad cibernética y de Pentesting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-Haklab&lt;/code&gt;, para el sistema operativo Android en la aplicación Termux.&lt;/p&gt;
+Fueron creadas para el  propósito de ofrecer acceso fácil y rápido a la instalación de herramientas y / o marcos proporcionados
+para el laboratorio de seguridad cibernética y de Pentesting `I-Haklab`, para el sistema operativo Android en la aplicación Termux.
 
-&lt;p&gt;Para ver lista 👉 &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+Para ver lista 👉 [aqui](https://github.com/ivam3/termux-packages)
 
-&lt;h1 id=&quot;aprendizaje&quot;&gt;👨‍🎓Aprendizaje&lt;/h1&gt;
+# 👨‍🎓Aprendizaje
 
-&lt;p&gt;Para su cultura persolan y para mi vivencia de cada dia.&lt;/p&gt;
+Para su cultura persolan y para mi vivencia de cada dia.
 
-&lt;p&gt;-&lt;/p&gt;
+- 
 
-&lt;p&gt;-&lt;/p&gt;
+- [Learnig NVIM ](https://victorhck.gitbook.io/aprende-vim) 
 
-&lt;p&gt;-&lt;/p&gt;
+-
 
-&lt;h1 id=&quot;️-uso&quot;&gt;🛠️ Uso&lt;/h1&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ i-haklab &lt;span class=&quot;nt&quot;&gt;--help&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+# 🛠️ Uso
 
-&lt;h1 id=&quot;-editores-de-texto&quot;&gt;📖 Editores de texto&lt;/h1&gt;
+```shell 
+❯ i-haklab --help
+```
 
-&lt;p&gt;Contamos con dos editores total mente configurados para usted.&lt;/p&gt;
 
-&lt;h2 id=&quot;️nvim&quot;&gt;🖋️&lt;a href=&quot;&quot;&gt;nvim&lt;/a&gt;&lt;/h2&gt;
+# 📖 Editores de texto 
 
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
+Contamos con dos editores total mente configurados para usted unos de esto es [nvim]() y el otroe [helix]() de los cuales les compartire parte de su configuración ysus combinaciones de tecla. 
 
-&lt;h3 id=&quot;alvor-de-directorios&quot;&gt;Alvor de directorios&lt;/h3&gt;
+![nvim](path) 
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.config/nvim
+![helix](path) 
+
+## Configuracion 
+
+Esto que estan viendo a continuacion es el  arbol  de directorios de la configuración de `nvim`. No dare de talle de la configuración comotal pero si saves lo que estas hacien te invito a ver el codigo el cual me he eforzado en comentar para un buen entendimiento.
+
+
+```shell 
+.config/nvim
 ├── init.lua
 └── lua                                                                        ├── keymaps.lua
     ├── plugins
@@ -327,454 +622,664 @@ para el laboratorio de seguridad cibernética y de Pentesting &lt;code class=&qu
     │   ├── tree.lua
     │   └── zk.lua
     └── settings.lua
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;h3 id=&quot;configuraciones&quot;&gt;Configuraciones&lt;/h3&gt;
+- `keymaps.lua`: Configuracion de teclas
+- `settings.lua`: Configuracion de algunos rasgos del algunos plugins
+- `plugins`: Directorio que contiene las configuración de los plugins por separado- `init.lua`: Archivo principal
 
-&lt;p&gt;Como tal solo hare breve receñas de la configuracion que se va a tener disponible.&lt;/p&gt;
+### Atajos de tecla
 
-&lt;h3 id=&quot;atajos-de-tecla&quot;&gt;Atajos de tecla&lt;/h3&gt;
+Neovim no tiene suficientes, tenemos que crear más. Para esto debemos aprender a usar la función `vim.keymap.set`.  
 
-&lt;p&gt;Neovim no tiene suficientes, tenemos que crear más. Para esto debemos aprender a usar la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim.keymap.set&lt;/code&gt;.&lt;/p&gt;
+Les mostraré un ejemplo.
 
-&lt;p&gt;Les mostraré un ejemplo.&lt;/p&gt;
+```shell
+vim.keymap.set(&apos;n&apos;, &apos;&lt;space&gt;w&apos;, &apos;&lt;cmd&gt;write&lt;cr&gt;&apos;, {desc = &apos;Guardar&apos;})
+```
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;n&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;space&amp;gt;w&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;cmd&amp;gt;write&amp;lt;cr&amp;gt;&apos;&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;desc &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;Guardar&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+Después de ejecutar esta función la combinación `Espacio + w` nos permitirá usar el comando `write`. 
 
-&lt;p&gt;Después de ejecutar esta función la combinación &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Espacio + w&lt;/code&gt; nos permitirá usar el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;write&lt;/code&gt;. 
-Podremos &lt;strong&gt;guardar el archivo actual&lt;/strong&gt; con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Espacio + w&lt;/code&gt;.&lt;/p&gt;
+Podremos **guardar el archivo actual** con `Espacio + w`.
 
-&lt;p&gt;Ahora déjenme explicarles qué hace cada parámetro.&lt;/p&gt;
+Ahora déjenme explicarles qué hace cada parámetro.
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;mode&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;lhs&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;rhs&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;opts&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```shell
+vim.keymap.set({mode}, {lhs}, {rhs}, {opts})
+```
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{mode}&lt;/code&gt; es el modo donde tendrá efecto nuestro atajo (puede ser una lista de modos).
+- `{mode}` es el modo donde tendrá efecto nuestro atajo (puede ser una lista de modos).
+
 Pero no necesitamos nombres, necesitamos la abreviación. 
-Estas son las más comunes.&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt;: Modo normal.&lt;/p&gt;
+Estas son las más comunes.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt;: Modo de inserción.&lt;/p&gt;
+`n`: Modo normal.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt;: Modo visual.&lt;/p&gt;
+`i`: Modo de inserción.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;: Modo de selección.&lt;/p&gt;
+`x`: Modo visual.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v&lt;/code&gt;: Visual y selección.&lt;/p&gt;
+`s`: Modo de selección.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;t&lt;/code&gt;: Modo de terminal.&lt;/p&gt;
+`v`: Visual y selección.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;o&lt;/code&gt;: Modo de espera de operador.&lt;/p&gt;
+`t`: Modo de terminal.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;&apos;&lt;/code&gt;: Sí, una cadena de texto vacía. Es el equivalente a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n + v + o&lt;/code&gt;.&lt;/p&gt;
+`o`: Modo de espera de operador.
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{lhs}&lt;/code&gt; es el atajo que queremos crear.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{rhs}&lt;/code&gt; es la acción que queremos ejecutar. Puede ser un comando, una expresión o una función de lua.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{opts}&lt;/code&gt; este parámetro debe ser una tabla de lua. Si no saben qué es una tabla, sólo piensen que es una manera albergar varios tipos de datos en un lugar. En fin, estas son las propiedades de uso común.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+`&apos;&apos;`: Sí, una cadena de texto vacía. Es el equivalente a `n + v + o`.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;desc&lt;/code&gt;: Cadena de texto que describe qué hace el comando. Aquí podemos escribir cualquier cosa.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;remap&lt;/code&gt;: Booleano que controla si nuestro atajo debe ser recursivo. Su valor por defecto es false. Los atajos recursivos pueden crear conflictos, así que no lo habiliten si no saben todos los detalles de lo que quieren lograr. Luego les explico con más detalle.&lt;/p&gt;
+- `{lhs}` es el atajo que queremos crear.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buffer&lt;/code&gt;: Puede ser un Booleano o un número. Si el valor es el booleano true quiere decir que al atajo sólo tendrá efecto en el archivo actual. Si es un número deberá ser el “id” de un archivo que tenemos abierto.&lt;/p&gt;
+- `{rhs}` es la acción que queremos ejecutar. Puede ser un comando, una expresión o una función de lua.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;silent&lt;/code&gt;: Booleano que controla si el atajo puede mostrar un mensaje. Su valor por defecto es false.&lt;/p&gt;
+- `{opts}` este parámetro debe ser una tabla de lua. Si no saben qué es una tabla, sólo piensen que es una manera albergar varios tipos de datos en un lugar. En fin, estas son las propiedades de uso común.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expr&lt;/code&gt;: Booleano. Si lo habilitamos tendremos la posibilidad de usar vimscript o lua para generar el valor del parámetro {rhs}. Su valor por defecto es false&lt;/p&gt;
 
-&lt;h3 id=&quot;la-tecla-líde&quot;&gt;La tecla líde&lt;/h3&gt;
+`desc`: Cadena de texto que describe qué hace el comando. Aquí podemos escribir cualquier cosa.
 
-&lt;p&gt;Cuando definimos nuestros atajos podemos usar la secuencia especial &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; en el parámetro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{lhs}&lt;/code&gt;, esta toma el valor que tenemos en la variable global &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mapleader&lt;/code&gt;.&lt;/p&gt;
+`remap`: Booleano que controla si nuestro atajo debe ser recursivo. Su valor por defecto es false. Los atajos recursivos pueden crear conflictos, así que no lo habiliten si no saben todos los detalles de lo que quieren lograr. Luego les explico con más detalle.
 
-&lt;p&gt;mapleader es una variable que debe ser una cadena texto. Por ejemplo.&lt;/p&gt;
+`buffer`: Puede ser un Booleano o un número. Si el valor es el booleano true quiere decir que al atajo sólo tendrá efecto en el archivo actual. Si es un número deberá ser el &quot;id&quot; de un archivo que tenemos abierto.
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.g.mapleader &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;,&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+`silent`: Booleano que controla si el atajo puede mostrar un mensaje. Su valor por defecto es false.
 
-&lt;p&gt;Con esto podríamos usar la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt; como un prefijo para nuestros atajos.&lt;/p&gt;
+`expr`: Booleano. Si lo habilitamos tendremos la posibilidad de usar vimscript o lua para generar el valor del parámetro {rhs}. Su valor por defecto es false
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;n&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;leader&amp;gt;w&apos;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&apos;&amp;lt;cmd&amp;gt;write&amp;lt;cr&amp;gt;&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Y así la secuencia &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;, + w&lt;/code&gt; guarda el archivo actual.&lt;/p&gt;
+### La tecla líde
 
-&lt;h3 id=&quot;initlua&quot;&gt;init.lua&lt;/h3&gt;
+Cuando definimos nuestros atajos podemos usar la secuencia especial `&lt;leader&gt;` en el parámetro `{lhs}`, esta toma el valor que tenemos en la variable global `mapleader` la misma se encuentra en `settings.lua`.
 
-&lt;p&gt;El administrador de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugins&lt;/code&gt; que posehemos es &lt;a href=&quot;https://github.com/folke/lazy.nvim&quot;&gt;lazy.nvim&lt;/a&gt;.&lt;/p&gt;
+**Mapleader** es una variable que debe ser una cadena texto. Por ejemplo.
 
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/292349/208301737-68fb279c-ba70-43ef-a369-8c3e8367d6b1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+```shell
+vim.g.mapleader = &apos;,&apos;
+```
 
-&lt;p&gt;Nuestra especificasion de la ruta donde se intla nuestros plugins es.&lt;/p&gt;
+Con esto podríamos usar la tecla `,` como un prefijo para nuestros atajos.
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lazy.path &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; vim.fn.stdpath&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;data&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; .. &lt;span class=&quot;s1&quot;&gt;&apos;/lazy/lazy.nvim&apos;&lt;/span&gt;
-lazy.opts &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+```shell
+vim.keymap.set(&apos;n&apos;, &apos;&lt;leader&gt;w&apos;, &apos;&lt;cmd&gt;write&lt;cr&gt;&apos;)
+```
+Y así la secuencia `, + w` guarda el archivo actual.
 
-lazy.setup&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; Lista de plugins
-  &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Aquí utilizamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stdpath(&apos;data&apos;)&lt;/code&gt; para que la ruta de los plugins quede en una carpeta manejada por Neovim. Ustedes pueden cambiar la ruta si quieren. Pero de esta manera no tenemos que preocuparnos por cambiar la ruta dependiendo del sistema operativo donde estamos.&lt;/p&gt;
+###  init.lua
 
-&lt;p&gt;Si quieren saber donde estarán los plugins usen este comando.&lt;/p&gt;
+El administrador de `plugins` que posehemos es [lazy.nvim](https://github.com/folke/lazy.nvim).
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:echo stdpath&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;data&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;/lazy/lazy.nvim&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
 
-&lt;p&gt;1) &lt;a href=&quot;https://github.com/mickael-menu/zk-nvim&quot;&gt;zk-nvim&lt;/a&gt;&lt;/p&gt;
+![image](https://user-images.githubusercontent.com/292349/208301737-68fb279c-ba70-43ef-a369-8c3e8367d6b1.png)
 
-&lt;p&gt;Este plugins es para el &lt;a href=&quot;https://github.com/mickael-menu/zk&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zk&lt;/code&gt;&lt;/a&gt; asistente de toma de notas en texto plano.&lt;/p&gt;
 
-&lt;p&gt;2) &lt;a href=&quot;https://github.com/rhysd/vim-grammarous&quot;&gt;vim-grammarous&lt;/a&gt;&lt;/p&gt;
+Nuestra especificasion de la ruta donde se intla nuestros plugins es.
 
-&lt;p&gt;vim-grammarous es un potente corrector gramatical para Vim. Simplemente hazlo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:GrammarousCheck&lt;/code&gt; para ver la poderosa verificación.
-Este complemento descarga automáticamente &lt;a href=&quot;https://www.languagetool.org/&quot;&gt;LanguageTool&lt;/a&gt; , que requiere Java 8+.&lt;/p&gt;
+```shell
+lazy.path = vim.fn.stdpath(&apos;data&apos;) .. &apos;/lazy/lazy.nvim&apos;
+lazy.opts = {}
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/rhysd/ss/blob/master/vim-grammarous/demo.gif?raw=true&quot; alt=&quot;pantalla de demostración&quot; /&gt;&lt;/p&gt;
+lazy.setup({
+  ---
+  -- Lista de plugins
+  ---
+})
+```
+Aquí utilizamos `stdpath(&apos;data&apos;)` para que la ruta de los plugins quede en una carpeta manejada por Neovim. Ustedes pueden cambiar la ruta si quieren. Pero de esta manera no tenemos que preocuparnos por cambiar la ruta dependiendo del sistema operativo donde estamos.
 
-&lt;p&gt;3) &lt;a href=&quot;https://github.com/folke/tokyonight.nvim&quot;&gt;tokyonight.nvim&lt;/a&gt;&lt;/p&gt;
+Si quieren saber donde estarán los plugins usen este comando.
 
-&lt;p&gt;Para temas&lt;/p&gt;
+```shell
+:echo stdpath(&apos;data&apos;) . &apos;/lazy/lazy.nvim&apos;
+```
 
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/292349/190951628-10ba28a1-57ff-4479-8eab-47400a402242.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+### Plugins  
 
-&lt;p&gt;4) &lt;a href=&quot;https://github.com/nvim-lualine/lualine.nvim&quot;&gt;lualine.nvim&lt;/a&gt;&lt;/p&gt;
+1) [zk-nvim](https://github.com/mickael-menu/zk-nvim)
 
-&lt;p&gt;Una línea de estado de Neovim increíblemente rápida y fácil de configurar escrita en Lua.&lt;/p&gt;
+Este plugins es para el [`zk`](https://github.com/mickael-menu/zk) asistente de toma de notas en texto plano.
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;examples/evil_lualine.lua&quot;&gt;evil_lualine&lt;/a&gt;
-&lt;img width=&quot;700&quot; src=&quot;https://user-images.githubusercontent.com/13149513/113875129-4453ba00-97d8-11eb-8f21-94a9ef565db3.png&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
+2) [vim-grammarous](https://github.com/rhysd/vim-grammarous)
 
-&lt;p&gt;5) &lt;a href=&quot;&quot;&gt;telescope.nvim&lt;/a&gt;&lt;/p&gt;
+vim-grammarous es un potente corrector gramatical para Vim. Simplemente hazlo `:GrammarousCheck` para ver la poderosa verificación.
+Este complemento descarga automáticamente [LanguageTool](https://www.languagetool.org/) , que requiere Java 8+.
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;telescope.nvim&lt;/code&gt; es un buscador difuso altamente extensible sobre listas. Construido sobre las últimas características impresionantes del neovimnúcleo. El telescopio se centra en la modularidad, lo que permite una fácil personalización.&lt;/p&gt;
+![pantalla de demostración](https://github.com/rhysd/ss/blob/master/vim-grammarous/demo.gif?raw=true)
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/TTTja6t.gif&quot; alt=&quot;Preview&quot; /&gt;&lt;/p&gt;
+3) [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
 
-&lt;p&gt;6) &lt;a href=&quot;https://github.com/nvim-tree/nvim-tree.lua&quot;&gt;nvim-tree.lua&lt;/a&gt;&lt;/p&gt;
+Para temas
 
-&lt;p&gt;Un interezante explorador de archivo&lt;/p&gt;
+![image](https://user-images.githubusercontent.com/292349/190951628-10ba28a1-57ff-4479-8eab-47400a402242.png)
 
-&lt;h4 id=&quot;combinaciones-de-teclas&quot;&gt;Combinaciones de teclas&lt;/h4&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;leader + f&lt;/code&gt;: Abre explorador
-Mostrar las asignaciones del explorador: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;leader + g?&lt;/code&gt;&lt;/p&gt;
+4) [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;tree-explo&quot; /&gt;&lt;/p&gt;
+Una línea de estado de Neovim increíblemente rápida y fácil de configurar escrita en Lua.
 
-&lt;p&gt;7) &lt;a href=&quot;https://github.com/lukas-reineke/indent-blankline.nvim&quot;&gt;indent-blankline.nvim&lt;/a&gt;&lt;/p&gt;
+- [evil_lualine](examples/evil_lualine.lua)
+  &lt;img width=&quot;700&quot; src=&quot;https://user-images.githubusercontent.com/13149513/113875129-4453ba00-97d8-11eb-8f21-94a9ef565db3.png&quot; /&gt;
 
-&lt;p&gt;Este complemento agrega guías de sangría a Neovim.&lt;/p&gt;
+5) [telescope.nvim]()
 
-&lt;p&gt;&lt;img width=&quot;900&quot; src=&quot;https://github.com/lukas-reineke/indent-blankline.nvim/assets/12900252/69ca7bb2-e294-4437-818b-8b47e63244b3&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+`telescope.nvim` es un buscador difuso altamente extensible sobre listas. Construido sobre las últimas características impresionantes del neovimnúcleo. El telescopio se centra en la modularidad, lo que permite una fácil personalización.
 
-&lt;p&gt;De querér personalizar algo por su cuenta de este complemento le recomiendo ejecutar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:help ibl.config.scope&lt;/code&gt; y echarle una leída.&lt;/p&gt;
+![Preview](https://i.imgur.com/TTTja6t.gif)
 
-&lt;p&gt;8)  &lt;a href=&quot;https://github.com/akinsho/toggleterm.nvim&quot;&gt;toggleterm.nvim&lt;/a&gt;&lt;/p&gt;
+6) [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 
-&lt;p&gt;Un complemento de neovim para persistir y alternar entre múltiples terminales durante una sesión de edición&lt;/p&gt;
+Transformaciones de texto usando funciones Lua.
 
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/22454918/224485816-8b0cb1b8-b0e6-4da6-9d71-a7299d39f1a0.gif&quot; alt=&quot;toggleterm in action&quot; /&gt;&lt;/p&gt;
+7) [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 
-&lt;p&gt;9)  &lt;a href=&quot;https://github.com/dense-analysis/neural&quot;&gt;neural&lt;/a&gt;&lt;/p&gt;
+Este complemento agrega guías de sangría a Neovim.
 
-&lt;p&gt;¡Un complemento ChatGPT Vim, un complemento OpenAI Neovim y mucho más! Neural integra varias herramientas de aprendizaje automático para que puedas dejar que la IA escriba código por ti en Vim/Neovim, entre otras cosas útiles.&lt;/p&gt;
+&lt;img width=&quot;900&quot; src=&quot;https://github.com/lukas-reineke/indent-blankline.nvim/assets/12900252/69ca7bb2-e294-4437-818b-8b47e63244b3&quot; alt=&quot;Screenshot&quot; /&gt;
 
-&lt;p&gt;10) &lt;a href=&quot;https://github.com/MunifTanjim/nui.nvim&quot;&gt;nui.nvim&lt;/a&gt;&lt;/p&gt;
+De querér personalizar algo por su cuenta de este complemento le recomiendo ejecutar `:help ibl.config.scope` y echarle una leída. 
 
-&lt;p&gt;Biblioteca de componentes de interfaz de usuario para Neovim.&lt;/p&gt;
+8)  [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/MunifTanjim/nui.nvim/wiki/media/layout.gif&quot; alt=&quot;Diseño GIF&quot; /&gt;&lt;/p&gt;
+Un complemento de neovim para persistir y alternar entre múltiples terminales durante una sesión de edición
 
-&lt;p&gt;11) &lt;a href=&quot;https://github.com/ElPiloto/significant.nvim&quot;&gt;significant.nvim&lt;/a&gt;&lt;/p&gt;
+![toggleterm in action](https://user-images.githubusercontent.com/22454918/224485816-8b0cb1b8-b0e6-4da6-9d71-a7299d39f1a0.gif) 
 
-&lt;p&gt;😬 Cuando tienes algo importante que decir&lt;/p&gt;
 
-&lt;p&gt;12) &lt;a href=&quot;https://github.com/VonHeikemen/lsp-zero.nvim&quot;&gt;lsp-zero.nvim&lt;/a&gt;&lt;/p&gt;
+9)  [neural](https://github.com/dense-analysis/neural)
 
-&lt;p&gt;Colección de funciones que le ayudarán a configurar el cliente LSP de Neovim, para que pueda obtener funciones similares a IDE con el mínimo esfuerzo.&lt;/p&gt;
+¡Un complemento ChatGPT Vim, un complemento OpenAI Neovim y mucho más! Neural integra varias herramientas de aprendizaje automático para que puedas dejar que la IA escriba código por ti en Vim/Neovim, entre otras cosas útiles.
 
-&lt;h3 id=&quot;️-keymap-nvimm&quot;&gt;⌨️ keymap nvimm&lt;/h3&gt;
+10) [nui.nvim](https://github.com/MunifTanjim/nui.nvim)
 
-&lt;p&gt;…&lt;/p&gt;
+Biblioteca de componentes de interfaz de usuario para Neovim.
 
-&lt;h4 id=&quot;mias-&quot;&gt;Mias 😼&lt;/h4&gt;
+![Diseño GIF](https://github.com/MunifTanjim/nui.nvim/wiki/media/layout.gif)
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;ei&lt;/code&gt;: Abrir archivo de configuración &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;init.lua&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;qq&lt;/code&gt;: Cerrar neovim sin guardar&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;w&lt;/code&gt;: Guardar cambios&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;x&lt;/code&gt;: Guardar cambios y Cerrar neovim&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+11) [significant.nvim](https://github.com/ElPiloto/significant.nvim)
 
-&lt;h4 id=&quot;buffer&quot;&gt;Buffer&lt;/h4&gt;
+😬 Cuando tienes algo importante que decir
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;C-b&amp;gt;n&lt;/code&gt;,&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;C-b&amp;gt;p&lt;/code&gt;: Moverse entre búffer&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;C-b&amp;gt;q&lt;/code&gt;: Cerrer el buffer actual&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;h4 id=&quot;ventana&quot;&gt;Ventana&lt;/h4&gt;
+12) [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
 
-&lt;h4 id=&quot;cmp-y-luasnip&quot;&gt;cmp y luasnip&lt;/h4&gt;
+Colección de funciones que le ayudarán a configurar el cliente LSP de Neovim, para que pueda obtener funciones similares a IDE con el mínimo esfuerzo.
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;K&lt;/code&gt;: Muestra información sobre símbolo debajo del cursor&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
+### ⌨️ keymap nvimm
 
-&lt;h4 id=&quot;telescope&quot;&gt;Telescope&lt;/h4&gt;
+Una vez tenemos abierto vim y estamos editando un archivo debemos conocer diversos comandos para poder utilizar el entorno. El editor se puede encontrar en 3 modos diferentes:
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;&amp;lt;space&amp;gt;&lt;/code&gt;: Muestra la lista de archivos abiertos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;?&lt;/code&gt;: Muestra el historial de archivos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;ff&lt;/code&gt;: Muestra los archivos del directorio de trabajo actual&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;fg&lt;/code&gt;: Ejecuta una búsqueda interactiva en cada línea código de cada archivo en el directorio actual.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;fd&lt;/code&gt;: Muestra la lista de “&lt;strong&gt;diagnósticos&lt;/strong&gt;” del archivo actual. Un diagnóstico puede ser un error de sintaxis, una advertencia o una sugerencia.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;fs&lt;/code&gt;: Ejecuta una búsqueda interactiva en el archivo actual&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+- Modo `normal` (Normal mode): Se pueden utilizar ciertas combinaciones de teclas para realizar ciertas acciones. Para acceder a este modo presionar escape.
 
-&lt;h4 id=&quot;neural&quot;&gt;Neural&lt;/h4&gt;
+- Modo inserción (Insertion mode): Se puede insertar (insert) o sobreescribir el texto (append). Para acceder a este modo presionar `i` , `c`  o la tecla `insert`  (1 vez = insert, 2 veces = append).
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;leader&amp;gt;n&lt;/code&gt;: Activa interaccion con chatGPT de openAI con neura&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Activar / desactivar fondo transparente&lt;/p&gt;
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;be&apos;, &apos;&amp;lt;cmd&amp;gt;TransparentEnable&amp;lt;cr&amp;gt;&apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;bd&apos;, &apos;&amp;lt;cmd&amp;gt;TransparentDisable&amp;lt;cr&amp;gt;&apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim.keymap.set(&apos;n&apos;, &apos;&amp;lt;leader&amp;gt;bt&apos;, &apos;&amp;lt;cmd&amp;gt;TransparentToggle&amp;lt;cr&amp;gt;&apos;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;h4 id=&quot;lsp&quot;&gt;LSP&lt;/h4&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+- Modo comando (Command mode): Se puede utilizar cualquier comando SED además de funciones propias de Vim. Para acceder a este modo se debe estar en modo normal y pulsar `:` , a continuación se escribirá nuestra petición.
 
-&lt;p&gt;Estas son las combinaciones de teclas de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lsp-zero&lt;/code&gt; y sus complemento adisionales.&lt;/p&gt;
+- Modo visual (visual mode): Se puede selecionar texto para tratarlo en conjunto. Para acceder a este modo se debe estar en modo normal y pulsar `v`.
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Ctrl-y&amp;gt;&lt;/code&gt;: Confirma la selección.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Ctrl-e&amp;gt;&lt;/code&gt;: Cancelar la finalización.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Down&amp;gt;&lt;/code&gt;: navegue al siguiente elemento de la lista.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Up&amp;gt;&lt;/code&gt;: navega al elemento anterior de la lista.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Ctrl-n&amp;gt;&lt;/code&gt;: Vaya al siguiente elemento del menú de finalización o active el menú de finalización.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Ctrl-p&amp;gt;&lt;/code&gt;: Vaya al elemento anterior del menú de finalización o active el menú de finalizació.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+- Modo terminal
 
-&lt;h2 id=&quot;️helix&quot;&gt;🖋️&lt;a href=&quot;&quot;&gt;helix&lt;/a&gt;&lt;/h2&gt;
+#### Modo Normal
 
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
+- `G`  : Ultima linea
+- `gg` : Primera linea
+- `u`  : Deshacer ultimo cambio
+- `CTRL+r`: Rehacer
+- `/texto[ENTER]` : Buscar texto
+- `p`: Pegar el texto copiado o cortado
+- `&lt;leader&gt;+p`: Pegar el texto desde el portapapeles del sistema (teclear el + también)
+- `%` : Buscar el texto donde se encuentra el cursor
+- `n` : Repetur ultima busqueda
+- `CTRL+ws` : Dividir la pantalla horizontalmente en 2
+- `CTRL+wv` : Dividir la pantalla verticalmente en 2
+- `CTRL+wn` : Crear un nuevo archivo en una pantalla dividida horizontalmente
+- `CTRL+wq` : Cerrar la división actual
+-  `CTRL+w{j,k,h,l}`  ó `CTRL+w{cursores del teclado}` : Moverse a la ventana de arriba 
+- `CTRL+w=` : Hacer todas las ventanas del mismo tamaño
+- `ggVG`    : Seleccionar todo el texto
+- `ma`      : Establecer una marca con el nombre `a`
+- `&apos;a`      : Ir al la marca `a` 
+- `&lt;leader&gt;ei`: Abrir archivo de configuración `init.lua`
+- `&lt;leader&gt;qq`: Cerrar neovim sin guardar
+- `&lt;leader&gt;w`: Guardar cambios
+- `&lt;leader&gt;x`: Guardar cambios y Cerrar neovim
 
-&lt;h1 id=&quot;️-mapa-de-teclass&quot;&gt;⌨️ Mapa de teclass&lt;/h1&gt;
+#### Modo Inserción
 
-&lt;p&gt;&lt;strong&gt;i-Haklab&lt;/strong&gt; cuanta con diversas configuraciones de teclas que no son las que te topatias en un tutorial&lt;/p&gt;
 
-&lt;h2 id=&quot;termux&quot;&gt;Termux&lt;/h2&gt;
+#### Modo comando
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ctrl+u &lt;span class=&quot;c&quot;&gt;# borra todo a la izq&lt;/span&gt;
-ctrl+k &lt;span class=&quot;c&quot;&gt;# borra todo a la der&lt;/span&gt;
-ctrl+w &lt;span class=&quot;c&quot;&gt;# borra la ultima palabra&lt;/span&gt;
-ctrl+l &lt;span class=&quot;c&quot;&gt;# limpia la pantalla&lt;/span&gt;
-ctrl+y &lt;span class=&quot;c&quot;&gt;# restaura lo borrado&lt;/span&gt;
-ctrl+e &lt;span class=&quot;c&quot;&gt;# mueve cursor al final de la linea&lt;/span&gt;
-ctrl+a &lt;span class=&quot;c&quot;&gt;# mueve el cursor al inicio de la linea&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+- `:26` : Ir al la linea 25
+- `:q`  : Salir
+- `:qa` : Salir cerrando todo lo abierto
+- `q!`  : Salir sin quardar
+- `:w [name]` : Guardar con otro nombre
+- `:e archivo` : Editar archivo
+- `:new` : Crea nueva pantalla dividida
+- `:only` : Quedarse solo con la ventana actual y ocultar el resto
+- 
+##### Substituir una cadena
 
-&lt;h1 id=&quot;-comandos-adisionales&quot;&gt;🤖 Comandos adisionales&lt;/h1&gt;
+- `:%s/A/B/g`   : Substituir una cadena de texto A por B en todo el texto
+- `:2,3s/A/B/g` : Substituir una cadena de texto A por B entre la linea 2 y 10
 
-&lt;p&gt;Los comandos a adicionales son funciones  que se agregan a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fpath&lt;/code&gt; y se encuentran en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;. zsh/functions&lt;/code&gt;&lt;/p&gt;
+#### Modo Visual
 
-&lt;h2 id=&quot;como-crear-más&quot;&gt;Como crear más&lt;/h2&gt;
+- `y`: Copiar el texto seleccionado  
+- `&lt;leader&gt;+y&quot;`: Copiar el texto selecionado en el portapapeles del sistema (teclear el + también)  
+- `d`: Copiar texto selecionado  
 
-&lt;p&gt;&lt;strong&gt;Agregar archivo en el directorio de carga automática&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;El nombre del archivo será el nombre del comando.&lt;/li&gt;
-  &lt;li&gt;No se necesita permiso ejecutable.&lt;/li&gt;
-  &lt;li&gt;No es necesario definir la función en el archivo.&lt;/li&gt;
-&lt;/ul&gt;
+##### Corrector ortográfico
 
-&lt;p&gt;&lt;strong&gt;Agregar nuevo comando mediante carga automática&lt;/strong&gt;&lt;/p&gt;
+Por defecto, vim dispone de corrector para Inglés pero si activamos otros idiomas, el editor nos pregunará si deseamos descargar los correspondientes diccionarios automáticamente.
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; comamdo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+Activar corrector
+`:set spell`
 
-&lt;p&gt;En el directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugins&lt;/code&gt; es para lo que no son creados por nosotros ni la comunidad que puedes tener una lista de ellos &lt;a href=&quot;https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins&quot;&gt;agui&lt;/a&gt;&lt;/p&gt;
+Desactivar corrector
+`:set nospell`
 
-&lt;p&gt;Para agregar unos de ello solo clonelo en el directorio y ponga el nombre del mismo en el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;. zshrc &lt;/code&gt; en plugins=(…).&lt;/p&gt;
+Seleccionamos idioma
+```
+:set spelllang=es
+:set spelllang=ca
+:set spelllang=en
+:set spelllang=fr
+```
 
-&lt;h1 id=&quot;-reasignación-de-claves&quot;&gt;🙈 Reasignación de claves&lt;/h1&gt;
+Las palabras incorrectas se marcaran en color rojo y podremos interaccionar en modo normal:
 
-&lt;h1 id=&quot;-shell-default-zsh&quot;&gt;🤗 SHELL (Default zsh)&lt;/h1&gt;
+Siguiente palabra incorrecta
+``]s``
 
-&lt;p&gt;Contamos con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zsh&lt;/code&gt; que es  un shell diseñado para uso interactivo, aunque también es un potente lenguaje de programación. Muchas de las funciones útiles de bash, ksh y tcsh se incorporaron a zsh; Se agregaron muchas características originales&lt;/p&gt;
+Previa palabra incorrecta
+``[s``
 
-&lt;h2 id=&quot;globbing&quot;&gt;&lt;a href=&quot;https://zsh.sourceforge.io/Intro/intro_toc.html#SEC2&quot;&gt;globbing&lt;/a&gt;&lt;/h2&gt;
+Sugerencias de corrección para una palabra
+``z=``
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;% &lt;span class=&quot;nb&quot;&gt;ls
-&lt;/span&gt;Makefile   file.pro   foo.o      main.o     q.c        run234     stuff
-bar.o      foo        &lt;span class=&quot;nb&quot;&gt;link       &lt;/span&gt;morestuff  run123     run240     sub
+Añadir una palabra al diccionario
+``zg``
+
+Borrar una palabra del diccionario
+``zw``
+
+#### Buffer 
+
+- `&lt;C-b&gt;n`,`&lt;C-b&gt;p`: Moverse entre búffer 
+- `&lt;C-b&gt;q`: Cerrer el buffer actual
+
+
+
+
+
+#### cmp y luasnip
+
+- `K`: Muestra información sobre símbolo debajo del cursor
+ 
+
+
+#### Telescope
+
+- `&lt;leader&gt;&lt;space&gt;`: Muestra la lista de archivos abiertos.
+
+- `&lt;leader&gt;?`: Muestra el historial de archivos.
+
+- `&lt;leader&gt;ff`: Muestra los archivos del directorio de trabajo actual
+
+- `&lt;leader&gt;fg`: Ejecuta una búsqueda interactiva en cada línea código de cada archivo en el directorio actual.
+
+- `&lt;leader&gt;fd`: Muestra la lista de &quot;**diagnósticos**&quot; del archivo actual. Un diagnóstico puede ser un error de sintaxis, una advertencia o una sugerencia.
+
+- `&lt;leader&gt;fs`: Ejecuta una búsqueda interactiva en el archivo actual
+
+#### Neural
+
+- `&lt;leader&gt;n`: Activa interaccion con chatGPT de openAI con neura
+
+- Activar / desactivar fondo transparente
+```
+vim.keymap.set(&apos;n&apos;, &apos;&lt;leader&gt;be&apos;, &apos;&lt;cmd&gt;TransparentEnable&lt;cr&gt;&apos;)
+```
+```
+vim.keymap.set(&apos;n&apos;, &apos;&lt;leader&gt;bd&apos;, &apos;&lt;cmd&gt;TransparentDisable&lt;cr&gt;&apos;)
+```
+```
+vim.keymap.set(&apos;n&apos;, &apos;&lt;leader&gt;bt&apos;, &apos;&lt;cmd&gt;TransparentToggle&lt;cr&gt;&apos;)
+```
+
+### Markdown Syntax: Basics
+
+- Plain text (two paragraphs):
+
+```
+This is first paragraph.
+
+And this is second paragraph.
+``` 
+
+- Italic:
+
+```
+Text enclosed in *single asterisks* or _single underscores_ is recognized
+as an emphasis, and it usually gets rendered as an italic text.
+```
+![Italic](path) 
+
+- Bold:
+
+```
+Similarly, text enclosed in **double asterisks** or __double underscores__
+is recognized as a strong emphasis, and it usually gets rendered as a bold
+text.
+```
+![bold](path)
+
+
+- Bold italic:
+
+```
+*Italic* and **bold text** can be combined into ***bold italic***, even 
+__in quite a _complicated_ ways__.
+```
+![Bold italic](path) 
+
+- Headings
+
+```
+# Header level 1
+## Header level 2
+### Header level 3
+#### Header level 4
+##### Header level 5
+###### Header level 6
+
+First two header level may alternatively be written using an underline:
+
+Header level 1
+==============
+
+Header level 2
+--------------
+```
+
+- Link
+
+```
+Inline link: [link text](http://www.example.com)
+
+Or link using a reference definition:
+
+[Reference link][1]
+
+[1]: http://www.example.com
+```
+
+![Linsk](path) 
+
+
+- Unordered list
+
+```
+* List item 1
+* List item 2
+* List item 3
+
+or
+
+- List item 1
+- List item 2
+- List item 3
+```
+![Unordered](path) 
+
+- Ordered lists
+
+```
+1. List item 1
+2. List item 2
+3. List item 3
+
+or
+
+1) List item 1
+2) List item 2
+3) List item 3
+```
+
+- Nested lists
+
+```
+* Foo
+  * Foo&apos;s subitem
+* Bar
+  * Bar&apos;s subitem 1
+  * Bar&apos;s subitem 2
+  * Bar&apos;s subitem 3
+* Baz
+  * Baz&apos;s subitem 1
+  * Baz&apos;s subitem 2
+```
+
+- Blockquote
+
+```
+&amp;gt; Part of documements with lines prepended with `&amp;gt;` is treated as a
+&amp;gt; blockquote.
+&amp;gt;
+&amp;gt; &amp;gt; It may contain even nested block quote or lists:
+&amp;gt; 
+&amp;gt; * List item 1
+&amp;gt; * List item 2
+```
+
+- Inline code (a.k.a code span)
+
+```
+Run shell command `ls` to get contents of the current directory.    
+```
+ 
+ - Code Block  
+
+```
+Set of lines enclosed within a lines formed by three (or more) consecutive
+backticks (```) or tildes (~~~) is recognized as a code block.
+
+Alternatively, the code may just be indented by four or more spaces:
+
+    $ ./configure
+    $ make
+    $ make install
+
+An [info string] can be provided after the opening code fence.
+Although this spec doesn&apos;t mandate any particular treatment of
+the info string, the first word is typically used to specify
+the language of the code block. In HTML output, the language is
+normally indicated by adding a class to the `code` element consisting
+of `language-` followed by the language name.
+
+example:
+
+~~~ruby
+def foo(x)
+  return 3
+end
+~~~
+
+will turn into:
+
+&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def foo(x)
+  return 3
+end
+&lt;/code&gt;&lt;/pre&gt;
+```
+
+
+
+
+## 🖋️[helix]() 
+
+![Imagen]() 
+
+
+# ⌨️ Mapa de teclass
+
+*i-haklab* cuanta con diversas configuraciones de teclas que no son las que te topatias en un tutorial 
+
+## Termux 
+
+```shell
+ctrl+u # borra todo a la izq
+ctrl+k # borra todo a la der
+ctrl+w # borra la ultima palabra
+ctrl+l # limpia la pantalla
+ctrl+y # restaura lo borrado
+ctrl+e # mueve cursor al final de la linea
+ctrl+a # mueve el cursor al inicio de la linea
+```
+
+#  🤖 Comandos adisionales
+
+Los comandos a adicionales son funciones  que se agregan a `fpath` y se encuentran en `. zsh/functions`
+
+## Como crear más 
+
+**Agregar archivo en el directorio de carga automática**
+
+- El nombre del archivo será el nombre del comando.
+- No se necesita permiso ejecutable.
+- No es necesario definir la función en el archivo.
+
+**Agregar nuevo comando mediante carga automática**
+
+```sh
+autoload -U comamdo
+```
+
+En el directorio `plugins` es para lo que no son creados por nosotros ni la comunidad que puedes tener una lista de ellos [agui](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) 
+
+Para agregar unos de ello solo clonelo en el directorio y ponga el nombre del mismo en el `. zshrc ` en plugins=(...). 
+
+
+
+# 🙈 Reasignación de claves
+
+
+
+# 🤗 SHELL (Default zsh) 
+
+Contamos con `zsh` que es  un shell diseñado para uso interactivo, aunque también es un potente lenguaje de programación. Muchas de las funciones útiles de bash, ksh y tcsh se incorporaron a zsh; Se agregaron muchas características originales
+
+## [globbing](https://zsh.sourceforge.io/Intro/intro_toc.html#SEC2)
+
+```shell
+% ls
+Makefile   file.pro   foo.o      main.o     q.c        run234     stuff
+bar.o      foo        link       morestuff  run123     run240     sub
 file.h     foo.c      main.h     pipe       run2       run303
-% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.c
+% ls *.c
 foo.c  q.c
-% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.[co]
+% ls *.[co]
 bar.o   foo.c   foo.o   main.o  q.c
-% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;foo.?
+% ls foo.?
 foo.c  foo.o
-% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.[^c]
+% ls *.[^c]
 bar.o   file.h  foo.o   main.h  main.o
-% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.[^oh]
+% ls *.[^oh]
 foo.c  q.c  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Una expresión de la forma &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;x-y&amp;gt;&lt;/code&gt; coincide con un rango de números enteros:&lt;/p&gt;
+```
+Una expresión de la forma `&lt;x-y&gt;` coincide con un rango de números enteros:
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;200-300&amp;gt; 
+```shell
+% ls run&amp;lt;200-300&amp;gt; 
 run234 run240 
-% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;300-400&amp;gt; 
+% ls run&amp;lt;300-400&amp;gt; 
 run303 
-% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;&lt;span class=&quot;nt&quot;&gt;-200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 
+% ls run&amp;lt;-200&amp;gt; 
 run123 run2 
-% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;300-&amp;gt; 
+% ls run&amp;lt;300-&amp;gt; 
 run303 
-% &lt;span class=&quot;nb&quot;&gt;ls &lt;/span&gt;run&amp;lt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 
+% ls run&amp;lt;&amp;gt; 
 run123 run2 run234 run240 run303
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Es posible agrupar:&lt;/p&gt;
+```
+Es posible agrupar:
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;foo|bar&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 
+```shell
+% ls (foo|bar).* 
 bar.o foo.c foo.o 
-% &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c|o|pro&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
+% ls *.(c|o|pro) 
 bar.o archivo.pro foo.c foo.o main.o qc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;h2 id=&quot;archivos-de-inicio&quot;&gt;&lt;a href=&quot;https://zsh.sourceforge.io/Intro/intro_toc.html#SEC3&quot;&gt;Archivos de inicio&lt;/a&gt;&lt;/h2&gt;
+## [Archivos de inicio](https://zsh.sourceforge.io/Intro/intro_toc.html#SEC3)
 
-&lt;p&gt;Hay cinco archivos de inicio desde los que zsh leerá los comandos:&lt;/p&gt;
+Hay cinco archivos de inicio desde los que zsh leerá los comandos:
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zshenv
-&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zprofile
-&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zshrc
-&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zlogin
-&lt;span class=&quot;nv&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zlogout
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```shell
+$ZDOTDIR/.zshenv
+$ZDOTDIR/.zprofile
+$ZDOTDIR/.zshrc
+$ZDOTDIR/.zlogin
+$ZDOTDIR/.zlogout
+```
 
-&lt;p&gt;&lt;strong&gt;zshenv:&lt;/strong&gt; Contien comandos para establecer la ruta de búsqueda de comandos, además de otras variables de entorno importantes.&lt;/p&gt;
+**zshenv:** Contien comandos para establecer la ruta de búsqueda de comandos, además de otras variables de entorno importantes.
 
-&lt;p&gt;&lt;strong&gt;zshrc:&lt;/strong&gt; Debe contener comandos para configurar alias, funciones, opciones, combinaciones de teclas, etc.&lt;/p&gt;
+**zshrc:** Debe contener comandos para configurar alias, funciones, opciones, combinaciones de teclas, etc.
 
-&lt;p&gt;&lt;strong&gt;zlogin:&lt;/strong&gt; Debe contener comandos que deben ejecutarse sólo en shells de inicio de sesión. `.zlogout’ se obtiene cuando se cierran los shells de inicio de sesió&lt;/p&gt;
+**zlogin:** Debe contener comandos que deben ejecutarse sólo en shells de inicio de sesión. `.zlogout&apos; se obtiene cuando se cierran los shells de inicio de sesió
 
-&lt;p&gt;&lt;strong&gt;zprofile:&lt;/strong&gt; pretende ser una alternativa a `.zlogin’ para los fanáticos de ksh.&lt;/p&gt;
+**zprofile:** pretende ser una alternativa a `.zlogin&apos; para los fanáticos de ksh.
 
-&lt;h1 id=&quot;-temas&quot;&gt;🎨 TEMAS&lt;/h1&gt;
 
-&lt;p&gt;&lt;strong&gt;Por default (Powerlevel10k)&lt;/strong&gt;&lt;/p&gt;
+# 🎨 TEMAS
 
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png&quot; alt=&quot;Powerlevel10k&quot; /&gt;&lt;/p&gt;
+**Por default (Powerlevel10k)**
 
-&lt;p&gt;Para agregar un tema en esta ruta para carga automática &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;. zsh/themes&lt;/code&gt;&lt;/p&gt;
+![Powerlevel10k](
+https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png)
 
-&lt;h1 id=&quot;-asistente-de-configuración&quot;&gt;👨‍🔧 Asistente de configuración&lt;/h1&gt;
+Para agregar un tema en esta ruta para carga automática `. zsh/themes` 
 
-&lt;p&gt;Escriba &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p10k configure&lt;/code&gt; para acceder al asistente de configuración incorporado directamente desde su terminal.&lt;/p&gt;
+# 👨‍🔧 Asistente de configuración
 
-&lt;p&gt;Para más información 👉 &lt;a href=&quot;https://github.com/romkatv/powerlevel10k#configuration-wizard&quot;&gt;agui&lt;/a&gt;&lt;/p&gt;
+Escriba `p10k configure` para acceder al asistente de configuración incorporado directamente desde su terminal.
 
-&lt;h1 id=&quot;-tmux&quot;&gt;📺 TMUX&lt;/h1&gt;
+Para más información 👉 [agui](https://github.com/romkatv/powerlevel10k#configuration-wizard) 
 
-&lt;p&gt;También vas a contar con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; qué es un multiplexor de terminal para sistemas tipo unix, 
+
+# 📺 TMUX 
+
+También vas a contar con `tmux` qué es un multiplexor de terminal para sistemas tipo unix, 
 similar a GNU Screen o Byobu que permite dividir una consola en múltiples secciones o generar 
-sesiones independientes en la misma terminal.&lt;/p&gt;
+sesiones independientes en la misma terminal.
 
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Imagen&quot; /&gt;&lt;/p&gt;
+![Imagen]() 
 
-&lt;h2 id=&quot;️-tmux&quot;&gt;⌨️ tmux&lt;/h2&gt;
 
-&lt;p&gt;Todos los comandos en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; requieren el atajo de prefijo, que de forma predeterminada es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+b&lt;/code&gt; pero en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I-haklab&lt;/code&gt; es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt; qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.&lt;br /&gt;
-Después de ingresar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+s&lt;/code&gt;, puede ejecutar un comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt; o escribir: para obtener un mensaje de tmux.&lt;/p&gt;
+## ⌨️ tmux 
 
-&lt;h3 id=&quot;-configuracion&quot;&gt;👨‍🔧 Configuracion&lt;/h3&gt;
+Todos los comandos en `tmux` requieren el atajo de prefijo, que de forma predeterminada es `ctrl+b` pero en `I-haklab` es `ctrl+s` qué usaremos mucho el prefijo, así que es mejor simplemente guardarlo en la memoria.  
+Después de ingresar `ctrl+s`, puede ejecutar un comando `tmux` o escribir: para obtener un mensaje de tmux. 
 
-&lt;p&gt;Ruta de alchivo de configuración&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/.tmux.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+### 👨‍🔧 Configuracion
 
-&lt;h1 id=&quot;️-desintalar-laboratorio&quot;&gt;⚰️ Desintalar laboratorio&lt;/h1&gt;
+Ruta de alchivo de configuración 
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;r laboratorio&lt;/p&gt;
+```sh
+~/.tmux.conf
+```
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;~/.tmux.conf&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-# 👨‍🎓  Como puedo ayudar 
 
-Contribuya con informando cualquier problema o realizando solicitudes push.
-
-Únase a nuestro [servidor de telegrama]() . 
 
 # ⚰️ Desintalar laboratorio 
 
 ```sh
 apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;r laboratorio&lt;/p&gt;
+```
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt remove i-haklab 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Laboratorio" /><category term="Termux" /><summary type="html">i-Haklab es un laboratorio de hacking para Termux que que nos ofrece de manera ordenada y secuencial un conjunto herramientas de código abierto para pentesting, que nos proporciona mas de 100 herramientas/marcos que no estan disponible en termux.</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/termux/root/2023/04/21/Alpine.html" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/termux/root/2023/04/21/Alpine</id><content type="html" xml:base="http://localhost:4000/termux/root/2023/04/21/Alpine.html">&lt;p&gt;Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package 
-Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a href=&quot;https://t.me/Ivam3by_Cinderella&quot;&gt;comunidad&lt;/a&gt; a probado su funcionalidad al 100% en Android.&lt;/p&gt;
+&lt;/x-y&gt;&lt;/cr&gt;&lt;/cmd&gt;&lt;/leader&gt;&lt;/cr&gt;&lt;/cmd&gt;&lt;/leader&gt;&lt;/cr&gt;&lt;/cmd&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/space&gt;&lt;/leader&gt;&lt;/C-b&gt;&lt;/C-b&gt;&lt;/C-b&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/cr&gt;&lt;/cmd&gt;&lt;/leader&gt;&lt;/leader&gt;&lt;/cr&gt;&lt;/cmd&gt;&lt;/space&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;</content><author><name>Demon Hunter</name></author><category term="Laboratorio" /><category term="Termux" /><category term="Linux" /><summary type="html">Inicio Tutoriales Cursos&amp;lt;/l&amp;gt; Bootcamps Contacto &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; [1]: http://www.example.com</summary></entry><entry><title type="html">Alpine en termux</title><link href="http://localhost:4000/Alpine/" rel="alternate" type="text/html" title="Alpine en termux" /><published>2023-04-21T00:00:00-04:00</published><updated>2023-04-21T00:00:00-04:00</updated><id>http://localhost:4000/Alpine</id><content type="html" xml:base="http://localhost:4000/Alpine/">&lt;p&gt;Para tener corriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente. Con la finalidad de facilitar el uso de &lt;em&gt;Termux&lt;/em&gt; y mantenerlo lo más similar posible a las distribuciones Linux &lt;em&gt;@Ivam3&lt;/em&gt; a realizado la adaptación al gestor de paquetes Advance Package.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Puedes revisa el listado de todas las herramientas disponibles  &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;aqui&lt;/a&gt;:&lt;/li&gt;
@@ -784,24 +1289,18 @@ Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la &lt;a
 
 &lt;p&gt;Para tener el acceso a todas las herramientas solo debes de agregar la llave(key) de acceso a las configuraciones de APT en Termux :&lt;/p&gt;
 
-&lt;h2 id=&quot;crea-el-directorio-&quot;&gt;Crea el directorio :&lt;/h2&gt;
-
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;Descarga la Key(llave) :&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;wget
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list.d/ivam3-termux-packages.list
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;actualiza-termux-&quot;&gt;Actualiza Termux :&lt;/h2&gt;
+&lt;h2 id=&quot;actualiza-termux&quot;&gt;Actualiza Termux&lt;/h2&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;En ese listado de herramientas que hemos optenido vamos a tener a &lt;strong&gt;termux-doker-qemu&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;En ese listado de &lt;a href=&quot;https://github.com/ivam3/termux-packages&quot;&gt;herramientas&lt;/a&gt;  que hemos optenido vamos a tener a &lt;strong&gt;termux-doker-qemu&lt;/strong&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ apt show  termux-docker-qemu                             
 Package: termux-docker-qemu                                Version: 0.3.3
@@ -816,7 +1315,7 @@ APT-Manual-Installed: &lt;span class=&quot;nb&quot;&gt;yes
 Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;running x86,x86_64,armv7 and aarch64 Linux virtual machines using QEMU
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Esto nos va a facilitar virtualizar el sistema operativo.&lt;/p&gt;
+&lt;p&gt;Esto nos va a facilitar virtualizar de una sistema operativo que por &lt;em&gt;default es alpinne&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;por-que-alpine&quot;&gt;Por que alpine&lt;/h3&gt;
 
@@ -850,7 +1349,7 @@ Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;r
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener coriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package Tool (APT) de las herramientas y/o frameworks que él recomienda, y que la comunidad a probado su funcionalidad al 100% en Android.</summary></entry><entry><title type="html">Notas de git</title><link href="http://localhost:4000/soluciones/notas/2023/04/20/GIT.html" rel="alternate" type="text/html" title="Notas de git" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/soluciones/notas/2023/04/20/GIT</id><content type="html" xml:base="http://localhost:4000/soluciones/notas/2023/04/20/GIT.html">&lt;p&gt;Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="termux" /><category term="root" /><category term="termux" /><category term="intalacion" /><summary type="html">Para tener corriendo Alpine en nuestro dispositivo vamos a nesecitar los siquiente. Con la finalidad de facilitar el uso de Termux y mantenerlo lo más similar posible a las distribuciones Linux @Ivam3 a realizado la adaptación al gestor de paquetes Advance Package.</summary></entry><entry><title type="html">Notas de git</title><link href="http://localhost:4000/GIT/" rel="alternate" type="text/html" title="Notas de git" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/GIT</id><content type="html" xml:base="http://localhost:4000/GIT/">&lt;p&gt;Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.&lt;/p&gt;
 
 &lt;p&gt;Para configurar un token de acceso personal, sigue estos pasos:&lt;/p&gt;
 
@@ -933,127 +1432,14 @@ Description: Docker container &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;r
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="soluciones" /><category term="notas" /><category term="termux" /><category term="tips" /><summary type="html">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.</summary></entry><entry><title type="html">Alternativas para `ngrok`</title><link href="http://localhost:4000/alternativa/2023/04/18/ngrok_alternativas.html" rel="alternate" type="text/html" title="Alternativas para `ngrok`" /><published>2023-04-18T00:00:00-04:00</published><updated>2023-04-18T00:00:00-04:00</updated><id>http://localhost:4000/alternativa/2023/04/18/ngrok_alternativas</id><content type="html" xml:base="http://localhost:4000/alternativa/2023/04/18/ngrok_alternativas.html">&lt;p&gt;Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="soluciones" /><category term="notas" /><category term="termux" /><category term="tips" /><summary type="html">Para evitar tener que autenticarte cada vez que subes un proyecto a Git desde tu terminal, puedes usar un token de acceso personal de Git. Un token de acceso personal es una cadena de caracteres que funciona como una contraseña temporal que solo se te otorga una vez. Con este token puedes acceder a tu cuenta de Git sin la necesidad de ingresar tus credenciales completas en la línea de comandos.</summary></entry><entry><title type="html">Añadir carpeta a el PATH</title><link href="http://localhost:4000/path/" rel="alternate" type="text/html" title="Añadir carpeta a el PATH" /><published>2023-04-20T00:00:00-04:00</published><updated>2023-04-20T00:00:00-04:00</updated><id>http://localhost:4000/path</id><content type="html" xml:base="http://localhost:4000/path/">&lt;h2 id=&quot;cómo-añadir-carpetas-a-al-path-en-linux&quot;&gt;Cómo añadir carpetas a al PATH en Linux&lt;/h2&gt;
 
-&lt;h1 id=&quot;opcion-1&quot;&gt;Opcion 1&lt;/h1&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://pagekite.net
-curl &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; https://pagekite.net/pk/pagekite.py 
-python2 pagekite.py 80 yourname.pagekite.me
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;opcion-2&quot;&gt;Opcion 2&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://portmap.io
+&lt;p&gt;Para añadir una carpeta al &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PATH&lt;/code&gt; de Linux se usa el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;:/home/usuario/ruta_a_la_carpeta_que_quiero_añadir
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;opcion-3&quot;&gt;Opcion 3&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/antoniomika/sish
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;opcion-4&quot;&gt;Opcion 4&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://forwardhq.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;opcion-5&quot;&gt;Opcion 5&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.beame.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;opcion-6&quot;&gt;Opcion 6&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://localhost.run
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;opcion-7&quot;&gt;Opcion 7&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://holepunch.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;opcion-8&quot;&gt;Opcion 8&lt;/h1&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://burrow.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="alternativa" /><category term="termux" /><category term="tips" /><summary type="html">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho servicio y por eso le brindo otras formas de lograr o optener el mismo resultado</summary></entry><entry><title type="html">Como intalar localtunnel</title><link href="http://localhost:4000/termux/2023/04/17/install-localtunel.html" rel="alternate" type="text/html" title="Como intalar localtunnel" /><published>2023-04-17T00:00:00-04:00</published><updated>2023-04-17T00:00:00-04:00</updated><id>http://localhost:4000/termux/2023/04/17/install-localtunel</id><content type="html" xml:base="http://localhost:4000/termux/2023/04/17/install-localtunel.html">&lt;p&gt;En esta oportunidad vamos a aprender como  instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; en nuestra terminal sin errores&lt;/p&gt;
-
-&lt;h1 id=&quot;instalacion&quot;&gt;Instalacion&lt;/h1&gt;
-
-&lt;h2 id=&quot;paso-1-actualizar-paquetes&quot;&gt;Paso 1: actualizar paquetes&lt;/h2&gt;
-
-&lt;p&gt;Ejecute el siguiente comando&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;paso-2-instalar-termux-api&quot;&gt;Paso 2: Instalar termux-api&lt;/h2&gt;
-
-&lt;p&gt;Ahora debe asegurarse de que termux tenga acceso a las funciones de hardware de Android y Chrome. Ejecute el siguiente comando.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;termux-api
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;paso-3-install-paquete-de-nodejs&quot;&gt;Paso 3: Install paquete de nodejs&lt;/h2&gt;
-
-&lt;p&gt;Para su intalacion ejecutar&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt  &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nodejs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;paso-4-instalar-localtunel&quot;&gt;Paso 4: Instalar localtunel&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; localtunnel
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Despues de que finalice la instalacion tendremos un error la ejecutal el comado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lt&lt;/code&gt; que seria la 
-abreviatura de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localtunel&lt;/code&gt; mostrando por pantalla lo siguente&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16
-        throw new Error&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Unsupported platform: &apos;&lt;/span&gt; + process.platform&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        ^
-
-Error: Unsupported platform: android
-    at Object.&amp;lt;anonymous&amp;gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/node_modules/openurl/openurl.js:16:15&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._compile &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1275:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._extensions..js &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1329:10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module.load &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1133:32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._load &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:972:12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module.require &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1157:19&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at require &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/helpers:119:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Object.&amp;lt;anonymous&amp;gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/data/data/com.termux/files/usr/lib/node_modules/localtunnel/bin/lt.js:4:17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._compile &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1275:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Module._extensions..js &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;node:internal/modules/cjs/loader:1329:10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-
-Node.js v19.6.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Para solucionar lo siguente procederemos a untilizar nuestro editor de texto faborito y editaremos el siguiente archivo&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvim &lt;span class=&quot;nv&quot;&gt;$PREFIX&lt;/span&gt;/lib/node_modules/localtunnel/node_modules/openurl/openurl.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Nos pocisionaremos en la linea numero &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;14&lt;/code&gt; gregamos la siguente fracmento de codigo despues de el 
-ultimo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;android&apos;&lt;/span&gt;:
-    &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;termux&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;resultado-final&quot;&gt;Resultado final&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    5 switch&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;process.platform&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    6     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;darwin&apos;&lt;/span&gt;:
-    7         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;open&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                      
-    8         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    9     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;win32&apos;&lt;/span&gt;:
-   10         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;explorer.exe&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   11         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   12     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;linux&apos;&lt;/span&gt;:
-   13         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;xdg-open&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   14         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   15     &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;android&apos;&lt;/span&gt;:
-   16         &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;termux&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                   
-   17         &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   18     default:
-   19         throw new Error&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Unsupported platform: &apos;&lt;/span&gt; + process.platform&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   20 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;usar&quot;&gt;usar&lt;/h1&gt;
-&lt;p&gt;Suponiendo que su servidor local se está ejecutando en el puerto 8000, simplemente use el ltcomando para iniciar el túnel.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lt &lt;span class=&quot;nt&quot;&gt;--port&lt;/span&gt; 8000
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Con esta orden le estamos diciento a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export&lt;/code&gt; algo así: “&lt;em&gt;oye comando, quiero que la variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PATH&lt;/code&gt; tenga todo que &lt;strong&gt;ya hay en ella&lt;/strong&gt;, más la carpeta que te pongo despues de los dos puntos&lt;/em&gt;“… ¿Entendido?&lt;/p&gt;
 
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -1065,4 +1451,55 @@ ultimo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&
     })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><category term="termux" /><category term="error" /><category term="termux" /><summary type="html">En esta oportunidad vamos a aprender como instalar localtunel en nuestra terminal sin errores</summary></entry></feed>
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="notas" /><category term="termux" /><category term="linux" /><summary type="html">Cómo añadir carpetas a al PATH en Linux</summary></entry><entry><title type="html">Alternativas para `ngrok`</title><link href="http://localhost:4000/ngrok_alternativas/" rel="alternate" type="text/html" title="Alternativas para `ngrok`" /><published>2023-04-18T00:00:00-04:00</published><updated>2023-04-18T00:00:00-04:00</updated><id>http://localhost:4000/ngrok_alternativas</id><content type="html" xml:base="http://localhost:4000/ngrok_alternativas/">&lt;p&gt;Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ngrok.com&lt;/code&gt;, uno &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http&lt;/code&gt; y otro con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https&lt;/code&gt; pero en ocasiones tenemos problemas con dicho sevicio.&lt;/p&gt;
+
+&lt;h1 id=&quot;lisa-de-acternativas&quot;&gt;Lisa de acternativas&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Opcion 1
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://pagekite.net
+curl &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; https://pagekite.net/pk/pagekite.py 
+python2 pagekite.py 80 yourname.pagekite.me
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Opcion 2
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://portmap.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Opcion 3
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/antoniomika/sish
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Opcion 4
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://forwardhq.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Opcion 5
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.beame.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Opcion 6
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://localhost.run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Opcion 7
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://holepunch.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Opcion 8
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://burrow.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    (function() { // DON&apos;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&apos;script&apos;);
+    s.src = &apos;https://blok-termux.disqus.com/embed.js&apos;;
+    s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Demon Hunter</name></author><category term="error" /><category term="termux" /><summary type="html">Ngrok es una aplicación desarrollada por Alan Shreeve , permite a los desarrolladores exponer sus servidores de desarrollo locales a Internet. Básicamente, crea un túnel a su servidor de desarrollo local y genera dos subdominios aleatorios en ngrok.com, uno http y otro con https pero en ocasiones tenemos problemas con dicho sevicio.</summary></entry></feed>
