@@ -67,6 +67,9 @@ apt install cloudflared
 
 Dec: Un demonio de túnel que dirige el tráfico desde la red de `Cloudflare` a sus orígenes
 
+Ejm: `cloudflared tunel --url http::\\localhost::8000`
+
+
 {% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
