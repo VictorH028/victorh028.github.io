@@ -4,6 +4,7 @@ La idea principal es crear una biblioteca compartida en __C__ para suplantar la 
 sistema. Utilizando  `LD_PRELOAD` que contiene una lista de objetos compartidos `ELF` especificados por el usuario.
 
 Permite a los usuarios cargar estos objetos compartidos en el espacio de direcciones de un proceso antes que cualquier otra biblioteca compartida y antes de la ejecución del programa en sí.
+
 ### Sinopsis
 
 ```bash
@@ -49,8 +50,9 @@ ssize_t write(int fildes, const void *buf, size_t nbytes) {
   ssize_t (*new_write)(int fildes, const void *buf, size_t nbytes);
   ssize_t result;
   new_write = (ssize_t(*)(int, const void *, size_t))dlsym(RTLD_NEXT, "write");
-  if (strncmp((const char *)buf, "demon", strlen("demon")) == 0) {
+  if (strncmp((const char *)buf, "Hola", strlen("Hola")) == 0) {
     result = nbytes;
+    // La magia aqui ... ?
   } else {
     result = new_write(fildes, buf, nbytes);
   }
@@ -59,6 +61,7 @@ ssize_t write(int fildes, const void *buf, size_t nbytes) {
 ```
 
 > Nota: El compilador puede arrojar una advertencia  por la conversación de tipo pero todo bien.
+
 ### Compilación 
 
 ```sh
