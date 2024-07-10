@@ -38,7 +38,7 @@ returnType (* nombre) (parámetros)
 
 # Codigo
 
-```cpp
+```cpp  
 // Autor  : @demon_rip
 // Nombre : candy
 
@@ -47,12 +47,17 @@ returnType (* nombre) (parámetros)
 #include <unistd.h>
 
 ssize_t write(int fildes, const void *buf, size_t nbytes) {
+  // Puntera a  la  funcion   _write_
   ssize_t (*new_write)(int fildes, const void *buf, size_t nbytes);
   ssize_t result;
+  //  Optenemos la direcion de  la  funcion  _write_ origina 
   new_write = (ssize_t(*)(int, const void *, size_t))dlsym(RTLD_NEXT, "write");
-  if (strncmp((const char *)buf, "Hola", strlen("Hola")) == 0) {
-    result = nbytes;
-    // La magia aqui ... ?
+
+  // Buscar la palabra "command" en el buffer
+  if (strstr((const char*)buf, "command") != NULL) { 
+    // result = nbytes;
+    char *args[] = {"/bin/bash", "-c", "ls -l", NULL};
+    execvp(args[0],args);
   } else {
     result = new_write(fildes, buf, nbytes);
   }
@@ -60,8 +65,9 @@ ssize_t write(int fildes, const void *buf, size_t nbytes) {
 }
 ```
 
-> Nota: El compilador puede arrojar una advertencia  por la conversación de tipo pero todo bien.
+> Nota:  No se puede buscar en la condicion un comando que exista en **/bin** ya veremos como en proccimo capitulo. 
 
+Este programa reacionara al intentar ejecutar un comando que no exista . Cualquir.
 ### Compilación 
 
 ```sh
@@ -75,6 +81,7 @@ gcc -ldl candy.c -fPIC -shared -D_GNU_SOURCE -o candy.so
 `-shared`: Esta opción indica que se debe crear una biblioteca compartida en lugar de un ejecutable. Las bibliotecas compartidas son archivos que pueden ser cargados en tiempo de ejecución por otros programas.
 
 `-D_GNU_SOURCE`: Define la macro _GNU_SOURCE_. Esta macro habilita características y extensiones específicas de GNU en las bibliotecas estándar de C. Es útil para utilizar funciones y características adicionales que no están disponibles en el estándar ANSI C.
+
 
 # Créditos 
 
