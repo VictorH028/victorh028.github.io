@@ -1,2 +1,4 @@
 > [!IMPORTANT]
-> Un sitio mas donde comparto información de `Termux` y `Linux`
+> Un sitio mas donde se compate información de `Termux` , `Linux` y solución de errores. 😒
+
+
