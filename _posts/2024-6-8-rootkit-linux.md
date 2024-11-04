@@ -1,4 +1,4 @@
-# Mini tutorial de idea para crear un _rootkit_ para linux 
+# Mini tutorial de idea para crear un _rootkit_ para termux  
 
 La idea principal es crear una biblioteca compartida en __C__ para suplantar la funcion  __write__ del
 sistema. Utilizando  `LD_PRELOAD` que contiene una lista de objetos compartidos `ELF` especificados por el usuario.
@@ -65,9 +65,11 @@ ssize_t write(int fildes, const void *buf, size_t nbytes) {
 }
 ```
 
-> Nota:  No se puede buscar en la condicion un comando que exista en **/bin** ya veremos como en proccimo capitulo. 
+> Nota:  No se puede buscar en la condicion un comando . 
 
 Este programa reacionara al intentar ejecutar un comando que no exista . Cualquir.
+
+
 ### Compilación 
 
 ```sh
