@@ -4,7 +4,7 @@
 #
 set -e
 
-echo "Preparándose para instalar spix..."
+echo "Getting ready to install spix..."
 
 # Eliminar archivos antiguos solo si existen
 if [ -f "$PREFIX/share/man/man1/spix.1" ]; then
@@ -15,7 +15,7 @@ if [ -f "$PREFIX/bin/spix" ]; then
     rm -f "$PREFIX/bin/spix"
 fi
 
-echo "Archivos antiguos eliminados (si existían)."
+echo "Deleted old files (if they existed)."
 exit 0
 
 

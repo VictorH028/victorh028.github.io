@@ -21,9 +21,9 @@ Depends: git, libc++ , clang ,libiconv, make
 Homepage: https://github.com/victorh028/spix
 Description: A command line (CLI) tool written in C++ that displays an animated
 Filename: dists/stable/extras/binary-all/spix_0.2.0_all.deb
-Size: 1312
-MD5Sum: cf510f2d8030cdc71ae131eb9e563119
-SHA1: 6f80d00cbdae8d70aac3b77d28e7158edf765033
-SHA256: 64b3051101638e24df82b8c9ea5af60c06423d3bc7006dc4ca66c1df75926717
-SHA512: 5ee883d4d369e23e35bd30c8351000d9d268cfd941eb91b76701af39f57d42e5b02e15cd0592cf40df39e23c0b5b9e4552dbb867d442452728ee1e0cd1951532
+Size: 1448
+MD5Sum: 42708ab1e4f58ff652637a1127072f1f
+SHA1: 6d363bfc0d0c547b936bc5fc5c6dc9b4c2aa136a
+SHA256: 9497a40da50c80e35df6040485a8361a38e88b9b84634bb234c28311ca63b9c3
+SHA512: 8f1af13a41c3ea412914f70f1d534721836053ac869a7170fd591c97b1803017e70d75cd3addb57c12cb28ce94a2a28e27d99b5a5d85295b01e92ce5adbf77f5
 

@@ -1,7 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash 
 
+set -e 
 cd  ${HOME}
 echo "Cloning repository..."
 git clone https://github.com/victorh028/spix.git 
 cd spix
 make build-bin
+rm ~/spix 
+exit 0

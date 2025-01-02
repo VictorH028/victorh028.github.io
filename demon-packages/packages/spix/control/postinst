@@ -4,5 +4,5 @@
 #
 set -e 
 bash $PREFIX/bin/install-spix
-echo "'spix' Se instalo corecta mente  "
+echo "'spix' Installs correctly"
 exit 0
