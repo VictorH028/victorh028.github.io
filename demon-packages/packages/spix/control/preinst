@@ -1,0 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/bash 
+#
+# Antes que el paquete este en el sistema 
+#
+rm ${PREFIX}/share/man/man1/spix.1 ${PREFIX}/bin/spix

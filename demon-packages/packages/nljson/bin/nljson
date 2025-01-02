@@ -11,6 +11,6 @@ if [[ ! -d ${PREFIX}/include/nlohmann ]];then
     rm  -rf json.tar.xz 
     cp  -r  ~/json/include/nlohmann  ${PREFIX}/include/
 else
-    echo Error archivos reciduales 
+    echo "Error archivos reciduales"  
     exit 1
 fi 

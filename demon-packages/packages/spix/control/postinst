@@ -1,0 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#
+# Se ejecuta despues que el paquete esta en el sistema 
+#
+bash $PREFIX/bin/install-spix
+echo "'spix' Se instalo corecta mente  "
+exit 0

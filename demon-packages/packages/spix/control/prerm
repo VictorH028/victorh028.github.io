@@ -1,0 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash 
+#
+# Se ejecuta antes que el paquete se desintale del sistema  
+# 
+ rm ${PREFIX}/share/man/man1/spix.1 ${PREFIX}/bin/spix 
+ echo "Borrando spix"
+ exit 0

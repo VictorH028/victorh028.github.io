@@ -12,20 +12,18 @@ SHA1: d10c227adc2f5d015f3afa34292b98050f223285
 SHA256: 9d56a53c8ccd2e25b9443049577dd1b45f2ed99cab28619d6533d31687d3fc68
 SHA512: e15f8625658a6b0977e3acec68cd7c4b1b4970d41edd52eec0adfd0df0b4a14116dd123aa8b286a2edfd058278f6a139d7252195ef0e94b10bf93db1ed8aabfd
 
-Package: vcpkg
-Version: 0.1.1
+Package: spix
+Version: 0.2.0
 Architecture: all
-Maintainer: DemonHunter <demonhunternauta@gmail.com>
-Installed-Size: 3
-Depends: cmake, git, tar, curl, zip, unzip
-Description:  Administrador de paquetes de C/C++
- It 
- .
- Obtenga acceso a miles de bibliotecas de código abierto de alta calidad para capacitar a la aplicación y compartir internamente colecciones de componentes privados.
-Filename: dists/stable/extras/binary-all/vcpkg_0.1.1_all.deb
-Size: 2040
-MD5Sum: 688968942499336c675b3d6f9bd69fc0
-SHA1: a53dcd2dd34d922392b28b1c42a55442badb3f0d
-SHA256: af9f28e7211a411316adb2a1ba108094711c0e9f5ac1f5b9cb057e85ff2744f0
-SHA512: 10254d7780dad7f78f884be8f976a51d56661cc50e20dce520bb604dcc0bcf80d2af7d610903fc3a13c4c0cf376261e0322c249d88559d1d932863fcf93378b9
+Maintainer: Telegram: @demonh_rip>
+Installed-Size: 1
+Depends: git, libc++ , clang ,libiconv, make
+Homepage: https://github.com/victorh028/spix
+Description: A command line (CLI) tool written in C++ that displays an animated
+Filename: dists/stable/extras/binary-all/spix_0.2.0_all.deb
+Size: 1312
+MD5Sum: cf510f2d8030cdc71ae131eb9e563119
+SHA1: 6f80d00cbdae8d70aac3b77d28e7158edf765033
+SHA256: 64b3051101638e24df82b8c9ea5af60c06423d3bc7006dc4ca66c1df75926717
+SHA512: 5ee883d4d369e23e35bd30c8351000d9d268cfd941eb91b76701af39f57d42e5b02e15cd0592cf40df39e23c0b5b9e4552dbb867d442452728ee1e0cd1951532
 
