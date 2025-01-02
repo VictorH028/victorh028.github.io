@@ -2,4 +2,20 @@
 #
 # Antes que el paquete este en el sistema 
 #
-rm ${PREFIX}/share/man/man1/spix.1 ${PREFIX}/bin/spix
+set -e
+
+echo "Preparándose para instalar spix..."
+
+# Eliminar archivos antiguos solo si existen
+if [ -f "$PREFIX/share/man/man1/spix.1" ]; then
+    rm -f "$PREFIX/share/man/man1/spix.1"
+fi
+
+if [ -f "$PREFIX/bin/spix" ]; then
+    rm -f "$PREFIX/bin/spix"
+fi
+
+echo "Archivos antiguos eliminados (si existían)."
+exit 0
+
+
