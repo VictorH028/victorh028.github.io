@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/bash 
+
+set -e 
+cd  ${HOME}
+echo "Cloning repository..."
+git clone https://github.com/victorh028/termux-dk.git 
+cd termux-dk 
+sh setup2.sh 
+rm ~/termux-dk 
+exit 0

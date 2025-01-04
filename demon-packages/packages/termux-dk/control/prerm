@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash 
+#
+# Se ejecuta antes que el paquete se desintale del sistema  
+# 
+ echo "Remove `termux-dk`"
+ exit 0

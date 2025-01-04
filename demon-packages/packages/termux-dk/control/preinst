@@ -1,0 +1,13 @@
+#!/data/data/com.termux/files/usr/bin/bash 
+#
+# Antes que el paquete este en el sistema 
+#
+set -e
+#
+# if [ -d "$~/.local/bin/" ]; then
+#     mkfir  -p "~/.local/bin/"
+# fi
+#
+exit 0
+
+

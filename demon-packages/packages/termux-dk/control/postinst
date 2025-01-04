@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#
+# Se ejecuta despues que el paquete esta en el sistema 
+#
+set -e 
+bash $PREFIX/bin/install-termux-dk
+echo "'termux-dk' Installs correctly"
+exit 0
