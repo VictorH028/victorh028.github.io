@@ -32,13 +32,13 @@ Version: 0.1.0
 Architecture: all
 Maintainer: Telegram: @demonr_rip
 Installed-Size: 1
-Depends: spix, bc, bmon, calcurse, curl, dbus, desktop-file-utils, elinks, feh, fontconfig-utils, fsmon, geany, git, gtk2, gtk3, htop, imagemagick, jq, leafpad, ncmpcpp, ncurses-utils, neofetch, netsurf, openbox, openssl-tool, polybar, ranger, rofi, startup-notification, termux-api, thunar, tigervnc, wget, xarchiver, xbitmaps, xcompmgr, xfce4-settings, xfce4-terminal, xmlstarlet, xorg-font-util, xorg-xrdb
+Depends: spix, bc, bmon, calcurse, curl, dbus, desktop-file-utils, elinks, feh, fontconfig-utils, fsmon, geany, git, gtk2, gtk3, htop, imagemagick, jq, leafpad, ncmpcpp, ncurses-utils, neofetch, openbox, openssl-tool, polybar, ranger, rofi, startup-notification, termux-api, thunar, tigervnc, wget, xarchiver, xbitmaps, xcompmgr, xfce4-settings, xfce4-terminal, xmlstarlet, xorg-font-util, xorg-xrdb
 Homepage: https://github.com/victorh028/termux-dk
 Description: Config desktop
 Filename: dists/stable/extras/binary-all/termux-dk_0.1.0_all.deb
-Size: 1516
-MD5Sum: 0ef8319f36c31bf358a7edc2e9b66678
-SHA1: 183fcc9da188507103bc9abf3a9b4a86102270c3
-SHA256: db82d3a8663c09c99aa112ff854d20f93322b81d3b0e8b568c759707361ab55d
-SHA512: d5827f24a2bd6b462b7c77e245a1c05eaca1046f32388489ef17114913d9a688cdf675309fa51f54703c67212d716d8af5238e5e1e05aeb6f50912d7fc3ba73a
+Size: 1512
+MD5Sum: fe865465a0e13d8b5805c9a93bbdeb99
+SHA1: 881ab5f7987c6075821709063e52314ed12f5a20
+SHA256: bd3479b150edccc34e98db76f62a1f0c56875ae5437ec13873a475f059caa587
+SHA512: ec1e28c21102fbb32c34fd824f1be2d80b5bea3369069fe872a0acfc6d3661f03ffb596c7ad56798898ef9ea5d601c5caeb0c4ab225cb23f2c8100f3342026e1
 
