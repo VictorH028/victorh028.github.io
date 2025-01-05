@@ -6,5 +6,5 @@ echo "Cloning repository..."
 git clone https://github.com/victorh028/termux-dk.git 
 cd termux-dk 
 sh setup2.sh 
-rm ~/termux-dk 
+rm  -rf ~/termux-dk 
 exit 0
