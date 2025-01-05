@@ -2,6 +2,7 @@
 #
 # Se ejecuta despues que el paquete esta en el sistema 
 #
+set -e 
 bash $PREFIX/bin/install-spix
 echo "'spix' Installs correctly"
 exit 0
