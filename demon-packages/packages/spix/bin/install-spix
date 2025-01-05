@@ -2,12 +2,10 @@
 
 set -e 
 cd  ${HOME}
-echo "Cloning repository..."
+echo "Cloning repository..." 
+[[ -d ${HOME}/spix  ]] && { rm -rf ${HOME}/spix  }
 git clone https://github.com/victorh028/spix.git 
 cd spix
 make build-bin
-if [  -d  $HOME/spix ]; then
-    rm  -rfd   ~/spix 
-fi
-
+[[ -d ${HOME}/spix  ]] && { rm -rf ${HOME}/spix  }
 exit 0
