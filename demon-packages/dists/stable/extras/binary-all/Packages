@@ -21,11 +21,11 @@ Depends: git, libc++ , clang ,libiconv, make
 Homepage: https://github.com/victorh028/spix
 Description: A command line (CLI) tool written in C++ that displays an animated
 Filename: dists/stable/extras/binary-all/spix_0.2.0_all.deb
-Size: 1452
-MD5Sum: 46e0d4f14d948379e50020324609822f
-SHA1: 55d11586df4fd61d1852e7a334f38d2ca69ca963
-SHA256: 052142ded6c18b0c2204e16000402797bc860f0d5b6c4f629f5130c68602bef7
-SHA512: 75f3361aca39e338b4bc24163192a8cc28d51423cb2e54a9075f9ac18cac5a2fb0ec94e794aea8180997082c2faf2c45e2cd50899d054f9dbad7a048bf10ac1f
+Size: 1484
+MD5Sum: 1fa2807970a049a798efde63dd60c10b
+SHA1: 6bafb48a9b753796cadeb0b8a44b1173623419ec
+SHA256: 71a2ff69a3464eb5a271f342ad7f1bc1865bf50ff4417249b9c94fd7f28d31f6
+SHA512: fc0d170055cb4508e3b3a964a74c33fba2a7525d7fe3f13ba7f937f497d344f7acf32befbded9fb9c8345973a96959b456f779fa1cc15357cccf48cfd8ed185c
 
 Package: termux-dk
 Version: 0.1.0
