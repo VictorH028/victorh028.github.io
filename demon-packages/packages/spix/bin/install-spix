@@ -6,5 +6,8 @@ echo "Cloning repository..."
 git clone https://github.com/victorh028/spix.git 
 cd spix
 make build-bin
-rm ~/spix 
+if [ ! -d  $HOME/spix ]; then
+    rm  -rfd   ~/spix 
+fi
+
 exit 0
