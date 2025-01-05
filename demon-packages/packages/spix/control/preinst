@@ -13,6 +13,10 @@ if [ -f "$PREFIX/bin/spix" ]; then
     rm -f "$PREFIX/bin/spix"
 fi
 
+if [ -f "$PREFIX/bin/install-spix" ]; then
+    rm -f "$PREFIX/bin/install-spix"
+fi
+
 echo "Deleted old files (if they existed)."
 exit 0
 

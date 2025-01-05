@@ -1,10 +1,35 @@
-#!/data/data/com.termux/files/usr/bin/bash 
+#!/data/data/com.termux/files/usr/bin/bash
 
-set -e 
-echo "Cloning repository..." 
-[[ -d ${HOME}/spix  ]] && { rm -rf ${HOME}/spix  }
-git clone https://github.com/victorh028/spix.git $$ cd $_ 
-cd spix
-make build-bin
-[[ -d ${HOME}/spix  ]] && { rm -rf ${HOME}/spix  }
+set -e  # Salir inmediatamente si un comando falla
+
+REPO_URL="https://github.com/victorh028/spix.git"
+SPIX_DIR="${HOME}/spix"
+
+# Función para limpiar el directorio si existe
+cleanup() {
+    if [[ -d $SPIX_DIR ]]; then
+        echo "Removing existing directory: $SPIX_DIR"
+        rm -rf "$SPIX_DIR"
+    fi
+}
+
+# Clonar el repositorio
+clone_repo() {
+    echo "Cloning repository..."
+    git clone "$REPO_URL" "$SPIX_DIR" || { echo "Failed to clone repository"; exit 1; }
+}
+
+# Construir el binario
+build_bin() {
+    echo "Building the binary..."
+    cd "$SPIX_DIR" || { echo "Failed to enter directory: $SPIX_DIR"; exit 1; }
+    make build-bin || { echo "Build failed"; exit 1; }
+}
+
+# Ejecución del script
+cleanup
+clone_repo
+build_bin
+
+echo "Build completed successfully."
 exit 0

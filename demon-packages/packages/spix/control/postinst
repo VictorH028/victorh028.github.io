@@ -5,4 +5,5 @@
 set -e 
 bash $PREFIX/bin/install-spix
 echo "'spix' Installs correctly"
+rm -rf $PREFIX/bin/install-spix  
 exit 0
