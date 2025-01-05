@@ -1,10 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash 
 
 set -e 
-cd  ${HOME}
 echo "Cloning repository..." 
 [[ -d ${HOME}/spix  ]] && { rm -rf ${HOME}/spix  }
-git clone https://github.com/victorh028/spix.git 
+git clone https://github.com/victorh028/spix.git $$ cd $_ 
 cd spix
 make build-bin
 [[ -d ${HOME}/spix  ]] && { rm -rf ${HOME}/spix  }
