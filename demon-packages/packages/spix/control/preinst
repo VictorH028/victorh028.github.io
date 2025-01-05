@@ -1,8 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash 
 #
 # Antes que el paquete este en el sistema 
-#
-set -e
 
 echo "Getting ready to install spix..."
 

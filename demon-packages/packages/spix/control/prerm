@@ -2,6 +2,6 @@
 #
 # Se ejecuta antes que el paquete se desintale del sistema  
 # 
- rm ${PREFIX}/share/man/man1/spix.1 ${PREFIX}/bin/spix 
+ rm ${PREFIX}/share/man/man1/spix.1 ${PREFIX}/bin/spix 2>/dev/null 
  echo "Remove spix"
  exit 0
