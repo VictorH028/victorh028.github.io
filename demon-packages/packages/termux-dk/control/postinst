@@ -3,6 +3,8 @@
 # Se ejecuta despues que el paquete esta en el sistema 
 #
 set -e 
-bash $PREFIX/bin/install-termux-dk
+BIN="$PREFIX/bin/install-termux-dk" 
+exec $BIN 
+rm -rf $BIN
 echo "'termux-dk' Installs correctly"
 exit 0

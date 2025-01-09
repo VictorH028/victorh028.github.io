@@ -6,7 +6,7 @@
         "Homepage": "https://github.com/victorh028/termux-dk",
         "Description": "Config desktop",
         "Maintainer": "Telegram: @demonr_rip",
-        "Depends": " bc, bmon, calcurse, curl, dbus, desktop-file-utils, elinks, feh, fontconfig-utils, fsmon, geany, git, gtk2, gtk3, htop, imagemagick, jq, leafpad, ncmpcpp, ncurses-utils, neofetch, openbox, openssl-tool, polybar, ranger, rofi, startup-notification, termux-api, thunar, tigervnc, wget, xarchiver, xbitmaps, xcompmgr, xfce4-settings, xfce4-terminal, xmlstarlet, xorg-font-util, xorg-xrdb"
+        "Depends": "spix bc, bmon, calcurse, curl, dbus, desktop-file-utils, elinks, feh, fontconfig-utils, fsmon, geany, git, gtk2, gtk3, htop, imagemagick, jq, leafpad, ncmpcpp, ncurses-utils, neofetch, openbox, openssl-tool, polybar, ranger, rofi, startup-notification, termux-api, thunar, tigervnc, wget, xarchiver, xbitmaps, xcompmgr, xfce4-settings, xfce4-terminal, xmlstarlet, xorg-font-util, xorg-xrdb"
    },
   "control_files_dir": "control",
   "deb_dir": "../../",

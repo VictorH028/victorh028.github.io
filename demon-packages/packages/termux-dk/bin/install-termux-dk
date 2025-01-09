@@ -1,10 +1,26 @@
 #!/data/data/com.termux/files/usr/bin/bash 
 
-set -e 
-cd  ${HOME}
-echo "Cloning repository..."
-git clone https://github.com/victorh028/termux-dk.git 
-cd termux-dk 
-sh setup2.sh 
-rm  -rf ~/termux-dk 
+set -e  # Salir inmediatamente si un comando falla
+
+REPO_URL="https://github.com/victorh028/termux-dk.git"
+DEST_DIR="${HOME}/termux-dk"
+
+cd "${HOME}"
+echo "Clonando el repositorio..."
+if git clone --depth=1 "$REPO_URL" "$DEST_DIR"; then
+    cd "$DEST_DIR"
+    echo "Ejecutando el script de configuración..."
+    sh ./setup2.sh
+else
+    echo "Berifica el internet"
+    exit 1
+fi
+
+# Limpiar el directorio clonado
+echo "Limpiando..."
+rm -rf "$DEST_DIR"
+
+echo "Proceso completado con éxito."
 exit 0
+
+
