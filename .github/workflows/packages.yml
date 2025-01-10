@@ -24,8 +24,3 @@ jobs:
       run: echo $PWD 
 
 
-    - name: Uploading... 
-      uses: actions/upload-artifact@v3  
-      with:
-         name: i-haklab-home.tar.gz 
-         path: i-haklab-home.tar.gz
