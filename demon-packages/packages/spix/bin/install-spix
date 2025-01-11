@@ -16,7 +16,7 @@ cleanup() {
 # Clonar el repositorio
 clone_repo() {
     echo "Cloning repository..."
-    git clone "$REPO_URL" "$SPIX_DIR" || { echo "Failed to clone repository"; exit 1; }
+    git clone --depth=1 "$REPO_URL" "$SPIX_DIR" || { echo "Failed to clone repository"; exit 1; }
 }
 
 # Construir el binario
