@@ -17,7 +17,7 @@ if [ -f "$PREFIX/bin/install-spix" ]; then
     rm -f "$PREFIX/bin/install-spix"
 fi
 
-if [ -d "$PREFIX/local/include" ]; then
+if [ -f "$PREFIX/local/include" ]; then
     rm -f "$PREFIX/local/include/"
 fi
 
