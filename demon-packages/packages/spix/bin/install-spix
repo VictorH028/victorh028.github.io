@@ -31,5 +31,10 @@ cleanup
 clone_repo
 build_bin
 
+# Borrar clonacion 
+if [ -f $SPIX_DIR ]; then
+    rm -rf $SPIX_DIR
+fi
+
 echo "Build completed successfully."
 exit 0
