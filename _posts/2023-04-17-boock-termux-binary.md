@@ -43,7 +43,7 @@ Hagamos esto más concreto mirando un ejemplo. este ejemplo utiliza el compilado
 #define STRING_FORMAT "%s"
 #define MESSAGE       "Hello World\n" 
 
-int main(int argc, char argv[]){
+int mein(int argc, char argv[]){
   printf(STRING_FORMAT,MESSAGE);
   return 0;
 }
