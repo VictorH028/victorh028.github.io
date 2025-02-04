@@ -1,34 +1,41 @@
+# Mis demonis en un solo lugar 
+
+
+> [!WARNING]
+> 
+
+
+> [!NOTE]
+> Mucho del contenido aca vine de  la comunidad de ``@ivam3`` y sus subcriptores 
+
+
+
 # C++
 
 - [AprenderC++](https://www.learncpp.com)
 - [GestionDeMemoria]()
-- [](https://en.cppreference.com)
+- [...](https://en.cppreference.com)
 
 **Modulos y funciones**
 
-- 
 
-# Analisis binario 
+> [!NOTE]
+> La mayoría de los dispositivos Android funcionan con ARM 
 
-**Comceptos basico**
+# ROP 
 
-- **Pila**
+# Assembly 
 
-- **Registro**
+**Comnados**
+ - ``as`` : 
+ - ``ld`` : 
+- [Intoducion al los comceptos basicos de  ensamblaje arm](https://azeria-labs.com/writing-arm-assembly-part-1/) 
 
-- **Buffer** 
-    - [Como funciona la memoria](http://progra.usm.cl/apunte/c/memoria.html) 
 
-Un buffer se define como un conjunto limitado de memoria asignada de forma contigua
+# Desarollo de  exploit `ARM` 
 
-**Funciones bulnerables**
-printf
-sprintf
-strcat
-strcpy
-gets
-- como se lleva acabo una llamada a funcion 
-
+ [1](https://fuzzysecurity.com/tutorials/expDev/1.html) 
+ [2](https://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/) 
 
 # [Radare2](https://book.rada.re/config/evars.html)
 
@@ -44,6 +51,26 @@ gets
 **Plugings**
 
 - `r2dec` : Descompilador 
+
+
+
+# Android Ingenieria Inversa 
+
+
+
+# Analisis binario 
+
+**Comceptos basico**
+
+- **Pila**
+
+- **Registro**
+
+- **Buffer** 
+    - [Como funciona la memoria](http://progra.usm.cl/apunte/c/memoria.html) 
+
+
+
 
 A partir de android 11 `selinux` implementó varias restricciones, la buena noticia es que muchas de ellas se pueden 'bypassear' sin necesidad de ser root ni haciendo uso de adb xD. El mismo restringe las llamadas al sistema
 
@@ -109,17 +136,6 @@ https://tldp.org/HOWTO/Glibc2-HOWTO-5.html
 
 **Telegram**
 https://t.me/Ivam3by_Cinderella/19953
-
-
-> [!WARNING]
-> Los vectores de ataque para ganar una shell de sistema siendo un usuario normal son muchísimos y más aún si la versión de tu Android es inferior a la versión 13.
-
-
-
-
-> [!NOTE]
-> Mucho del contenido aca vine de  la comunidad de ``@ivam3`` y sus subcriptores 
-
 
 # Foros que me llamaron la atencion 
 [bypassing-root-detection](https://medium.com/@aimardcr/bypassing-root-detection-the-universal-way-2625712172e5) 
