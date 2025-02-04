@@ -6,18 +6,16 @@
 
 
 > [!NOTE]
-> Mucho del contenido aca vine de  la comunidad de ``@ivam3`` y sus subcriptores 
-
-
+> Mucho del mis imsobnios  vine de  la comunidad de ``@ivam3`` y sus subcriptores 
 
 # C++
 
 - [AprenderC++](https://www.learncpp.com)
 - [GestionDeMemoria]()
-- [...](https://en.cppreference.com)
 
 **Modulos y funciones**
-
+ 
+ - [...](https://en.cppreference.com)
 
 > [!NOTE]
 > La mayoría de los dispositivos Android funcionan con ARM 
@@ -27,8 +25,10 @@
 # Assembly 
 
 **Comnados**
- - ``as`` : 
- - ``ld`` : 
+ - [as](https://sourceware.org/binutils/docs/as/index.html#Top)  : 
+ - [ld](https://sourceware.org/binutils/docs/ld/)  : 
+
+
 - [Intoducion al los comceptos basicos de  ensamblaje arm](https://azeria-labs.com/writing-arm-assembly-part-1/) 
 
 
