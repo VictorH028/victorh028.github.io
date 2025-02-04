@@ -20,16 +20,18 @@
 > [!NOTE]
 > La mayoría de los dispositivos Android funcionan con ARM 
 
-# ROP 
 
 # Assembly 
 
 **Comnados**
- - [as](https://sourceware.org/binutils/docs/as/index.html#Top)  : 
+ - [as](https://sourceware.org/binutils/docs/as/index.html#Top)  : De lenguage emsablador a codigo maquina   
  - [ld](https://sourceware.org/binutils/docs/ld/)  : 
 
 
 - [Intoducion al los comceptos basicos de  ensamblaje arm](https://azeria-labs.com/writing-arm-assembly-part-1/) 
+
+
+# ROP 
 
 
 # Desarollo de  exploit `ARM` 
@@ -52,10 +54,11 @@
 
 - `r2dec` : Descompilador 
 
-
-
 # Android Ingenieria Inversa 
 
+**Documentación de Oracle JNI**
+- Espesificacion de JNI
+- 
 
 
 # Analisis binario 
