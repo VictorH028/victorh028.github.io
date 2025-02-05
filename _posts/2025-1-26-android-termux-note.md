@@ -40,7 +40,7 @@
 
 # Diseño y arquitectura de Android
 
-- Núcleo de Linux: [ 1 ]
+- Núcleo de Linux: [[ 1 ]](https://developer.android.com/guide/platform?hl=en)
 - HAL
 - Biblioteca Nativa
 - Tiempo de ejecución de Android
@@ -102,19 +102,17 @@
 - Proceso de desarrollo de APK
 - Estructura del APK: [ 1 ]
 - Descompilación
-- JADX
 - Herramienta APK
 - Parcheo de código
 - Código nativo
 - Desmontaje
-- Ghidra
 - IDA
 
 # Análisis dinámico
 - Rastreo de pila
 - Enganche
 - Depuración
-- Banco Asiático de Desarrollo
+- ADB
 - Emulador
 - Movimiento genético
 - AVD
@@ -124,13 +122,30 @@
 - PIN SSL
 - Enraizamiento
 - Herramientas
-- Frida
 - Drozer
 - Objeción
-- Expuesto
+- Xposed
 - RMS
+- MOBS
 
-# Ataques comunes
+# Ataques 
+- Componentes exportados inadvertidamente
+- Componentes exportados protegidos de forma inadecuada
+- Intenciones que son vulnerables a la interceptación o escuchas clandestinas
+- Validación incorrecta del certificado x.509
+- Creación de archivos legibles o escribibles por todo el mundo
+- Actividades que pueden filtrar datos
+- El uso de Sticky Intents
+- Intenciones pendientes creadas de forma insegura
+- Envío de intenciones de difusión inseguras
+- Claves privadas incrustadas en la fuente
+- Uso de criptografía débil o inadecuada
+- Configuraciones de WebView potencialmente explotables
+- Actividades de preferencia exportadas
+- Robo de grifos
+- Aplicaciones que permiten realizar copias de seguridad
+- Aplicaciones que se pueden depurar
+- Aplicaciones que admiten versiones de API obsoletas, con vulnerabilidades conocidas
 - Transmisión de datos insegura
 - IPC inseguro
 - Problema de permiso
@@ -138,9 +153,24 @@
 - Problema con la vista web
 - Registros inseguros
 
+☝️ Ariba las bases 
+
+👇 Abajo lo que veo  en el camino 
+
 > [!NOTE]
 > La mayoría de los dispositivos Android funcionan con ARM 
 
+# Herramientas
+
+- Radare2: [[ 1 ]](https://github.com/radareorg/radare2) 
+- am
+- pm
+- aapt2
+- Fridra:  [[ 1 ]](https://frida.re/) - [[2]](https://hacktricks.boitatech.com.br/mobile-apps-pentesting/android-app-pentesting/frida-tutorial)
+- Ghidra 
+- JADX 
+- Apktool 
+- Qark : [[ 1 ]](https://github.com/linkedin/qark)
 
 # Assembly 
 
@@ -149,7 +179,7 @@
  - [ld](https://sourceware.org/binutils/docs/ld/)  : 
 
 
-**[Intoducion al los comceptos basicos de  ensamblaje arm](https://azeria-labs.com/writing-arm-assembly-part-1/)**
+[Intoducion al los comceptos basicos de  ensamblaje arm](https://azeria-labs.com/writing-arm-assembly-part-1/)
 
 
 # ROP 
@@ -235,8 +265,7 @@ Incluso puedes ver los registros de tu aplicación en la web y conectarte a trav
 
 ### Referencias CTF
 
-- [root-me](url) 
-
+Apk-vulnerable [[ 1  ]](https://github.com/payatu/diva-android) - [[ 2 ]](https://github.com/dineshshetty/Android-InsecureBankv2?tab=readme-ov-file) - [[ 3 ]](https://github.com/payatu/BugBazaar)
 
 # Contenido de la comunidad
 
