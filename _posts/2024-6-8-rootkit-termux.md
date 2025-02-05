@@ -1,3 +1,21 @@
+---
+comments: true
+layout: single
+title: rootkit_termux
+date: 2024-06-8
+classes: wide
+header:
+  teaser: /assets/images/
+  teaser_home_page: true
+categories:
+  - termux
+tags:
+  - progracion 
+  - termux
+---
+
+
+
 # Mini tutorial de idea para crear un _rootkit_ para termux  
 
 La idea principal es crear una biblioteca compartida en __C__ para suplantar la funcion  __write__ del

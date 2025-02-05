@@ -1,3 +1,21 @@
+---
+comments: true
+layout: single
+title: Analisis binario desde termux
+date: 2023-04-17
+classes: wide
+header:
+  teaser: /assets/images/ 
+  teaser_home_page: true
+categories:
+  - termux
+tags:
+  - Analisis 
+  - binario
+---
+
+
+
 ### ¿Qué es el análisis binario y por qué lo necesita?
 
 .......?
