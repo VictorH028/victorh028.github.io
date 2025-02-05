@@ -5,7 +5,7 @@ title: NotasAndroid_Termux
 date: 2025-01-26
 classes: wide
 header:
-  teaser: /assets/images/localtunnel/icon-localtunnel.png
+  teaser: /assets/images/
   teaser_home_page: true
 categories:
   - notas 
