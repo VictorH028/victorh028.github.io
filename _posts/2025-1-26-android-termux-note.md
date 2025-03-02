@@ -200,9 +200,12 @@ tags:
 
 [Intoducion al los comceptos basicos de  ensamblaje arm](https://azeria-labs.com/writing-arm-assembly-part-1/)
 
+**Explotacion**
+- [[1]](https://azeria-labs.com/tcp-reverse-shell-in-assembly-arm-32-bit/)
 
 # ROP 
 
+[[1]](https://docs.pwntools.com/en/stable/rop/rop.html)
 
 # Desarollo de  exploit `ARM` 
 
