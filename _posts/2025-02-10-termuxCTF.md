@@ -1,7 +1,7 @@
 ---
 comments: true
 layout: single
-title: Analis de binarios desde termux 
+title: TermuxCTF  
 date: 2025-02-10 
 classes: wide
 header:

@@ -1,3 +1,21 @@
+---
+comments: true
+layout: single
+title: shellcode-termux-arm
+date: 2025-01-26
+classes: wide
+header:
+  teaser: /assets/images/
+  teaser_home_page: true
+categories:
+  - notas 
+tags:
+  - notas 
+  - termux
+---
+
+
+
 
 ```sh
 bat $PREFIX/include/asm-generic/unistd.h 
@@ -97,7 +115,7 @@ ld -o shellcode shellcode.o
 ncat -lvp 4444
 ```
 
-Luego 
+Then  
 
 ```sh
 ./shellcode 
@@ -113,7 +131,7 @@ objcopy -O binary shellcode shellcode.bin    #  extraemos los bytecode
 hexdump -v -e '"\\" 1/1 "x%02x"' shellcode.bin; echo    # extraemos byte code de binario
 ```
 
-El sesultado se compara con el resultado de la 2 columna:
+El resultado se compara con el resultado de la 2 columna:
 
 ```sh
 objdump -d shellcode
