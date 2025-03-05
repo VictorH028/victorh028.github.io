@@ -1,9 +1,9 @@
 {
     "control": {
-        "Package": "spix",
+        "Package": "spin",
         "Version": "0.2.1",
         "Architecture": "all",
-        "Homepage": "https://github.com/victorh028/spix",
+        "Homepage": "https://github.com/victorh028/spin",
         "Description": "A command line (CLI) tool written in C++ that displays an animated",
         "Maintainer": "Telegram: @demonh_rip>",
         "Depends": "git, libc++ , clang ,libiconv, make"
@@ -12,7 +12,7 @@
   "deb_dir": "../../",
   "data_files": {
      "bin/install-spix": { 
-        "source" : "bin/install-spix", "perm": "755"
+        "source" : "bin/install-spin", "perm": "755"
     }
   }
 }

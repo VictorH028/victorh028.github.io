@@ -2,19 +2,19 @@
 #
 # Antes que el paquete este en el sistema 
 set -e 
-echo "Getting ready to install spix..."
+echo "Getting ready to install spin..."
 
 # Eliminar archivos antiguos solo si existen
-if [ -f "$PREFIX/share/man/man1/spix.1" ]; then
-    rm -f "$PREFIX/share/man/man1/spix.1"
+if [ -f "$PREFIX/share/man/man1/spin.1" ]; then
+    rm -f "$PREFIX/share/man/man1/spin.1"
 fi
 
-if [ -f "$PREFIX/bin/spix" ]; then
-    rm -f "$PREFIX/bin/spix"
+if [ -f "$PREFIX/bin/spin" ]; then
+    rm -f "$PREFIX/bin/spin"
 fi
 
-if [ -f "$PREFIX/bin/install-spix" ]; then
-    rm -f "$PREFIX/bin/install-spix"
+if [ -f "$PREFIX/bin/install-spin" ]; then
+    rm -f "$PREFIX/bin/install-spin"
 fi
 
 if [ -f "$PREFIX/local/include" ]; then

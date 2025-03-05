@@ -3,7 +3,7 @@
 # Se ejecuta despues que el paquete esta en el sistema 
 #
 set -e 
-bash $PREFIX/bin/install-spix
-echo "'spix' Installs correctly"
-rm -rf $PREFIX/bin/install-spix  
+bash $PREFIX/bin/install-spin
+echo "'spin' Installs correctly"
+rm -rf $PREFIX/bin/install-spin  
 exit 0

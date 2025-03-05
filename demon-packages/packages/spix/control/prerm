@@ -3,9 +3,9 @@
 # Se ejecuta antes que el paquete se desintale del sistema  
 # 
 set -e 
-rm  -rf ${PREFIX}/share/man/man1/spix.1 ${PREFIX}/bin/spix 2>/dev/null 
+rm  -rf ${PREFIX}/share/man/man1/spin.1 ${PREFIX}/bin/spin 2>/dev/null 
 if [ -f ${PREFIX}/local/include ]; then
     rm -rf   ${PREFIX}/local/include  
 fi
-echo "Remove spix"
+echo "Remove spin"
 exit 0

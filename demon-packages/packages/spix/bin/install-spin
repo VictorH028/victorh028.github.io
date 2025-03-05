@@ -2,27 +2,27 @@
 
 set -e  # Salir inmediatamente si un comando falla
 
-REPO_URL="https://github.com/victorh028/spix.git"
-SPIX_DIR="${HOME}/spix"
+REPO_URL="https://github.com/victorh028/spin.git"
+spin_DIR="${HOME}/spin"
 
 # Función para limpiar el directorio si existe
 cleanup() {
-    if [[ -d $SPIX_DIR ]]; then
-        echo "Removing existing directory: $SPIX_DIR"
-        rm -rf "$SPIX_DIR"
+    if [[ -d $spin_DIR ]]; then
+        echo "Removing existing directory: $spin_DIR"
+        rm -rf "$spin_DIR"
     fi
 }
 
 # Clonar el repositorio
 clone_repo() {
     echo "Cloning repository..."
-    git clone --depth=1 "$REPO_URL" "$SPIX_DIR" || { echo "Failed to clone repository"; exit 1; }
+    git clone --depth=1 "$REPO_URL" "$spin_DIR" || { echo "Failed to clone repository"; exit 1; }
 }
 
 # Construir el binario
 build_bin() {
     echo "Building the binary..."
-    cd "$SPIX_DIR" || { echo "Failed to enter directory: $SPIX_DIR"; exit 1; }
+    cd "$spin_DIR" || { echo "Failed to enter directory: $spin_DIR"; exit 1; }
     make build-bin || { echo "Build failed"; exit 1; }
 }
 
@@ -32,8 +32,8 @@ clone_repo
 build_bin
 
 # Borrar clonacion 
-if [ -f $SPIX_DIR ]; then
-    rm -rf $SPIX_DIR
+if [ -f $spin_DIR ]; then
+    rm -rf $spin_DIR
 fi
 
 echo "Build completed successfully."
