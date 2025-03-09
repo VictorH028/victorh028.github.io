@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Volviendome un Hacker"
+title                    : "Termux vs Hackers"
 title_separator          : "-"
 name                     : "DemonHunter"
 description              : "Soy apacionado de la tecnología, la programacion y la seguridad "
@@ -128,8 +128,8 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : #"https://youtube.com/c/"
-  telegram         : "@demon_rip"
+  youtube          : "https://youtube.com/@hackcub2090?si=AYF6h3UNvDRSyXgG" #"https://youtube.com/c/"
+  telegram         : "@demonr_rip"
 
 # Reading Files
 include:
