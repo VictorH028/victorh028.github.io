@@ -21,26 +21,11 @@ Depends: git, libc++ , clang ,libiconv, make
 Homepage: https://github.com/victorh028/spin
 Description: A command line (CLI) tool written in C++ that displays an animated
 Filename: dists/stable/extras/binary-all/spin_0.2.1_all.deb
-Size: 1844
-MD5Sum: 19e7432c07745a6be454bd597e532b07
-SHA1: 5577ed63e1966aeff9ec176952e1449a225d5490
-SHA256: c0fcd56e19b9c62de38d3872b404d39e1644e2aa647c662f3359bffe961e0427
-SHA512: 6ffdc835525cd745269c62c3d8798652d3d0b88248d2beed5d66c4bafeab93e1de210fba95cbcebce6142c9ae7e2aa1482efb84a64abc713caad24ca6df4c5ca
-
-Package: spix
-Version: 0.2.1
-Architecture: all
-Maintainer: Telegram: @demonh_rip>
-Installed-Size: 1
-Depends: git, libc++ , clang ,libiconv, make
-Homepage: https://github.com/victorh028/spix
-Description: A command line (CLI) tool written in C++ that displays an animated
-Filename: dists/stable/extras/binary-all/spix_0.2.1_all.deb
-Size: 1852
-MD5Sum: ecc85f7814fa981e16b4dee522cd626f
-SHA1: 8c0dbc9002f15fdba89e623ca23e1535d51adf90
-SHA256: d21b66d35da7c1aab8b1ccaf318aff0ea061aae800f81a35d77935de7e74be42
-SHA512: b91d9e9a27a279d34a3ad980dba19416aacc30e35ca4582966fad7298b730c5b46fd96d02eb8bec4908541cd1a4bf7d251f400803b0ebf157bfece2e76b99254
+Size: 1840
+MD5Sum: 5b4a5440403fd485def3984387c5dc9e
+SHA1: 4022c4b0fd8d9fe9a977beef6f9baee2d30e1aba
+SHA256: 918d60eda27e7a8ec13b469576e6ff3f0ecaed393fa2a20f7682386b12dfd639
+SHA512: 5987a3b17c0e72f6c342bdbf77769ba21671e09ee8814ea0a3380ffa974794483d130f85dbdea05b9717550c2e8b03e50d72a9436c83e3eee9c7b00c5017f543
 
 Package: termux-dk
 Version: 0.1.0

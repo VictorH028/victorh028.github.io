@@ -11,7 +11,7 @@
   "control_files_dir": "control",
   "deb_dir": "../../",
   "data_files": {
-     "bin/install-spix": { 
+     "bin/install-spin": { 
         "source" : "bin/install-spin", "perm": "755"
     }
   }
