@@ -1,3 +1,4 @@
 data/data/com.termux/files/usr/bin/nljson                                        nljson
+data/data/com.termux/files/usr/bin/install-spix                                  spin
 data/data/com.termux/files/usr/bin/install-spix                                  spix
 data/data/com.termux/files/usr/bin/install-termux-dk                             termux-dk

@@ -12,6 +12,21 @@ SHA1: d10c227adc2f5d015f3afa34292b98050f223285
 SHA256: 9d56a53c8ccd2e25b9443049577dd1b45f2ed99cab28619d6533d31687d3fc68
 SHA512: e15f8625658a6b0977e3acec68cd7c4b1b4970d41edd52eec0adfd0df0b4a14116dd123aa8b286a2edfd058278f6a139d7252195ef0e94b10bf93db1ed8aabfd
 
+Package: spin
+Version: 0.2.1
+Architecture: all
+Maintainer: Telegram: @demonh_rip>
+Installed-Size: 1
+Depends: git, libc++ , clang ,libiconv, make
+Homepage: https://github.com/victorh028/spin
+Description: A command line (CLI) tool written in C++ that displays an animated
+Filename: dists/stable/extras/binary-all/spin_0.2.1_all.deb
+Size: 1844
+MD5Sum: 19e7432c07745a6be454bd597e532b07
+SHA1: 5577ed63e1966aeff9ec176952e1449a225d5490
+SHA256: c0fcd56e19b9c62de38d3872b404d39e1644e2aa647c662f3359bffe961e0427
+SHA512: 6ffdc835525cd745269c62c3d8798652d3d0b88248d2beed5d66c4bafeab93e1de210fba95cbcebce6142c9ae7e2aa1482efb84a64abc713caad24ca6df4c5ca
+
 Package: spix
 Version: 0.2.1
 Architecture: all

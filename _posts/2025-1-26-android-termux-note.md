@@ -36,7 +36,7 @@ tags:
 - Java : [[ 1 ]](https://www.homeandlearn.co.uk/java/java.html) - [[ 2 ]](https://www.codecademy.com/learn/learn-java) - [[ 3 ]](https://www.tutorialspoint.com/java/index.htm) - [[ 4 ]](https://www.youtube.com/watch?v=eIrMbAQSU34&t=6s)
 - Kotlin : [[ 1 ]](https://developer.android.com/kotlin) - [[ 2 ]](https://kotlinlang.org/docs/home.html)
 - XML : [[ 1 ]](https://www.w3schools.com/xml/) - [[ 2 ]](https://www.tutorialspoint.com/xml/index.htm)
-- Smali : [[ 1 ]](https://github.com/JesusFreke/smali) - [[ 2 ]](https://source.android.com/devices/tech/dalvik/dalvik-bytecode) - [[ 3 ]](https://programmer.help/blogs/smali-introduction-manual.html) - [[ 4 ]](https://forum.xda-developers.com/t/guide-smali-coding-guide-for-beginners.2193735/)
+- Smali : [[ 1 ]](https://github.com/JesusFreke/smali) - [[ 2 ]](https://source.android.com/devices/tech/dalvik/dalvik-bytecode) - [[ 3 ]](https://programmer.help/blogs/smali-introduction-manual.html) - [[ 4 ]](https://forum.xda-developers.com/t/guide-smali-coding-guide-for-beginners.2193735/) - [[5]](https://certbar.com/technical-blogs/smali-code-analysis-for-android-hacking)
 - Assembly :  [[ 1 ]](https://www.tutorialspoint.com/assembly_programming/index.htm) - [[ 2 ]](https://cs.lmu.edu/~ray/notes/nasmtutorial/) - [[ 3 ]](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html) - [[ 4 ]](http://www.egr.unlv.edu/~ed/assembly64.pdf)
 
 
@@ -67,7 +67,7 @@ tags:
 - Aplicación del sistema
 - CPI
 - Aglutinante
-- Máquina virtual Dalvik
+- Máquina virtual Dalvik [[1]](https://keepcoding.io/blog/como-funciona-la-maquina-virtual-dalvik/) - [[2]](https://online.flipbuilder.com/omaz/yugx/files/basic-html/page3.html)
 - Sandboxing (caja de arena)
 - Usuario y grupo
 - Sistema de archivos / Partición
@@ -140,7 +140,6 @@ tags:
 - Maquina virtual
 - PIN SSL
 - Enraizamiento
-- Herramientas
 - Drozer
 - Objeción
 - Xposed
