@@ -7,10 +7,10 @@ Smali es la representación textual de los archivos DEX, que son ejecutados por 
 - Realizar parches o mejoras en apps existentes.
 
 ---
-#  Archivos a tener en cuenta 
+#  Archivos a tener en cuenta en modificasiones 
   
 ### `colors.xml`
-##  `strings.xml`
+###  `strings.xml`
 Es un recurso para armacenar cadenas de texto (`strings`). Que se utiliza en la interfaz de usuario 
 
 ```xml
@@ -26,10 +26,6 @@ Es un recurso para armacenar cadenas de texto (`strings`). Que se utiliza en la 
 - **`<string>`**: Cada cadena de texto se define con este elemento. El atributo `name` es un identificador único para la cadena, y el contenido del elemento es el texto que se mostrará en la aplicación.
 
 ### Cómo acceder a las cadenas desde el código
-
-Puedes acceder a las cadenas definidas en `strings.xml` desde el código Java/Kotlin o desde los archivos de diseño XML.
-
-#### 1. **Desde el código Java/Kotlin/smali :**
 
 En Java:
 
@@ -48,12 +44,16 @@ val welcomeMessage = getString(R.string.welcome_message)
 En smali:
 
 ```R
+
 ```
+
 - Se referencian en los archivos XML usando `@string/nombre_de_la_cadena`.
+
 --- 
 
+###  `MainActivity` 
+Es la actividad principal de una aplicación y que se define toda la lógica inicial y la interfaz de usuario 
 
-   - `MainActivity` : Es la actividad principal de una aplicación y que se define toda la lógica inicial y la interfaz de usuario 
 ---
 # Estructura de APK 
 
