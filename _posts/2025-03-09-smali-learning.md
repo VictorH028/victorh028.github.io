@@ -1,16 +1,82 @@
 
 ## **Introducción a Smali**
+
 Smali es la representación textual de los archivos DEX, que son ejecutados por la máquina virtual Dalvik (o ART en versiones más recientes de Android). Aprender Smali te permitirá:
 - Modificar aplicaciones Android.
 - Analizar el comportamiento de apps.
 - Realizar parches o mejoras en apps existentes.
 
 ---
+#  Archivos a tener en cuenta 
+  
+### `colors.xml`
+##  `strings.xml`
+Es un recurso para armacenar cadenas de texto (`strings`). Que se utiliza en la interfaz de usuario 
 
+```xml
+<resources>
+    <string name="app_name">Mi Aplicación</string>
+    <string name="welcome_message">Bienvenido a Mi Aplicación</string>
+    <string name="button_text">Presionar</string>
+</resources> 
+```
+### Explicación:
+
+- **`<resources>`**: Es el elemento raíz que contiene todas las cadenas de texto.
+- **`<string>`**: Cada cadena de texto se define con este elemento. El atributo `name` es un identificador único para la cadena, y el contenido del elemento es el texto que se mostrará en la aplicación.
+
+### Cómo acceder a las cadenas desde el código
+
+Puedes acceder a las cadenas definidas en `strings.xml` desde el código Java/Kotlin o desde los archivos de diseño XML.
+
+#### 1. **Desde el código Java/Kotlin/smali :**
+
+En Java:
+
+```java
+String appName = getString(R.string.app_name);
+String welcomeMessage = getString(R.string.welcome_message);
+```
+
+En Kotlin:
+
+```kotlin
+val appName = getString(R.string.app_name)
+val welcomeMessage = getString(R.string.welcome_message)
+```
+
+En smali:
+
+```R
+```
+- Se referencian en los archivos XML usando `@string/nombre_de_la_cadena`.
+--- 
+
+
+   - `MainActivity` : Es la actividad principal de una aplicación y que se define toda la lógica inicial y la interfaz de usuario 
+---
+# Estructura de APK 
+
+###  **AndroidManifest.xml**: 
+el archivo de manifiesto en formato XML binario.
+###  **classes.dex**:
+código de aplicación compilado en el formato dex.
+### **resources.arsc**:
+archivo que contiene recursos de aplicación precompilados, en XML binario.
+###  **res/**: 
+carpeta que contiene recursos no compilados en `resources.arsc`
+### **assets/**: 
+carpeta opcional que contiene activos de aplicaciones, que AssetManager puede recuperar.
+###  **lib/**: 
+carpeta opcional que contiene código compilado, es decir, bibliotecas de código nativas.
+### **META-INF/**: 
+carpeta que contiene el MANIFEST. MF, que almacena metadatos sobre el contenido del JAR. que a veces se almacenará en una carpeta llamada original. La firma del APK también se almacena en esta carpeta. 
+
+---
+# Estructura básica de smali 
 ## Encabezado de clase
 
-Cada archivo Smali comienza con la definición de la clase, de la siguiente manera :
-
+Cada archivo Smali comienza con la definición de la clase :
 ```r
 .class <public|private|synthetic> <static?> L<path>/<class_name>; 
 # el nombre de la clase podría ser: "Test" para el archivo Test.smali 
@@ -20,7 +86,7 @@ Cada archivo Smali comienza con la definición de la clase, de la siguiente mane
 # Como en Java, la madre de todas las clases es java/lang/Object;   
 ```
 
-Para definir un método:
+### Definicion de un método:
 
 ```r
 # definición de un método: 
@@ -49,8 +115,156 @@ return-object <register>
 .end method
 ```
 
-Otras directivas opcionales pueden ser `.implements`, `.debug`,`.source`
+### **Otras directivas**
+- **`.implements`**: Para implementar interfaces.
+- **`.debug`**: Para información de depuración.
+- **`.source`**: Especifica el archivo fuente original
 
+---
+
+# Clases anónimas 
+
+Las clases anónimas en Smali suelen tener nombres generados automáticamente que siguen el formato:
+    
+```text
+OuterClassName$N
+```
+     
+Donde:
+- `OuterClassName` es el nombre de la clase externa que contiene la clase anónima.
+
+- `N` es un número entero que comienza desde `1` y se incrementa para cada clase anónima dentro de la misma clase externa.
+
+Por ejemplo, si tienes una clase `MainActivity` y dentro de ella defines una clase anónima, el nombre en Smali podría ser `MainActivity$1`.
+
+## **Estructura de la clase anónima**
+
+- Las clases anónimas en Smali tienen una estructura similar a cualquier otra clase, pero con algunas particularidades:
+
+- **Constructor**: El constructor de la clase anónima recibe implícitamente una referencia a la clase externa (si la clase anónima no es estática). Esto se refleja en el parámetro `this$0` en el constructor.
+     
+- **Métodos**: Los métodos de la clase anónima incluyen los métodos definidos en la interfaz o clase base que se está implementando o extendiendo, así como cualquier método adicional que se haya definido en la clase anónima.
+****
+Ejemplo de una clase anónima en Smali:
+
+```R
+   .class LMainActivity$1;
+   .super Ljava/lang/Object;
+   .source "MainActivity.java"
+
+   # Interfaces
+   .implements Ljava/lang/Runnable;
+
+   # Instance fields
+   .field final synthetic this$0:LMainActivity;
+
+   # Direct methods
+   .method constructor <init>(LMainActivity;)V
+       .locals 0
+       .parameter
+
+       .prologue
+       .line 10
+       iput-object p1, p0, LMainActivity$1;->this$0:LMainActivity;
+
+       invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+       return-void
+   .end method
+
+   # Virtual methods
+   .method public run()V
+       .locals 2
+
+       .prologue
+       .line 13
+       const-string v0, "Hello from anonymous class!"
+
+       invoke-static {v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+       return-void
+   .end method
+```
+
+En este ejemplo:
+
+- `MainActivity$1` es la clase anónima.
+- `this$0` es una referencia a la instancia de la clase externa `MainActivity`.
+- El método `run()` es la implementación de la interfaz `Runnable`.
+--- 
+# Manejo de eventos 
+
+### **Método `onClick`**
+El método `onClick` se utiliza para manejar eventos de clic en vistas (como botones).
+
+--- 
+
+### Operaciones matemáticas en Smali
+
+| Operación      | Instrucción Smali | Ejemplo              |
+| -------------- | ----------------- | -------------------- |
+| Suma           | `add-int`         | `add-int v0, p0, p1` |
+| Resta          | `sub-int`         | `sub-int v3, v0, v1` |
+| Multiplicación | `mul-int`         | `mul-int v0, p0, p1` |
+| División       | `div-int`         | `div-int v0, p0, p1` |
+| Módulo         | `rem-int`         | `rem-int v0, p0, p1` |
+
+---
+
+## **Manejo de campos y métodos**
+
+### **Obtener/Guardar atributos de un objeto**
+```R
+iget v0, p0, Lcom/ams/gametest/model/Game;->level:I  # Guarda this.level dentro de v0
+iput v0, p0, Lcom/ams/gametest/model/Game;->level:I  # Guarda v0 dentro de this.level
+```
+
+### **Invocación de métodos**
+- **`invoke-virtual`**: Llama a un método en una instancia de objeto (método público).
+- **`invoke-static`**: Llama a un método estático.
+- **`invoke-direct`**: Llama a un método en el objeto actual directamente (privado, normalmente constructores).
+
+#### **Ejemplos**
+```R
+invoke-static {}, Ljava/lang/System;->gc()V 
+# Invoca el método estático 'gc' de la clase System
+invoke-virtual {v0}, Ljava/lang/String;->length()I  
+# Llama al método length() en un objeto String almacenado en v0
+``` 
+
+---
+
+# Condiciones y saltos
+
+## IF - ELSE - GOTO 
+
+Comparación con 0
+
+| Sintaxis             | Descripción                    |
+| -------------------- | ------------------------------ |
+| `if-eqz x, target`   | Salta a `target ` si `x==0`    |
+| `if-nez x, target`   | Salta a `target ` si `x!=0`    |
+| `if-ltz x, target`   | Salta a `target` si `x < 0`    |
+| `if-gez x, target `  | Salta a `target` i `x >= 0`    |
+| `if-gtz x, target `  | Salta a `target` si `x > 0`    |
+| `if-lez x, target `  | Salta a `target`  si `x <= 0 ` |
+
+## Comparación con un registro 
+
+| Sintaxis           | Descripción                    |
+| ------------------ | ------------------------------ |
+| `if-eq x, v, target`  | Salta a `target ` si `x == v`  |
+| `if-ne x, v, target`  | Salta a `target ` si `x != v`  |
+| `if-lt x, v, target`  | Salta a `target`  si `x < v`   |
+| `if-ge x, v, target ` | Salta a `target`  si `x >= v`  |
+| `if-gt x, v, target ` | Salta a `target`  si `x > v`   |
+| `if-le x, v, target ` | Salta a `target`  si `x <= v ` |
+
+## Ir A
+
+| Dominio | Descripción  | Ejemplo(Java, smali ) |
+| ------- | ----------- | --------------------- |
+|         |              |                       |
 
 ---
 
@@ -94,47 +308,6 @@ Los registros se usan para almacenar valores temporales
 | `const x, lit32 `        | Pone una referencia a una constante de cadena identificada por `string_id` en `x`.                                             | `String name = "Player";<br>const-string v5, "Player" `                     |
  
 --- 
-
-### Operaciones matemáticas en Smali
-
-| Operación      | Instrucción Smali | Ejemplo              |
-| -------------- | ----------------- | -------------------- |
-| Suma           | `add-int`         | `add-int v0, p0, p1` |
-| Resta          | `sub-int`         | `sub-int v3, v0, v1` |
-| Multiplicación | `mul-int`         | `mul-int v0, p0, p1` |
-| División       | `div-int`         | `div-int v0, p0, p1` |
-| Módulo         | `rem-int`         | `rem-int v0, p0, p1` |
-
----
-## Métodos - Objetos
-
-####  Invocación de método 
-Se utilizan diferentes instrucciones dependiendo de si se invoca un método de forma estática, virtual o en una interfaz.
-
-- **invoke-virtual**: Llama a un método en una instancia de objeto (método público).
-
-- **invoke-static**:Llama a un método estático.
-
-* **invoke-direct**:Llama a un método en el objeto actual directamente (privado) (normalmente constructores).
-
-## Ejemplo 
-
-```r
-invoke-static {}, Ljava/lang/System;->gc()V  
-# Invoca el método estático 'gc' de la clase Sistema
-``` 
-
-```r
-invoke-virtual {v0}, Ljava/lang/String;->length()I   # Llamar al método length() en un objeto String almacenado en v0
-``` 
-
-Tabla que resume los comandos y las descripciones para invocar métodos en Java/Smali:
-
-
-| Domonio | Descripción  | Ejemplo  |
-| ------- | ----------- | -------- |
-|         |              |          |
-
 
 --- 
 # Ejemplo practicos
@@ -229,7 +402,7 @@ HolaMundo
 .end method 
 ```
 
-## Explicasion 
+## En este ejemplo
 
 **Declaración de la clase**
 
@@ -482,37 +655,6 @@ move-result v2
 - **`move-result v2`**: Almacena el resultado de la suma en el registro `v2`.
 
 ---
-
-# IF - ELSE - GOTO 
-
-Comparación con 0
-
-| Sintaxis             | Descripción                    |
-| -------------------- | ------------------------------ |
-| `if-eqz x, target`   | Salta a `target ` si `x==0`    |
-| `if-nez x, target`   | Salta a `target ` si `x!=0`    |
-| `if-ltz x, target`   | Salta a `target` si `x < 0`    |
-| `if-gez x, target `  | Salta a `target` i `x >= 0`    |
-| `if-gtz x, target `  | Salta a `target` si `x > 0`    |
-| `if-lez x, target `  | Salta a `target`  si `x <= 0 ` |
-
-# Comparación con un registro 
-
-| Sintaxis           | Descripción                    |
-| ------------------ | ------------------------------ |
-| `if-eq x, v, target`  | Salta a `target ` si `x == v`  |
-| `if-ne x, v, target`  | Salta a `target ` si `x != v`  |
-| `if-lt x, v, target`  | Salta a `target`  si `x < v`   |
-| `if-ge x, v, target ` | Salta a `target`  si `x >= v`  |
-| `if-gt x, v, target ` | Salta a `target`  si `x > v`   |
-| `if-le x, v, target ` | Salta a `target`  si `x <= v ` |
-
-# Ir A
-
-| Dominio | Descripción  | Ejemplo(Java, smali ) |
-| ------- | ----------- | --------------------- |
-|         |              |                       |
-
 
 
 
