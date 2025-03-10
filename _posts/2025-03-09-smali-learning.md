@@ -1,6 +1,7 @@
 
 ## **Introducción a Smali**
 Smali es la representación textual de los archivos DEX, que son ejecutados por la máquina virtual Dalvik (o ART en versiones más recientes de Android). Aprender Smali te permitirá:
+
 - Modificar aplicaciones Android.
 - Analizar el comportamiento de apps.
 - Realizar parches o mejoras en apps existentes.
@@ -9,7 +10,7 @@ Smali es la representación textual de los archivos DEX, que son ejecutados por 
 
 Cada archivo Smali comienza con la definición de la clase, de la siguiente manera:
 
-```smali 
+```java 
 .class <public|private|synthetic> <static?> L<path>/<class_name>; 
 # el nombre de la clase podría ser: "Test" para el archivo Test.smali 
 # Si Test tiene una clase anidada "nestedTest", el nombre podría ser "Test$nestedTest" 
@@ -506,5 +507,19 @@ move-result v2
 `iget v0, p0, Lcom/ams/gametest/model/Game;->level:I #Guarda this.level dentro de v0`
 `iput v0, p0, Lcom/ams/gametest/model/Game;->level:I #Guarda v0 dentro de this.level`
   
+
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://blok-termux.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
 
 
