@@ -4,6 +4,7 @@ Smali es la representación textual de los archivos DEX, que son ejecutados por 
 - Modificar aplicaciones Android.
 - Analizar el comportamiento de apps.
 - Realizar parches o mejoras en apps existentes.
+
 ---
 
 Cada archivo Smali comienza con la definición de la clase, de la siguiente manera:
@@ -70,7 +71,6 @@ Los tipos nativos son los siguientes:
 - **Android Studio**: Para probar y depurar aplicaciones.
 - **d8**:  
 - **dex2jar**:
-- 
 
 ---
 
