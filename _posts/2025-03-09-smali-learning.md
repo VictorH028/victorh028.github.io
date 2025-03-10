@@ -1,16 +1,17 @@
 
 ## **Introducción a Smali**
 Smali es la representación textual de los archivos DEX, que son ejecutados por la máquina virtual Dalvik (o ART en versiones más recientes de Android). Aprender Smali te permitirá:
-
 - Modificar aplicaciones Android.
 - Analizar el comportamiento de apps.
 - Realizar parches o mejoras en apps existentes.
 
 ---
 
-Cada archivo Smali comienza con la definición de la clase, de la siguiente manera:
+## Encabezado de clase
 
-```java 
+Cada archivo Smali comienza con la definición de la clase, de la siguiente manera :
+
+```r
 .class <public|private|synthetic> <static?> L<path>/<class_name>; 
 # el nombre de la clase podría ser: "Test" para el archivo Test.smali 
 # Si Test tiene una clase anidada "nestedTest", el nombre podría ser "Test$nestedTest" 
@@ -21,7 +22,7 @@ Cada archivo Smali comienza con la definición de la clase, de la siguiente mane
 
 Para definir un método:
 
-```smali 
+```r
 # definición de un método: 
 # el método puede ser privado / protegido / público 
 # Se puede llamar de forma estática o debe ser instanciado, si el método es estático, la clase debe ser estática 
@@ -48,9 +49,12 @@ return-object <register>
 .end method
 ```
 
+Otras directivas opcionales pueden ser `.implements`, `.debug`,`.source`
+
+
 ---
 
-#  Types
+#  Decriptores de tipo
 
 Los tipos nativos son los siguientes: 
 - `V` void
@@ -84,7 +88,7 @@ Los registros se usan para almacenar valores temporales
 
 | Dominio                  | Descripción                                                                                                                    | Ejemplo (Java, smali)                                                       |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
-| `move y, x`              | Mueve el contenido de x a y                                                                                                    | `int a = 12  move v0, 0xc`                                                  |
+| `move y, x`              | Mueve el contenido de x a y                                                                                                    | `int a = 12; move v0, 0xc`                                                  |
 | `const/4 x, list4`       | Coloca la constante de 4 bits en `x`. El valor máximo es `7`. Para valores más altos, elimine `/4` para usar `const x, value`. | `int level = 3;<br>const/4 v0, 0x5 `                                        |
 | `new-array x,y,type_id ` | Genera una nueva matriz de `type_id` tipo y `y` tamaño de elemento, luego almacena la referencia en `x`.                       | `byte[] bArr = {0, 1, 2, 3, 4};<br>const/4 v0, 0x5<br>new-array v0, v0, [B` |
 | `const x, lit32 `        | Pone una referencia a una constante de cadena identificada por `string_id` en `x`.                                             | `String name = "Player";<br>const-string v5, "Player" `                     |
@@ -115,14 +119,22 @@ Se utilizan diferentes instrucciones dependiendo de si se invoca un método de f
 
 ## Ejemplo 
 
-```smali
+```r
 invoke-static {}, Ljava/lang/System;->gc()V  
 # Invoca el método estático 'gc' de la clase Sistema
 ``` 
 
-```smali
+```r
 invoke-virtual {v0}, Ljava/lang/String;->length()I   # Llamar al método length() en un objeto String almacenado en v0
 ``` 
+
+Tabla que resume los comandos y las descripciones para invocar métodos en Java/Smali:
+
+
+| Domonio | Descripción  | Ejemplo  |
+| ------- | ----------- | -------- |
+|         |              |          |
+
 
 --- 
 # Ejemplo practicos
@@ -175,7 +187,7 @@ HolaMundo
 
 **Contenido**:
 
-```smali 
+```r
 .class public Lcom/app/smali1/HolaMundo;
 .super Ljava/lang/Object;
 .source "HolaMundo.java"
@@ -221,7 +233,7 @@ HolaMundo
 
 **Declaración de la clase**
 
-```smali 
+```r
 .class public Lcom/app/smali1/HolaMundo;
 .super Ljava/lang/Object;
 .source "HolaMundo.java" 
@@ -232,7 +244,7 @@ HolaMundo
 - `.source ` Es el archivo fuente original 
 
 ###  **Contructor**
-```smali
+```r
 .method public constructor <init>()V
        .locals 0
 
@@ -250,7 +262,7 @@ HolaMundo
 
 ### **Método `HolaMundoFuncion`**
 
-```smali 
+```r
 .method public static HolaMundoFuncion()V
        .locals 2
 
@@ -272,7 +284,7 @@ HolaMundo
    - `invoke-virtual` llama al método `println` en el objeto `PrintStream` (que es `System.out`). 
 ### **Método `main`**
 
-```smali
+```r
 .method public static main([Ljava/lang/String;)V
        .locals 0
        .param p0, "argv"    # [Ljava/lang/String;
@@ -292,7 +304,7 @@ HolaMundo
 
 # Operaciones matemática
 
-```java
+```r
 public class Operaciones {
     public static int suma(int a, int b){
         return a + b;
@@ -316,7 +328,7 @@ public class Operaciones {
 
 ###  Código `smali`
 
-```smali
+```r
 .class public LOperaciones;
 .super Ljava/lang/Object;
 .source "Operaciones.java"
@@ -422,7 +434,7 @@ public class Operaciones {
 
  Método `suma`:
 
-```smali
+```r
 .method public static suma(II)I
     .locals 1
     .param p0, "a"    # I
@@ -435,7 +447,7 @@ public class Operaciones {
 .end method
 ```
 
-- **`add-int v0, p0, p1`**: Esta es la instrucción que realiza la suma.
+  - **`add-int v0, p0, p1`**: Esta es la instrucción que realiza la suma.
   - `add-int`: Es la instrucción que suma dos valores enteros.
   - `v0`: Es el registro donde se almacenará el resultado de la suma.
   - `p0` y `p1`: Son los registros que contienen los valores de los parámetros `a` y `b` respectivamente.
@@ -451,7 +463,7 @@ La resta se realiza directamente en el método `main`:
 sub-int v3, v0, v1
 ```
 
-- **`sub-int v3, v0, v1`**: Esta es la instrucción que realiza la resta.
+  - **`sub-int v3, v0, v1`**: Esta es la instrucción que realiza la resta.
   - `v3`: Es el registro donde se almacenará el resultado de la resta.
   - `v0` y `v1`: Son los registros que contienen los valores de las variables `a` y `b` respectivamente.
 
@@ -471,14 +483,36 @@ move-result v2
 
 ---
 
-# SI - DE LO CONTRARIO - IR A 
+# IF - ELSE - GOTO 
 
+Comparación con 0
 
+| Sintaxis             | Descripción                    |
+| -------------------- | ------------------------------ |
+| `if-eqz x, target`   | Salta a `target ` si `x==0`    |
+| `if-nez x, target`   | Salta a `target ` si `x!=0`    |
+| `if-ltz x, target`   | Salta a `target` si `x < 0`    |
+| `if-gez x, target `  | Salta a `target` i `x >= 0`    |
+| `if-gtz x, target `  | Salta a `target` si `x > 0`    |
+| `if-lez x, target `  | Salta a `target`  si `x <= 0 ` |
 
+# Comparación con un registro 
 
----
+| Sintaxis           | Descripción                    |
+| ------------------ | ------------------------------ |
+| `if-eq x, v, target`  | Salta a `target ` si `x == v`  |
+| `if-ne x, v, target`  | Salta a `target ` si `x != v`  |
+| `if-lt x, v, target`  | Salta a `target`  si `x < v`   |
+| `if-ge x, v, target ` | Salta a `target`  si `x >= v`  |
+| `if-gt x, v, target ` | Salta a `target`  si `x > v`   |
+| `if-le x, v, target ` | Salta a `target`  si `x <= v ` |
 
 # Ir A
+
+| Dominio | Descripción  | Ejemplo(Java, smali ) |
+| ------- | ----------- | --------------------- |
+|         |              |                       |
+
 
 
 
@@ -494,7 +528,7 @@ move-result v2
 
 ---
 
-## **Proceso de modificación**
+# **Como aplicar parchos**
 
 
 
@@ -521,5 +555,3 @@ move-result v2
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
-
-

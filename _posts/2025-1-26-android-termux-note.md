@@ -119,7 +119,7 @@ tags:
 # Análisis estático
 
 - Proceso de desarrollo de APK
-- Estructura del APK: [ 1 ]
+- Estructura del APK: [[ 1 ]](https://sallam.gitbook.io/sec-88/android-appsec/apk-structure)
 - Descompilación
 - Herramienta APK
 - Parcheo de código
