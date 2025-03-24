@@ -8,7 +8,8 @@ echo "'spin' Installs correctly"
 rm -rf $PREFIX/bin/install-spin  
 
 # Borrar clonacion 
-if [ -f $spin_DIR ]; then
+
+if [ -f $HOME/spin ]; then
     rm -rf $spin_DIR
 fi
 

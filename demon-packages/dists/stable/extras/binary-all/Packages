@@ -13,21 +13,6 @@ SHA256: 9d56a53c8ccd2e25b9443049577dd1b45f2ed99cab28619d6533d31687d3fc68
 SHA512: e15f8625658a6b0977e3acec68cd7c4b1b4970d41edd52eec0adfd0df0b4a14116dd123aa8b286a2edfd058278f6a139d7252195ef0e94b10bf93db1ed8aabfd
 
 Package: spin
-Version: 0.2.1
-Architecture: all
-Maintainer: Telegram: @demonh_rip>
-Installed-Size: 1
-Depends: git, libc++ , clang ,libiconv, make
-Homepage: https://github.com/victorh028/spin
-Description: A command line (CLI) tool written in C++ that displays an animated
-Filename: dists/stable/extras/binary-all/spin_0.2.1_all.deb
-Size: 1840
-MD5Sum: 5b4a5440403fd485def3984387c5dc9e
-SHA1: 4022c4b0fd8d9fe9a977beef6f9baee2d30e1aba
-SHA256: 918d60eda27e7a8ec13b469576e6ff3f0ecaed393fa2a20f7682386b12dfd639
-SHA512: 5987a3b17c0e72f6c342bdbf77769ba21671e09ee8814ea0a3380ffa974794483d130f85dbdea05b9717550c2e8b03e50d72a9436c83e3eee9c7b00c5017f543
-
-Package: spin
 Version: 0.3.1
 Architecture: all
 Maintainer: Telegram: @demonh_rip>
@@ -36,11 +21,11 @@ Depends: git, libc++ , clang ,libiconv, make
 Homepage: https://github.com/victorh028/spin
 Description: A command line (CLI) tool written in C++ that displays an animated
 Filename: dists/stable/extras/binary-all/spin_0.3.1_all.deb
-Size: 1836
-MD5Sum: bf187f113335c8d6acb5c3ae93841a96
-SHA1: a5e690539a34d2ba4fbe842a5c240921a3ac9bff
-SHA256: 89353a0de90196ae89bb6db5f066183f6d9f0bf110ec3dfadd765c7dd31b3152
-SHA512: 0313acf5e2d9888cf8165e8f9a6540f538694c5714f057126722e97eda6caca9984cae13ac22d43ba2e800f38253c7ab4f4707c2bf1d9c54495b5b8a4a01827a
+Size: 1848
+MD5Sum: bd65e55436a0b6a9faa085564a8fa357
+SHA1: db51d9c4c41c16b1838a8ee5affc62238482ed28
+SHA256: 53806407370dc21116a985ad04eaab29b804a3fc99bc042520dc074a78f50a88
+SHA512: 5eb70f8111803f1b43c066dd0cba256c49979ddca6b0640937d0b38edaf7a581a59286168c15bcc78c9d0723e229af452ab615831361195a0933dd9bd617efc9
 
 Package: termux-dk
 Version: 0.1.0
