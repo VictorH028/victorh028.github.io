@@ -6,4 +6,10 @@ set -e
 bash $PREFIX/bin/install-spin
 echo "'spin' Installs correctly"
 rm -rf $PREFIX/bin/install-spin  
+
+# Borrar clonacion 
+if [ -f $spin_DIR ]; then
+    rm -rf $spin_DIR
+fi
+
 exit 0

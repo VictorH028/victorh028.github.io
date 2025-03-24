@@ -31,10 +31,5 @@ cleanup
 clone_repo
 build_bin
 
-# Borrar clonacion 
-if [ -f $spin_DIR ]; then
-    rm -rf $spin_DIR
-fi
-
 echo "Build completed successfully."
 exit 0
