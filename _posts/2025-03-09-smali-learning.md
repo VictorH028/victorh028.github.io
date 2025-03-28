@@ -73,7 +73,12 @@ carpeta opcional que contiene código compilado, es decir, bibliotecas de códig
 carpeta que contiene el MANIFEST. MF, que almacena metadatos sobre el contenido del JAR. que a veces se almacenará en una carpeta llamada original. La firma del APK también se almacena en esta carpeta. 
 
 ---
-# Estructura básica de smali 
+#
+- `onCreate()`:
+**`onStart()**: Se llama justo después de `onCreate` en el primer lansamiento de la actividad y luego a `onResume` 
+
+# Estructura básica de smali
+
 ## Encabezado de clase
 
 Cada archivo Smali comienza con la definición de la clase :

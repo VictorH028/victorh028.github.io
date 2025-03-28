@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/
   teaser_home_page: true
 categories:
-  - notas 
+  - Android
 tags:
   - notas 
   - termux
@@ -189,6 +189,13 @@ tags:
 - JADX 
 - Apktool 
 - Qark : [[ 1 ]](https://github.com/linkedin/qark)
+- bundletool : [[1]](https://github.com/google/bundletool/releases)
+---
+**Convierte de APKS a APK***
+```
+java -jar bundletool-all.jar build-apks --apks=tu_app.apks --output=salida.apk --mode=universal 
+```
+---
 
 # Assembly 
 
