@@ -54,6 +54,12 @@ En smali:
 ###  `MainActivity` 
 Es la actividad principal de una aplicación y que se define toda la lógica inicial y la interfaz de usuario 
 
+
+- `onCreate()`:
+- **onStart()**: Se llama justo después de `onCreate` en el primer lansamiento de la actividad y luego a `onResume` 
+
+
+
 ---
 # Estructura de APK 
 
@@ -73,10 +79,6 @@ carpeta opcional que contiene código compilado, es decir, bibliotecas de códig
 carpeta que contiene el MANIFEST. MF, que almacena metadatos sobre el contenido del JAR. que a veces se almacenará en una carpeta llamada original. La firma del APK también se almacena en esta carpeta. 
 
 ---
-#
-- `onCreate()`:
-**`onStart()**: Se llama justo después de `onCreate` en el primer lansamiento de la actividad y luego a `onResume` 
-
 # Estructura básica de smali
 
 ## Encabezado de clase

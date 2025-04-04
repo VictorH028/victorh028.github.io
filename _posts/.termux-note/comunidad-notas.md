@@ -19,6 +19,11 @@ PATH=$PREFIX/bin && /system/bin/pm list packages --user 0
 am start --user 0 -a android.settings.action.MANAGE_OVERLAY_PERMISSION -d "package:com.termux.x11"
 ```
 
+- Para extraerel AndroidManifiest.xml
+
+```
+aapt dump xmltree app.apk AndroidManifest.xml
+```
 # Investigar 
 
 - Si se logras ejecutar los binarios de ``/vendor/bin`` siendo usuario shell es posible escalar privilegios hasta el usuario ``system``. Mas informacion [aqui](https://t.me/Ivam3by_Cinderella/13/9867) 

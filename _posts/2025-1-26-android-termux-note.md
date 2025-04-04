@@ -64,7 +64,7 @@ tags:
 - Biblioteca Nativa
 - Tiempo de ejecución de Android
 - API de Java
-- Aplicación del sistema
+- Creación de aplicación [[1]](https://elbauldelprogramador.com/programacion-android-hola-mundo/)
 - CPI
 - Aglutinante
 - Máquina virtual Dalvik [[1]](https://keepcoding.io/blog/como-funciona-la-maquina-virtual-dalvik/) - [[2]](https://online.flipbuilder.com/omaz/yugx/files/basic-html/page3.html)
