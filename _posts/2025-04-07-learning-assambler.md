@@ -29,14 +29,14 @@ void main(void)
 ```
 Ese código no se ejecutó. La cuestión es que el código se compila en código ensamblador, que se ve así:
 
-/assets/images/assembler/hello_asm.jpg
+![hello_asm](/assets/images/assembler/hello_asm.jpg)
 
 También con el código ensamblador, hay muchas arquitecturas diferentes. Diferentes tipos de procesadores pueden ejecutar diferentes tipos de arquitecturas de código ensamblador. Los dos que más trataremos aquí serán ELF (formato ejecutable y enlazable) de 64 bits y de 32 bits. A menudo llamaré a estas dos cosas `x64`y `x86`.
 
 # Registers
 En una computadora, un registro es uno de un pequeño conjunto de datos que tienen lugares que forman parte de un procesador de computadora. Un registro puede mantener una instrucción de computadora, una dirección de almacenamiento o cualquier tipo de datos (como una secuencia de bits o caracteres individuales). Los procesadores modernos (I.E 386 y más allá) X86 tienen ocho registros de 32 bits de propósito general 
 
-/assets/images/assembler/Registers.jpg
+![Registers](/assets/images/assembler/Registers.jpg)
 
 ```
 rbp: Puntero base, apunta a la parte inferior del marco de pila actual
@@ -119,7 +119,7 @@ void main(void)
 ```
 Específicamente, podemos ver que está almacenado en la pila en `rbp-0x4`.
 
-/assets/images/assembler/stack.jpg
+![stack](/assets/images/assembler/stack.jpg)
 
 Ahora los valores en la pila se mueven empujándolos a la pila o sacándolos. Esa es la única forma de agregar o eliminar valores de la pila (es una estructura de datos LIFO). Sin embargo, podemos hacer referencia a valores en la pila.
 
@@ -140,7 +140,7 @@ La pila crece hacia las direcciones de memoria más bajas. Cuando se declara una
 
 Como se muestra en la imagen, la variable local `1` se encuentra en la dirección de la memoria `ebp-0x4.`
 
-/assets/images/assembler/the_stack.jpg
+![the_stack](/assets/images/assembler/the_stack.jpg)
 
 # 64 Bit Assembly Instructions (Intel)
 
@@ -309,10 +309,17 @@ Esta instrucción es equivalente a la `sub` Instrucción, excepto que el resulta
 Se administran nombres de las ramas condicionales que se basan intuitivamente en la última instrucción de comparación, `cmp`. Por ejemplo, las ramas condicionales como `jle` y `jne` se basan en la primera vez que realizan una operación de `cmp` en los operandos deseados.
 
 ### Syntax
+
 `je <label>` (salta cuando es igual)
+
 `jne <label>` (saltar cuando no es igual)
+
 `jz <label>` (saltar cuando el último resultado fue cero)
+
 `jg <label>` (salta cuando es mayor que)
+
 `jge <label>` (salta cuando es mayor o igual que)
+
 `jl <label>` (salta cuando menos de)
+
 `jle <label>` (salta cuando es menor o igual que)
