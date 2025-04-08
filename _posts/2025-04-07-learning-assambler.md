@@ -212,6 +212,7 @@ La instrucción `res` implementa un mecanismo de retorno de subrutina.  Esta ins
 El valor de retorno de una función siempre se mueve a `eax`. Entonces, para ver qué se devolvió una función, solo mire a `eax` después de la llamada.
 
 ### Syntax
+
 `call <function>`
 `ret`
 
@@ -233,8 +234,11 @@ Moverá el valor del `rdx`registro a cualquier memoria a la que apunte el `rax
 La instrucción lea coloca la dirección especificada por su segundo operando en el registro especificado por su primer operando. Nota, el contenido de la ubicación de la memoria no se carga, solo se calcula la dirección efectiva y se coloca en el registro. Esto es útil para obtener un puntero en una región de memoria.
 
 #### Syntax
+
 `lea  <reg32>,<mem>`
-#### Examples
+
+#### Ejemplo
+
 `lea edi, [ebx+4*esi]` — La cantidad `EBX+4*ESI` se coloca en EDI.
 `lea eax, [esp+0x8]` — El valor en `va` se coloca en `eax`.
 
@@ -242,10 +246,12 @@ La instrucción lea coloca la dirección especificada por su segundo operando en
 
 Esto simplemente suma los dos valores y almacena la suma en el primer argumento. Por ejemplo:
 
-#### Syntax      
+#### Syntax  
+
 `add <destination>,<source>`
 
 #### Examples
+
 `add eax, 0x10;` EAX ← EAX + 10
 `add eax, ebx;`  Añadir el contenidos de EBX al contenido de eax
 
@@ -268,11 +274,13 @@ La `push`instrucción hará crecer la pila en `8`bytes (for `x64`, `4`for `
 Esto aumentará la pila por `8`bytes, y el contenido del `rax`registro estará en la parte superior de la pila.
 
 ## Syntax
+
 `push <reg>`
 `push <mem>`
 `push <con32>`
 
 ### Examples
+
 `push eax` — Enpuja `eax` en la pila
 `push [var]` — Empuje los `4 bytes` en la dirección var en la pila
 

@@ -1,3 +1,18 @@
+Package: apkeditor
+Version: 1.4.1
+Section: base
+Priority: optional
+Architecture: all
+Depends: 
+Maintainer: https://kikfox.t.me thekikfox@gmail.com
+Description: Powerful android apk editor - aapt/aapt2 independent.
+Filename: dists/stable/extras/binary-all/apkeditor-1.4.1.deb
+Size: 6673300
+MD5Sum: d8b3100821c949a11f7ad93d74fee5d3
+SHA1: 274c77e44d896b901d3d172bac194dd18aa0a23d
+SHA256: 2f39b6255893033e27f21b74844f9c1265075c6165055a5bc55b445315827153
+SHA512: fec4db5ac9a64eb83cb8de7619f4906eebe935bc604de1f2fde7c9ae922e1baa6a4755ada0e327e8185bf21ec9fb88b2fb60d32d079cc219fc80bf74a2fbfc2b
+
 Package: nljson
 Version: 0.0.1
 Architecture: all
