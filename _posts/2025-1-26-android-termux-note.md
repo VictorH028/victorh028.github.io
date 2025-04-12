@@ -27,8 +27,12 @@ tags:
 > [!NOTE]
 > Mucho del mis imsobnios  vine de  la comunidad de ``@ivam3`` y sus subcriptores 
 
+# Android Ingenieria Inversa desde Android
 
-# Android Ingenieria Inversa 
+**Apk utiles*
+- Developer assistant
+- Mt manager
+- Current Activity 
 
 # Programacion lenguajes 
 

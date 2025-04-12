@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/
   teaser_home_page: true
 categories:
-  - notas 
+  - assamble
 tags:
   - notas 
   - termux
@@ -122,17 +122,17 @@ Then
 ```
  
 ### Optener el código magina
-
+**Extraemos los bytecode**
 ```sh
-objcopy -O binary shellcode shellcode.bin    #  extraemos los bytecode 
+objcopy -O binary shellcode shellcode.bin   
 ```
 
+**Extraemos byte code de binario
 ```sh
-hexdump -v -e '"\\" 1/1 "x%02x"' shellcode.bin; echo    # extraemos byte code de binario
+hexdump -v -e '"\\" 1/1 "x%02x"' shellcode.bin; echo    
 ```
 
 El resultado se compara con el resultado de la 2 columna:
-
 ```sh
 objdump -d shellcode
 ```

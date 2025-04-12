@@ -1,16 +1,20 @@
 
 ## **Introducción a Smali**
 
-Smali es la representación textual de los archivos DEX, que son ejecutados por la máquina virtual Dalvik (o ART en versiones más recientes de Android). Aprender Smali te permitirá:
+Smali es la representación textual de los archivos `DEX`, que son ejecutados por la máquina virtual `Dalvik` (o `ART` en versiones más recientes de Android). Aprender Smali te permitirá:
+
 - Modificar aplicaciones Android.
 - Analizar el comportamiento de apps.
 - Realizar parches o mejoras en apps existentes.
 
 ---
+
 #  Archivos a tener en cuenta en modificasiones 
   
 ### `colors.xml`
+
 ###  `strings.xml`
+
 Es un recurso para armacenar cadenas de texto (`strings`). Que se utiliza en la interfaz de usuario 
 
 ```xml
@@ -58,9 +62,8 @@ Es la actividad principal de una aplicación y que se define toda la lógica ini
 - `onCreate()`:
 - **onStart()**: Se llama justo después de `onCreate` en el primer lansamiento de la actividad y luego a `onResume` 
 
-
-
 ---
+
 # Estructura de APK 
 
 ###  **AndroidManifest.xml**: 
@@ -79,11 +82,13 @@ carpeta opcional que contiene código compilado, es decir, bibliotecas de códig
 carpeta que contiene el MANIFEST. MF, que almacena metadatos sobre el contenido del JAR. que a veces se almacenará en una carpeta llamada original. La firma del APK también se almacena en esta carpeta. 
 
 ---
+
 # Estructura básica de smali
 
-## Encabezado de clase
+Encabezado de clase
 
 Cada archivo Smali comienza con la definición de la clase :
+
 ```r
 .class <public|private|synthetic> <static?> L<path>/<class_name>; 
 # el nombre de la clase podría ser: "Test" para el archivo Test.smali 
@@ -278,31 +283,23 @@ Comparación con 0
 #  Decriptores de tipo
 
 Los tipos nativos son los siguientes: 
-- `V` void
-- `Z` boolean
-- `B` byte
-- `S` short
-- `C` char
-- `I` int
-- `J` long (64 bit)
-- `F` float
-- `D` double (64 bit) 
+- `V`: void
+- `Z`: boolean
+- `B`: byte
+- `S`: short
+- `C`: char
+- `I`: int
+- `J`: long (64 bit)
+- `F`: float
+- `D`: double (64 bit) 
+-    : matriz 
+     : nombre de la calse  
 
 ---
 
-## **Herramientas necesarias**
-- **Apktool**: Herramienta para descompilar y recompilar archivos APK.
-- **Jadx**: Descompilador de Java para ver el código fuente de las apps.
-- **Bytecode Viewer**: Herramienta para visualizar Smali y Java.
-- **Android Studio**: Para probar y depurar aplicaciones.
-- **d8**:  
-- **dex2jar**:
+# Registros / Variables / Asignacion 
 
----
-
-# Registro 
-
-Los registros se usan para almacenar valores temporales
+En Dalvik los registros den de `32 bits` y pueden contener cualquier tipo de valor.
 
 - **Registros locales ( Vx)**: se utilizan para variables locales y valores temporales. `V0`, `V1`
 - **Registros de parámetros ( Px)** : se utilizan para pasar parámetros en funciones, `P0` normalmente representan al `this` operador. 
@@ -316,7 +313,17 @@ Los registros se usan para almacenar valores temporales
  
 --- 
 
+## **Herramientas necesarias**
+### Linux 
+- **Apktool**: Herramienta para descompilar y recompilar archivos APK.
+- **Jadx**: Descompilador de Java para ver el código fuente de las apps.
+- **Bytecode Viewer**: Herramienta para visualizar Smali y Java.
+- **Android Studio**: Para probar y depurar aplicaciones.
+- **d8**:  
+- **dex2jar**:
+### Android
 --- 
+
 # Ejemplo practicos
 
 #### **Estructura básica de Smali**
@@ -677,19 +684,18 @@ move-result v2
 
 ---
 
-# **Como aplicar parchos**
+# **Mota de parchos aplicados**
 
-
-
----
-
-
+[apk](url) 
 
 ## Obtener/Guardar atributos de un objeto  
 
-`iget v0, p0, Lcom/ams/gametest/model/Game;->level:I #Guarda this.level dentro de v0`
-`iput v0, p0, Lcom/ams/gametest/model/Game;->level:I #Guarda v0 dentro de this.level`
-  
+```
+iget v0, p0, Lcom/ams/gametest/model/Game;->level:I #Guarda this.level dentro de v0
+
+iput v0, p0, Lcom/ams/gametest/model/Game;->level:I #Guarda v0 dentro de this.level
+```
+
 
 
 {% if page.comments %}
