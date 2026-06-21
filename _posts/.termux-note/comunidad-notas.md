@@ -33,7 +33,7 @@ aapt dump xmltree app.apk AndroidManifest.xml
 Si se logras ejecutar los binarios de ``/vendor/bin`` siendo usuario shell es posible escalar privilegios hasta el usuario ``system``. Mas informacion [aqui](https://t.me/Ivam3by_Cinderella/13/9867) 
 
 ## Investigasion  
-
+- `vendor shell` Tiene vulnerabilidad asta android 14
 
 ### Comandos
 
@@ -41,7 +41,9 @@ Si se logras ejecutar los binarios de ``/vendor/bin`` siendo usuario shell es po
 * `getenforce` Muestra el modo de seguridad de Selinux
 * `setenforce` Combia temporal mente el modo 
 * `/system/bin/run-as`
-
+* 
+###  Lenguaje 
+- JNI
 
 # Pendientes 
 ---
@@ -54,7 +56,7 @@ Si se logras ejecutar los binarios de ``/vendor/bin`` siendo usuario shell es po
 
 
 **Rever shell**
-
+[Revisar](https://t.me/Ivam3by_Cinderella/28117)
 [Ejemplo](https://t.me/Ivam3by_Cinderella/13/9377)
 
 --- 
