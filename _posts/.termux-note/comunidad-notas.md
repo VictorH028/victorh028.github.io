@@ -7,6 +7,12 @@ SELinux sólo controla y restringe llamadas al sistema, pero un proceso puede es
 
 
 El binario /system/bin/run-as tiene un permiso especial llamado setuid (o capacidades CAP_SETUID). Esto permite que, al ejecutarlo, el proceso obtenga temporalmente permisos de root para validar las condiciones
+
+Para ver si el binario tiene capacidades asicnadas 
+```
+getcap /system/bin/run-as
+```
+
 **Listar paquetes saltando protexion ** 
 
 ```sh
