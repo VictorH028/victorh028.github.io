@@ -6,13 +6,28 @@ A partir de android 11 `selinux` implementó varias restricciones, la buena noti
 SELinux sólo controla y restringe llamadas al sistema, pero un proceso puede escribir en la memoria en una dirección virtual, sin realizar una 'system call'.
 
 
-El binario /system/bin/run-as tiene un permiso especial llamado setuid (o capacidades CAP_SETUID). Esto permite que, al ejecutarlo, el proceso obtenga temporalmente permisos de root para validar las condiciones
+El binario `/system/bin/run-as` tiene un permiso especial llamado setuid (o capacidades `CAP_SETUID`). Esto permite que, al ejecutarlo, el proceso obtenga temporalmente permisos de root para validar las condiciones
 
-Para ver si el binario tiene capacidades asicnadas 
+
+**Para ver si el binario tiene capacidades asicnadas**
+
 ```
 getcap /system/bin/run-as
 ```
+El concepto: memfd_create
 
+Esta función crea un archivo anónimo que no existe en el disco, sino que reside enteramente en la memoria RAM. El sistema te devuelve un descriptor de archivo que apunta a este espacio de memoria.
+
+Con este descriptor, puedes escribir el código de tu comando (por ejemplo, un binario ELF) y luego usar fexecve para ejecutarlo directamente desde la memoria, sin dejar rastro en el almacenamiento.
+
+¿Cómo se hace en la práctica?
+
+El proceso general en código C sería:
+
+1. Crear el archivo en memoria:
+   ```c
+   int fd = memfd_create("nombre_mi_comando", MFD_ALLOW_SEALING);
+   ```
 **Listar paquetes saltando protexion ** 
 
 ```sh
