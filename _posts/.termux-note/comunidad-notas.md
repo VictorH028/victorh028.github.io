@@ -3,6 +3,7 @@
 
 A partir de android 11 `selinux` implementó varias restricciones, la buena noticia es que muchas de ellas se pueden 'bypassear' sin necesidad de ser root ni haciendo uso de adb xD. El mismo restringe las llamadas al sistema
 
+SELinux sólo controla y restringe llamadas al sistema, pero un proceso puede escribir en la memoria en una dirección virtual, sin realizar una 'system call'.
 
 **Listar paquetes saltando protexion ** 
 
