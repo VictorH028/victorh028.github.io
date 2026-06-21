@@ -5,6 +5,8 @@ A partir de android 11 `selinux` implementó varias restricciones, la buena noti
 
 SELinux sólo controla y restringe llamadas al sistema, pero un proceso puede escribir en la memoria en una dirección virtual, sin realizar una 'system call'.
 
+
+El binario /system/bin/run-as tiene un permiso especial llamado setuid (o capacidades CAP_SETUID). Esto permite que, al ejecutarlo, el proceso obtenga temporalmente permisos de root para validar las condiciones
 **Listar paquetes saltando protexion ** 
 
 ```sh
