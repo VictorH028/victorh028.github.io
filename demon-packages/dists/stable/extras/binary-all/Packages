@@ -36,11 +36,11 @@ Depends: git, libc++ , clang ,libiconv, make
 Homepage: https://github.com/victorh028/spin
 Description: A command line (CLI) tool written in C++ that displays an animated
 Filename: dists/stable/extras/binary-all/spin_4.5-beta_all.deb
-Size: 1836
-MD5Sum: 13b00e6cde4a7567f0f491c898dd4a0d
-SHA1: dfb582c2129a4f790fc10341b0567e9ff7ca8ada
-SHA256: 092f3df2128d7aacff3b84a01c8e493534c8ba56d2747861e395026ad6e2d00c
-SHA512: cad82b1d20b6ebe7584790f9825b1aa81edb02f767a07ca73b756c11277fdd3c79be5336b35c32dff10016aa84e56d505292639c74e424d9e59d316882577bd1
+Size: 1832
+MD5Sum: 98fc9c2566976cdf3fb3bf09386b3bc5
+SHA1: ca0f95da88ab53b51cbbcbe58bb768ff797ec044
+SHA256: 66e75a4fda0b6d13bb5d9d4b0d9e3c1e0924afd085ffcd9fc78f76000bd0a68b
+SHA512: 45196767af85fbebaaa3635e13a23a750cdcba072b3d53035ae81edbf3f6a35420e1121a7bc5e1adeef021cb07523140d15a6dcaff98133cb8d23827b7b3c2c5
 
 Package: termux-dk
 Version: 0.1.0
