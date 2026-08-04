@@ -10,7 +10,7 @@ rm -rf $PREFIX/bin/install-spin
 # Borrar clonacion 
 
 if [ -f $HOME/spin ]; then
-    rm -rf $spin_DIR
+    rm -rf $HOME/spin 
 fi
 
 exit 0

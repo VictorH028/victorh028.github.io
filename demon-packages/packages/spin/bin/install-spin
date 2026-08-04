@@ -31,5 +31,6 @@ cleanup
 clone_repo
 build_bin
 
+
 echo "Build completed successfully."
 exit 0

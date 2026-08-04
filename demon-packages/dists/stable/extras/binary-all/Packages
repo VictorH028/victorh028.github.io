@@ -28,19 +28,19 @@ SHA256: 9d56a53c8ccd2e25b9443049577dd1b45f2ed99cab28619d6533d31687d3fc68
 SHA512: e15f8625658a6b0977e3acec68cd7c4b1b4970d41edd52eec0adfd0df0b4a14116dd123aa8b286a2edfd058278f6a139d7252195ef0e94b10bf93db1ed8aabfd
 
 Package: spin
-Version: 0.3.1
+Version: 4.5-beta
 Architecture: all
 Maintainer: Telegram: @demonh_rip>
 Installed-Size: 1
 Depends: git, libc++ , clang ,libiconv, make
 Homepage: https://github.com/victorh028/spin
 Description: A command line (CLI) tool written in C++ that displays an animated
-Filename: dists/stable/extras/binary-all/spin_0.3.1_all.deb
-Size: 1848
-MD5Sum: bd65e55436a0b6a9faa085564a8fa357
-SHA1: db51d9c4c41c16b1838a8ee5affc62238482ed28
-SHA256: 53806407370dc21116a985ad04eaab29b804a3fc99bc042520dc074a78f50a88
-SHA512: 5eb70f8111803f1b43c066dd0cba256c49979ddca6b0640937d0b38edaf7a581a59286168c15bcc78c9d0723e229af452ab615831361195a0933dd9bd617efc9
+Filename: dists/stable/extras/binary-all/spin_4.5-beta_all.deb
+Size: 1836
+MD5Sum: 13b00e6cde4a7567f0f491c898dd4a0d
+SHA1: dfb582c2129a4f790fc10341b0567e9ff7ca8ada
+SHA256: 092f3df2128d7aacff3b84a01c8e493534c8ba56d2747861e395026ad6e2d00c
+SHA512: cad82b1d20b6ebe7584790f9825b1aa81edb02f767a07ca73b756c11277fdd3c79be5336b35c32dff10016aa84e56d505292639c74e424d9e59d316882577bd1
 
 Package: termux-dk
 Version: 0.1.0
