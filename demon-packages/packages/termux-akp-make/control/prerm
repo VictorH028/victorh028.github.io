@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/bash    
+# Antes de eliminar/actualizar   
+
+eliminar(){
+  local cmd 
+  cmd="rm -rf \$PREFIX/lib/termux-apk-make \$PREFIX/bin/termux-apk-make  "
+  spin -t "Eliminando.." \ 
+      --cmd " sleep 1 && $cmd " 
+}

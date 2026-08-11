@@ -42,6 +42,21 @@ SHA1: ca0f95da88ab53b51cbbcbe58bb768ff797ec044
 SHA256: 66e75a4fda0b6d13bb5d9d4b0d9e3c1e0924afd085ffcd9fc78f76000bd0a68b
 SHA512: 45196767af85fbebaaa3635e13a23a750cdcba072b3d53035ae81edbf3f6a35420e1121a7bc5e1adeef021cb07523140d15a6dcaff98133cb8d23827b7b3c2c5
 
+Package: termux-apk-make
+Version: 1.0.0
+Architecture: all
+Maintainer: @demonr_rip
+Installed-Size: 23641
+Depends: spin, aapt2 , openjdk-21 , d8, zip, unzip 
+Homepage: https://github.com/victorh028/termux-apk-make
+Description: Herramienta para compilar aplicaciones Android desde Termux.
+Filename: dists/stable/extras/binary-all/termux-apk-make_1.0.0_all.deb
+Size: 19834388
+MD5Sum: 3ea5c1d716c88967b062efa8c8f56dc1
+SHA1: 762072686fe78ebfb649c5266d29d37ae5515a88
+SHA256: 176995c1f9be0269d1c7621bc34c102632c84559d746f1d7dbf8be846431b0df
+SHA512: e80f97930ce97585ce14da22edefb5a5476ca092a3532db82351037a6acce3b551bd700d6d389b886f0e0f34da42db1fda6decf509752f06f92f2757ea72f976
+
 Package: termux-dk
 Version: 0.1.0
 Architecture: all

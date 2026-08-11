@@ -3,4 +3,10 @@ data/data/com.termux/files/usr/lib/apkeditor/apkeditor.jar                      
 data/data/com.termux/files/usr/share/doc/apkeditor/LICENSE                       apkeditor
 data/data/com.termux/files/usr/bin/nljson                                        nljson
 data/data/com.termux/files/usr/bin/install-spin                                  spin
+data/data/com.termux/files/usr/bin/termux-apk-make                               termux-apk-make
+data/data/com.termux/files/usr/lib/termux-apk-make/toolz/android.jar             termux-apk-make
+data/data/com.termux/files/usr/lib/termux-apk-make/toolz/apksigner               termux-apk-make
+data/data/com.termux/files/usr/lib/termux-apk-make/toolz/apksigner.jar           termux-apk-make
+data/data/com.termux/files/usr/lib/termux-apk-make/toolz/key.keystore            termux-apk-make
+data/data/com.termux/files/usr/lib/termux-apk-make/toolz/zipalign                termux-apk-make
 data/data/com.termux/files/usr/bin/install-termux-dk                             termux-dk

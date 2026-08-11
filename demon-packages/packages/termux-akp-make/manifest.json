@@ -1,0 +1,46 @@
+{
+  "control": {
+    "Package": "termux-apk-make",
+    "Version": "1.0.0",
+    "Architecture": "all",
+    "Maintainer": "@demonr_rip",
+    "Description": "Herramienta para compilar aplicaciones Android desde Termux.",
+    "Homepage": "https://github.com/victorh028/termux-apk-make",
+    "Depends": "spin, aapt2 , openjdk-21 , d8, zip, unzip "
+  },
+
+ "control_files_dir": "control", 
+ "deb_dir": "../../",
+  
+  "data_files": {
+    "bin/termux-apk-make": {
+      "source": "src/termux-apk-make.sh",
+      "perm": "755"
+    },
+
+    "lib/termux-apk-make/toolz/android.jar": {
+      "source": "toolz/android.jar",
+      "perm": "775"
+    },
+
+    "lib/termux-apk-make/toolz/apksigner": {
+      "source": "toolz/apksigner",
+      "perm": "755"
+    },
+
+    "lib/termux-apk-make/toolz/apksigner.jar": {
+      "source": "toolz/apksigner.jar",
+      "perm": "775"
+    },
+
+    "lib/termux-apk-make/toolz/key.keystore": {
+       "source": "toolz/key.keystore" ,
+       "perm": "775"
+    },
+
+    "lib/termux-apk-make/toolz/zipalign": {
+      "source": "toolz/zipalign",
+      "perm": "755"
+    }
+  }
+}

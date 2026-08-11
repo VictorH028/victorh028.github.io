@@ -6,7 +6,7 @@
         "Homepage": "https://github.com/victorh028/spin",
         "Description": "A command line (CLI) tool written in C++ that displays an animated",
         "Maintainer": "Telegram: @demonh_rip>",
-        "Depends": "git, libc++ , clang ,libiconv, make"
+        "Depends": "git, libc++ , clang ,libiconv, make, python"
    },
   "control_files_dir": "control",
   "deb_dir": "../../",

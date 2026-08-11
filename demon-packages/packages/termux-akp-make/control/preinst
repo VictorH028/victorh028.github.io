@@ -1,0 +1,16 @@
+#!/data/data/com.termux/files/usr/bin/bash    
+
+# Antes de instalar/actualizar   
+set -e 
+
+postinst(){
+ local cmd 
+ cmd="mkdir -p \$PREFIX/lib/termux-apk-make/toolz "
+ spin -t "Configurando..."  \
+    --cmd "sleep 1 && $cmd" \
+    --result \
+    --success "Configurado..." \
+    --error "[ERROR]:  No se porque..."
+}
+
+postinst 

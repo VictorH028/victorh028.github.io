@@ -19,6 +19,11 @@ clone_repo() {
     git clone --depth=1 "$REPO_URL" "$spin_DIR" || { echo "Failed to clone repository"; exit 1; }
 }
 
+# para la compilacion de python 
+if ! python -c "import pybind11" >/dev/null 2>&1; then
+    python -m pip install --upgrade pybind11
+fi
+
 # Construir el binario
 build_bin() {
     echo "Building the binary..."
