@@ -1,0 +1,6 @@
+#!/bin/sh 
+
+
+java -jar ../src/smali-lsp-1.5.0.jar lsp 
+
+

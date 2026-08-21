@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/bash    
+# Antes de eliminar/actualizar   
+
+rm -rf  $PREFIX/share/smali-lsp/

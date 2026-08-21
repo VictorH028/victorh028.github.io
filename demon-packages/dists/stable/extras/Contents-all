@@ -2,6 +2,8 @@ data/data/com.termux/files/usr/bin/apkeditor                                    
 data/data/com.termux/files/usr/lib/apkeditor/apkeditor.jar                       apkeditor
 data/data/com.termux/files/usr/share/doc/apkeditor/LICENSE                       apkeditor
 data/data/com.termux/files/usr/bin/nljson                                        nljson
+data/data/com.termux/files/usr/bin/smali-lsp                                     smali-lsp
+data/data/com.termux/files/usr/share/smali-lsp/smali-lsp.jar                     smali-lsp
 data/data/com.termux/files/usr/bin/install-spin                                  spin
 data/data/com.termux/files/usr/bin/termux-apk-make                               termux-apk-make
 data/data/com.termux/files/usr/lib/termux-apk-make/toolz/android.jar             termux-apk-make

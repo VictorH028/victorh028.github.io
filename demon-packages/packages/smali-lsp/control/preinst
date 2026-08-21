@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash    
+
+# Antes de instalar/actualizar   
+set -e 
+
+mkdir -p  $PREFIX/share/smali-lsp/

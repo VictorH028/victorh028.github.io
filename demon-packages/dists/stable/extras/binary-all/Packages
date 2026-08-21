@@ -27,6 +27,21 @@ SHA1: d10c227adc2f5d015f3afa34292b98050f223285
 SHA256: 9d56a53c8ccd2e25b9443049577dd1b45f2ed99cab28619d6533d31687d3fc68
 SHA512: e15f8625658a6b0977e3acec68cd7c4b1b4970d41edd52eec0adfd0df0b4a14116dd123aa8b286a2edfd058278f6a139d7252195ef0e94b10bf93db1ed8aabfd
 
+Package: smali-lsp
+Version: 1.5.0
+Architecture: all
+Maintainer: @demonr_rip
+Installed-Size: 13166
+Depends: openjdk-21
+Homepage: https://github.com/victorh028/smali-lsp
+Description: A Language Server Protocol (LSP) server with built-in MCP server for Smali
+Filename: dists/stable/extras/binary-all/smali-lsp_1.5.0_all.deb
+Size: 11978792
+MD5Sum: d116d6aed2d215664f6dd377bbff97e8
+SHA1: e4c2d807984c69109bf23118eb3d00dc5586201d
+SHA256: 894ef32f5901feadbf567d13fc16f3dc9ab21d1e98e5121aa7ef28d347d389b8
+SHA512: f6fa1bb12cf1693c2a25fe011f90feabf0bf3f721ad5d0046b5526ba1be918450fb9019edaf77edd0841e9d2e999f52fdd9d5af4930d6c068cc5711ee5855f3b
+
 Package: spin
 Version: 4.5-beta
 Architecture: all
@@ -51,11 +66,11 @@ Depends: spin, aapt2 , openjdk-21 , d8, zip, unzip
 Homepage: https://github.com/victorh028/termux-apk-make
 Description: Herramienta para compilar aplicaciones Android desde Termux.
 Filename: dists/stable/extras/binary-all/termux-apk-make_1.0.0_all.deb
-Size: 19834388
-MD5Sum: 3ea5c1d716c88967b062efa8c8f56dc1
-SHA1: 762072686fe78ebfb649c5266d29d37ae5515a88
-SHA256: 176995c1f9be0269d1c7621bc34c102632c84559d746f1d7dbf8be846431b0df
-SHA512: e80f97930ce97585ce14da22edefb5a5476ca092a3532db82351037a6acce3b551bd700d6d389b886f0e0f34da42db1fda6decf509752f06f92f2757ea72f976
+Size: 19834788
+MD5Sum: 3026945ca3172ff52794b0cf8323ddd5
+SHA1: a09a21556af68921cc3b3d8c30083d5b55a7b0df
+SHA256: 2c46371859c203c2f253d82511c50c6bda5ea9bedcc66d48b07118902bec1466
+SHA512: 11026a568461047f36784bdbe9ab684634dd5788130b12594f713810d686df3ea5c50ebd26e8056068fefd078ce178720d6605321aa0b453c6adffeafc621c49
 
 Package: termux-dk
 Version: 0.1.0

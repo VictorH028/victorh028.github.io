@@ -1,0 +1,27 @@
+{
+  "control": {
+    "Package": "smali-lsp",
+    "Version": "1.5.0",
+    "Architecture": "all",
+    "Maintainer": "@demonr_rip",
+    "Description": "A Language Server Protocol (LSP) server with built-in MCP server for Smali",
+    "Homepage": "https://github.com/victorh028/smali-lsp",
+    "Depends": "openjdk-21"
+  },
+
+ "control_files_dir": "control", 
+ "deb_dir": "../../",
+  
+  "data_files": {
+    "bin/smali-lsp": {
+      "source": "bin/smali-lsp",
+      "perm": "755"
+    },
+    
+
+    "share/smali-lsp/smali-lsp.jar": {
+      "source": "src/smali-lsp-1.5.0.jar",
+      "perm": "775"
+    }
+  }
+}

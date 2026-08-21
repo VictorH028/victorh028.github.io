@@ -1,0 +1,3 @@
+#!/data/data/com.termux/files/usr/bin/bash    
+# Después de instalar/actualizar   
+echo  "Por suelte se instalo..." 
