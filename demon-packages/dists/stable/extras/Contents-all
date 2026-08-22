@@ -1,6 +1,5 @@
 data/data/com.termux/files/usr/bin/apkeditor                                     apkeditor
-data/data/com.termux/files/usr/lib/apkeditor/apkeditor.jar                       apkeditor
-data/data/com.termux/files/usr/share/doc/apkeditor/LICENSE                       apkeditor
+data/data/com.termux/files/usr/share/apkeditor/apkeditor.jar                     apkeditor
 data/data/com.termux/files/usr/bin/nljson                                        nljson
 data/data/com.termux/files/usr/bin/smali-lsp                                     smali-lsp
 data/data/com.termux/files/usr/share/smali-lsp/smali-lsp.jar                     smali-lsp
