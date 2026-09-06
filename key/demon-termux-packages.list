@@ -1,1 +1,1 @@
-deb [trusted=yes arch=all] https://victorh028.github.io/demon-packages stable extras
+deb [signed-by=/data/data/com.termux/files/usr/etc/apt/trusted.gpg.d/demon.gpg arch=all] https://victorh028.github.io/demon-packages stable extras
