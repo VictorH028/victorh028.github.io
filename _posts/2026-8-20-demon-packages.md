@@ -1,7 +1,6 @@
 ---
-
 layout: single
-title: "Demon Packages"
+title: "demon-packages"
 date: 2026-09-20
 classes: wide
 categories:
@@ -14,9 +13,7 @@ categories:
 - packages
 - tools
   header:
-  teaser: /assets/images/path/path_img.jpg
   teaser_home_page: true
-
 ---
 
 # Demon Packages
