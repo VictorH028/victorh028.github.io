@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 #theme                   : "minimal-mistakes-jekyll
-remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
+remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -19,7 +19,7 @@ locale                   : "es-ES"
 title                    : "Termux vs Hackers"
 title_separator          : "-"
 name                     : "DemonHunter"
-description              : "Soy apacionado de la tecnología, la programacion y la seguridad "
+description              : "Soy apasionado de la tecnología, la programacion y la seguridad "
 url                      : "https://victorh028.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "victorh028/victorh028.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -128,7 +128,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "https://youtube.com/@hackcub2090?si=AYF6h3UNvDRSyXgG" #"https://youtube.com/c/"
+  youtube          : "https://youtube.com/@hackcub2090" #"https://youtube.com/c/"
   telegram         : "@demonr_rip"
 
 # Reading Files
