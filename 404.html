@@ -3,22 +3,108 @@ layout: default
 ---
 
 <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&family=Share+Tech+Mono&display=swap');
+
+  :root {
+    --neon-cyan: #00f3ff;
+    --neon-pink: #ff0055;
+    --bg-dark: #0a0a12;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
+
+  .futuristic-404 {
+    background-color: var(--bg-dark);
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.1), inset 0 0 15px rgba(0, 243, 255, 0.05);
+    color: #e0e6ed;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 40px auto;
+    max-width: 650px;
+    padding: 40px 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* Indicador Cyberpunk superior */
+  .futuristic-404::before {
+    content: "SYSTEM_ERROR // LOCATION_NOT_FOUND";
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--neon-cyan);
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+  /* Título 404 con Glitch sutil */
+  .glitch-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 6rem;
+    font-weight: 900;
     line-height: 1;
-    letter-spacing: -1px;
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: 
+      0 0 10px var(--neon-cyan),
+      0 0 20px var(--neon-cyan),
+      -2px 0 var(--neon-pink);
+    letter-spacing: -2px;
+  }
+
+  .status-tag {
+    display: inline-block;
+    background: rgba(255, 0, 85, 0.15);
+    border: 1px solid var(--neon-pink);
+    color: var(--neon-pink);
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .message {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 15px 0 30px;
+  }
+
+  /* Botón con efecto Neón */
+  .btn-home {
+    display: inline-block;
+    background: transparent;
+    color: var(--neon-cyan);
+    border: 1px solid var(--neon-cyan);
+    padding: 12px 28px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+  }
+
+  .btn-home:hover {
+    background: var(--neon-cyan);
+    color: var(--bg-dark);
+    box-shadow: 0 0 20px var(--neon-cyan);
+    transform: translateY(-2px);
   }
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div class="futuristic-404">
+  <div class="status-tag">ERR_404 // REALITY_FLAW</div>
+  <h1 class="glitch-title">404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p class="message">
+    La coordenada solicitada ha sido eliminada o nunca existió en esta línea temporal.
+  </p>
+
+  <a href="/" class="btn-home">&lt; Reestablecer Conexión /&gt;</a>
 </div>
+
