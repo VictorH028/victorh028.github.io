@@ -2,18 +2,6 @@
 layout: single
 title: "demon-packages"
 date: 2026-09-20
-classes: wide
-categories:
-
-- termux
-- packages
-  tags:
-- termux
-- apt
-- packages
-- tools
-  header:
-  teaser_home_page: true
 ---
 
 # Demon Packages
