@@ -1,0 +1,1 @@
+find . \( -path "./final_decompile_xml" -o -path "./build_payloads" -o -path "./__pycache__" -o -path "./smalilog.egg-info" -o -path "./bin" -o -path "./.git" -o -path "*/__pycache__" -o -path "*/smalilog.egg-info" \) -prune -o -type f \( -name "*.py" -o -name "*.toml" -o -name "*.md" -o -name "Makefile" \) -exec tail -n +1 {} + > todo_el_codigo_limpio.txt
