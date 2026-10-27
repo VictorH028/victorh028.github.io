@@ -1,16 +1,6 @@
 ---
-comments: true
-layout: single
 title: Atajos de teclado 
 date: 2026-10-27 
-classes: wide
-categories:
-  - termux
-  - atajos
-  - teclado 
-tags:
-  - termux
-  - desktop 
 ---
 
 
