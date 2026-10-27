@@ -4,8 +4,7 @@ date: 2026-10-27
 ---
 
 
-ATAJOS DE TECLADO - OPENBOX (rc.xml)
-=====================================
+# ATAJOS DE TECLADO - OPENBOX (rc.xml)
 
 Leyenda:
   W = tecla Windows / Super
@@ -14,23 +13,17 @@ Leyenda:
   S = Shift
   KP = teclado numerico
 
--------------------------------------------------------------------------------
-ESCRITORIOS
--------------------------------------------------------------------------------
+## ESCRITORIOS
   W-1 ... W-5              Ir al escritorio 1-5
   S-W-1 ... S-W-5          Enviar ventana al escritorio 1-5
   W-S-Left                 Enviar ventana al escritorio anterior
   W-S-Right                Enviar ventana al escritorio siguiente
 
--------------------------------------------------------------------------------
-CAMBIO DE VENTANAS
--------------------------------------------------------------------------------
+## CAMBIO DE VENTANAS
   A-Tab                    Siguiente ventana (mismo escritorio)
   W-Tab                    Siguiente ventana (todos los escritorios)
 
--------------------------------------------------------------------------------
-MOSAICO / SNAP
--------------------------------------------------------------------------------
+## MOSAICO / SNAP
   W-Left                   Mitad izquierda (49%)
   W-Right                  Mitad derecha (49%)
   W-Up                     Maximizar completo
@@ -43,9 +36,7 @@ MOSAICO / SNAP
   A-x                      Columna central (32%)
   A-c                      Columna derecha (32%)
 
--------------------------------------------------------------------------------
-MOSAICO NUMERICO (TECLADO NUMERICO)
--------------------------------------------------------------------------------
+## MOSAICO NUMERICO (TECLADO NUMERICO)
   W-KP_7                   Arriba izquierda
   W-KP_8                   Mitad superior
   W-KP_9                   Arriba derecha
@@ -56,9 +47,7 @@ MOSAICO NUMERICO (TECLADO NUMERICO)
   W-KP_2                   Mitad inferior
   W-KP_3                   Abajo derecha
 
--------------------------------------------------------------------------------
-MOVER Y REDIMENSIONAR
--------------------------------------------------------------------------------
+# MOVER Y REDIMENSIONAR
   W-A-Up                   Mover ventana 20 px hacia arriba
   W-A-Down                 Mover ventana 20 px hacia abajo
   W-A-Left                 Mover ventana 20 px a la izquierda
@@ -70,9 +59,7 @@ MOVER Y REDIMENSIONAR
   A-m                      Modo mover
   A-r                      Modo redimensionar
 
--------------------------------------------------------------------------------
-LANZAR APLICACIONES
--------------------------------------------------------------------------------
+## LANZAR APLICACIONES
   W-e                      geany
   W-f                      thunar
   W-t                      xfce4-terminal
@@ -90,9 +77,7 @@ LANZAR APLICACIONES
   C-A-h                    htop (terminal)
   C-A-n                    nano (terminal)
 
--------------------------------------------------------------------------------
-OPENBOX / GESTION DE VENTANAS
--------------------------------------------------------------------------------
+## OPENBOX / GESTION DE VENTANAS
   C-S-Escape               Salir de Openbox
   C-S-BackSpace            Reiniciar Openbox
   C-S-R                    Reconfigurar (recargar rc.xml)
@@ -105,9 +90,7 @@ OPENBOX / GESTION DE VENTANAS
   W-space                  Menu raiz
   A-space                  Menu de ventana
 
--------------------------------------------------------------------------------
-DESHABILITADOS (COMENTADOS EN EL XML)
--------------------------------------------------------------------------------
+## DESHABILITADOS (COMENTADOS EN EL XML)
   Multimedia:
     XF86AudioRaiseVolume   volume-up
     XF86AudioLowerVolume   volume-down
