@@ -6,7 +6,7 @@
     "Maintainer": "@demonr_rip",
     "Description": "Herramienta para compilar aplicaciones Android desde Termux.",
     "Homepage": "https://github.com/victorh028/termux-apk-make",
-    "Depends": "spin, aapt2 , openjdk-21 , d8, zip, unzip "
+    "Depends": "spin, aapt2 , aapt , openjdk-21 , d8, zip, unzip "
   },
 
  "control_files_dir": "control", 
